@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} – {{SCHOOL}} · {{CHURCH}}, {{CITY}}</title>
+<meta name="description" content="Навчальний посібник Біблійної школи «Дім Слова» християнської церкви «Перемога» (Рівне): тема «Слово Боже», з тестами для самоперевірки.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Cg fill='none' stroke='%23d4a94f' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10'/%3E%3C/g%3E%3C/svg%3E">
+<script>
+try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<style>{{CSS}}</style>
+</head>
+<body>
+<div class="progress screen-only" aria-hidden="true"><span></span></div>
+
+<header class="topbar screen-only">
+  <button class="icon-btn" id="tocBtn" type="button" aria-controls="toc" aria-expanded="false" title="Зміст">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+  </button>
+  <a class="brand" href="#top">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <span><b>Дім Слова</b><small>Біблійна школа · церква «Перемога» · Рівне</small></span>
+  </a>
+  <div class="tools">
+    <button class="chip" id="memoBtn" type="button" aria-pressed="false" title="Сховати тексти віршів, щоб перевірити, чи пам’ятаєте їх">Режим запам’ятовування</button>
+    <button class="icon-btn" id="fsDown" type="button" title="Менший шрифт">A−</button>
+    <button class="icon-btn" id="fsUp" type="button" title="Більший шрифт">A+</button>
+    <button class="icon-btn" id="themeBtn" type="button" title="Світла / темна тема">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="chip solid" href="slovo-bozhe.pdf" download>PDF</a>
+  </div>
+</header>
+
+<nav class="toc-drawer screen-only" id="toc" aria-label="Зміст">
+  <div class="toc-inner">
+    <p class="lbl">Зміст</p>
+    <ol class="toc-list">
+      <li><a href="#preface">Передмова</a></li>
+      {{TOC}}
+      <li><a href="#summary">Підсумок тестів</a></li>
+    </ol>
+  </div>
+</nav>
+<div class="scrim screen-only" id="scrim"></div>
+
+<main id="top">
+  <section class="cover">
+    <div class="cover-inner">
+      <p class="cover-church">{{CHURCH}} · {{CITY}}</p>
+      <svg class="cover-emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+      <p class="cover-school">Біблійна школа</p>
+      <p class="cover-name">«Дім Слова»</p>
+      <h1>{{TITLE}}</h1>
+      <p class="cover-sub">Навчальний посібник</p>
+      <p class="cover-meta">Писання – це Бог, Який говорить до нас · Характеристики Слова · Що дає Слово віруючому · Що ми маємо робити зі Словом · Як вивчати й тлумачити Біблію</p>
+      <p class="cover-foot"><span>instagram.com/victorychurch_rv</span><span>2026</span></p>
+      <a class="cover-start screen-only" href="#preface">Почати читання ↓</a>
+    </div>
+  </section>
+
+  {{PREFACE}}
+
+  <section class="toc-page print-only">
+    <span class="lbl">Зміст</span>
+    <ol class="toc-list">{{TOC}}</ol>
+    <p class="toc-extra">Відповіді до тестів – наприкінці посібника.</p>
+  </section>
+
+  {{CHAPTERS}}
+
+  <section class="summary screen-only" id="summary">
+    <span class="lbl">Підсумок</span>
+    <h2>Ваші результати</h2>
+    <p>Результати зберігаються лише у вашому браузері, на цьому пристрої. Нікуди не надсилаються.</p>
+    <div id="summaryTable"></div>
+  </section>
+
+  <section class="answers print-only" id="answers">
+    <span class="lbl">Додаток</span>
+    <h2>Відповіді до тестів</h2>
+    <p>Для питань на відповідність літери відповідають правому стовпчику в тесті. Для питань на порядок подано правильну послідовність.</p>
+    {{KEYS}}
+  </section>
+
+  <footer class="site-foot">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <p><b>{{SCHOOL}}</b> · {{CHURCH}}, {{CITY}}</p>
+    <p class="links"><a href="{{INSTAGRAM}}" rel="noopener">Instagram</a> · <a href="{{FACEBOOK}}" rel="noopener">Facebook</a></p>
+    <p class="small">Українською перекладено та оформлено за навчальним матеріалом Біблійної школи «Робітники Царства» християнської церкви «Перемога» (м. Київ). Використано з дозволу.</p>
+    <p class="small">Цитати Святого Письма – «Біблія. Сучасний переклад» © Українське Біблійне Товариство, 2020–2023.</p>
+  </footer>
+</main>
+
+<script type="application/json" id="quiz-data">{{QUIZ_DATA}}</script>
+<script>{{JS}}</script>
+</body>
+</html>
