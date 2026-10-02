@@ -94,6 +94,9 @@
 
   /* ---------- учень і надсилання результатів ---------- */
   var ENDPOINT = $('#quiz-data').getAttribute('data-endpoint') || '';
+  var LESSON = $('#quiz-data').getAttribute('data-lesson') || 'slovo-bozhe';
+  // «Слово Боже» зберігав результати під старим ключем – лишаємо його.
+  var RESULTS_KEY = LESSON === 'slovo-bozhe' ? 'sb-results' : 'sb-results-' + LESSON;
   function rid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 10); }
   var student = store.get('sb-student') || {};
   if (!student.uid) { student.uid = rid(); store.set('sb-student', student); }
@@ -180,6 +183,7 @@
   function queueResult(entry) {
     if (!ENDPOINT) return null;
     entry.id = rid();
+    entry.lesson = LESSON;
     entry.uid = student.uid;
     entry.ts = new Date().toISOString();
     outbox.push(entry);
@@ -379,10 +383,10 @@
         '</div>';
       checkBtn.style.display = 'none';
       retry.style.display = '';
-      var saved = store.get('sb-results') || {};
+      var saved = store.get(RESULTS_KEY) || {};
       var prev = saved[data.chapter];
       saved[data.chapter] = { pct: pct, best: Math.max(pct, prev ? prev.best || prev.pct : 0), date: new Date().toLocaleDateString('uk-UA'), tries: (prev ? prev.tries || 1 : 0) + 1 };
-      store.set('sb-results', saved);
+      store.set(RESULTS_KEY, saved);
       var sid = queueResult({ ch: data.chapter, title: data.title, pct: pct, score: Math.round(total * 10) / 10, max: max,
         attempt: saved[data.chapter].tries, q: perQ });
       if (sid) $('.result', resultBox).appendChild(h('p', { 'data-send': sid }));
@@ -396,7 +400,7 @@
   }
 
   function renderSummary() {
-    var saved = store.get('sb-results') || {};
+    var saved = store.get(RESULTS_KEY) || {};
     var rows = DATA.map(function (d) {
       var r = saved[d.chapter];
       return '<tr><td>' + d.chapter + '</td><td><a href="#quiz' + d.chapter + '">' + d.title + '</a></td><td>' +

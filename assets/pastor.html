@@ -33,10 +33,14 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
 
 <main>
   <section class="p-head">
-    <span class="lbl">{{SCHOOL}} · {{TITLE}}</span>
+    <span class="lbl">{{SCHOOL}}</span>
     <h1>Результати учнів</h1>
     <p class="p-status" id="status" aria-live="polite">Завантаження…</p>
+    <label class="p-lesson" id="lessonBar" hidden>Урок:
+      <select id="lesson"></select>
+    </label>
     <div class="tiles" id="tiles"></div>
+    <p class="p-hint" id="empty" hidden>Цей урок ще ніхто не проходив.</p>
   </section>
 
   <section class="p-card" id="studentsCard" hidden>
@@ -51,7 +55,7 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
         </select>
       </label>
     </div>
-    <p class="p-hint">Число – найкращий результат тесту, під ним – кількість спроб. Натисніть на учня, щоб побачити всі спроби.</p>
+    <p class="p-hint" id="gridHint"></p>
     <div class="table-wrap"><table class="p-table" id="grid"></table></div>
   </section>
 

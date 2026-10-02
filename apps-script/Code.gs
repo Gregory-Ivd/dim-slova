@@ -3,7 +3,10 @@
  * Таблиця – та, до якої прив'язаний скрипт. Ключ пастора – PASTOR_KEY у key.gs (не в репозиторії).
  */
 var SHEET = 'Результати';
-var HEAD = ['Час', 'Ім’я', 'Пристрій', 'Розділ', 'Тест', '%', 'Бали', 'З', 'Спроба', 'Питання', 'ID'];
+var HEAD = ['Час', 'Ім’я', 'Пристрій', 'Розділ', 'Тест', '%', 'Бали', 'З', 'Спроба', 'Питання', 'ID', 'Урок'];
+var ID_COL = 11;
+// Рядки до появи колонки «Урок» належать до вступного уроку.
+var FIRST_LESSON = 'slovo-bozhe';
 
 function sheet_() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -15,6 +18,8 @@ function sheet_() {
     sh.appendRow(HEAD);
     sh.setFrozenRows(1);
     sh.getRange(1, 1, 1, HEAD.length).setFontWeight('bold');
+  } else if (sh.getLastColumn() < HEAD.length) {
+    sh.getRange(1, 1, 1, HEAD.length).setValues([HEAD]).setFontWeight('bold');
   }
   return sh;
 }
@@ -32,6 +37,7 @@ function doPost(e) {
   var name = str_(d.name, 80), uid = str_(d.uid, 40), id = str_(d.id, 40), title = str_(d.title, 200);
   var ch = num_(d.ch, 1, 20), pct = num_(d.pct, 0, 100), score = num_(d.score, 0, 500), max = num_(d.max, 1, 500);
   var attempt = num_(d.attempt, 1, 10000);
+  var lesson = /^[a-z0-9-]{1,40}$/.test(d.lesson) ? d.lesson : FIRST_LESSON;
   var qs = Array.isArray(d.q) ? d.q.slice(0, 100).map(function (x) { return x === null ? null : num_(x, 0, 1); }) : [];
   if (!name || !id || ch === null || pct === null) return json_({ ok: false, error: 'bad_data' });
   // Формула, що починається з «=», «+», «-», «@», не повинна виконатися в таблиці.
@@ -44,12 +50,12 @@ function doPost(e) {
     var last = sh.getLastRow();
     if (last > 1) {
       var from = Math.max(2, last - 499);
-      var ids = sh.getRange(from, HEAD.length, last - from + 1, 1).getValues();
+      var ids = sh.getRange(from, ID_COL, last - from + 1, 1).getValues();
       for (var i = 0; i < ids.length; i++) if (ids[i][0] === id) return json_({ ok: true, dup: true });
     }
     var ts = d.ts ? new Date(d.ts) : new Date();
     if (isNaN(ts.getTime()) || ts > new Date()) ts = new Date();
-    sh.appendRow([ts, name, uid, ch, title, pct, score, max, attempt, JSON.stringify(qs), id]);
+    sh.appendRow([ts, name, uid, ch, title, pct, score, max, attempt, JSON.stringify(qs), id, lesson]);
   } finally {
     lock.releaseLock();
   }
@@ -70,7 +76,8 @@ function doGet(e) {
       return {
         ts: r[0] instanceof Date ? r[0].toISOString() : String(r[0]),
         name: String(r[1]).replace(/^’(?=[=+\-@])/, ''), uid: String(r[2]), ch: Number(r[3]), title: String(r[4]),
-        pct: Number(r[5]), score: Number(r[6]), max: Number(r[7]), attempt: Number(r[8]), q: q
+        pct: Number(r[5]), score: Number(r[6]), max: Number(r[7]), attempt: Number(r[8]), q: q,
+        lesson: String(r[11] || FIRST_LESSON)
       };
     })
   });

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{TITLE}} – {{SCHOOL}} · {{CHURCH}}, {{CITY}}</title>
-<meta name="description" content="Навчальний посібник Біблійної школи «Дім Слова» християнської церкви «Перемога» (Рівне): тема «Слово Боже», з тестами для самоперевірки.">
+<meta name="description" content="Навчальний посібник Біблійної школи «Дім Слова» християнської церкви «Перемога» (Рівне): тема «{{TITLE}}», з тестами для самоперевірки.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic" rel="stylesheet">
@@ -21,9 +21,9 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
   <button class="icon-btn" id="tocBtn" type="button" aria-controls="toc" aria-expanded="false" title="Зміст">
     <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
   </button>
-  <a class="brand" href="#top">
+  <a class="brand" href="./" title="Усі уроки">
     <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
-    <span><b>Дім Слова</b><small>Біблійна школа · церква «Перемога» · Рівне</small></span>
+    <span><b>Дім Слова</b><small>{{LABEL}} · {{TITLE}}</small></span>
   </a>
   <div class="tools">
     <button class="chip who-chip" id="whoBtn" type="button" title="Змінити ім’я" hidden></button>
@@ -33,7 +33,7 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
     <button class="icon-btn" id="themeBtn" type="button" title="Світла / темна тема">
       <svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
     </button>
-    <a class="chip solid" href="slovo-bozhe.pdf" download>PDF</a>
+    <a class="chip solid" href="{{PDF}}" download>PDF</a>
   </div>
 </header>
 
@@ -41,6 +41,7 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
   <div class="toc-inner">
     <p class="lbl">Зміст</p>
     <ol class="toc-list">
+      <li><a href="./">← Усі уроки</a></li>
       <li><a href="#preface">Передмова</a></li>
       {{TOC}}
       <li><a href="#summary">Підсумок тестів</a></li>
@@ -71,8 +72,8 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
       <p class="cover-school">Біблійна школа</p>
       <p class="cover-name">«Дім Слова»</p>
       <h1>{{TITLE}}</h1>
-      <p class="cover-sub">Навчальний посібник</p>
-      <p class="cover-meta">Писання – це Бог, Який говорить до нас · Характеристики Слова · Що дає Слово віруючому · Що ми маємо робити зі Словом · Як вивчати й тлумачити Біблію</p>
+      <p class="cover-sub">{{LABEL}} · Навчальний посібник</p>
+      <p class="cover-meta">{{META}}</p>
       <p class="cover-foot"><span>instagram.com/victorychurch_rv</span><span>2026</span></p>
       <a class="cover-start screen-only" href="#preface">Почати читання ↓</a>
     </div>
@@ -111,7 +112,7 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
   </footer>
 </main>
 
-<script type="application/json" id="quiz-data" data-endpoint="{{ENDPOINT}}">{{QUIZ_DATA}}</script>
+<script type="application/json" id="quiz-data" data-endpoint="{{ENDPOINT}}" data-lesson="{{LESSON}}">{{QUIZ_DATA}}</script>
 <script>{{JS}}</script>
 </body>
 </html>

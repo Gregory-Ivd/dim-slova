@@ -4,3 +4,4 @@ __pycache__/
 apps-script/key.gs
 apps-script/.clasp.json
 .clasp.json
+sources/*.pdf

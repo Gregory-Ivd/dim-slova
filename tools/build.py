@@ -22,7 +22,6 @@ ASSETS = os.path.join(ROOT, 'assets')
 CHURCH = 'Християнська церква «Перемога»'
 CITY = 'м. Рівне'
 SCHOOL = 'Біблійна школа «Дім Слова»'
-TITLE = 'Слово Боже'
 INSTAGRAM = 'https://www.instagram.com/victorychurch_rv/'
 FACEBOOK = 'https://www.facebook.com/profile.php?id=100077340400434'
 # Адреса веб-застосунку Google Apps Script (apps-script/), куди надсилаються результати тестів.
@@ -35,6 +34,8 @@ OVERRIDES = {
     # в оригіналі наведено лише перше речення
     'Осия 4:6': {'first_sentence': True},
 }
+# Нумерація посилань у src/<урок>/*.md: 'synodal' (перераховується на УБТ) або 'ubt'.
+NUMBERING = 'synodal'
 ROMAN = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5}
 
 
@@ -68,14 +69,15 @@ def fmt_ranges(book, pairs):
 
 def scripture(ref):
     book, ch, rng = parse(ref)
+    rm = remap if NUMBERING == 'synodal' else (lambda b, c, v: (c, v))
     ov = OVERRIDES.get(ref, {})
     syn, cuv = [], []
     for a, b in rng:
         if ov.get('extend_to'):
-            b = max(b, ov['extend_to'] - (remap(book, ch, a)[1] - a))
+            b = max(b, ov['extend_to'] - (rm(book, ch, a)[1] - a))
         for v in range(a, b + 1):
             syn.append((ch, v))
-            cuv.append(remap(book, ch, v))
+            cuv.append(rm(book, ch, v))
     verses = []
     for c, v in cuv:
         vs, _ = chapter(book, c)
@@ -273,11 +275,10 @@ def answer_key(q_data, n):
 
 # ---------- складання ----------
 
-def render_chapter(n):
-    blocks = merge_keys(parse_md(os.path.join(SRC, f'ch{n}.md')))
-    quiz = json.load(open(os.path.join(SRC, f'quiz{n}.json'), encoding='utf-8'))
-    out, toc, h3n = [], [], 0
-    stats = {'verses': 0}
+def render_chapter(ldir, n):
+    blocks = merge_keys(parse_md(os.path.join(ldir, f'ch{n}.md')))
+    quiz = json.load(open(os.path.join(ldir, f'quiz{n}.json'), encoding='utf-8'))
+    out, toc = [], []
     for b in blocks:
         t = b['t']
         if t == 'h1':
@@ -293,7 +294,6 @@ def render_chapter(n):
             out.append(f'<h3 class="sec" id="{b["id"]}">{badge}{inline(title)}</h3>')
             toc[-1][2].append((b['id'], b['text']))
         elif t == 'h3':
-            h3n += 1
             out.append(f'<h4 class="sub">{inline(b["text"])}</h4>')
         elif t == 'p':
             out.append(f'<p>{apply_marks(inline(b["text"]), b.get("marks"))}</p>')
@@ -305,9 +305,7 @@ def render_chapter(n):
                 items.append(f'<li><p class="li-head">{first}</p>{rest}</li>')
             out.append(f'<ul class="points">{"".join(items)}</ul>')
         elif t == 'scr':
-            h, size = scripture(b['ref'])
-            out.append(h)
-            stats['verses'] += 1
+            out.append(scripture(b['ref'])[0])
         elif t == 'key':
             out.append(f'<aside class="key-idea"><span class="lbl">Головна думка</span><p>{inline(b["text"])}</p></aside>')
         elif t == 'aside':
@@ -325,59 +323,86 @@ def render_chapter(n):
     return ''.join(out) + quiz_html, toc, qjs, answer_key(quiz, n), quiz['title']
 
 
-def main():
+def verse(ref):
+    book, c, v = ref
+    vs, _ = chapter(book, c)
+    label = f'{UA[book]} {c}:{v}'
+    return vs[v], label
+
+
+def fill(page, **kw):
+    for k, v in kw.items():
+        page = page.replace('{{' + k + '}}', v)
+    page = (page.replace('{{ENDPOINT}}', html.escape(ENDPOINT))
+            .replace('{{CHURCH}}', CHURCH).replace('{{CITY}}', CITY).replace('{{SCHOOL}}', SCHOOL)
+            .replace('{{INSTAGRAM}}', INSTAGRAM).replace('{{FACEBOOK}}', FACEBOOK))
+    left = re.findall(r'\{\{[A-Z_]+\}\}', page)
+    assert not left, left
+    return page
+
+
+def jsdata(x):
+    return json.dumps(x, ensure_ascii=False).replace('</', '<\\/')
+
+
+def write(name, page):
+    open(os.path.join(ROOT, name), 'w', encoding='utf-8').write(page)
+    print(name, len(page), 'bytes')
+
+
+def build_lesson(entry, css, js, tpl):
+    slug = entry['slug']
+    ldir = os.path.join(SRC, slug)
+    cfg = json.load(open(os.path.join(ldir, 'lesson.json'), encoding='utf-8'))
+    global NUMBERING
+    NUMBERING = cfg.get('numbering', 'ubt')
     chapters, tocs, quizzes, keys = [], [], [], []
-    for n in range(1, 6):
-        body, toc, qjs, key, qtitle = render_chapter(n)
+    n = 1
+    while os.path.exists(os.path.join(ldir, f'ch{n}.md')):
+        body, toc, qjs, key, qtitle = render_chapter(ldir, n)
         chapters.append(f'<article class="chapter" data-ch="{n}">{body}</article>')
         tocs += toc
         quizzes.append(qjs)
         keys.append((n, qtitle, key))
-
-    epi_vs, _ = chapter('2TI', 2)
-    epigraph = epi_vs[15]
-    prayer_vs, _ = chapter('PSA', 119)
-    prayer = prayer_vs[18]
-
+        n += 1
+    epigraph, epi_ref = verse(cfg['epigraph'])
+    prayer, prayer_ref = verse(cfg['prayer'])
     toc_html = ''.join(
         f'<li><a href="#{cid}">{esc(ct)}</a><ol>' + ''.join(f'<li><a href="#{sid}">{esc(st)}</a></li>' for sid, st in secs) + '</ol></li>'
         for cid, ct, secs in tocs)
-    keys_html = ''.join(f'<section class="key-ch"><h3>Розділ {n}. {esc(t)}</h3>{k}</section>' for n, t, k in keys)
+    keys_html = ''.join(f'<section class="key-ch"><h3>Розділ {k}. {esc(t)}</h3>{v}</section>' for k, t, v in keys)
+    preface = open(os.path.join(ldir, 'preface.html'), encoding='utf-8').read()
+    # колонтитул друкованої версії
+    css = css.replace('@top-right { content: "Слово Боже";', '@top-right { content: "%s";' % cfg['title'].replace('"', ''))
+    page = fill(tpl.replace('{{PREFACE}}', preface),
+                CSS=css, JS=js, EPIGRAPH=esc(epigraph), EPIGRAPH_REF=esc(epi_ref), PRAYER=esc(prayer), PRAYER_REF=esc(prayer_ref),
+                TOC=toc_html, CHAPTERS=''.join(chapters), KEYS=keys_html, QUIZ_DATA=jsdata(quizzes),
+                TITLE=esc(cfg['title']), LABEL=esc(entry['label']), META=esc(cfg['meta']), LESSON=slug, PDF=cfg['pdf'])
+    write(f'{slug}.html', page)
+    return {'slug': slug, 'label': entry['label'], 'title': cfg['title'], 'summary': cfg['summary'],
+            'chapters': [{'chapter': q['chapter'], 'title': q['title'],
+                          'questions': [{'q': x['q']} for x in q['questions']]} for q in quizzes]}
 
-    tpl = open(os.path.join(ASSETS, 'template.html'), encoding='utf-8').read()
+
+def main():
     css = open(os.path.join(ASSETS, 'style.css'), encoding='utf-8').read()
     js = open(os.path.join(ASSETS, 'app.js'), encoding='utf-8').read()
-    preface = open(os.path.join(SRC, 'preface.html'), encoding='utf-8').read()
-    page = (tpl.replace('{{CSS}}', css).replace('{{JS}}', js)
-            .replace('{{PREFACE}}', preface)
-            .replace('{{EPIGRAPH}}', esc(epigraph)).replace('{{PRAYER}}', esc(prayer))
-            .replace('{{TOC}}', toc_html).replace('{{CHAPTERS}}', ''.join(chapters))
-            .replace('{{KEYS}}', keys_html)
-            .replace('{{QUIZ_DATA}}', json.dumps(quizzes, ensure_ascii=False).replace('</', '<\\/'))
-            .replace('{{ENDPOINT}}', html.escape(ENDPOINT))
-            .replace('{{CHURCH}}', CHURCH).replace('{{CITY}}', CITY).replace('{{SCHOOL}}', SCHOOL)
-            .replace('{{TITLE}}', TITLE).replace('{{INSTAGRAM}}', INSTAGRAM).replace('{{FACEBOOK}}', FACEBOOK))
-    left = re.findall(r'\{\{[A-Z_]+\}\}', page)
-    assert not left, left
-    open(os.path.join(ROOT, 'index.html'), 'w', encoding='utf-8').write(page)
-    print('index.html', len(page), 'bytes')
-    build_pastor(quizzes, css)
+    tpl = open(os.path.join(ASSETS, 'template.html'), encoding='utf-8').read()
+    lessons = [build_lesson(e, css, js, tpl) for e in json.load(open(os.path.join(SRC, 'lessons.json'), encoding='utf-8'))]
 
+    cards = ''.join(
+        f'<li><a class="lesson-card" href="{L["slug"]}.html" data-lesson="{L["slug"]}">'
+        f'<span class="lc-label">{esc(L["label"])}</span><span class="lc-title">{esc(L["title"])}</span>'
+        f'<span class="lc-sum">{esc(L["summary"])}</span><span class="lc-prog"></span></a></li>'
+        for L in lessons)
+    write('index.html', fill(open(os.path.join(ASSETS, 'home.html'), encoding='utf-8').read(),
+                             CSS=css, JS=open(os.path.join(ASSETS, 'home.js'), encoding='utf-8').read(), LESSONS=cards,
+                             LESSON_DATA=jsdata([{'slug': L['slug'], 'chapters': len(L['chapters'])} for L in lessons])))
 
-def build_pastor(quizzes, css):
-    data = [{'chapter': q['chapter'], 'title': q['title'], 'questions': [{'q': x['q']} for x in q['questions']]}
-            for q in quizzes]
-    tpl = open(os.path.join(ASSETS, 'pastor.html'), encoding='utf-8').read()
-    page = (tpl.replace('{{CSS}}', css)
-            .replace('{{PCSS}}', open(os.path.join(ASSETS, 'pastor.css'), encoding='utf-8').read())
-            .replace('{{JS}}', open(os.path.join(ASSETS, 'pastor.js'), encoding='utf-8').read())
-            .replace('{{QUIZ_DATA}}', json.dumps(data, ensure_ascii=False).replace('</', '<\\/'))
-            .replace('{{ENDPOINT}}', html.escape(ENDPOINT))
-            .replace('{{SCHOOL}}', SCHOOL).replace('{{TITLE}}', TITLE))
-    left = re.findall(r'\{\{[A-Z_]+\}\}', page)
-    assert not left, left
-    open(os.path.join(ROOT, 'pastor.html'), 'w', encoding='utf-8').write(page)
-    print('pastor.html', len(page), 'bytes')
+    write('pastor.html', fill(open(os.path.join(ASSETS, 'pastor.html'), encoding='utf-8').read(),
+                              CSS=css, PCSS=open(os.path.join(ASSETS, 'pastor.css'), encoding='utf-8').read(),
+                              JS=open(os.path.join(ASSETS, 'pastor.js'), encoding='utf-8').read(),
+                              QUIZ_DATA=jsdata([{k: L[k] for k in ('slug', 'label', 'title', 'chapters')} for L in lessons])))
 
 
 if __name__ == '__main__':

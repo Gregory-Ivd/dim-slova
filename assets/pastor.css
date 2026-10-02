@@ -5,6 +5,10 @@ body.pastor { font-size: .95rem; }
 .p-head h1 { font-family: var(--display); font-size: 2.4rem; color: var(--navy); margin: 4px 0 6px; line-height: 1.1; }
 .p-status { font-family: var(--sans); font-size: .8rem; color: var(--muted); margin: 0 0 6px; }
 .p-status.err { color: var(--bad); }
+.p-lesson { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 14px 0 0; font-family: var(--sans); font-size: .8rem; font-weight: 600; color: var(--muted); }
+.p-lesson[hidden] { display: none; }
+.p-lesson select { font: inherit; font-weight: 600; color: var(--ink); padding: 9px 14px; border: 1px solid var(--gold-line); border-radius: 999px; background: var(--bg); max-width: 100%; }
+#empty { margin-top: 12px; }
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 14px; }
 .tiles:empty { display: none; }
 .tile { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: var(--bg); }
