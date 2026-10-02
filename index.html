@@ -208,7 +208,7 @@ ul.points > li > p:not(.li-head) { margin-bottom: .6em; }
 .opt.right { border-color: var(--ok); background: var(--ok-bg); }
 .opt.wrong { border-color: var(--bad); background: var(--bad-bg); }
 .tf { display: flex; gap: 10px; }
-.tf .opt { flex: 1; justify-content: center; }
+.tf .opt { flex: 1 1 0; min-width: 0; justify-content: center; }
 .match-row { display: grid; grid-template-columns: 1fr 1.4fr; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: .9rem; }
 .match-row select { width: 100%; font: inherit; font-size: .86rem; padding: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
 .match-row.right select { border-color: var(--ok); background: var(--ok-bg); }
@@ -360,6 +360,21 @@ ul.points > li > p:not(.li-head) { margin-bottom: .6em; }
   .brand small { display: none; }
   .who-chip { max-width: 96px; }
   .sum-table .c-date { display: none; }
+  /* обкладинка: увесь текст усередині золотої рамки (inset 22–30px) */
+  .cover-inner { padding: 52px 40px; max-width: 100%; }
+  .cover-church { letter-spacing: .14em; margin-bottom: 26px; }
+  .cover-school { letter-spacing: .22em; }
+  .cover h1 { font-size: clamp(2.3rem, 11vw, 3.4rem); overflow-wrap: anywhere; }
+  .cover-sub { font-size: 1.3rem; }
+  .cover-foot { flex-wrap: wrap; gap: 6px 18px; letter-spacing: .08em; }
+}
+@media (max-width: 400px) {
+  .topbar { gap: 6px; padding: 8px 10px; }
+  .tools { gap: 4px; }
+  .brand > span { display: none; }
+  .who-chip { max-width: 64px; padding: 0 8px; }
+  .cover-inner { padding: 52px 34px; }
+  .cover-foot { font-size: .6rem; letter-spacing: .04em; }
 }
 </style>
 <style>
