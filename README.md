@@ -16,12 +16,23 @@
 - `assets/` – шаблони, стилі, скрипти (`template.html` – урок, `home.*` – головна, `pastor.*` – сторінка пастора).
 - `tools/build.py` – збирає всі сторінки; тексти віршів бере з bible.com (кеш у `.cache/`, не в репозиторії).
 - `tools/pdf.ps1 [-Lesson <slug>]` – друкує уроки в PDF через Chrome або Edge.
+- `tools/new_lesson.py`, `check_lesson.py`, `konspekt_pdf.py`, `publish.ps1` – новий урок (див. нижче); `konspekt.py` – читання PDF-конспекту.
 
 ## Новий урок
 
-1. `src/<slug>/` з `lesson.json`, `preface.html`, `chN.md`, `quizN.json` (вимоги до тестів – `tools/SPEC.md`).
-2. Рядок у `src/lessons.json`.
-3. `python tools/build.py`, потім `powershell -ExecutionPolicy Bypass -File tools/pdf.ps1 -Lesson <slug>`.
+Потрібно один раз: `pip install -r tools/requirements.txt`.
+
+1. **Заготовка з конспекту** (оригінал PDF з обкладинкою):
+   `python tools/new_lesson.py "<конспект.pdf>"` – створює `src/<slug>/` (текст конспекту в розмітці уроку,
+   теми згруповано в 3–5 розділів, посилання `@@`, головні думки `!!`), шаблони тестів `quizN.json` з `TODO`
+   і додає урок у `src/lessons.json`. Параметри: `--slug`, `--chapters N`, `--force`.
+2. **Доробити вручну**: назви розділів (`# I. …`), `summary` у `lesson.json`, тести замість `TODO`
+   (вимоги – `tools/SPEC.md`; ідеї – `_konspekt_questions` у `quiz1.json`, взяті з «Перевір себе» конспекту).
+3. **Перевірка**: `python tools/check_lesson.py <slug>` – посилання, тести, якорі, збірка розділів.
+4. **Публікація**: `powershell -ExecutionPolicy Bypass -File tools/publish.ps1 -Lesson <slug> -Konspekt "<конспект.pdf>"` –
+   перевірка, збірка сайту, PDF уроку, конспект для роздачі (без обкладинки, з посиланням на урок) і push.
+
+Окремо конспект для роздачі: `python tools/konspekt_pdf.py "<конспект.pdf>"` (у `Documents\Дім Слова – конспекти\`).
 
 ## Збірка
 

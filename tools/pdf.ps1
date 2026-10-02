@@ -1,4 +1,4 @@
-# Prints a lesson page (<slug>.html) to <slug>.pdf with headless Chrome.
+﻿# Prints a lesson page (<slug>.html) to <slug>.pdf with headless Chrome.
 # Usage: pdf.ps1 [-Lesson vira]   (without -Lesson prints every lesson from src/lessons.json)
 # Needs Chrome 131+ for CSS @page margin boxes (running header/footer).
 param([string]$Lesson)
