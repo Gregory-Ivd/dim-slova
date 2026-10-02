@@ -16,6 +16,7 @@
 - `assets/` – шаблони, стилі, скрипти (`template.html` – урок, `home.*` – головна, `pastor.*` – сторінка пастора).
 - `tools/build.py` – збирає всі сторінки; тексти віршів бере з bible.com (кеш у `.cache/`, не в репозиторії).
 - `tools/pdf.ps1 [-Lesson <slug>]` – друкує уроки в PDF через Chrome або Edge.
+- `tools/send_tg.py` – надіслати текст собі в Telegram через бота; `messages/` – готові тексти (запрошення учнів).
 - `tools/new_lesson.py`, `check_lesson.py`, `konspekt_pdf.py`, `publish.ps1` – новий урок (див. нижче); `konspekt.py` – читання PDF-конспекту.
 
 ## Новий урок
