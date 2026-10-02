@@ -309,6 +309,24 @@ ul.points > li > p:not(.li-head) { margin-bottom: .6em; }
   a { color: inherit; text-decoration: none; }
 }
 
+/* ---------- ім’я учня і надсилання ---------- */
+.who-chip { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; line-height: 34px; }
+.who-chip[hidden] { display: none; }
+.who { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 16px; background: rgba(16, 20, 28, .55); }
+.who[hidden] { display: none; }
+.who-box { width: 100%; max-width: 440px; background: var(--paper); color: var(--ink); border: 1px solid var(--gold-line); border-radius: 18px; padding: 26px 24px 22px; box-shadow: var(--shadow); }
+.who-box h2 { font-family: var(--display); font-size: 2rem; color: var(--navy); margin: 4px 0 8px; line-height: 1.15; }
+.who-box p { margin: 0 0 14px; font-size: .92rem; }
+.who-box input { width: 100%; font: inherit; font-size: 1rem; padding: 12px 14px; border: 1px solid var(--gold-line); border-radius: 10px; background: var(--bg); color: var(--ink); }
+.who-box input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.who-box .warn { display: block; min-height: 1.2em; margin: 6px 0 10px; }
+.who-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.send { grid-column: 1 / -1; margin: 6px 0 0; font-family: var(--sans); font-size: .76rem; }
+.send:empty { display: none; }
+.send.ok { color: var(--ok); }
+.send.wait { color: var(--part); }
+.linkish { font: inherit; color: var(--navy); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
 /* ---------- вузькі екрани ---------- */
 .brand { flex: 1 1 auto; }
 .brand > span { min-width: 0; }
@@ -326,5 +344,6 @@ ul.points > li > p:not(.li-head) { margin-bottom: .6em; }
   .quiz { padding: 18px 10px; }
   .q { padding: 14px 12px 12px; }
   .brand small { display: none; }
+  .who-chip { max-width: 96px; }
   .sum-table .c-date { display: none; }
 }

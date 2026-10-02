@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Результати учнів – {{SCHOOL}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Cg fill='none' stroke='%23d4a94f' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10'/%3E%3C/g%3E%3C/svg%3E">
+<script>
+try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<style>{{CSS}}</style>
+<style>{{PCSS}}</style>
+</head>
+<body class="pastor">
+<header class="topbar">
+  <a class="brand" href="./">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <span><b>Дім Слова</b><small>Сторінка пастора · результати тестів</small></span>
+  </a>
+  <div class="tools">
+    <button class="chip" id="reloadBtn" type="button">Оновити</button>
+    <button class="chip" id="csvBtn" type="button" disabled>CSV</button>
+    <button class="icon-btn" id="themeBtn" type="button" title="Світла / темна тема">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="p-head">
+    <span class="lbl">{{SCHOOL}} · {{TITLE}}</span>
+    <h1>Результати учнів</h1>
+    <p class="p-status" id="status" aria-live="polite">Завантаження…</p>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <section class="p-card" id="studentsCard" hidden>
+    <div class="p-bar">
+      <h2>Учні</h2>
+      <input id="search" type="search" placeholder="Пошук за ім’ям" aria-label="Пошук за ім’ям">
+      <label class="p-sort">Сортувати:
+        <select id="sort">
+          <option value="name">за ім’ям</option>
+          <option value="avg">за середнім результатом</option>
+          <option value="last">за останньою активністю</option>
+        </select>
+      </label>
+    </div>
+    <p class="p-hint">Число – найкращий результат тесту, під ним – кількість спроб. Натисніть на учня, щоб побачити всі спроби.</p>
+    <div class="table-wrap"><table class="p-table" id="grid"></table></div>
+  </section>
+
+  <section class="p-card" id="questionsCard" hidden>
+    <div class="p-bar"><h2>Складні питання</h2></div>
+    <p class="p-hint">Частка правильних відповідей за останньою спробою кожного учня. Питання з найнижчим результатом – теми, які варто повторити на занятті.</p>
+    <div id="questions"></div>
+  </section>
+</main>
+
+<script type="application/json" id="quiz-data" data-endpoint="{{ENDPOINT}}">{{QUIZ_DATA}}</script>
+<script>{{JS}}</script>
+</body>
+</html>

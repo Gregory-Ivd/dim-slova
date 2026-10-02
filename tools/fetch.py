@@ -34,6 +34,7 @@ class P(HTMLParser):
 def chapter(book,ch):
     fn=os.path.join(D,f'{book}.{ch}.html')
     if not os.path.exists(fn):
+        os.makedirs(D,exist_ok=True)
         req=urllib.request.Request(f'https://www.bible.com/bible/3786/{book}.{ch}.CUV',headers={'User-Agent':'Mozilla/5.0'})
         open(fn,'w',encoding='utf-8').write(urllib.request.urlopen(req).read().decode('utf-8')); time.sleep(0.4)
     h=open(fn,encoding='utf-8').read()

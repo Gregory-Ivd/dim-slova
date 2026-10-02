@@ -26,6 +26,7 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
     <span><b>Дім Слова</b><small>Біблійна школа · церква «Перемога» · Рівне</small></span>
   </a>
   <div class="tools">
+    <button class="chip who-chip" id="whoBtn" type="button" title="Змінити ім’я" hidden></button>
     <button class="chip" id="memoBtn" type="button" aria-pressed="false" title="Сховати тексти віршів, щоб перевірити, чи пам’ятаєте їх">Режим запам’ятовування</button>
     <button class="icon-btn" id="fsDown" type="button" title="Менший шрифт">A−</button>
     <button class="icon-btn" id="fsUp" type="button" title="Більший шрифт">A+</button>
@@ -47,6 +48,20 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
   </div>
 </nav>
 <div class="scrim screen-only" id="scrim"></div>
+
+<div class="who screen-only" id="who" role="dialog" aria-modal="true" aria-labelledby="whoTitle" hidden>
+  <form class="who-box" id="whoForm" novalidate>
+    <span class="lbl">Біблійна школа «Дім Слова»</span>
+    <h2 id="whoTitle">Як вас звати?</h2>
+    <p id="whoText">Вкажіть ім’я та прізвище. Результати тестів побачить пастор, щоб допомагати вам у навчанні.</p>
+    <input id="whoName" type="text" autocomplete="name" maxlength="60" placeholder="Ім’я та прізвище" aria-describedby="whoWarn">
+    <p class="warn" id="whoWarn" aria-live="polite"></p>
+    <div class="who-actions">
+      <button class="btn" type="submit">Зберегти</button>
+      <button class="btn ghost" type="button" id="whoLater">Пізніше</button>
+    </div>
+  </form>
+</div>
 
 <main id="top">
   <section class="cover">
@@ -76,7 +91,7 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
   <section class="summary screen-only" id="summary">
     <span class="lbl">Підсумок</span>
     <h2>Ваші результати</h2>
-    <p>Результати зберігаються лише у вашому браузері, на цьому пристрої. Нікуди не надсилаються.</p>
+    <p>Результати зберігаються у вашому браузері і надсилаються пастору Біблійної школи разом з ім’ям, яке ви вказали.</p>
     <div id="summaryTable"></div>
   </section>
 
@@ -96,7 +111,7 @@ try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.
   </footer>
 </main>
 
-<script type="application/json" id="quiz-data">{{QUIZ_DATA}}</script>
+<script type="application/json" id="quiz-data" data-endpoint="{{ENDPOINT}}">{{QUIZ_DATA}}</script>
 <script>{{JS}}</script>
 </body>
 </html>

@@ -1,3 +1,6 @@
 .cache/
 __pycache__/
 .playwright-mcp/
+apps-script/key.gs
+apps-script/.clasp.json
+.clasp.json

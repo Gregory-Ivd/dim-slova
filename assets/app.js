@@ -92,6 +92,104 @@
     f.addEventListener('click', function () { if (document.body.classList.contains('memo')) f.classList.toggle('revealed'); });
   });
 
+  /* ---------- учень і надсилання результатів ---------- */
+  var ENDPOINT = $('#quiz-data').getAttribute('data-endpoint') || '';
+  function rid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 10); }
+  var student = store.get('sb-student') || {};
+  if (!student.uid) { student.uid = rid(); store.set('sb-student', student); }
+  var outbox = store.get('sb-outbox') || [];
+  var sendState = {};  // id -> 'sending' | 'ok' | 'fail'
+
+  var who = $('#who'), whoName = $('#whoName'), whoWarn = $('#whoWarn'), whoBtn = $('#whoBtn'), whoText = $('#whoText');
+  var whoDefault = whoText.textContent;
+  function showName() {
+    whoBtn.hidden = !ENDPOINT;
+    whoBtn.textContent = student.name ? student.name : 'Вказати ім’я';
+  }
+  function openWho(reason) {
+    whoText.textContent = reason || whoDefault;
+    whoName.value = student.name || '';
+    whoWarn.textContent = '';
+    who.hidden = false;
+    setTimeout(function () { whoName.focus(); }, 30);
+  }
+  function closeWho() {
+    who.hidden = true;
+    store.set('sb-asked', true);
+  }
+  $('#whoForm').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var v = whoName.value.replace(/\s+/g, ' ').trim();
+    if (v.split(' ').length < 2 || v.length < 4) { whoWarn.textContent = 'Вкажіть, будь ласка, ім’я та прізвище.'; whoName.focus(); return; }
+    student.name = v;
+    store.set('sb-student', student);
+    showName();
+    closeWho();
+    flush();
+  });
+  $('#whoLater').addEventListener('click', closeWho);
+  who.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeWho(); });
+  whoBtn.addEventListener('click', function () { openWho(); });
+  showName();
+  if (ENDPOINT && !student.name && !store.get('sb-asked')) openWho();
+
+  function sendStatusText(id) {
+    var st = sendState[id];
+    if (st === 'ok') return ['ok', '✓ Результат надіслано пастору.'];
+    if (!student.name) return ['wait', 'Результат ще не надіслано: вкажіть ім’я, щоб його побачив пастор.'];
+    if (st === 'fail') return ['wait', 'Не вдалося надіслати. Спробуємо ще раз автоматично, коли буде інтернет.'];
+    return ['wait', 'Надсилаємо результат пастору…'];
+  }
+  function paintStatus() {
+    $$('[data-send]').forEach(function (el) {
+      var t = sendStatusText(el.getAttribute('data-send'));
+      el.className = 'send ' + t[0];
+      el.textContent = t[1];
+      if (!student.name) {
+        el.appendChild(document.createTextNode(' '));
+        el.appendChild(h('button', { class: 'linkish', type: 'button', text: 'Вказати ім’я', onclick: function () { openWho(); } }));
+      }
+    });
+    var n = $('#outboxNote');
+    if (n) n.textContent = ENDPOINT && outbox.length ? 'Ще не надіслано пастору: ' + outbox.length + '.' : '';
+  }
+  var sending = false;
+  function flush() {
+    paintStatus();
+    if (!ENDPOINT || sending || !student.name || !outbox.length) return;
+    var item = outbox[0];
+    item.name = student.name;
+    sending = true;
+    sendState[item.id] = 'sending';
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(item) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res.ok && res.error !== 'bad_data') throw new Error(res.error);
+        outbox = outbox.filter(function (x) { return x.id !== item.id; });
+        store.set('sb-outbox', outbox);
+        sendState[item.id] = 'ok';
+        sending = false;
+        flush();
+      })
+      .catch(function () {
+        sendState[item.id] = 'fail';
+        sending = false;
+        paintStatus();
+      });
+  }
+  function queueResult(entry) {
+    if (!ENDPOINT) return null;
+    entry.id = rid();
+    entry.uid = student.uid;
+    entry.ts = new Date().toISOString();
+    outbox.push(entry);
+    store.set('sb-outbox', outbox);
+    if (!student.name) openWho('Щоб пастор побачив ваш результат, вкажіть ім’я та прізвище.');
+    return entry.id;
+  }
+  addEventListener('online', flush);
+  setInterval(function () { if (outbox.length) flush(); }, 60000);
+
   /* ---------- тести ---------- */
   var DATA = JSON.parse($('#quiz-data').textContent);
   var LEVELS = ['знання', 'розуміння', 'застосування'];
@@ -255,12 +353,13 @@
         return;
       }
       warn.textContent = '';
-      var total = 0, max = 0, byLvl = {}, review = {};
+      var total = 0, max = 0, byLvl = {}, review = {}, perQ = [];
       qs.forEach(function (a) {
         a.el.classList.remove('missing');
         var s = a.answered() ? a.grade() : (a.grade(), 0);
         if (a.q.type === 'reflect') s = null;
         a.feedback(s);
+        perQ.push(s === null ? null : Math.round(s * 100) / 100);
         if (s === null) return;
         total += s; max += 1;
         var L = a.q.level || 'розуміння';
@@ -284,7 +383,11 @@
       var prev = saved[data.chapter];
       saved[data.chapter] = { pct: pct, best: Math.max(pct, prev ? prev.best || prev.pct : 0), date: new Date().toLocaleDateString('uk-UA'), tries: (prev ? prev.tries || 1 : 0) + 1 };
       store.set('sb-results', saved);
+      var sid = queueResult({ ch: data.chapter, title: data.title, pct: pct, score: Math.round(total * 10) / 10, max: max,
+        attempt: saved[data.chapter].tries, q: perQ });
+      if (sid) $('.result', resultBox).appendChild(h('p', { 'data-send': sid }));
       renderSummary();
+      flush();
       resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     retry.addEventListener('click', function () { renderQuiz(app, data); app.scrollIntoView({ behavior: 'smooth' }); });
@@ -302,7 +405,8 @@
     var done = DATA.filter(function (d) { return saved[d.chapter]; });
     var avg = done.length ? Math.round(done.reduce(function (s, d) { return s + saved[d.chapter].best; }, 0) / done.length) : null;
     $('#summaryTable').innerHTML = '<div class="table-wrap"><table class="sum-table"><thead><tr><th>№</th><th>Розділ</th><th>Останній</th><th>Найкращий</th><th class="c-date">Дата</th></tr></thead><tbody>' +
-      rows + '</tbody></table></div>' + (avg !== null ? '<p style="margin-top:14px">Пройдено тестів: ' + done.length + ' з ' + DATA.length + '. Середній найкращий результат: <b>' + avg + '%</b>.</p>' : '<p style="margin-top:14px">Тести ще не пройдено.</p>');
+      rows + '</tbody></table></div>' + (avg !== null ? '<p style="margin-top:14px">Пройдено тестів: ' + done.length + ' з ' + DATA.length + '. Середній найкращий результат: <b>' + avg + '%</b>.</p>' : '<p style="margin-top:14px">Тести ще не пройдено.</p>') + '<p class="send wait" id="outboxNote"></p>';
+    paintStatus();
   }
 
   DATA.forEach(function (d) {
@@ -310,4 +414,5 @@
     if (app) renderQuiz(app, d);
   });
   renderSummary();
+  flush();
 })();

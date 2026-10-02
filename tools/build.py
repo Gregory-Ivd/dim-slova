@@ -25,6 +25,8 @@ SCHOOL = 'Біблійна школа «Дім Слова»'
 TITLE = 'Слово Боже'
 INSTAGRAM = 'https://www.instagram.com/victorychurch_rv/'
 FACEBOOK = 'https://www.facebook.com/profile.php?id=100077340400434'
+# Адреса веб-застосунку Google Apps Script (apps-script/), куди надсилаються результати тестів.
+ENDPOINT = 'https://script.google.com/macros/s/AKfycbyyOJP3nvwp38aiZIJQHnpvppkgWD4EYnmRpf0tdZVsY2Ls4fPLwr7fvoc4AycUOZA/exec'
 
 # Синодальне посилання -> як цитувати з УБТ, коли звичайного перерахунку замало.
 OVERRIDES = {
@@ -352,12 +354,30 @@ def main():
             .replace('{{TOC}}', toc_html).replace('{{CHAPTERS}}', ''.join(chapters))
             .replace('{{KEYS}}', keys_html)
             .replace('{{QUIZ_DATA}}', json.dumps(quizzes, ensure_ascii=False).replace('</', '<\\/'))
+            .replace('{{ENDPOINT}}', html.escape(ENDPOINT))
             .replace('{{CHURCH}}', CHURCH).replace('{{CITY}}', CITY).replace('{{SCHOOL}}', SCHOOL)
             .replace('{{TITLE}}', TITLE).replace('{{INSTAGRAM}}', INSTAGRAM).replace('{{FACEBOOK}}', FACEBOOK))
     left = re.findall(r'\{\{[A-Z_]+\}\}', page)
     assert not left, left
     open(os.path.join(ROOT, 'index.html'), 'w', encoding='utf-8').write(page)
     print('index.html', len(page), 'bytes')
+    build_pastor(quizzes, css)
+
+
+def build_pastor(quizzes, css):
+    data = [{'chapter': q['chapter'], 'title': q['title'], 'questions': [{'q': x['q']} for x in q['questions']]}
+            for q in quizzes]
+    tpl = open(os.path.join(ASSETS, 'pastor.html'), encoding='utf-8').read()
+    page = (tpl.replace('{{CSS}}', css)
+            .replace('{{PCSS}}', open(os.path.join(ASSETS, 'pastor.css'), encoding='utf-8').read())
+            .replace('{{JS}}', open(os.path.join(ASSETS, 'pastor.js'), encoding='utf-8').read())
+            .replace('{{QUIZ_DATA}}', json.dumps(data, ensure_ascii=False).replace('</', '<\\/'))
+            .replace('{{ENDPOINT}}', html.escape(ENDPOINT))
+            .replace('{{SCHOOL}}', SCHOOL).replace('{{TITLE}}', TITLE))
+    left = re.findall(r'\{\{[A-Z_]+\}\}', page)
+    assert not left, left
+    open(os.path.join(ROOT, 'pastor.html'), 'w', encoding='utf-8').write(page)
+    print('pastor.html', len(page), 'bytes')
 
 
 if __name__ == '__main__':
