@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Благодать – Біблійна школа «Дім Слова» · Християнська церква «Перемога», м. Рівне</title>
+<meta name="description" content="Навчальний посібник Біблійної школи «Дім Слова» християнської церкви «Перемога» (Рівне): тема «Благодать», з тестами для самоперевірки.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Cg fill='none' stroke='%23d4a94f' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10'/%3E%3C/g%3E%3C/svg%3E">
+<script>
+try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<style>/* ---------- кольори ---------- */
+:root {
+  --bg: #f4efe4;
+  --paper: #fffdf8;
+  --ink: #1f2430;
+  --muted: #5d6474;
+  --navy: #1f3a5f;
+  --navy-deep: #152a45;
+  --gold: #b0852b;
+  --gold-soft: #f2e6c8;
+  --gold-line: #dcc896;
+  --scr-bg: #f8f1e1;
+  --scr-ink: #3f3320;
+  --note-bg: #edf1f6;
+  --note-line: #9fb2c8;
+  --key-bg: #1f3a5f;
+  --key-ink: #fdfaf2;
+  --mark: #f6e3ad;
+  --ok: #2f7a4f;
+  --ok-bg: #e5f2ea;
+  --bad: #a3392f;
+  --bad-bg: #f8e6e3;
+  --part: #9a6b12;
+  --part-bg: #f8eed6;
+  --line: #e4dccb;
+  --shadow: 0 1px 2px rgba(31, 36, 48, .06), 0 8px 24px rgba(31, 36, 48, .06);
+  --fs: 18px;
+  --serif: "PT Serif", Georgia, "Times New Roman", serif;
+  --display: "Cormorant Garamond", "PT Serif", Georgia, serif;
+  --sans: "Montserrat", "Segoe UI", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141c; --paper: #161b25; --ink: #e8e4da; --muted: #a3a9b6;
+    --navy: #9fbbe0; --navy-deep: #0d1a2c; --gold: #d4a94f; --gold-soft: #3a3120; --gold-line: #5c4c2b;
+    --scr-bg: #1e2230; --scr-ink: #eadfc6; --note-bg: #1a2230; --note-line: #3f5673;
+    --key-bg: #22385a; --key-ink: #f4efe2; --mark: #5a4a22;
+    --ok: #7fcf9d; --ok-bg: #1d3327; --bad: #f09a8f; --bad-bg: #3a2220; --part: #e6c170; --part-bg: #3a3020;
+    --line: #2a3140; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10141c; --paper: #161b25; --ink: #e8e4da; --muted: #a3a9b6;
+  --navy: #9fbbe0; --navy-deep: #0d1a2c; --gold: #d4a94f; --gold-soft: #3a3120; --gold-line: #5c4c2b;
+  --scr-bg: #1e2230; --scr-ink: #eadfc6; --note-bg: #1a2230; --note-line: #3f5673;
+  --key-bg: #22385a; --key-ink: #f4efe2; --mark: #5a4a22;
+  --ok: #7fcf9d; --ok-bg: #1d3327; --bad: #f09a8f; --bad-bg: #3a2220; --part: #e6c170; --part-bg: #3a3020;
+  --line: #2a3140; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  color-scheme: dark;
+}
+
+/* ---------- основа ---------- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; font-size: var(--fs); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--serif); line-height: 1.68; }
+a { color: var(--navy); text-decoration-color: var(--gold-line); text-underline-offset: 3px; }
+.print-only { display: none; }
+.lbl { display: inline-block; font-family: var(--sans); font-size: .66rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+strong { color: var(--navy); }
+main { max-width: 820px; margin: 0 auto; padding: 0 16px 64px; }
+main > section, .chapter { background: var(--paper); border-radius: 18px; box-shadow: var(--shadow); padding: clamp(22px, 5vw, 56px); margin: 22px 0; }
+p { margin: 0 0 1em; }
+
+/* ---------- верхня панель ---------- */
+.progress { position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 60; }
+.progress span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--gold), #e3c170); }
+.topbar { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; gap: 10px; padding: 8px 16px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); min-width: 0; }
+.brand .emblem { width: 30px; height: 30px; color: var(--gold); flex: none; }
+.brand b { display: block; font-family: var(--sans); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
+.brand small { display: block; font-family: var(--sans); font-size: .66rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tools { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.icon-btn, .chip { font-family: var(--sans); font-size: .72rem; font-weight: 600; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; height: 36px; min-width: 36px; padding: 0 10px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+.icon-btn:hover, .chip:hover { border-color: var(--gold); }
+.chip[aria-pressed="true"] { background: var(--gold-soft); border-color: var(--gold); }
+.chip.solid { background: var(--navy); color: var(--paper); border-color: var(--navy); }
+:root[data-theme="dark"] .chip.solid { color: #10141c; }
+@media (max-width: 720px) {
+  #memoBtn { font-size: 0; padding: 0; width: 36px; }
+  #memoBtn::before { content: "👁"; font-size: 15px; }
+  #fsDown, #fsUp { display: none; }
+  .brand small { max-width: 44vw; }
+}
+
+/* ---------- зміст ---------- */
+.toc-drawer { position: fixed; top: 0; bottom: 0; left: 0; width: min(340px, 86vw); background: var(--paper); z-index: 70; transform: translateX(-102%); transition: transform .25s ease; box-shadow: var(--shadow); overflow-y: auto; }
+.toc-drawer.open { transform: none; }
+.toc-inner { padding: 24px 22px 40px; }
+.scrim { position: fixed; inset: 0; background: rgba(10, 14, 22, .4); z-index: 65; opacity: 0; pointer-events: none; transition: opacity .25s; }
+.scrim.open { opacity: 1; pointer-events: auto; }
+.toc-list { list-style: none; margin: 10px 0 0; padding: 0; font-family: var(--sans); font-size: .8rem; }
+.toc-list > li { margin: 0 0 12px; }
+.toc-list > li > a { font-weight: 700; color: var(--ink); text-decoration: none; }
+.toc-list ol { list-style: none; padding: 4px 0 0 12px; margin: 0; border-left: 2px solid var(--line); }
+.toc-list ol a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; font-weight: 500; line-height: 1.35; }
+.toc-list a.active { color: var(--gold); }
+@media (min-width: 1280px) {
+  .toc-drawer { transform: none; top: 53px; width: 290px; background: transparent; box-shadow: none; z-index: 10; }
+  .toc-inner { padding-top: 28px; }
+  #tocBtn, .scrim { display: none; }
+  main { margin-left: max(310px, calc(50vw - 410px)); }
+}
+
+/* ---------- обкладинка ---------- */
+.cover { background: radial-gradient(120% 90% at 50% 0%, #2a4c78 0%, #1f3a5f 45%, #122540 100%) !important; color: #f7f1e3; text-align: center; min-height: min(92vh, 860px); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.cover::before, .cover::after { content: ""; position: absolute; inset: 22px; border: 1px solid rgba(212, 169, 79, .45); border-radius: 12px; pointer-events: none; }
+.cover::after { inset: 30px; border-color: rgba(212, 169, 79, .2); }
+.cover-inner { position: relative; max-width: 560px; padding: 40px 10px; }
+.cover-church { font-family: var(--sans); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: #e3c882; margin: 0 0 34px; }
+.cover-emblem { width: 92px; height: 92px; color: #d9b25e; margin: 0 auto 16px; display: block; }
+.cover-school { font-family: var(--sans); font-weight: 600; letter-spacing: .34em; text-transform: uppercase; font-size: .86rem; margin: 0; color: #f1e7cf; }
+.cover-name { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 2rem; color: #e3c882; margin: 2px 0 26px; }
+.cover h1 { font-family: var(--display); font-weight: 600; font-size: clamp(3.4rem, 12vw, 6.2rem); line-height: 1; margin: 14px 0 8px; color: #fff8e8; letter-spacing: .01em; }
+.cover-sub { font-family: var(--display); font-style: italic; font-size: 1.5rem; color: #e3c882; margin: 0 0 28px; }
+.cover-meta { font-size: .86rem; line-height: 1.7; color: #cdd6e4; max-width: 460px; margin: 0 auto 36px; }
+.cover-foot { display: flex; justify-content: center; gap: 26px; font-family: var(--sans); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: #aebbd0; margin: 0 0 26px; }
+.cover-start { display: inline-block; font-family: var(--sans); font-size: .78rem; font-weight: 600; color: #1f3a5f; background: #e3c882; padding: 12px 22px; border-radius: 999px; text-decoration: none; }
+
+/* ---------- передмова ---------- */
+.epigraph { margin: 18px 0 30px; text-align: center; }
+.epigraph blockquote { margin: 0 auto; max-width: 600px; font-family: var(--display); font-size: 1.75rem; line-height: 1.35; font-style: italic; color: var(--navy); }
+.epigraph blockquote::before { content: "“"; display: block; font-size: 3.2rem; line-height: .6; color: var(--gold); margin-bottom: 6px; }
+.epigraph figcaption, .prayer figcaption { font-family: var(--sans); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-top: 10px; }
+.lead { font-size: 1.1rem; }
+.prayer { margin: 28px 0; padding: 20px 24px; border: 1px dashed var(--gold-line); border-radius: 14px; text-align: center; }
+.prayer blockquote { margin: 8px 0 0; font-family: var(--display); font-size: 1.35rem; font-style: italic; color: var(--scr-ink); }
+.legend h3 { font-family: var(--sans); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 30px 0 12px; }
+.legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+.lg { padding: 12px 14px; border-radius: 10px; font-size: .82rem; line-height: 1.45; }
+.lg b { display: block; font-family: var(--sans); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+.lg-scr { background: var(--scr-bg); border-left: 3px solid var(--gold); }
+.lg-key { background: var(--key-bg); color: var(--key-ink); }
+.lg-key b { color: #e3c882; }
+.lg-note { background: var(--note-bg); border-left: 3px solid var(--note-line); }
+.lg-quiz { background: var(--gold-soft); }
+.source-note { margin-top: 26px; font-size: .78rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+
+/* ---------- розділ ---------- */
+.ch-head { position: relative; padding: 6px 0 26px; margin-bottom: 26px; border-bottom: 1px solid var(--gold-line); }
+.ch-head::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 90px; height: 3px; background: var(--gold); }
+.ch-num { font-family: var(--sans); font-size: .74rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+.ch-head h2 { font-family: var(--display); font-weight: 700; font-size: clamp(2.1rem, 6vw, 3.1rem); line-height: 1.08; color: var(--navy); margin: 8px 0 6px; }
+.ch-sub { font-family: var(--display); font-style: italic; font-size: 1.3rem; color: var(--muted); margin: 0; }
+h3.sec { display: flex; gap: 12px; align-items: baseline; font-family: var(--display); font-weight: 700; font-size: 1.75rem; line-height: 1.2; color: var(--navy); margin: 46px 0 18px; }
+.s-num { flex: none; display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--gold); color: #fff; font-family: var(--sans); font-size: .9rem; font-weight: 700; transform: translateY(-3px); }
+h4.sub { font-family: var(--sans); font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); margin: 34px 0 14px; display: flex; align-items: center; gap: 10px; }
+h4.sub::after { content: ""; flex: 1; height: 1px; background: var(--gold-line); }
+
+/* Святе Письмо */
+.scripture { position: relative; margin: 22px 0 24px; padding: 20px 24px 14px 26px; background: var(--scr-bg); border-left: 4px solid var(--gold); border-radius: 4px 14px 14px 4px; }
+.scripture blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-size: 1.24rem; line-height: 1.5; color: var(--scr-ink); }
+.scripture sup { font-family: var(--sans); font-size: .56rem; font-weight: 700; color: var(--gold); margin-right: 2px; vertical-align: .55em; }
+.scripture .gap { color: var(--gold); }
+.scripture figcaption { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+.scripture .ref { font-family: var(--sans); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.scripture .syn { font-family: var(--sans); font-size: .66rem; color: var(--muted); }
+.scripture .more { display: none; }
+.scripture.collapsed blockquote { max-height: 11.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+.scripture.long .more { display: inline-block; margin-top: 8px; font-family: var(--sans); font-size: .7rem; font-weight: 600; color: var(--navy); background: transparent; border: 1px solid var(--gold-line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+body.memo .scripture blockquote { filter: blur(7px); cursor: pointer; user-select: none; transition: filter .2s; }
+body.memo .scripture.revealed blockquote { filter: none; }
+body.memo .scripture::before { content: "Натисніть, щоб відкрити"; position: absolute; right: 14px; top: 10px; z-index: 1; font-family: var(--sans); font-size: .62rem; color: var(--muted); }
+body.memo .scripture.revealed::before { content: none; }
+
+/* Головна думка, пояснення */
+.key-idea { margin: 24px 0; padding: 18px 24px 16px; background: var(--key-bg); color: var(--key-ink); border-radius: 14px; position: relative; }
+.key-idea .lbl { color: #e3c882; }
+.key-idea p { margin: 6px 0 0; font-family: var(--display); font-weight: 600; font-size: 1.32rem; line-height: 1.4; }
+mark.key { background: linear-gradient(transparent 55%, var(--mark) 55%); color: inherit; font-weight: 700; padding: 0 1px; }
+.note { margin: 20px 0; padding: 14px 20px; background: var(--note-bg); border-left: 3px solid var(--note-line); border-radius: 4px 12px 12px 4px; font-size: .93rem; }
+.note .lbl { color: var(--muted); }
+.note p { margin: 4px 0 0; }
+ul.points { list-style: none; padding: 0; margin: 12px 0 18px; }
+ul.points > li { position: relative; padding-left: 26px; margin-bottom: 12px; }
+ul.points > li::before { content: ""; position: absolute; left: 4px; top: .62em; width: 9px; height: 9px; background: var(--gold); transform: rotate(45deg); }
+ul.points .li-head { margin-bottom: .35em; }
+ul.points > li > p:not(.li-head) { margin-bottom: .6em; }
+
+/* ---------- тест ---------- */
+.quiz { margin-top: 50px; padding: 26px clamp(16px, 4vw, 30px); border-radius: 16px; background: linear-gradient(180deg, var(--gold-soft), transparent 220px); border: 1px solid var(--gold-line); }
+.quiz-head h3 { font-family: var(--display); font-size: 1.9rem; color: var(--navy); margin: 6px 0 6px; line-height: 1.15; }
+.quiz-intro { font-size: .9rem; color: var(--muted); }
+.quiz-print { display: none; }
+.q { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 14px; margin: 14px 0; }
+.q-top { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; font-family: var(--sans); font-size: .64rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.q-top .lvl { padding: 3px 8px; border-radius: 999px; background: var(--note-bg); }
+.q-top .lvl.app { background: var(--gold-soft); color: var(--part); }
+.q-text { font-weight: 700; margin-bottom: 12px; line-height: 1.5; }
+.opt { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; cursor: pointer; font-size: .93rem; line-height: 1.45; }
+.opt:hover { border-color: var(--gold-line); }
+.opt input { margin-top: 4px; accent-color: var(--navy); flex: none; }
+.opt.right { border-color: var(--ok); background: var(--ok-bg); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.tf { display: flex; gap: 10px; }
+.tf .opt { flex: 1 1 0; min-width: 0; justify-content: center; }
+.match-row { display: grid; grid-template-columns: 1fr 1.4fr; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: .9rem; }
+.match-row select { width: 100%; font: inherit; font-size: .86rem; padding: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+.match-row.right select { border-color: var(--ok); background: var(--ok-bg); }
+.match-row.wrong select { border-color: var(--bad); background: var(--bad-bg); }
+.match-row .fix { grid-column: 1 / -1; font-size: .8rem; color: var(--ok); }
+@media (max-width: 560px) { .match-row { grid-template-columns: 1fr; } }
+.order-list { list-style: none; padding: 0; margin: 0; counter-reset: ord; }
+.order-list li { display: flex; gap: 8px; align-items: center; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; background: var(--paper); font-size: .9rem; line-height: 1.4; counter-increment: ord; }
+.order-list li::before { content: counter(ord); font-family: var(--sans); font-weight: 700; font-size: .75rem; color: var(--gold); width: 18px; flex: none; }
+.order-list li span { flex: 1; }
+.order-list button { font: inherit; font-size: .8rem; width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; flex: none; }
+.order-list li.right { border-color: var(--ok); background: var(--ok-bg); }
+.order-list li.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.q textarea { width: 100%; min-height: 90px; font: inherit; font-size: .92rem; padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); resize: vertical; }
+.fb { display: none; margin-top: 10px; padding: 10px 12px; border-radius: 10px; font-size: .88rem; line-height: 1.5; }
+.q.done .fb { display: block; }
+.q.ok .fb { background: var(--ok-bg); }
+.q.bad .fb { background: var(--bad-bg); }
+.q.part .fb { background: var(--part-bg); }
+.q.reflect .fb { background: var(--note-bg); }
+.fb b.st { font-family: var(--sans); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; margin-right: 6px; }
+.q.ok .fb b.st { color: var(--ok); } .q.bad .fb b.st { color: var(--bad); } .q.part .fb b.st { color: var(--part); }
+.fb a { font-family: var(--sans); font-size: .74rem; font-weight: 600; display: inline-block; margin-top: 6px; }
+.q.missing { border-color: var(--bad); }
+.quiz-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 18px; }
+.btn { font-family: var(--sans); font-weight: 700; font-size: .8rem; padding: 12px 20px; border-radius: 999px; border: 0; cursor: pointer; background: var(--navy); color: var(--paper); }
+:root[data-theme="dark"] .btn { color: #10141c; }
+.btn.ghost { background: transparent; color: var(--navy); border: 1px solid var(--gold-line); }
+.warn { font-size: .85rem; color: var(--bad); }
+.result { margin-top: 18px; padding: 20px; border-radius: 14px; background: var(--paper); border: 1px solid var(--gold-line); display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+.ring { width: 112px; height: 112px; }
+.ring text { font-family: var(--sans); font-weight: 700; font-size: 20px; fill: var(--ink); }
+.result h4 { font-family: var(--display); font-size: 1.5rem; margin: 0 0 6px; color: var(--navy); }
+.result p { margin: 0 0 8px; font-size: .9rem; }
+.levels { grid-column: 1 / -1; display: grid; gap: 8px; }
+.lvlbar { display: grid; grid-template-columns: 120px 1fr 48px; gap: 10px; align-items: center; font-family: var(--sans); font-size: .72rem; }
+.lvlbar .bar { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; }
+.lvlbar .bar i { display: block; height: 100%; background: var(--gold); border-radius: 99px; }
+.review { grid-column: 1 / -1; font-size: .88rem; }
+.review ul { margin: 6px 0 0; padding-left: 18px; }
+@media (max-width: 560px) { .result { grid-template-columns: 1fr; justify-items: start; } }
+
+/* ---------- підсумок, підвал ---------- */
+.summary h2, .answers h2 { font-family: var(--display); font-size: 2.2rem; color: var(--navy); margin: 6px 0 10px; }
+.sum-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin-top: 10px; }
+.sum-table td, .sum-table th { padding: 10px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+.sum-table th { font-family: var(--sans); font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.site-foot { text-align: center; font-size: .82rem; color: var(--muted); padding: 30px 10px 10px; }
+.site-foot .emblem { width: 36px; height: 36px; color: var(--gold); }
+.site-foot p { margin: 4px 0; }
+.site-foot .small { font-size: .72rem; }
+
+/* ---------- друк / PDF ---------- */
+@page {
+  size: A4;
+  margin: 19mm 17mm 17mm;
+  @top-left { content: "Біблійна школа «Дім Слова» · Християнська церква «Перемога», м. Рівне"; font-family: "Montserrat", sans-serif; font-size: 7pt; font-weight: 600; letter-spacing: .08em; color: #9a7a35; vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #dcc896; }
+  @top-right { content: "Благодать"; font-family: "Cormorant Garamond", serif; font-size: 10pt; font-style: italic; color: #1f3a5f; vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #dcc896; }
+  @bottom-left { content: "instagram.com/victorychurch_rv"; font-family: "Montserrat", sans-serif; font-size: 6.5pt; color: #8f96a3; }
+  @bottom-right { content: counter(page); font-family: "Montserrat", sans-serif; font-size: 8pt; font-weight: 700; color: #b0852b; }
+}
+@page cover { margin: 0; @top-left { content: none; border: 0; } @top-right { content: none; border: 0; } @bottom-left { content: none; } @bottom-right { content: none; } }
+
+@media print {
+  :root { --fs: 10.4pt; --bg: #fff; --paper: #fff; }
+  html { font-size: 10.4pt; }
+  body { background: #fff; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .screen-only, .quiz-app, .scripture .more { display: none !important; }
+  .print-only { display: block; }
+  main { max-width: none; margin: 0 !important; padding: 0; }
+  main > section, .chapter { box-shadow: none; border-radius: 0; padding: 0; margin: 0; background: none; }
+  .cover { page: cover; height: 297mm; min-height: 0; width: 210mm; border-radius: 0 !important; break-after: page; }
+  .cover::before { inset: 12mm; } .cover::after { inset: 14.5mm; }
+  .cover-name { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 2rem; color: #e3c882; margin: 2px 0 26px; }
+.cover h1 { font-size: 64pt; }
+  .preface, .toc-page, .chapter, .answers { break-before: page; }
+  .scripture blockquote { font-size: 12.2pt; }
+  .scripture:not(.long), .key-idea, .note, .lg, .prayer, .epigraph { break-inside: avoid; }
+  .scripture.collapsed blockquote { max-height: none; -webkit-mask-image: none; mask-image: none; }
+  h3.sec, h4.sub, .ch-head { break-after: avoid; }
+  h3.sec { margin-top: 26pt; }
+  p { orphans: 3; widows: 3; }
+  .quiz { break-before: page; background: none; border: 0; padding: 0; margin: 0; }
+  .quiz-print { display: block; }
+  .pq { break-inside: avoid; margin: 0 0 12pt; }
+  .pq-q { margin: 0 0 5pt; }
+  .pq-hint { font-family: var(--sans); font-size: 6.5pt; letter-spacing: .06em; text-transform: uppercase; color: #9a7a35; margin-left: 4pt; }
+  .pq-opts { list-style: none; padding: 0 0 0 14pt; margin: 0; }
+  .pq-opts li { margin: 2pt 0; display: flex; gap: 5pt; }
+  .box { display: inline-block; width: 8pt; height: 8pt; border: .7pt solid #1f3a5f; border-radius: 1.5pt; flex: none; margin-top: 3pt; }
+  .pq-tf { padding-left: 14pt; }
+  .pq-match { display: grid; grid-template-columns: 1fr 1.3fr; gap: 12pt; padding-left: 14pt; }
+  .pq-match ol { margin: 0; padding-left: 14pt; }
+  .pq-match ol.letters { list-style: none; padding: 0; }
+  .pq-match li { margin: 2pt 0; }
+  .blank { display: inline-block; width: 28pt; border-bottom: .7pt solid #1f3a5f; margin-left: 4pt; }
+  .blank.sm { width: 16pt; margin: 0 4pt 0 0; }
+  .pq-order { list-style: none; padding-left: 14pt; margin: 0; }
+  .pq-order li { margin: 3pt 0; }
+  .pq-lines { height: 58pt; margin-left: 14pt; background: repeating-linear-gradient(transparent 0 18pt, #cfc6b3 18pt 18.6pt); }
+  .toc-page .toc-list { font-size: 10pt; columns: 1; }
+  .toc-page .toc-list > li { margin-bottom: 10pt; break-inside: avoid; }
+  .toc-page .toc-list > li > a { font-family: var(--display); font-size: 15pt; color: #1f3a5f; }
+  .toc-page .toc-list a { text-decoration: none; }
+  .toc-extra { font-size: 9pt; color: #5d6474; margin-top: 14pt; }
+  .answers h3 { font-family: var(--display); font-size: 14pt; color: #1f3a5f; margin: 16pt 0 6pt; break-after: avoid; }
+  .key-list { padding-left: 16pt; font-size: 8.8pt; line-height: 1.45; }
+  .key-list li { margin-bottom: 4pt; break-inside: avoid; }
+  .k-a { color: #1f3a5f; }
+  .k-exp { color: #3b4150; }
+  .site-foot { break-inside: avoid; padding-top: 30pt; }
+  a { color: inherit; text-decoration: none; }
+}
+
+/* ---------- ім’я учня і надсилання ---------- */
+.who-chip { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; line-height: 34px; }
+.who-chip[hidden] { display: none; }
+.who { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 16px; background: rgba(16, 20, 28, .55); }
+.who[hidden] { display: none; }
+.who-box { width: 100%; max-width: 440px; background: var(--paper); color: var(--ink); border: 1px solid var(--gold-line); border-radius: 18px; padding: 26px 24px 22px; box-shadow: var(--shadow); }
+.who-box h2 { font-family: var(--display); font-size: 2rem; color: var(--navy); margin: 4px 0 8px; line-height: 1.15; }
+.who-box p { margin: 0 0 14px; font-size: .92rem; }
+.who-box input { width: 100%; font: inherit; font-size: 1rem; padding: 12px 14px; border: 1px solid var(--gold-line); border-radius: 10px; background: var(--bg); color: var(--ink); }
+.who-box input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.who-box .warn { display: block; min-height: 1.2em; margin: 6px 0 10px; }
+.who-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.send { grid-column: 1 / -1; margin: 6px 0 0; font-family: var(--sans); font-size: .76rem; }
+.send:empty { display: none; }
+.send.ok { color: var(--ok); }
+.send.wait { color: var(--part); }
+.linkish { font: inherit; color: var(--navy); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+/* ---------- вузькі екрани ---------- */
+.brand { flex: 1 1 auto; }
+.brand > span { min-width: 0; }
+.brand b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tools { flex: none; }
+.table-wrap { overflow-x: auto; }
+@media (max-width: 600px) {
+  html { font-size: min(var(--fs), 17px); }
+  main { padding: 0 8px 40px; }
+  main > section, .chapter { padding: 22px 16px; border-radius: 14px; margin: 12px 0; }
+  .cover { padding: 0; }
+  .scripture { padding: 16px 14px 12px 16px; }
+  .scripture blockquote { font-size: 1.16rem; }
+  .key-idea, .note { padding-left: 16px; padding-right: 16px; }
+  .quiz { padding: 18px 10px; }
+  .q { padding: 14px 12px 12px; }
+  .brand small { display: none; }
+  .who-chip { max-width: 96px; }
+  .sum-table .c-date { display: none; }
+  /* обкладинка: увесь текст усередині золотої рамки (inset 22–30px) */
+  .cover-inner { padding: 52px 40px; max-width: 100%; }
+  .cover-church { letter-spacing: .14em; margin-bottom: 26px; }
+  .cover-school { letter-spacing: .22em; }
+  .cover h1 { font-size: clamp(2.3rem, 11vw, 3.4rem); overflow-wrap: anywhere; }
+  .cover-sub { font-size: 1.3rem; }
+  .cover-foot { flex-wrap: wrap; gap: 6px 18px; letter-spacing: .08em; }
+}
+@media (max-width: 400px) {
+  .topbar { gap: 6px; padding: 8px 10px; }
+  .tools { gap: 4px; }
+  .brand > span { display: none; }
+  .who-chip { max-width: 64px; padding: 0 8px; }
+  .cover-inner { padding: 52px 34px; }
+  .cover-foot { font-size: .6rem; letter-spacing: .04em; }
+}
+</style>
+</head>
+<body>
+<div class="progress screen-only" aria-hidden="true"><span></span></div>
+
+<header class="topbar screen-only">
+  <button class="icon-btn" id="tocBtn" type="button" aria-controls="toc" aria-expanded="false" title="Зміст">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+  </button>
+  <a class="brand" href="./" title="Усі уроки">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <span><b>Дім Слова</b><small>Урок 7 · Благодать</small></span>
+  </a>
+  <div class="tools">
+    <button class="chip who-chip" id="whoBtn" type="button" title="Змінити ім’я" hidden></button>
+    <button class="chip" id="memoBtn" type="button" aria-pressed="false" title="Сховати тексти віршів, щоб перевірити, чи пам’ятаєте їх">Режим запам’ятовування</button>
+    <button class="icon-btn" id="fsDown" type="button" title="Менший шрифт">A−</button>
+    <button class="icon-btn" id="fsUp" type="button" title="Більший шрифт">A+</button>
+    <button class="icon-btn" id="themeBtn" type="button" title="Світла / темна тема">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="chip solid" href="blahodat.pdf" download>PDF</a>
+  </div>
+</header>
+
+<nav class="toc-drawer screen-only" id="toc" aria-label="Зміст">
+  <div class="toc-inner">
+    <p class="lbl">Зміст</p>
+    <ol class="toc-list">
+      <li><a href="./">← Усі уроки</a></li>
+      <li><a href="#preface">Передмова</a></li>
+      <li><a href="#ch1">I. Що таке благодать і як вона діє</a><ol><li><a href="#ch1-s1">Що таке благодать</a></li><li><a href="#ch1-s2">Принципи дії благодаті</a></li><li><a href="#quiz1">Перевір себе</a></li></ol></li><li><a href="#ch2">II. Благодать дається смиренним</a><ol><li><a href="#ch2-s1">Благодать дається смиренним</a></li><li><a href="#quiz2">Перевір себе</a></li></ol></li><li><a href="#ch3">III. Що чинить благодать і наша участь у ній</a><ol><li><a href="#ch3-s1">Що благодать чинить у нашому житті</a></li><li><a href="#ch3-s2">Наша участь у благодаті</a></li><li><a href="#quiz3">Перевір себе</a></li></ol></li><li><a href="#ch4">IV. Гордість: звідки вона і в чому її суть</a><ol><li><a href="#ch4-s1">Звідки приходить гордість</a></li><li><a href="#ch4-s2">Суть гордості</a></li><li><a href="#quiz4">Перевір себе</a></li></ol></li>
+      <li><a href="#summary">Підсумок тестів</a></li>
+    </ol>
+  </div>
+</nav>
+<div class="scrim screen-only" id="scrim"></div>
+
+<div class="who screen-only" id="who" role="dialog" aria-modal="true" aria-labelledby="whoTitle" hidden>
+  <form class="who-box" id="whoForm" novalidate>
+    <span class="lbl">Біблійна школа «Дім Слова»</span>
+    <h2 id="whoTitle">Як вас звати?</h2>
+    <p id="whoText">Вкажіть ім’я та прізвище. Результати тестів побачить пастор, щоб допомагати вам у навчанні.</p>
+    <input id="whoName" type="text" autocomplete="name" maxlength="60" placeholder="Ім’я та прізвище" aria-describedby="whoWarn">
+    <p class="warn" id="whoWarn" aria-live="polite"></p>
+    <div class="who-actions">
+      <button class="btn" type="submit">Зберегти</button>
+      <button class="btn ghost" type="button" id="whoLater">Пізніше</button>
+    </div>
+  </form>
+</div>
+
+<main id="top">
+  <section class="cover">
+    <div class="cover-inner">
+      <p class="cover-church">Християнська церква «Перемога» · м. Рівне</p>
+      <svg class="cover-emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+      <p class="cover-school">Біблійна школа</p>
+      <p class="cover-name">«Дім Слова»</p>
+      <h1>Благодать</h1>
+      <p class="cover-sub">Урок 7 · Навчальний посібник</p>
+      <p class="cover-meta">Що таке благодать · Принципи дії благодаті · Благодать смиренним · Що чинить благодать · Наша участь у благодаті · Звідки приходить гордість · Суть гордості</p>
+      <p class="cover-foot"><span>instagram.com/victorychurch_rv</span><span>2026</span></p>
+      <a class="cover-start screen-only" href="#preface">Почати читання ↓</a>
+    </div>
+  </section>
+
+  <section class="preface" id="preface">
+  <span class="lbl">Передмова</span>
+  <figure class="epigraph">
+    <blockquote>Адже ви спасенні благодаттю через віру, і це не від вас, це Божий дар,</blockquote>
+    <figcaption>Ефесян 2:8</figcaption>
+  </figure>
+
+  <p class="lead">Це сьомий урок Біблійної школи «Дім Слова» – після уроку «Молитва». Його тема – благодать: що таке благодать, принципи дії благодаті, благодать смиренним, що чинить благодать, наша участь у благодаті, звідки приходить гордість, суть гордості.</p>
+
+  <p>Кожну думку тут підкріплено місцями Писання – прочитайте їх уважно, бо саме Слово Боже, а не пояснення до нього, змінює життя.</p>
+
+  <p>Кожен розділ завершується тестом. Він перевіряє, чи зрозуміла прочитане людина, і тому частина питань описує ситуації з життя, де його треба застосувати. Відповіді з поясненнями зібрано наприкінці посібника, а на вебсторінці тест перевіряється одразу і показує, які теми варто перечитати.</p>
+
+  <figure class="prayer">
+    <span class="lbl">Перед кожним заняттям</span>
+    <blockquote>Відкрий мої очі, щоб я міг побачити дивовижні властивості Твого Закону!</blockquote>
+    <figcaption>Псалом 119:18</figcaption>
+  </figure>
+
+  <div class="legend">
+    <h3>Як читати посібник</h3>
+    <div class="legend-grid">
+      <div class="lg lg-scr"><b>Святе Письмо</b><span>Біблійні тексти виділено золотою рамкою. Посилання стоїть під текстом.</span></div>
+      <div class="lg lg-key"><b>Головна думка</b><span>Висновок, який варто запам’ятати. У тексті такі речення підсвічено.</span></div>
+      <div class="lg lg-note"><b>Пояснення</b><span>Значення слова, історичний фон, приклад.</span></div>
+      <div class="lg lg-quiz"><b>Перевір себе</b><span>Тест наприкінці розділу: знання, розуміння, застосування.</span></div>
+    </div>
+  </div>
+
+  <p class="source-note">Українською перекладено та оформлено за навчальним матеріалом Біблійної школи «Робітники Царства» християнської церкви «Перемога» (м. Київ). Використано з дозволу.<br>Цитати Святого Письма наведено за виданням «Біблія. Сучасний переклад» © Українське Біблійне Товариство, 2020–2023. Посилання подано за нумерацією цього перекладу.</p>
+</section>
+
+
+  <section class="toc-page print-only">
+    <span class="lbl">Зміст</span>
+    <ol class="toc-list"><li><a href="#ch1">I. Що таке благодать і як вона діє</a><ol><li><a href="#ch1-s1">Що таке благодать</a></li><li><a href="#ch1-s2">Принципи дії благодаті</a></li><li><a href="#quiz1">Перевір себе</a></li></ol></li><li><a href="#ch2">II. Благодать дається смиренним</a><ol><li><a href="#ch2-s1">Благодать дається смиренним</a></li><li><a href="#quiz2">Перевір себе</a></li></ol></li><li><a href="#ch3">III. Що чинить благодать і наша участь у ній</a><ol><li><a href="#ch3-s1">Що благодать чинить у нашому житті</a></li><li><a href="#ch3-s2">Наша участь у благодаті</a></li><li><a href="#quiz3">Перевір себе</a></li></ol></li><li><a href="#ch4">IV. Гордість: звідки вона і в чому її суть</a><ol><li><a href="#ch4-s1">Звідки приходить гордість</a></li><li><a href="#ch4-s2">Суть гордості</a></li><li><a href="#quiz4">Перевір себе</a></li></ol></li></ol>
+    <p class="toc-extra">Відповіді до тестів – наприкінці посібника.</p>
+  </section>
+
+  <article class="chapter" data-ch="1"><header class="ch-head" id="ch1"><span class="ch-num">Розділ I</span><h2>Що таке благодать і як вона діє</h2><p class="ch-sub">природа благодаті і принципи її дії</p></header><h3 class="sec" id="ch1-s1">Що таке благодать</h3><p>Благодать – незаслужена Божа милість, Божий дар. Усе, що ми отримуємо від Бога, ми отримуємо з благодаті: заслужити чи заробити її неможливо, хоч яких зусиль докладай. Крім того, благодать – послана згори Божа сила і допомога у виконанні Його волі.</p><h4 class="sub">1. Від Отця і Господа Ісуса Христа</h4><p>Будь-яка сторона наших стосунків з Богом будується на благодаті. Відкрити Себе через Ісуса – Його ініціатива: якби Він Сам нас не знайшов, ми ніколи б Його не пізнали.</p><figure class="scripture"><blockquote><sup>7</sup>усім, хто в Римі, улюбленим Божим, покликаним святим: благодать і мир вам від Бога, нашого Отця, і Господа Ісуса Христа!</blockquote><figcaption><span class="ref">Римлян 1:7</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Дана в Христі</h4><p>Поза Христом благодать не діє; що глибше ми пізнаємо Його, то сильніше вона діє в нас. Ісус помер за всіх, тож кожен може чекати благодаті для себе: її запаси невичерпні. Випросити чи заслужити її ділами не можна.</p><figure class="scripture"><blockquote><sup>4</sup>Завжди дякую моєму Богові за вас і за благодать Божу, дану вам у Христі Ісусі,</blockquote><figcaption><span class="ref">1 Коринтян 1:4</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Безцінна</h4><p>Бог помилував гонителя церкви і зробив його апостолом, тому Павло постійно дякував за благодать. Християни швидко звикають до неї, але Бог заплатив за неї велику ціну. Хто не цінує благодаті, той зловживатиме нею і згодом може її втратити.</p><h4 class="sub">4. Благодать та істина</h4><p>Вони завжди йдуть разом: що більше в мені живе істина – одкровення Слова, а не буква закону, – то більше дії благодаті я побачу.</p><figure class="scripture"><blockquote><sup>16</sup>Адже з Його повноти ми всі одержували благодать за благодаттю, <sup>17</sup>оскільки Закон був даний через Мойсея, а благодать та істина з’явилися через Ісуса Христа.</blockquote><figcaption><span class="ref">Івана 1:16–17</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Будь-яка сторона наших стосунків з Богом будується на благодаті.</p></aside><h3 class="sec" id="ch1-s2">Принципи дії благодаті</h3><h4 class="sub">1. Не має нічого спільного з ділами</h4><p>Павло розділяє чітко: або діла, або благодать. Дехто спочатку жив благодаттю, а згодом почав покладатися на діла, і її дія зменшилася. Одне з головних завдань – знайти, у чому саме діє для тебе Божа благодать, і займатися цим. Покладатися на діла не можна, але й робити їх треба.</p><figure class="scripture"><blockquote><sup>6</sup>Якщо ж за благодаттю, то не за ділами, бо тоді благодать вже не була б благодаттю. [А коли за ділами, то це вже не благодать, бо тоді діло вже не є ділом].</blockquote><figcaption><span class="ref">Римлян 11:6</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Спасіння і праведність – з благодаті</h4><p>Ми спасенні не завдяки добрим ділам чи належності до церкви, а лише з благодаті. Праведність отримано в повній мірі після покаяння, тож ніхто не праведніший за іншого. Добрі діла – плід праведності, а не навпаки; людська праведність від діл перед Богом – як забруднений одяг.</p><figure class="scripture"><blockquote><sup>9</sup>тому що досягаєте мети вашої віри – спасіння душ! <sup>10</sup>Про це спасіння розвідували та допитувалися пророки, які провістили для вас благодать. <sup>11</sup>Вони досліджували, на що або на який час у них вказував Дух Христа, наперед провіщаючи Христові страждання і славу, яка настане після цього. <sup>12</sup>Їм було відкрито, що не для них самих, а й для нас служило те, що нині сповіщено вам через благовісників Духом Святим, посланим з неба, що бажають побачити ангели. <sup>13</sup>Тому, підперезавши стегна вашого розуму, будучи тверезими, повністю покладіть надію на благодать, що приноситься вам у з’явленні Ісуса Христа.</blockquote><figcaption><span class="ref">1 Петра 1:9–13</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>6</sup>Давид також називає блаженною ту людину, якій Бог зараховує праведність незалежно від діл:</blockquote><figcaption><span class="ref">Римлян 4:6</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>5</sup>нас, котрі були мертві через наші переступи, оживив разом із Христом, адже ви спасенні благодаттю, – <sup>6</sup>і воскресив нас разом з Ним, і в Ісусі Христі посадив разом на небесах, <sup>7</sup>щоб у доброті до нас в Ісусі Христі в майбутніх віках показати надзвичайно велике багатство Своєї благодаті. <sup>8</sup>Адже ви спасенні благодаттю через віру, і це не від вас, це Божий дар, <sup>9</sup>не від діл, щоб ніхто не хвалився. <sup>10</sup>Тому що ми – Його творіння, ми створені в Христі Ісусі для добрих діл, які Бог наперед приготував для нас, щоб ми в них перебували.</blockquote><figcaption><span class="ref">Ефесян 2:5–10</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Не має нічого спільного з хвастощами</h4><p>У тому, що дано з благодаті, немає заслуги отримувача. Хто хвалиться отриманим з благодаті, ризикує його втратити, як Єзекія.</p><h4 class="sub">4. Діє через віру</h4><p>Віра народжується з одкровення Слова і підключає нас до благодаті, а невіра закриває її дію.</p><figure class="scripture"><blockquote><sup>8</sup>Адже ви спасенні благодаттю через віру, і це не від вас, це Божий дар,</blockquote><figcaption><span class="ref">Ефесян 2:8</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Виправдання ділами відрізає від благодаті</h4><p>Хто покладається на свої діла більше, ніж на благодать Христа, той відпадає від неї. Де догми і правила важливіші за спасіння душі, як у фарисеїв, там зникає Божа присутність. <strong>Законництво</strong> – коли людина чинить правильно зовні, а в серці цього немає.</p><figure class="scripture"><blockquote><sup>4</sup>Ви, які оправдуєтеся Законом, залишилися без Христа, відпали ви від благодаті!</blockquote><figcaption><span class="ref">Галатів 5:4</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>21</sup>Я не відкидаю Божої благодаті. Бо якщо праведність через Закон, то даремно помер Христос.</blockquote><figcaption><span class="ref">Галатів 2:21</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Добрі діла – плід праведності, а не навпаки.</p></aside><section class="quiz" id="quiz1" data-ch="1"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 1</span><h3>Що таке благодать і як вона діє</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="1"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що таке благодать за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Нагорода від Бога за старанне служіння</li><li><span class="box"></span><b>Б)</b> Особливий стан, який мають лише зрілі християни</li><li><span class="box"></span><b>В)</b> Відчуття Божої присутності під час молитви</li><li><span class="box"></span><b>Г)</b> Незаслужена Божа милість, Божий дар, а також Божа сила і допомога у виконанні Його волі</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Який принцип Павло формулює в Римлян 11:6? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Благодать дається тим, хто найбільше трудиться</li><li><span class="box"></span><b>Б)</b> Або діла, або благодать: якщо з благодаті, то вже не з діл</li><li><span class="box"></span><b>В)</b> Благодать і діла разом дають спасіння</li><li><span class="box"></span><b>Г)</b> Християнину добрі справи не потрібні</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Брат, який уже десять років у церкві, каже про спасіння: «Це для мене давно звична річ», – і перестав за нього дякувати. Яку небезпеку бачить урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Жодної: дякувати за спасіння потрібно лише новонаверненим</li><li><span class="box"></span><b>Б)</b> Він може стати надто духовним</li><li><span class="box"></span><b>В)</b> Хто не цінує благодаті, той зловживатиме нею і згодом може її втратити</li><li><span class="box"></span><b>Г)</b> Він утратить праведність, якщо не дякуватиме щодня</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Служитель каже: «Я стільки зробив для церкви, що Бог тепер мусить мені відповісти». Який принцип він порушує? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Благодать не має нічого спільного з ділами: на діла покладатися не можна</li><li><span class="box"></span><b>Б)</b> Принцип, що діла взагалі не треба робити</li><li><span class="box"></span><b>В)</b> Жодного: Бог винагороджує за працю</li><li><span class="box"></span><b>Г)</b> Принцип, що благодать діє лише через служителів</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Чому, за уроком, благодать та істина завжди йдуть разом (Івана 1:16–17)? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бо істину можна заслужити, а благодать ні</li><li><span class="box"></span><b>Б)</b> Бо обидві дано через Мойсея</li><li><span class="box"></span><b>В)</b> Бо життя дає сама буква закону</li><li><span class="box"></span><b>Г)</b> Бо що більше в мені живе істина – одкровення Слова, – то більше дії благодаті я бачу</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Людина ретельно дотримується всіх правил, але в серці досі хоче грішити. Як урок це називає? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Святість</li><li><span class="box"></span><b>Б)</b> Законництво – правильне зовні, без серця</li><li><span class="box"></span><b>В)</b> Смирення</li><li><span class="box"></span><b>Г)</b> Духовна зрілість</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Поза ким, за уроком, благодать не може діяти в житті людей (1 Коринтян 1:4)? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Поза церквою</li><li><span class="box"></span><b>Б)</b> Поза пастором</li><li><span class="box"></span><b>В)</b> Поза Ісусом Христом</li><li><span class="box"></span><b>Г)</b> Поза Біблійною школою</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Молодий віруючий каже: «Я стану праведним, коли перестану грішити і робитиму більше добрих справ». Що порадити йому за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Праведність отримано в повній мірі після покаяння; добрі діла – її плід, а не причина</li><li><span class="box"></span><b>Б)</b> Так, праведність поступово набирається ділами</li><li><span class="box"></span><b>В)</b> Праведність залежить від стажу в церкві</li><li><span class="box"></span><b>Г)</b> Праведність дається лише служителям</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Що урок каже про благодать? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Її запаси невичерпні: кожен може чекати її для себе</li><li><span class="box"></span><b>Б)</b> Її можна випросити, якщо довго просити</li><li><span class="box"></span><b>В)</b> На ній будується будь-яка сторона наших стосунків з Богом</li><li><span class="box"></span><b>Г)</b> Її отримують лише ті, хто має багато добрих справ</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що, за уроком, відрізає людину від благодаті або закриває її дію? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Спроба виправдатися ділами</li><li><span class="box"></span><b>Б)</b> Віра, що народжується зі Слова</li><li><span class="box"></span><b>В)</b> Невіра</li><li><span class="box"></span><b>Г)</b> Покаяння</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Відкрити Себе людям через Ісуса Христа було Божою ініціативою: якби Він Сам нас не знайшов, ми ніколи б Його не пізнали. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Оскільки на діла покладатися не можна, християнину не потрібно робити добрих справ. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> Поєднайте місце Писання з думкою уроку. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Римлян 11:6 <span class="blank"></span></li><li>Івана 1:16–17 <span class="blank"></span></li><li>Галатів 5:4 <span class="blank"></span></li><li>Ефесян 2:8 <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Благодать та істина прийшли через Ісуса Христа</li><li><b>Б)</b> Хто виправдовує себе законом, відпав від благодаті</li><li><b>В)</b> Спасенні благодаттю через віру</li><li><b>Г)</b> Або діла, або благодать</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розставте в правильному порядку, як за уроком пов’язані праведність і діла. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Добрі діла як плід праведності</li><li><span class="blank sm"></span> Праведність, отримана в повній мірі</li><li><span class="blank sm"></span> Покаяння</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Чи є у вашому житті ділянка, де ви намагаєтеся заслужити те, що Бог дає з благодаті? Що ви зміните? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="2"><header class="ch-head" id="ch2"><span class="ch-num">Розділ II</span><h2>Благодать дається смиренним</h2><p class="ch-sub">смирення перед Богом і перед людьми</p></header><h3 class="sec" id="ch2-s1">Благодать дається смиренним</h3><p>Смирення – необхідна умова, щоб Божа благодать виявлялася в нашому житті. Благодать, що веде до покаяння, діє на всіх невіруючих; але віруючим, щоб зростати в Бозі, без смирення не обійтися.</p><h4 class="sub">1. Бог гордим противиться</h4><p>Противитися – значить воювати. Бог противиться саме в тій ділянці, де є гордість, і там не буде успіху. Що більше смирення, то більше благодаті.</p><figure class="scripture"><blockquote><sup>34</sup>Якщо над глузіями Він сміється, то покірним дає благодать.</blockquote><figcaption><span class="ref">Приповісті 3:34</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>6</sup>Та більшу дає благодать, через те й говорить: Бог гордим противиться, а покірним дає благодать. <sup>7</sup>Тож підкоріться Богові, протидійте дияволові, й він утече від вас. <sup>8</sup>Наблизьтеся до Бога, і Він наблизиться до вас. Очистіть руки, грішники, і очистіть серця, двоєдушні. <sup>9</sup>Журіться, сумуйте і плачте. Нехай ваш сміх обернеться на плач, а радість – на смуток. <sup>10</sup>Упокоріть себе перед Господом, і Він піднесе вас.</blockquote><figcaption><span class="ref">Якова 4:6–10</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Вавилонська вежа</h4><p>Ззовні люди будували корисне місто, а в корені була гордість – зробити собі ім’я. Бог перевірив серця, і справа зупинилася. Вавилонську вежу можна збудувати зі служіння, роботи, становища – тож перевіряй мотиви.</p><figure class="scripture"><blockquote><sup>4</sup>Давайте, – говорили вони, – збудуємо собі місто й вежу, вершина якої сягала б небес, і створимо собі ім’я, перш ніж розпорошимося по всій поверхні землі. <sup>5</sup>І зійшов Господь подивитись на місто й вежу, яку будували людські сини. <sup>6</sup>Тоді Господь сказав: Ось народ один і одна в усіх мова, а це лише початок їх роботи. І тепер усе, що лише запланують зробити, буде їм під силу. <sup>7</sup>Отже, зійдемо і змішаймо їхню мову, щоб одна людина не могла розуміти свого ближнього. <sup>8</sup>І розсіяв їх звідти Господь по всій землі, – й вони перестали будувати те місто. <sup>9</sup>Тому-то й названо його Вавилоном, оскільки там змішав Господь мову людей усієї землі. Звідти розсіяв їх Господь по всій землі.</blockquote><figcaption><span class="ref">Буття 11:4–9</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Смирення перед Богом</h4><p>Це згода з Його волею і постійна готовність серця залишити свої бажання, плани й переконання і прийняти Божі як свої. Ісус, лагідний і смиренний серцем, Сам Себе впокорив; якщо ти не вирішиш відкласти свою гордість, Бог не зробить цього за тебе.</p><figure class="scripture"><blockquote><sup>29</sup>Візьміть Моє ярмо на себе і навчіться від Мене, бо Я лагідний і покірний серцем, – і знайдете спокій своїм душам.</blockquote><figcaption><span class="ref">Матвія 11:29</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>5</sup>Плекайте в собі ті самі думки, що й у Христі Ісусі. <sup>6</sup>Він, маючи Божу природу, не вважав посяганням бути рівним Богові, <sup>7</sup>але понизив Самого Себе, прийнявши образ раба, постав у подобі людини і з вигляду був як людина; <sup>8</sup>Він упокорив Себе, був слухняним аж до смерті, й до смерті хресної.</blockquote><figcaption><span class="ref">Филип’ян 2:5–8</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Смирення перед людьми</h4><p>Смирення перед Богом вимірюється смиренням перед людьми: молодші коряться пастирям, усі – одне одному. Гордість часто виявляється в бунті проти пастирів, як у Корея чи Міріям; Бог не виправдовує бунту, коли мотиви неправильні. Мета Бога – підняти смиренних.</p><figure class="scripture"><blockquote><sup>5</sup>Також і ви, молодші, коріться старшим; та й усі виявляйте покору один до одного, адже Бог гордим противиться, а покірним дає благодать. <sup>6</sup>Тож покоріться під міцну Божу руку, щоб Він вас підняв свого часу. <sup>7</sup>Покладіть на Нього всі ваші турботи, бо Він дбає про вас. <sup>8</sup>Будьте тверезі, пильнуйте. Ваш ворог – диявол – ходить і ричить, мов лев, шукаючи, кого б поглинути.</blockquote><figcaption><span class="ref">1 Петра 5:5–8</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>20</sup>Якщо хто скаже: Я люблю Бога! – але ненавидить свого брата, той неправдомовець. Адже хто не любить свого брата, якого бачить, то як може він любити Бога, Якого не бачить? <sup>21</sup>І ми маємо від Нього цю заповідь, щоб той, хто любить Бога, любив і свого брата.</blockquote><figcaption><span class="ref">1 Івана 4:20–21</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Як виявляється смирення</h4><p>У прощенні й поблажливості, у збереженні єдності, у тому, щоб нічого не робити з марнославства. Шанувати інших вище за себе – не те саме, що вважати себе нижчим: це знати, хто ти є, і поважати інших ще більше. Думати про себе треба за мірою віри – як каже Боже Слово.</p><figure class="scripture"><blockquote><sup>12</sup>Отже, зодягніться, як обрані Богом, святі й улюблені, у щире милосердя, доброту, покірність, лагідність, довготерпіння, <sup>13</sup>вибачаючи і прощаючи одне одному, коли хто проти кого має якусь скаргу. Як Христос простив вам, так само й ви робіть.</blockquote><figcaption><span class="ref">Колосян 3:12–13</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>3</sup>Нічого не робіть наперекір чи з марнославства, але в покорі вважайте одне одного більшим за себе.</blockquote><figcaption><span class="ref">Филип’ян 2:3</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>3</sup>Кажу кожному з вас через дану мені благодать: не думати про себе більше, ніж належить думати, а думати скромно, згідно з мірою віри, якою Бог кожного наділив.</blockquote><figcaption><span class="ref">Римлян 12:3</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">6. Переваги смирення</h4><p>Страх Господній, багатство, слава і життя, Царство Небесне, Божа присутність і спокій душі.</p><figure class="scripture"><blockquote><sup>4</sup>Нагородою за покірність і пошану до Господа є багатство, слава і життя.</blockquote><figcaption><span class="ref">Приповісті 22:4</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>3</sup>Блаженні убогі духом, бо їхнє Царство Небесне.</blockquote><figcaption><span class="ref">Матвія 5:3</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>15</sup>Адже так говорить Всевишній, Величний, вічно Живий, Святий на ім’я: Я живу на Високому і святому місці, а також зі смиренними і скрушними духом, щоб оживляти дух смиренних і давати життя упокореним серцем!</blockquote><figcaption><span class="ref">Ісая 57:15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>2</sup>Адже усе це створила Моя рука, і воно все належить Мені! – говорить Господь. Але ось на кого Я зверну увагу: на лагідного і скрушеного духом, – на того, хто тремтить перед Моїм Словом.</blockquote><figcaption><span class="ref">Ісая 66:2</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Смиренна людина – скарб перед Богом!</p></aside><section class="quiz" id="quiz2" data-ch="2"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 2</span><h3>Благодать дається смиренним</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="2"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Кому, за Приповісті 3:34 і Якова 4:6–10, Бог дає благодать? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Сильним і впливовим</li><li><span class="box"></span><b>Б)</b> Смиренним</li><li><span class="box"></span><b>В)</b> Тим, хто довго в церкві</li><li><span class="box"></span><b>Г)</b> Усім однаково, незалежно від стану серця</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Що означає, що Бог «противиться» гордим? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Що Бог перестає любити людину</li><li><span class="box"></span><b>Б)</b> Що Бог карає людину хворобою</li><li><span class="box"></span><b>В)</b> Що Бог воює проти людини саме в тій ділянці, де є гордість, і там не буде успіху</li><li><span class="box"></span><b>Г)</b> Що людина втрачає спасіння</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Брат організовує великий проєкт у церкві. Справа корисна, але він часто каже: «Нехай усі побачать, на що я здатний». Що з уроку стосується цього? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Вавилонська вежа: ззовні корисна справа, а в корені – бажання зробити собі ім’я; треба перевірити мотиви</li><li><span class="box"></span><b>Б)</b> Нічого: головне, що справа корисна</li><li><span class="box"></span><b>В)</b> Бог благословляє все, що робиться для церкви</li><li><span class="box"></span><b>Г)</b> Йому треба відмовитися від будь-якого служіння</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Сестра постійно каже: «Я ніхто, усі кращі за мене». Чи це смирення за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Так, це найвища форма смирення</li><li><span class="box"></span><b>Б)</b> Так, бо вона шанує інших</li><li><span class="box"></span><b>В)</b> Ні, бо смирення – це завжди з усіма погоджуватися</li><li><span class="box"></span><b>Г)</b> Ні: вважати себе нижчим – не смирення; смирення – знати, хто ти є, і поважати інших ще більше</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Чим, за уроком, вимірюється смирення перед Богом? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Кількістю годин у молитві</li><li><span class="box"></span><b>Б)</b> Смиренням перед людьми</li><li><span class="box"></span><b>В)</b> Знанням Писання</li><li><span class="box"></span><b>Г)</b> Тим, як часто людина плаче на служінні</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Група в церкві незадоволена пастором і хоче його «скинути», бо в нього справді є недоліки. Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бог підтримає їх, бо факти на їхньому боці</li><li><span class="box"></span><b>Б)</b> Треба мовчки піти з церкви</li><li><span class="box"></span><b>В)</b> Гордість часто виявляється в бунті проти пастирів, як у Корея чи Міріям; коли мотиви неправильні, Бог не виправдовує бунту</li><li><span class="box"></span><b>Г)</b> Пастир завжди і в усьому правий</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Хто, за Филип’ян 2:5–8, упокорив Ісуса? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Ісус Сам Себе впокорив</li><li><span class="box"></span><b>Б)</b> Бог Отець</li><li><span class="box"></span><b>В)</b> Святий Дух</li><li><span class="box"></span><b>Г)</b> Обставини Його земного життя</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Чоловік і дружина в суперечці відстоюють кожен своє. Як за уроком у цьому виявилося б смирення? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Довести свою правоту будь-що</li><li><span class="box"></span><b>Б)</b> Дочекатися, поки інший визнає провину</li><li><span class="box"></span><b>В)</b> Ніколи не висловлювати своєї думки</li><li><span class="box"></span><b>Г)</b> Простити, бути поблажливим і зберегти єдність, нічого не роблячи з марнославства</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які переваги смирення називає урок? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Страх Господній, багатство, слава і життя</li><li><span class="box"></span><b>Б)</b> Звільнення від усіх труднощів</li><li><span class="box"></span><b>В)</b> Спокій душі</li><li><span class="box"></span><b>Г)</b> Право не коритися лідерам</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що, за уроком, означає смирення перед Богом? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Згода з Його волею</li><li><span class="box"></span><b>Б)</b> Зовнішня скромність у словах і одязі</li><li><span class="box"></span><b>В)</b> Готовність серця прийняти Божі плани й переконання як свої</li><li><span class="box"></span><b>Г)</b> Постійне почуття провини</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Бог противиться людині саме в тій ділянці, де в неї є гордість. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Якщо ти не вирішиш відкласти свою гордість, Бог зробить це за тебе. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> Поєднайте місце Писання з думкою уроку. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Буття 11:4–9 <span class="blank"></span></li><li>Матвія 11:29 <span class="blank"></span></li><li>Римлян 12:3 <span class="blank"></span></li><li>1 Петра 5:5–8 <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Ісус лагідний і смиренний серцем</li><li><b>Б)</b> Думати про себе за мірою віри</li><li><b>В)</b> Гордість під виглядом корисної справи</li><li><b>Г)</b> Молодші коряться пастирям, усі – одне одному</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Як за уроком розвивалася історія Вавилонської вежі? Розставте по порядку. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Справа зупинилася</li><li><span class="blank sm"></span> Бог перевірив їхні серця</li><li><span class="blank sm"></span> Люди вирішили зробити собі ім’я</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> У якій ділянці – служіння, робота, становище – ви можете будувати свою «Вавилонську вежу»? Як перевірите свої мотиви? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="3"><header class="ch-head" id="ch3"><span class="ch-num">Розділ III</span><h2>Що чинить благодать і наша участь у ній</h2><p class="ch-sub">дія благодаті в житті й служінні і що робити нам</p></header><h3 class="sec" id="ch3-s1">Що благодать чинить у нашому житті</h3><h4 class="sub">1. Спасіння</h4><p>Прощення гріхів ми маємо з багатства Божої благодаті: його не заслужити, а лише отримати через покаяння. Тож і ми маємо прощати, не вимагаючи, щоб кривдник заслужив прощення.</p><ul class="points"><li><p class="li-head"><strong>Однаково для всіх.</strong> Благодать зрівнює всіх, тож ніхто не кращий за інших. Ми спасенні раніше, щоб розповісти іншим.</p></li><li><p class="li-head"><strong>Праведність даром.</strong> Виправдання ми маємо даром, а не в кредит, тому наша молитва багато може – і це не привід хвалитися.</p></li></ul><figure class="scripture"><blockquote><sup>6</sup>для прославлення величі Своєї благодаті, якою Він обдарував нас в улюбленому Сині. <sup>7</sup>В Ньому маємо викуплення Його кров’ю, прощення переступів, згідно з багатством Його благодаті,</blockquote><figcaption><span class="ref">Ефесян 1:6–7</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>13</sup>Тому що суд без милосердя на того, хто не чинив милосердя. Милосердя ставиться вище суду.</blockquote><figcaption><span class="ref">Якова 2:13</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>11</sup>Але віримо, що ми, як і вони, спасемося благодаттю Господа Ісуса.</blockquote><figcaption><span class="ref">Дії 15:11</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>11</sup>Бо для всіх людей з’явилася спасаюча Божа благодать;</blockquote><figcaption><span class="ref">Тита 2:11</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>7</sup>щоб, оправдавшись Його благодаттю, ми надією стали спадкоємцями вічного життя.</blockquote><figcaption><span class="ref">Тита 3:7</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>16</sup>Тому визнавайте один перед одним гріхи, моліться один за одного, щоби зцілитися, бо має велику силу ревна молитва праведного.</blockquote><figcaption><span class="ref">Якова 5:16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>24</sup>але оправдуються даром, Його благодаттю, через викуплення, що в Ісусі Христі.</blockquote><figcaption><span class="ref">Римлян 3:24</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Задоволення потреб і зцілення</h4><p>Бог дає за Своєю благодаттю, а не за нашими ділами; хто думає, що зцілення треба заслужити, зачиняє йому двері.</p><figure class="scripture"><blockquote><sup>19</sup>А мій Бог, згідно зі Своїм багатством, нехай задовольнить усяку вашу потребу – у славі, в Ісусі Христі.</blockquote><figcaption><span class="ref">Филип’ян 4:19</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Покликання</h4><p>Бог спершу створює мету, а потім людину для неї. У тебе є благодать дізнатися свою мету і досягти її.</p><figure class="scripture"><blockquote><sup>15</sup>Коли ж Бог, Який вибрав мене з утроби моєї матері й покликав Своєю благодаттю, уподобав</blockquote><figcaption><span class="ref">Галатів 1:15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>9</sup>Який спас нас і покликав святим покликанням, – не за наші діла, але згідно зі Своєю постановою і благодаттю, яка дана нам в Ісусі Христі ще перед вічними часами;</blockquote><figcaption><span class="ref">2 Тимофія 1:9</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Розрада і надія</h4><p>З благодаттю за будь-яких обставин можна мати в серці мир.</p><figure class="scripture"><blockquote><sup>16</sup>Сам же Господь наш, Ісус Христос, і Бог, наш Отець, Який полюбив нас і в благодаті дав вічну втіху та добру надію,</blockquote><figcaption><span class="ref">2 Солунян 2:16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Сила перемагати гріх</h4><p>Де примножився гріх, там ще більше благодаті. Вона не лише покриває гріх, а й дає здатність не грішити. Не грішити має спонукати не страх, а любов до Бога.</p><figure class="scripture"><blockquote><sup>20</sup>Закон увійшов, щоб намножився переступ. А де намножився гріх, там безмірно виявилася благодать. <sup>21</sup>Щоб так, як гріх запанував через смерть, аби так само й благодать запанувала через праведність для вічного життя через Ісуса Христа, Господа нашого.</blockquote><figcaption><span class="ref">Римлян 5:20–21</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>11</sup>Бо для всіх людей з’явилася спасаюча Божа благодать; <sup>12</sup>вона навчає нас, щоб відреклися безбожності й світських пожадань, жили чесно, праведно і побожно в теперішньому віці, <sup>13</sup>очікуючи блаженної надії і появи слави великого Бога і Спасителя нашого Ісуса Христа, <sup>14</sup>Який віддав Себе за нас, щоб викупити нас від усякого беззаконня, очистити Собі особливий народ, ревний до добрих діл.</blockquote><figcaption><span class="ref">Тита 2:11–14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">6. Благодать у служінні</h4><p>Будь-яке служіння ми отримуємо з благодаті, і вона приходить разом з даром: у Павла – для язичників, у Петра – для юдеїв. Без благодаті служіння – непосильна ноша. Щоб благодать діяла й далі, треба триматися Господа щирим серцем.</p><figure class="scripture"><blockquote><sup>33</sup>Апостоли з великою силою свідчили про воскресіння Господа Ісуса, і велика благодать була на них усіх.</blockquote><figcaption><span class="ref">Дії 4:33</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>23</sup>Він, прийшовши і побачивши Божу благодать, зрадів і заохочував усіх рішучістю серця триматися Господа,</blockquote><figcaption><span class="ref">Дії 11:23</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>7</sup>Навпаки, побачивши, що мені довірено Євангелію між язичниками, як і Петрові між обрізаними, – <sup>8</sup>адже Той, Хто допоміг Петрові бути апостолом між обрізаними, допоміг і мені між язичниками, – <sup>9</sup>та визнавши дану мені благодать, Яків, Кифа та Іван, котрі вважаються стовпами, подали мені й Варнаві, як співучасникам, руки, щоб ми йшли до язичників, а вони – до обрізаних,</blockquote><figcaption><span class="ref">Галатів 2:7–9</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>6</sup>Маємо різноманітні дари, згідно з даною нам благодаттю: якщо пророцтво, – то в міру віри; <sup>7</sup>якщо служіння, – перебувай у служінні; якщо учитель, – у навчанні; <sup>8</sup>коли хто потішає, – потішай, хто подає, – давай у простоті, хто керує, – керуй з ревністю, хто виявляє милосердя, – нехай робить це з привітністю.</blockquote><figcaption><span class="ref">Римлян 12:6–8</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">7. Не марна благодать</h4><p>Павло трудився більше за всіх, але це благодать трудилася з ним. Вона працює разом з тобою, а не замість тебе. Її досить у будь-яких проблемах: Божа сила звершується в немочі.</p><figure class="scripture"><blockquote><sup>10</sup>Та благодаттю Божою я є тим, ким є. Його благодать, що в мені, не була марною, бо я трудився більше за них усіх; втім, не я, а Божа благодать, що була зі мною.</blockquote><figcaption><span class="ref">1 Коринтян 15:10</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>9</sup>та Він сказав мені: Досить тобі Моєї благодаті, адже [Моя] сила виявляється в немочі! Тому краще радо буду хвалитися своїми немочами, щоб оселилася в мені сила Христа.</blockquote><figcaption><span class="ref">2 Коринтян 12:9</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>7</sup>А кожному з нас дана благодать згідно з даром Христа.</blockquote><figcaption><span class="ref">Ефесян 4:7</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Благодать – гарантія успіху й перемоги в Божій справі.</p></aside><h3 class="sec" id="ch3-s2">Наша участь у благодаті</h3><h4 class="sub">1. Відвага</h4><p>До престолу благодаті приступаємо з відвагою, а не з жалем до себе. Відвага ґрунтується на знанні Бога, стосунках з Ним і Його Слові; без цього вона перетворюється на зухвалість.</p><ul class="points"><li><p class="li-head"><strong>Від знання Божої любові.</strong> Досконала любов виганяє страх, що руйнує відвагу.</p></li><li><p class="li-head"><strong>Від послуху і чистої совісті.</strong> Свідомий непослух забирає відвагу.</p></li><li><p class="li-head"><strong>Від знання, що Бог чує.</strong> Коли просимо за Його волею, Він слухає нас.</p></li></ul><figure class="scripture"><blockquote><sup>16</sup>Тому приступаймо сміливо до престолу благодаті, щоб одержати милість і знайти благодать для своєчасної допомоги.</blockquote><figcaption><span class="ref">Євреїв 4:16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>16</sup>І ми пізнали й повірили в любов, яку Бог має в нас. Бог є любов, і хто перебуває в любові, той перебуває в Бозі, а Бог перебуває в ньому. <sup>17</sup>Таким чином, любов стала в нас досконалою, щоб ми мали сміливість у день суду, бо як Він, так і ми є в цьому світі. У любові немає страху, <sup>18</sup>але досконала любов проганяє страх, оскільки страх несе страждання; хто ж боїться, той недосконалий у любові.</blockquote><figcaption><span class="ref">1 Івана 4:16–18</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>20</sup>бо коли звинувачує наше серце, то Бог більший від нашого серця і знає все. <sup>21</sup>Улюблені, коли наше серце не звинувачує [нас], то маємо сміливість перед Богом, <sup>22</sup>і чого тільки попросимо, одержимо від Нього, оскільки зберігаємо Його заповіді й робимо те, що Йому до вподоби.</blockquote><figcaption><span class="ref">1 Івана 3:20–22</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>14</sup>І це та відвага, яку маємо до Нього, що коли чогось попросимо згідно з Його волею, Він вислуховує нас!</blockquote><figcaption><span class="ref">1 Івана 5:14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Пізнання істини і Бога</h4><p>Що глибше я пізнаю Божі істини і Самого Бога, то більше діє благодать. Наскільки Бог реальний для тебе, настільки реальна Його благодать.</p><figure class="scripture"><blockquote><sup>3</sup>Нехай буде з вами благодать, милість, мир від Бога Отця і [Господа] Ісуса Христа, Сина Отця, – в істині та в любові!</blockquote><figcaption><span class="ref">2 Івана 1:3</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>17</sup>Тож ви, любі, заздалегідь знаючи про це, стережіться, щоб не були ви зведені оманою безбожних і не відступили від своєї непохитності, <sup>18</sup>але зростайте в благодаті й пізнанні нашого Господа і Спасителя Ісуса Христа. Йому слава і нині, й у день вічний! Амінь.</blockquote><figcaption><span class="ref">2 Петра 3:17–18</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Служити іншим</h4><p>Дари дано, щоб служити ними іншим. Дар – те, до чого лежить серце і де все вдається. Хто не служить даром, може його втратити.</p><figure class="scripture"><blockquote><sup>10</sup>служіть один одному – кожний тим даром, якого одержав, наче добрі управителі різноманітної Божої благодаті.</blockquote><figcaption><span class="ref">1 Петра 4:10</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Стежити, щоб благодать не була марною</h4><p>Це залежить лише від мене: благодать дано, щоб ми потрудилися і принесли плід. Виноградник, що приніс дикі ягоди, було спустошено.</p><figure class="scripture"><blockquote><sup>1</sup>Ми, як співпрацівники, благаємо, щоб ви Божої благодаті не приймали надаремно.</blockquote><figcaption><span class="ref">2 Коринтян 6:1</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture long"><blockquote><sup>1</sup>Заспіваю моєму Улюбленому пісню мого Улюбленого про Його виноградник. В мого Улюбленого був виноградник у родючому місці на схилі гори. <sup>2</sup>Він перекопав його, очистив його від каміння і засадив його добірною виноградною лозою, – побудував посеред нього башту і викопав у ньому чавило. Він очікував, що лоза родитиме хороші грона винограду, а вона вродила дикі ягоди. <sup>3</sup>Тепер же ви, мешканці Єрусалима і мужі Юди, розсудіть між Мною і між Моїм виноградником. <sup>4</sup>Що ще Я мав би зробити для Мого виноградника, чого Я для нього не зробив? Чому ж, коли Я чекав, що він принесе добрий виноград, а він вродив дикі ягоди? <sup>5</sup>Отже, тепер Я сповіщу вам, що зроблю з Моїм виноградником. Заберу його огорожу, і нехай його нищать, – зруйную його стіну, і його топтатимуть, – <sup>6</sup>залишу його на спустошення. Його не будуть ні обрізувати, ні обкопувати, і він заросте терниною і будяками. А ще Я накажу хмарам, щоб не зрошували його дощем.</blockquote><figcaption><span class="ref">Ісая 5:1–6</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Бути милостивим і перебувати в любові</h4><p>З милостивим Бог поводиться милостиво; раб, що не помилував товариша, втратив прощення. Хто перестає любити, швидко втрачає благодать.</p><figure class="scripture"><blockquote><sup>26</sup>З праведним Ти поводишся праведно, і з людиною чесною ти дієш по-чесному, <sup>27</sup>з чистим Ти завжди чистий, а лукавому віддаєш за його лукавством.</blockquote><figcaption><span class="ref">2 Самуїла 22:26–27</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture long"><blockquote><sup>23</sup>Тож Царство Небесне подібне до чоловіка‑царя, який хотів розрахуватися зі своїми рабами. <sup>24</sup>Коли почав він розраховуватися, привели до нього одного, котрий був винен десять тисяч талантів. <sup>25</sup>А як той не мав чим віддати, пан наказав продати його, жінку, дітей і все, що має, і віддати борг. <sup>26</sup>Тоді раб, упавши ниць, кланявся йому й благав: Потерпи ще мені – й усе тобі віддам. <sup>27</sup>І пан того раба, змилосердившись, відпустив його, а борг йому простив. <sup>28</sup>Коли вийшов той раб, він зустрів іншого раба, який був винен йому сто динаріїв, схопив його, почав душити, проказуючи: Віддай те, що винен! <sup>29</sup>А той другий раб, упавши, благав його, кажучи: Потерпи мені, я все тобі віддам. <sup>30</sup>Він же не забажав і вкинув його до в’язниці, доки не віддасть борг. <sup>31</sup>Побачивши, що сталося, інші раби дуже засмутилися, пішли й розповіли своєму панові про все, що трапилося. <sup>32</sup>Тоді його пан покликав його та каже йому: Лукавий рабе, весь той борг я тобі простив, бо ти вблагав мене. <sup>33</sup>Хіба не слід і тобі було змилосердитися над своїм співрабом, як я змилосердився над тобою? <sup>34</sup>І його пан, розгнівавшись, передав його катам, доки не віддасть увесь борг. <sup>35</sup>Так і Мій Отець Небесний чинитиме з вами, якщо не простите від вашого серця кожний братові своєму [його переступів].</blockquote><figcaption><span class="ref">Матвія 18:23–35</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Знайди, у чому виявляється Божа благодать у твоєму житті, і рухайся в цьому.</p></aside><section class="quiz" id="quiz3" data-ch="3"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 3</span><h3>Що чинить благодать і наша участь у ній</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="3"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> З чого, за Ефесян 1:6–7, ми маємо прощення гріхів? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> З наших сліз і каяття</li><li><span class="box"></span><b>Б)</b> З добрих справ після гріха</li><li><span class="box"></span><b>В)</b> З багатства Божої благодаті</li><li><span class="box"></span><b>Г)</b> З молитов служителів</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Чим, за уроком, відвага перед Богом відрізняється від зухвалості? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Відвага ґрунтується на знанні Бога, стосунках з Ним і Його Слові; без цього вона перетворюється на зухвалість</li><li><span class="box"></span><b>Б)</b> Відвага – гучний голос у молитві, зухвалість – тихий</li><li><span class="box"></span><b>В)</b> Різниці немає</li><li><span class="box"></span><b>Г)</b> Зухвалість – коли людина приступає до Бога з жалем до себе</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Брат образив вас, а тепер намагається загладити провину подарунками. Як учинити за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Прийняти подарунки як плату за образу</li><li><span class="box"></span><b>Б)</b> Прощати, лише коли він достатньо постарається</li><li><span class="box"></span><b>В)</b> Не прощати, доки він не заслужить</li><li><span class="box"></span><b>Г)</b> Простити, не вимагаючи, щоб кривдник заслужив прощення, – як Бог прощає нас</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Сестра має дар навчати дітей, але каже: «Нехай цим займаються інші, мені й так добре». Що за уроком їй загрожує? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Нічого: дари дано для власної насолоди</li><li><span class="box"></span><b>Б)</b> Хто не служить даром, може його втратити</li><li><span class="box"></span><b>В)</b> Бог дасть їй інший дар</li><li><span class="box"></span><b>Г)</b> Вона стане гордою</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Що, за уроком, означає, що благодать дає силу перемагати гріх (Римлян 5:20–21)? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Благодать лише покриває гріх, тож на нього можна не зважати</li><li><span class="box"></span><b>Б)</b> Християнин більше ніколи не зустріне спокус</li><li><span class="box"></span><b>В)</b> Благодать не лише покриває гріх, а й дає здатність не грішити</li><li><span class="box"></span><b>Г)</b> Гріх перестав бути гріхом</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Віруючий приходить молитися з думкою: «Я такий нещасний, може, Бог мене пожаліє». Що порадити за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Приступати до престолу благодаті з відвагою, а не з жалем до себе</li><li><span class="box"></span><b>Б)</b> Так і треба: Бог відповідає на жаль до себе</li><li><span class="box"></span><b>В)</b> Не молитися, доки не з’явиться добрий настрій</li><li><span class="box"></span><b>Г)</b> Молитися якомога гучніше</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Що, за уроком, Бог створює спершу – мету чи людину? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Людину, а потім шукає, куди її визначити</li><li><span class="box"></span><b>Б)</b> Обидва одночасно</li><li><span class="box"></span><b>В)</b> Людина сама створює собі мету</li><li><span class="box"></span><b>Г)</b> Спершу мету, а потім людину для неї</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Брат часто дратується на одного з членів церкви і поступово перестає його любити, а потім дивується, чому в його житті менше благодаті. Що пояснює урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Це просто збіг</li><li><span class="box"></span><b>Б)</b> Хто перестає любити, швидко втрачає благодать; треба бути милостивим і перебувати в любові</li><li><span class="box"></span><b>В)</b> Треба більше постити</li><li><span class="box"></span><b>Г)</b> Благодать з віком зменшується</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Що, за уроком, чинить благодать у нашому житті? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Задовольняє потреби і дає зцілення</li><li><span class="box"></span><b>Б)</b> Звільняє від необхідності трудитися</li><li><span class="box"></span><b>В)</b> Дає розраду і надію</li><li><span class="box"></span><b>Г)</b> Гарантує життя без проблем</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Звідки, за уроком, приходить відвага перед Богом? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Від знання Божої любові</li><li><span class="box"></span><b>Б)</b> Від кількості прочитаних розділів Біблії</li><li><span class="box"></span><b>В)</b> Від послуху і чистої совісті</li><li><span class="box"></span><b>Г)</b> Від схвалення людей</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Благодать для служіння приходить разом з даром: у Павла вона була для язичників, у Петра – для юдеїв. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Чи буде Божа благодать у моєму житті марною, залежить від обставин, а не від мене. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> Поєднайте місце Писання з думкою уроку. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Филип’ян 4:19 <span class="blank"></span></li><li>2 Коринтян 12:9 <span class="blank"></span></li><li>Євреїв 4:16 <span class="blank"></span></li><li>Матвія 18:23–35 <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Бог задовольнить кожну вашу потребу</li><li><b>Б)</b> Божа сила звершується в немочі</li><li><b>В)</b> Приступати з відвагою до престолу благодаті</li><li><b>Г)</b> Раб, який не помилував свого товариша</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розставте події притчі про виноградник (Ісая 5:1–6) по порядку. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Виноградник було спустошено</li><li><span class="blank sm"></span> Виноградник приніс дикі ягоди</li><li><span class="blank sm"></span> Господар дав винограднику все потрібне</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> У чому виявляється Божа благодать у вашому житті? Як ви служите цим іншим? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="4"><header class="ch-head" id="ch4"><span class="ch-num">Розділ IV</span><h2>Гордість: звідки вона і в чому її суть</h2><p class="ch-sub">джерела гордості і як її перемогти</p></header><h3 class="sec" id="ch4-s1">Звідки приходить гордість</h3><p>Зменшення благодаті – процес, і приходить воно через гордість. Гордість – від диявола: він першим загордився. Хто гордиться, той несвідомо наслідує його.</p><h4 class="sub">1. Падіння Люцифера</h4><p>Помазаний херувим, печать досконалості, загордився через свою красу. Тож ніхто не настільки досконалий, щоб уникнути гордості. Вона починається з думок, засліплює і забирає мудрість.</p><figure class="scripture long"><blockquote><sup>12</sup>Сину людський, підійми голосіння над тирським царем й оголоси йому слова Владики Господа: Ти був зразком досконалості, сповнений мудрості й неперевершеної краси. <sup>13</sup>Ти перебував у Едемі в Божому раю. Твій одяг прикрашало усяке коштовне каміння: карнелій, топаз і яспіс, хризоліт, согам і яшма, сапфір, рубін і смарагд, а внизу майстерно зроблені золоті бубонці, що видавали мелодію сопілки, – все було виготовлене в день твого створення. <sup>14</sup>Ти був помазаним херувимом-покровителем, – ось для чого Я тебе призначив. Ти перебував на святій Божій горі, ходив посеред вогнистого каміння. <sup>15</sup>Ти був бездоганним на своїх дорогах з того дня, як ти був створений, аж доки в тобі не було знайдено беззаконня. <sup>16</sup>Через свою широку торгівлю ти сповнився насильством й беззаконням, і ти впав у гріх. Тому Я скинув тебе з Божої гори, – прогнав тебе, херувиме-охоронцю, поклав край твоєму перебуванню з-посеред вогнистого каміння. <sup>17</sup>Загордилось твоє серце через твою красу, – ти занапастив свою мудрість власним марнославством. Я скинув тебе на землю, – Я виставив тебе перед царями як видовище.</blockquote><figcaption><span class="ref">Єзекиїль 28:12–17</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>10</sup>Усі вони скажуть тобі: І ти ослаб, як і ми, – зрівнявся з нами! <sup>11</sup>Тож твоя пиха і звуки твоїх арф провалились до шеолу. Постіль під тобою – черв’яки, а твоє накриття – хробацтво. <sup>12</sup>Як же ти впав з неба, досвітня зоре, сину зірниці, – розбився об землю, погромнику усіх народів. <sup>13</sup>Але ж ти говорив у своєму серці: Підіймуся на небо, вище Божих зірок поставлю свій престол, сяду на Горі Зборів, – на далекій північній горі; <sup>14</sup>підіймуся понад високі хмари, уподібнюсь Всевишньому! <sup>15</sup>Але ти скинутий у шеол, – у земні глибини безодні.</blockquote><figcaption><span class="ref">Ісая 14:10–15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Порівняння з іншими</h4><p>Успішніший – приходить гордість, менш успішний – заздрість. Гріх не в порівнянні, а в реакції на нього.</p><figure class="scripture"><blockquote><sup>10</sup>Два чоловіки увійшли до храму помолитися: один фарисей, а другий митник. <sup>11</sup>Фарисей, ставши, про себе так молився: Боже, дякую Тобі, що я не такий, як інші люди, – грабіжники, несправедливі, перелюбники, або як оцей митник;</blockquote><figcaption><span class="ref">Луки 18:10–11</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Знання, таланти, позиція</h4><p>Знання надимає; краса й таланти відвертають увагу від Бога. Навуходоносор хвалив себе і був упокорений, доки не смирився. Павло ж уважав свої переваги сміттям.</p><figure class="scripture"><blockquote><sup>1</sup>А щодо ідольських жертв, розуміємо, що ми всі маємо знання. Проте знання приводить до зарозумілості, а любов збудовує!</blockquote><figcaption><span class="ref">1 Коринтян 8:1</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture long"><blockquote><sup>27</sup>цар зі захопленням вигукнув: Хіба ж не величний цей Вавилон, який я побудував силою своєї влади, як царський Дім, на честь моєї величі?!‥ <sup>28</sup>Ще цар не закінчив говорити, як з неба пролунав голос: До тебе говорять, царю Навуходоносоре! Царство твоє відійшло від тебе! <sup>29</sup>Тебе відлучать від людей, і ти житимеш з польовими звірами, – годуватимуть тебе травою, наче вола. Так триватиме з тобою сім років, аж доки не зрозумієш, що Всевишній владарює над людським царством, і дає його тому, кому хоче! <sup>30</sup>Тієї ж години сповнилося сказане щодо Навуходоносора, Він був відлучений від людей, і їв траву, наче віл, а його тіло ночами зрошувалось небесною росою, – аж поки волосся не стало великим, як пір’я в орла, а його нігті, – як кігті у птахів… <sup>31</sup>Коли ж минули ті дні, я, Навуходоносор, звів свої очі до небес! Мій розум повернувся до мене, і я поблагословив Всевишнього, – прославив і звеличив Того, Котрий живе вічно, а Його влада є постійною владою, як і Його царство – з роду в рід. <sup>32</sup>Всі мешканці землі, порівняно з Ним, – ніщо. Він чинить за Своєю волею, як з Небесними силами, так і з тими, що живуть на землі. Немає нікого, хто міг би стримати Його руку і спитати Його: Що Ти робиш? <sup>33</sup>Коли мій розум повернувся до мене, то я повернувся до слави мого царства, – повернулись також моє достоїнство і мій зовнішній вигляд. Мене визнали мої радники і мої вельможі. Я знову очолив моє царство, і моя могутність зросла ще більше. <sup>34</sup>І тепер я, Навуходоносор, віддаю хвалу, величаю і прославляю Небесного Царя, тому що всі Його вчинки праведні, а Його стежки справедливі, – Він має силу впокорювати всіх зарозумілих!</blockquote><figcaption><span class="ref">Даниїл 4:27–34</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>4</sup>хоч я і міг би покладатися на тіло. Коли хто й думає покладатися на тіло, то я тим паче: <sup>5</sup>обрізаний восьмого дня, з роду Ізраїля, з племені Веніяміна, єврей з євреїв, щодо Закону – фарисей, <sup>6</sup>щодо ревності – гонитель Церкви, щодо праведності, яка від Закону, – бездоганний. <sup>7</sup>Але що було для мене надбанням, те я визнав ради Христа за втрату. <sup>8</sup>І взагалі, все визнаю за втрату, порівняно з величчю пізнання мого Господа Ісуса Христа, задля Якого я все втратив і вважаю за сміття, аби здобути Христа,</blockquote><figcaption><span class="ref">Филип’ян 3:4–8</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Успіх і популярність</h4><p>Успіх приходить тому, що з тобою Бог. Перевіряй серце саме тоді, коли є успіх: кому віддаєш славу?</p><figure class="scripture"><blockquote><sup>17</sup>Багатим нинішнього часу нагадуй, аби не носилися високо й не покладали надії на непевне багатство, але на Бога, Який нам усе дає щедро, для насолоди,</blockquote><figcaption><span class="ref">1 Тимофія 6:17</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Помазання</h4><p>Зцілений Єзекія не віддав Богові слави і загордився; гордість лідера руйнує тих, хто під ним. Свідчення від хвастощів відрізняє мотив.</p><figure class="scripture"><blockquote><sup>24</sup>Але так сталось, що в той час Єзекія смертельно занедужав. Він молився до Господа, Котрий його вислухав і учинив для нього незвичну ознаку. <sup>25</sup>Проте Єзекія не віддячив Йому за виявлене до нього добродійство, оскільки його серце загорділо, тому Бог запалав гнівом на нього, на Юдею і на весь Єрусалим. <sup>26</sup>Коли ж Єзекія пізніше впокорився й покаявся в своїй гордині, як і всі мешканці Єрусалима, то Господній гнів не впав на них у часи Єзекії.</blockquote><figcaption><span class="ref">2 Хронік 32:24–26</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>15</sup>Тоді покличеш до Мене в день скорботи, – Я тебе визволю, і ти Мене прославиш.</blockquote><figcaption><span class="ref">Пс. 50:15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Серце людини не пристосоване мати Божу славу.</p></aside><h3 class="sec" id="ch4-s2">Суть гордості</h3><h4 class="sub">1. Мерзота для Бога</h4><p>Бог ненавидить гордовиті очі. Гордість – уважати себе кращим чи духовнішим за інших. Для Бога важливі не наші досягнення, а серце.</p><figure class="scripture"><blockquote><sup>16</sup>Ось шість речей, які ненавидить Господь, – навіть сім, що огидні для Його душі: <sup>17</sup>зарозумілий погляд очей; оманливий язик; руки, що проливають невинну кров; <sup>18</sup>серце, що виношує злі плани; ноги, що поспішають на злочин, і</blockquote><figcaption><span class="ref">Приповісті 6:16–18</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>5</sup>І коли молитеся, не будьте, як ті лицеміри, котрі люблять молитися в синагогах і, стоячи на перехрестях широких вулиць, щоби показатися людям. Запевняю вас: вони одержують свою нагороду. <sup>6</sup>Ти ж, коли молишся, ввійди до своєї кімнати і, замкнувши свої двері, помолися до свого Отця в тайні, – і твій Отець, Який бачить і таємне, віддасть тобі [явно].</blockquote><figcaption><span class="ref">Матвія 6:5–6</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Передує падінню</h4><p>Гордість передує загибелі, а смиренний духом здобуває честь. Прийде гордість – прийде й ганьба.</p><figure class="scripture"><blockquote><sup>18</sup>Загибелі передує гордість, і падінню – зарозумілість. <sup>19</sup>Краще бути покірним духом зі смиренними, ніж ділити здобич із зарозумілими.</blockquote><figcaption><span class="ref">Приповісті 16:18–19</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>23</sup>Гординя людини принижує її, а людина покірна духом здобуває славу.</blockquote><figcaption><span class="ref">Приповісті 29:23</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>2</sup>За чванливістю приходить і ганьба, а в покірних – мудрість.</blockquote><figcaption><span class="ref">Приповісті 11:2</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Життєва гордість</h4><p>Відкинути мудру пораду тільки тому, що її запропонував не я. Вона штовхає до помсти, непрощення і гніву, розпалює сварки і робить серце кам’яним.</p><figure class="scripture"><blockquote><sup>16</sup>Адже все, що у світі, це: пожадливість тіла, пожадливість очей і життєва гордість; це не від Отця, а від світу. <sup>17</sup>Проминає і світ, і його пожадання, а той, хто виконує Божу волю, – залишається вічно.</blockquote><figcaption><span class="ref">1 Івана 2:16–17</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>25</sup>Жадібний спричиняє суперечку, а хто покладається на Господа, житиме в достатку.</blockquote><figcaption><span class="ref">Приповісті 28:25</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>20</sup>Але, коли його серце загордилося і він став зарозумілим та зухвалим, то був скинутий з царського престолу і позбавлений своєї слави.</blockquote><figcaption><span class="ref">Даниїл 5:20</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Як перемогти гордість</h4><p>Завжди дякувати Богові й віддавати Йому славу; поважати людей; ставити Божу волю вище за свої інтереси. Смирятися треба постійно – усе життя.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Віддавай славу Богові і не порівнюй себе з іншими.</p></aside><section class="quiz" id="quiz4" data-ch="4"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 4</span><h3>Гордість: звідки вона і в чому її суть</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="4"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Від кого, за уроком, походить гордість? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Від диявола, який першим загордився</li><li><span class="box"></span><b>Б)</b> Від поганого виховання</li><li><span class="box"></span><b>В)</b> Від бідності</li><li><span class="box"></span><b>Г)</b> Від Бога як випробування</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Що, за уроком, є суттю гордості? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Прагнення робити свою справу добре</li><li><span class="box"></span><b>Б)</b> Турбота про себе</li><li><span class="box"></span><b>В)</b> Бажання мати успіх</li><li><span class="box"></span><b>Г)</b> Уважати себе кращим чи духовнішим за інших</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Після закінчення Біблійної школи брат зверхньо дивиться на новонавернених: «Вони ж нічого не знають». Яке джерело гордості тут діє? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Успіх у справах</li><li><span class="box"></span><b>Б)</b> Знання, яке надимає</li><li><span class="box"></span><b>В)</b> Популярність</li><li><span class="box"></span><b>Г)</b> Помазання</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> На нараді хтось дає мудру пораду, а лідер відкидає її лише тому, що ідея не його. Як урок це називає? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Обережністю</li><li><span class="box"></span><b>Б)</b> Лідерською принциповістю</li><li><span class="box"></span><b>В)</b> Життєвою гордістю</li><li><span class="box"></span><b>Г)</b> Смиренням</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Що, за уроком, відбувається, коли порівнюєш себе з іншими? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Якщо ти успішніший – приходить гордість, якщо менш успішний – заздрість; гріх не в порівнянні, а в реакції на нього</li><li><span class="box"></span><b>Б)</b> Саме порівняння – гріх</li><li><span class="box"></span><b>В)</b> Порівняння завжди мотивує до зростання</li><li><span class="box"></span><b>Г)</b> Порівняння стосується лише невіруючих</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Людина багато постить і молиться, а потім каже іншим: «Я молюся більше за вас». Що скаже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Це добрий приклад для інших</li><li><span class="box"></span><b>Б)</b> Це ознака духовної зрілості</li><li><span class="box"></span><b>В)</b> Треба молитися ще більше</li><li><span class="box"></span><b>Г)</b> Це гордість: уважати себе духовнішим за інших; для Бога важливе серце, а не досягнення</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Хто, за уроком, хвалив себе і був упокорений, доки не смирився (Даниїл 4:27–34)? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Мойсей</li><li><span class="box"></span><b>Б)</b> Навуходоносор</li><li><span class="box"></span><b>В)</b> Павло</li><li><span class="box"></span><b>Г)</b> Петро</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Брат помітив у собі гордість після підвищення на роботі. Що порадити йому за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Уникати будь-якого успіху</li><li><span class="box"></span><b>Б)</b> Ніколи не говорити про себе</li><li><span class="box"></span><b>В)</b> Завжди дякувати Богові й віддавати Йому славу, поважати людей і ставити Божу волю вище за свої інтереси</li><li><span class="box"></span><b>Г)</b> Порівнювати себе з тими, хто досяг більшого</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Що урок називає джерелами гордості? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Знання, таланти, позиція</li><li><span class="box"></span><b>Б)</b> Регулярне читання Біблії</li><li><span class="box"></span><b>В)</b> Успіх і популярність</li><li><span class="box"></span><b>Г)</b> Служіння іншим</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> До чого, за уроком, веде гордість? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> До падіння і ганьби</li><li><span class="box"></span><b>Б)</b> До пошани людей</li><li><span class="box"></span><b>В)</b> До сварок, непрощення і гніву</li><li><span class="box"></span><b>Г)</b> До примноження благодаті</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Люцифер був помазаним херувимом і печаттю досконалості, але загордився через свою красу. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Досить смиритися один раз – і з гордістю покінчено назавжди. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> Поєднайте місце Писання з думкою уроку. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Єзекиїль 28:12–17 <span class="blank"></span></li><li>1 Коринтян 8:1 <span class="blank"></span></li><li>2 Хронік 32:24–26 <span class="blank"></span></li><li>Приповісті 16:18–19 <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Знання надимає</li><li><b>Б)</b> Єзекія не віддав Богові слави</li><li><b>В)</b> Падіння Люцифера</li><li><b>Г)</b> Гордість передує загибелі</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Як за уроком розгорталася історія Навуходоносора? Розставте по порядку. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Цар смирився</li><li><span class="blank sm"></span> Бог упокорив його</li><li><span class="blank sm"></span> Цар хвалив себе</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Згадайте свій останній успіх. Що ви тоді думали про себе й інших і кому віддали славу? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article>
+
+  <section class="summary screen-only" id="summary">
+    <span class="lbl">Підсумок</span>
+    <h2>Ваші результати</h2>
+    <p>Результати зберігаються у вашому браузері і надсилаються пастору Біблійної школи разом з ім’ям, яке ви вказали.</p>
+    <div id="summaryTable"></div>
+  </section>
+
+  <section class="answers print-only" id="answers">
+    <span class="lbl">Додаток</span>
+    <h2>Відповіді до тестів</h2>
+    <p>Для питань на відповідність літери відповідають правому стовпчику в тесті. Для питань на порядок подано правильну послідовність.</p>
+    <section class="key-ch"><h3>Розділ 1. Що таке благодать і як вона діє</h3><ol class="key-list"><li><b class="k-a">Г.</b> <span class="k-exp">Благодать – незаслужена Божа милість і дар; заслужити чи заробити її неможливо. Крім того, це послана згори Божа сила і допомога.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Павло розділяє чітко: або діла, або благодать (Рим. 11:6). Водночас урок підкреслює, що діла робити треба, але покладатися на них не можна.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Християни швидко звикають до благодаті й приймають її як належне, але Бог заплатив за неї велику ціну. Хто не цінує благодаті, може її втратити.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Благодать не має нічого спільного з ділами (Рим. 11:6). Хто покладається на діла, у того дія благодаті зменшується.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Благодать і істина прийшли через Ісуса Христа (Ів. 1:16–17). Під істиною тут мається на увазі одкровення Слова, а не буква закону.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Законництво – коли людина чинить правильно зовні, а в серці цього немає. Виправдання ділами відрізає від благодаті (Гал. 5:4).</span></li><li><b class="k-a">В.</b> <span class="k-exp">Благодать дана в Христі Ісусі (1 Кор. 1:4): поза Ним вона не діє, а що глибше ми пізнаємо Христа, то сильніше вона діє.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Праведність ми отримали в повній мірі після покаяння, незалежно від діл (Рим. 4:6). Добрі діла – плід праведності, а не навпаки.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Ісус помер за всіх, і запаси благодаті невичерпні. Випросити чи заслужити її ділами не можна.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Хто виправдовує себе ділами, відпадає від благодаті (Гал. 5:4); невіра закриває її дію, а віра, навпаки, до неї підключає.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Так. Будь-яка сторона наших стосунків з Богом будується на благодаті, і перший крок зробив Бог.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ні. Покладатися на діла не можна, але це не означає, що їх не треба робити: добрі діла – плід праведності.</span></li><li><b class="k-a">1 – Г; 2 – А; 3 – Б; 4 – В.</b> <span class="k-exp">Кожне місце підтверджує один із принципів дії благодаті.</span></li><li><b class="k-a">Покаяння → Праведність, отримана в повній мірі → Добрі діла як плід праведності.</b> <span class="k-exp">Праведність отримуємо після покаяння, і вже з неї виростають добрі діла, а не навпаки.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Урок: благодать не має нічого спільного з ділами. Дехто спочатку жив благодаттю, а згодом почав покладатися на діла, і її дія зменшилася. Треба знайти, у чому діє для тебе Божа благодать, і займатися цим.</span></li></ol></section><section class="key-ch"><h3>Розділ 2. Благодать дається смиренним</h3><ol class="key-list"><li><b class="k-a">Б.</b> <span class="k-exp">Бог гордим противиться, а смиренним дає благодать (Пр. 3:34; Як. 4:6).</span></li><li><b class="k-a">В.</b> <span class="k-exp">Противитися – значить воювати. Бог противиться саме в тій ділянці, де є гордість, і там не буде успіху.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Вавилонську вежу можна збудувати зі служіння, роботи, становища. Бог перевіряє серце, тож перевіряй мотиви (Бут. 11:4–9).</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Шанувати інших вище за себе – не те саме, що вважати себе нижчим. Думати про себе треба за мірою віри – як каже Боже Слово (Рим. 12:3).</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Смирення перед Богом вимірюється смиренням перед людьми (1 Пет. 5:5–8; 1 Ів. 4:20–21).</span></li><li><b class="k-a">В.</b> <span class="k-exp">Бунт проти пастирів – вияв гордості. Бог не виправдовує бунту, коли мотиви неправильні; Його мета – підняти смиренних.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Ісус Сам Себе впокорив. Так само й ми: якщо не вирішиш відкласти свою гордість, Бог не зробить цього за тебе.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Смирення виявляється в прощенні й поблажливості, у збереженні єдності, у тому, щоб нічого не робити з марнославства (Кол. 3:12–13; Флп. 2:3).</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">За смиренням ідуть страх Господній, багатство, слава і життя, Царство Небесне, Божа присутність і спокій душі (Пр. 22:4).</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Смирення перед Богом – згода з Його волею і готовність серця залишити свої бажання й плани і прийняти Божі як свої.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Так. Там, де є гордість, не буде успіху; що більше смирення, то більше благодаті.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ні. Ісус Сам Себе впокорив, і якщо ти не ухвалиш такого рішення, Бог не зробить цього за тебе.</span></li><li><b class="k-a">1 – В; 2 – А; 3 – Б; 4 – Г.</b> <span class="k-exp">Ці місця розкривають, що таке смирення і як Бог ставиться до гордості.</span></li><li><b class="k-a">Люди вирішили зробити собі ім’я → Бог перевірив їхні серця → Справа зупинилася.</b> <span class="k-exp">У корені корисної на вигляд справи була гордість; Бог перевірив серця, і справа зупинилася.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Урок: Вавилонську вежу можна збудувати з чого завгодно, тож треба перевіряти мотиви. Бог противиться там, де гордість, а смиренним дає благодать.</span></li></ol></section><section class="key-ch"><h3>Розділ 3. Що чинить благодать і наша участь у ній</h3><ol class="key-list"><li><b class="k-a">В.</b> <span class="k-exp">Прощення гріхів ми маємо з багатства Божої благодаті: його не заслужити, а лише отримати через покаяння (Еф. 1:6–7).</span></li><li><b class="k-a">А.</b> <span class="k-exp">Відвага ґрунтується на знанні Бога, стосунках з Ним і Його Слові; без цього вона стає зухвалістю (Євр. 4:16).</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Бог прощає з благодаті, тож і ми маємо прощати, не вимагаючи, щоб кривдник заслужив прощення (Як. 2:13).</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Дари дано, щоб служити ними іншим (1 Пет. 4:10). Хто не служить даром, може його втратити.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Де примножився гріх, там ще більше благодаті; вона дає здатність не грішити, а спонукає до цього любов до Бога, а не страх.</span></li><li><b class="k-a">А.</b> <span class="k-exp">До престолу благодаті приступаємо з відвагою, а не з жалем до себе (Євр. 4:16).</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Бог спершу створює мету, а потім людину для неї; у тебе є благодать дізнатися свою мету і досягти її (Гал. 1:15; 2 Тим. 1:9).</span></li><li><b class="k-a">Б.</b> <span class="k-exp">З милостивим Бог поводиться милостиво (2 Сам. 22:26–27), а хто перестає любити, швидко втрачає благодать.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Благодать дає спасіння, задоволення потреб і зцілення, покликання, розраду й надію, силу перемагати гріх. Вона трудиться разом з нами, а не замість нас.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Відвага приходить від знання Божої любові (1 Ів. 4:16–18), від послуху і чистої совісті (1 Ів. 3:20–22) і від знання, що Бог чує (1 Ів. 5:14).</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Так. Будь-яке служіння ми отримуємо з благодаті, і вона приходить разом з даром (Гал. 2:7–9).</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ні. Це залежить лише від мене: благодать дано, щоб ми потрудилися і принесли плід (2 Кор. 6:1).</span></li><li><b class="k-a">1 – А; 2 – Б; 3 – В; 4 – Г.</b> <span class="k-exp">Ці місця показують, що чинить благодать і що робити нам, щоб вона діяла.</span></li><li><b class="k-a">Господар дав винограднику все потрібне → Виноградник приніс дикі ягоди → Виноградник було спустошено.</b> <span class="k-exp">Благодать дано, щоб принести плід; виноградник, що приніс дикі ягоди, було спустошено.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Урок: знайди, у чому виявляється Божа благодать у твоєму житті, і рухайся в цьому. Дар – те, до чого лежить серце і де все вдається; дари дано, щоб служити ними іншим.</span></li></ol></section><section class="key-ch"><h3>Розділ 4. Гордість: звідки вона і в чому її суть</h3><ol class="key-list"><li><b class="k-a">А.</b> <span class="k-exp">Гордість – від диявола: він першим загордився. Хто гордиться, той несвідомо наслідує його.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Гордість – уважати себе кращим чи духовнішим за інших. Бог ненавидить гордовиті очі (Пр. 6:16–18).</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Знання надимає (1 Кор. 8:1). Гордість може прийти через знання, таланти чи позицію.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Життєва гордість – відкинути мудру пораду тільки тому, що її запропонував не я (1 Ів. 2:16–17).</span></li><li><b class="k-a">А.</b> <span class="k-exp">Успішніший – приходить гордість, менш успішний – заздрість. Гріх не в порівнянні, а в реакції на нього (Лк. 18:10–11).</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Для Бога важливі не наші досягнення, а серце. Ісус назвав лицемірами тих, хто молиться напоказ (Мт. 6:5–6).</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Навуходоносор хвалив себе і був упокорений, доки не смирився (Дан. 4:27–34).</span></li><li><b class="k-a">В.</b> <span class="k-exp">Перемогти гордість допомагає подяка і слава Богові, повага до людей і Божа воля понад усе. Смирятися треба постійно.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Гордість може прийти через знання, таланти, позицію, успіх і популярність, помазання, а також через порівняння з іншими.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Гордість передує загибелі, з нею приходить ганьба (Пр. 16:18; 11:2); життєва гордість штовхає до помсти, непрощення і гніву.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Так (Єз. 28:12–17). Тож ніхто не настільки досконалий, щоб уникнути гордості.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ні. Смирятися треба постійно – усе життя.</span></li><li><b class="k-a">1 – В; 2 – А; 3 – Б; 4 – Г.</b> <span class="k-exp">Ці місця показують, звідки приходить гордість і до чого вона веде.</span></li><li><b class="k-a">Цар хвалив себе → Бог упокорив його → Цар смирився.</b> <span class="k-exp">Навуходоносор хвалив себе і був упокорений, доки не смирився (Дан. 4:27–34).</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Урок: перевіряй серце саме тоді, коли є успіх. Успіх приходить тому, що з тобою Бог. Віддавай славу Богові і не порівнюй себе з іншими.</span></li></ol></section>
+  </section>
+
+  <footer class="site-foot">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <p><b>Біблійна школа «Дім Слова»</b> · Християнська церква «Перемога», м. Рівне</p>
+    <p class="links"><a href="https://www.instagram.com/victorychurch_rv/" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=100077340400434" rel="noopener">Facebook</a></p>
+    <p class="small">Українською перекладено та оформлено за навчальним матеріалом Біблійної школи «Робітники Царства» християнської церкви «Перемога» (м. Київ). Використано з дозволу.</p>
+    <p class="small">Цитати Святого Письма – «Біблія. Сучасний переклад» © Українське Біблійне Товариство, 2020–2023.</p>
+  </footer>
+</main>
+
+<script type="application/json" id="quiz-data" data-endpoint="https://script.google.com/macros/s/AKfycbyyOJP3nvwp38aiZIJQHnpvppkgWD4EYnmRpf0tdZVsY2Ls4fPLwr7fvoc4AycUOZA/exec" data-lesson="blahodat">[{"chapter": 1, "title": "Що таке благодать і як вона діє", "questions": [{"id": "q1-01", "type": "single", "level": "знання", "q": "Що таке благодать за уроком?", "options": ["Нагорода від Бога за старанне служіння", "Особливий стан, який мають лише зрілі християни", "Відчуття Божої присутності під час молитви", "Незаслужена Божа милість, Божий дар, а також Божа сила і допомога у виконанні Його волі"], "answer": 3, "explain": "Благодать – незаслужена Божа милість і дар; заслужити чи заробити її неможливо. Крім того, це послана згори Божа сила і допомога.", "anchor": "ch1-s1"}, {"id": "q1-02", "type": "single", "level": "розуміння", "q": "Який принцип Павло формулює в Римлян 11:6?", "options": ["Благодать дається тим, хто найбільше трудиться", "Або діла, або благодать: якщо з благодаті, то вже не з діл", "Благодать і діла разом дають спасіння", "Християнину добрі справи не потрібні"], "answer": 1, "explain": "Павло розділяє чітко: або діла, або благодать (Рим. 11:6). Водночас урок підкреслює, що діла робити треба, але покладатися на них не можна.", "anchor": "ch1-s2"}, {"id": "q1-03", "type": "single", "level": "застосування", "q": "Брат, який уже десять років у церкві, каже про спасіння: «Це для мене давно звична річ», – і перестав за нього дякувати. Яку небезпеку бачить урок?", "options": ["Жодної: дякувати за спасіння потрібно лише новонаверненим", "Він може стати надто духовним", "Хто не цінує благодаті, той зловживатиме нею і згодом може її втратити", "Він утратить праведність, якщо не дякуватиме щодня"], "answer": 2, "explain": "Християни швидко звикають до благодаті й приймають її як належне, але Бог заплатив за неї велику ціну. Хто не цінує благодаті, може її втратити.", "anchor": "ch1-s1"}, {"id": "q1-04", "type": "single", "level": "застосування", "q": "Служитель каже: «Я стільки зробив для церкви, що Бог тепер мусить мені відповісти». Який принцип він порушує?", "options": ["Благодать не має нічого спільного з ділами: на діла покладатися не можна", "Принцип, що діла взагалі не треба робити", "Жодного: Бог винагороджує за працю", "Принцип, що благодать діє лише через служителів"], "answer": 0, "explain": "Благодать не має нічого спільного з ділами (Рим. 11:6). Хто покладається на діла, у того дія благодаті зменшується.", "anchor": "ch1-s2"}, {"id": "q1-05", "type": "single", "level": "розуміння", "q": "Чому, за уроком, благодать та істина завжди йдуть разом (Івана 1:16–17)?", "options": ["Бо істину можна заслужити, а благодать ні", "Бо обидві дано через Мойсея", "Бо життя дає сама буква закону", "Бо що більше в мені живе істина – одкровення Слова, – то більше дії благодаті я бачу"], "answer": 3, "explain": "Благодать і істина прийшли через Ісуса Христа (Ів. 1:16–17). Під істиною тут мається на увазі одкровення Слова, а не буква закону.", "anchor": "ch1-s1"}, {"id": "q1-06", "type": "single", "level": "застосування", "q": "Людина ретельно дотримується всіх правил, але в серці досі хоче грішити. Як урок це називає?", "options": ["Святість", "Законництво – правильне зовні, без серця", "Смирення", "Духовна зрілість"], "answer": 1, "explain": "Законництво – коли людина чинить правильно зовні, а в серці цього немає. Виправдання ділами відрізає від благодаті (Гал. 5:4).", "anchor": "ch1-s2"}, {"id": "q1-07", "type": "single", "level": "знання", "q": "Поза ким, за уроком, благодать не може діяти в житті людей (1 Коринтян 1:4)?", "options": ["Поза церквою", "Поза пастором", "Поза Ісусом Христом", "Поза Біблійною школою"], "answer": 2, "explain": "Благодать дана в Христі Ісусі (1 Кор. 1:4): поза Ним вона не діє, а що глибше ми пізнаємо Христа, то сильніше вона діє.", "anchor": "ch1-s1"}, {"id": "q1-08", "type": "single", "level": "застосування", "q": "Молодий віруючий каже: «Я стану праведним, коли перестану грішити і робитиму більше добрих справ». Що порадити йому за уроком?", "options": ["Праведність отримано в повній мірі після покаяння; добрі діла – її плід, а не причина", "Так, праведність поступово набирається ділами", "Праведність залежить від стажу в церкві", "Праведність дається лише служителям"], "answer": 0, "explain": "Праведність ми отримали в повній мірі після покаяння, незалежно від діл (Рим. 4:6). Добрі діла – плід праведності, а не навпаки.", "anchor": "ch1-s2"}, {"id": "q1-09", "type": "multi", "level": "знання", "q": "Що урок каже про благодать? Оберіть усі правильні.", "options": ["Її запаси невичерпні: кожен може чекати її для себе", "Її можна випросити, якщо довго просити", "На ній будується будь-яка сторона наших стосунків з Богом", "Її отримують лише ті, хто має багато добрих справ"], "answer": [0, 2], "explain": "Ісус помер за всіх, і запаси благодаті невичерпні. Випросити чи заслужити її ділами не можна.", "anchor": "ch1-s1"}, {"id": "q1-10", "type": "multi", "level": "розуміння", "q": "Що, за уроком, відрізає людину від благодаті або закриває її дію? Оберіть усі правильні.", "options": ["Спроба виправдатися ділами", "Віра, що народжується зі Слова", "Невіра", "Покаяння"], "answer": [0, 2], "explain": "Хто виправдовує себе ділами, відпадає від благодаті (Гал. 5:4); невіра закриває її дію, а віра, навпаки, до неї підключає.", "anchor": "ch1-s2"}, {"id": "q1-11", "type": "truefalse", "level": "знання", "q": "Відкрити Себе людям через Ісуса Христа було Божою ініціативою: якби Він Сам нас не знайшов, ми ніколи б Його не пізнали.", "answer": true, "explain": "Так. Будь-яка сторона наших стосунків з Богом будується на благодаті, і перший крок зробив Бог.", "anchor": "ch1-s1"}, {"id": "q1-12", "type": "truefalse", "level": "розуміння", "q": "Оскільки на діла покладатися не можна, християнину не потрібно робити добрих справ.", "answer": false, "explain": "Ні. Покладатися на діла не можна, але це не означає, що їх не треба робити: добрі діла – плід праведності.", "anchor": "ch1-s2"}, {"id": "q1-13", "type": "match", "level": "розуміння", "q": "Поєднайте місце Писання з думкою уроку.", "pairs": [["Римлян 11:6", "Або діла, або благодать"], ["Івана 1:16–17", "Благодать та істина прийшли через Ісуса Христа"], ["Галатів 5:4", "Хто виправдовує себе законом, відпав від благодаті"], ["Ефесян 2:8", "Спасенні благодаттю через віру"]], "explain": "Кожне місце підтверджує один із принципів дії благодаті.", "anchor": "ch1-s1", "_print_right": [1, 2, 3, 0]}, {"id": "q1-14", "type": "order", "level": "розуміння", "q": "Розставте в правильному порядку, як за уроком пов’язані праведність і діла.", "items": ["Покаяння", "Праведність, отримана в повній мірі", "Добрі діла як плід праведності"], "explain": "Праведність отримуємо після покаяння, і вже з неї виростають добрі діла, а не навпаки.", "anchor": "ch1-s2", "_print_order": [2, 1, 0]}, {"id": "q1-15", "type": "reflect", "level": "застосування", "q": "Чи є у вашому житті ділянка, де ви намагаєтеся заслужити те, що Бог дає з благодаті? Що ви зміните?", "sample": "Урок: благодать не має нічого спільного з ділами. Дехто спочатку жив благодаттю, а згодом почав покладатися на діла, і її дія зменшилася. Треба знайти, у чому діє для тебе Божа благодать, і займатися цим."}], "sections": {"ch1-s1": "Що таке благодать", "ch1-s2": "Принципи дії благодаті"}}, {"chapter": 2, "title": "Благодать дається смиренним", "questions": [{"id": "q2-01", "type": "single", "level": "знання", "q": "Кому, за Приповісті 3:34 і Якова 4:6–10, Бог дає благодать?", "options": ["Сильним і впливовим", "Смиренним", "Тим, хто довго в церкві", "Усім однаково, незалежно від стану серця"], "answer": 1, "explain": "Бог гордим противиться, а смиренним дає благодать (Пр. 3:34; Як. 4:6).", "anchor": "ch2-s1"}, {"id": "q2-02", "type": "single", "level": "розуміння", "q": "Що означає, що Бог «противиться» гордим?", "options": ["Що Бог перестає любити людину", "Що Бог карає людину хворобою", "Що Бог воює проти людини саме в тій ділянці, де є гордість, і там не буде успіху", "Що людина втрачає спасіння"], "answer": 2, "explain": "Противитися – значить воювати. Бог противиться саме в тій ділянці, де є гордість, і там не буде успіху.", "anchor": "ch2-s1"}, {"id": "q2-03", "type": "single", "level": "застосування", "q": "Брат організовує великий проєкт у церкві. Справа корисна, але він часто каже: «Нехай усі побачать, на що я здатний». Що з уроку стосується цього?", "options": ["Вавилонська вежа: ззовні корисна справа, а в корені – бажання зробити собі ім’я; треба перевірити мотиви", "Нічого: головне, що справа корисна", "Бог благословляє все, що робиться для церкви", "Йому треба відмовитися від будь-якого служіння"], "answer": 0, "explain": "Вавилонську вежу можна збудувати зі служіння, роботи, становища. Бог перевіряє серце, тож перевіряй мотиви (Бут. 11:4–9).", "anchor": "ch2-s1"}, {"id": "q2-04", "type": "single", "level": "застосування", "q": "Сестра постійно каже: «Я ніхто, усі кращі за мене». Чи це смирення за уроком?", "options": ["Так, це найвища форма смирення", "Так, бо вона шанує інших", "Ні, бо смирення – це завжди з усіма погоджуватися", "Ні: вважати себе нижчим – не смирення; смирення – знати, хто ти є, і поважати інших ще більше"], "answer": 3, "explain": "Шанувати інших вище за себе – не те саме, що вважати себе нижчим. Думати про себе треба за мірою віри – як каже Боже Слово (Рим. 12:3).", "anchor": "ch2-s1"}, {"id": "q2-05", "type": "single", "level": "розуміння", "q": "Чим, за уроком, вимірюється смирення перед Богом?", "options": ["Кількістю годин у молитві", "Смиренням перед людьми", "Знанням Писання", "Тим, як часто людина плаче на служінні"], "answer": 1, "explain": "Смирення перед Богом вимірюється смиренням перед людьми (1 Пет. 5:5–8; 1 Ів. 4:20–21).", "anchor": "ch2-s1"}, {"id": "q2-06", "type": "single", "level": "застосування", "q": "Група в церкві незадоволена пастором і хоче його «скинути», бо в нього справді є недоліки. Що каже урок?", "options": ["Бог підтримає їх, бо факти на їхньому боці", "Треба мовчки піти з церкви", "Гордість часто виявляється в бунті проти пастирів, як у Корея чи Міріям; коли мотиви неправильні, Бог не виправдовує бунту", "Пастир завжди і в усьому правий"], "answer": 2, "explain": "Бунт проти пастирів – вияв гордості. Бог не виправдовує бунту, коли мотиви неправильні; Його мета – підняти смиренних.", "anchor": "ch2-s1"}, {"id": "q2-07", "type": "single", "level": "знання", "q": "Хто, за Филип’ян 2:5–8, упокорив Ісуса?", "options": ["Ісус Сам Себе впокорив", "Бог Отець", "Святий Дух", "Обставини Його земного життя"], "answer": 0, "explain": "Ісус Сам Себе впокорив. Так само й ми: якщо не вирішиш відкласти свою гордість, Бог не зробить цього за тебе.", "anchor": "ch2-s1"}, {"id": "q2-08", "type": "single", "level": "застосування", "q": "Чоловік і дружина в суперечці відстоюють кожен своє. Як за уроком у цьому виявилося б смирення?", "options": ["Довести свою правоту будь-що", "Дочекатися, поки інший визнає провину", "Ніколи не висловлювати своєї думки", "Простити, бути поблажливим і зберегти єдність, нічого не роблячи з марнославства"], "answer": 3, "explain": "Смирення виявляється в прощенні й поблажливості, у збереженні єдності, у тому, щоб нічого не робити з марнославства (Кол. 3:12–13; Флп. 2:3).", "anchor": "ch2-s1"}, {"id": "q2-09", "type": "multi", "level": "знання", "q": "Які переваги смирення називає урок? Оберіть усі правильні.", "options": ["Страх Господній, багатство, слава і життя", "Звільнення від усіх труднощів", "Спокій душі", "Право не коритися лідерам"], "answer": [0, 2], "explain": "За смиренням ідуть страх Господній, багатство, слава і життя, Царство Небесне, Божа присутність і спокій душі (Пр. 22:4).", "anchor": "ch2-s1"}, {"id": "q2-10", "type": "multi", "level": "розуміння", "q": "Що, за уроком, означає смирення перед Богом? Оберіть усі правильні.", "options": ["Згода з Його волею", "Зовнішня скромність у словах і одязі", "Готовність серця прийняти Божі плани й переконання як свої", "Постійне почуття провини"], "answer": [0, 2], "explain": "Смирення перед Богом – згода з Його волею і готовність серця залишити свої бажання й плани і прийняти Божі як свої.", "anchor": "ch2-s1"}, {"id": "q2-11", "type": "truefalse", "level": "знання", "q": "Бог противиться людині саме в тій ділянці, де в неї є гордість.", "answer": true, "explain": "Так. Там, де є гордість, не буде успіху; що більше смирення, то більше благодаті.", "anchor": "ch2-s1"}, {"id": "q2-12", "type": "truefalse", "level": "розуміння", "q": "Якщо ти не вирішиш відкласти свою гордість, Бог зробить це за тебе.", "answer": false, "explain": "Ні. Ісус Сам Себе впокорив, і якщо ти не ухвалиш такого рішення, Бог не зробить цього за тебе.", "anchor": "ch2-s1"}, {"id": "q2-13", "type": "match", "level": "розуміння", "q": "Поєднайте місце Писання з думкою уроку.", "pairs": [["Буття 11:4–9", "Гордість під виглядом корисної справи"], ["Матвія 11:29", "Ісус лагідний і смиренний серцем"], ["Римлян 12:3", "Думати про себе за мірою віри"], ["1 Петра 5:5–8", "Молодші коряться пастирям, усі – одне одному"]], "explain": "Ці місця розкривають, що таке смирення і як Бог ставиться до гордості.", "anchor": "ch2-s1", "_print_right": [1, 2, 0, 3]}, {"id": "q2-14", "type": "order", "level": "розуміння", "q": "Як за уроком розвивалася історія Вавилонської вежі? Розставте по порядку.", "items": ["Люди вирішили зробити собі ім’я", "Бог перевірив їхні серця", "Справа зупинилася"], "explain": "У корені корисної на вигляд справи була гордість; Бог перевірив серця, і справа зупинилася.", "anchor": "ch2-s1", "_print_order": [2, 1, 0]}, {"id": "q2-15", "type": "reflect", "level": "застосування", "q": "У якій ділянці – служіння, робота, становище – ви можете будувати свою «Вавилонську вежу»? Як перевірите свої мотиви?", "sample": "Урок: Вавилонську вежу можна збудувати з чого завгодно, тож треба перевіряти мотиви. Бог противиться там, де гордість, а смиренним дає благодать."}], "sections": {"ch2-s1": "Благодать дається смиренним"}}, {"chapter": 3, "title": "Що чинить благодать і наша участь у ній", "questions": [{"id": "q3-01", "type": "single", "level": "знання", "q": "З чого, за Ефесян 1:6–7, ми маємо прощення гріхів?", "options": ["З наших сліз і каяття", "З добрих справ після гріха", "З багатства Божої благодаті", "З молитов служителів"], "answer": 2, "explain": "Прощення гріхів ми маємо з багатства Божої благодаті: його не заслужити, а лише отримати через покаяння (Еф. 1:6–7).", "anchor": "ch3-s1"}, {"id": "q3-02", "type": "single", "level": "розуміння", "q": "Чим, за уроком, відвага перед Богом відрізняється від зухвалості?", "options": ["Відвага ґрунтується на знанні Бога, стосунках з Ним і Його Слові; без цього вона перетворюється на зухвалість", "Відвага – гучний голос у молитві, зухвалість – тихий", "Різниці немає", "Зухвалість – коли людина приступає до Бога з жалем до себе"], "answer": 0, "explain": "Відвага ґрунтується на знанні Бога, стосунках з Ним і Його Слові; без цього вона стає зухвалістю (Євр. 4:16).", "anchor": "ch3-s2"}, {"id": "q3-03", "type": "single", "level": "застосування", "q": "Брат образив вас, а тепер намагається загладити провину подарунками. Як учинити за уроком?", "options": ["Прийняти подарунки як плату за образу", "Прощати, лише коли він достатньо постарається", "Не прощати, доки він не заслужить", "Простити, не вимагаючи, щоб кривдник заслужив прощення, – як Бог прощає нас"], "answer": 3, "explain": "Бог прощає з благодаті, тож і ми маємо прощати, не вимагаючи, щоб кривдник заслужив прощення (Як. 2:13).", "anchor": "ch3-s1"}, {"id": "q3-04", "type": "single", "level": "застосування", "q": "Сестра має дар навчати дітей, але каже: «Нехай цим займаються інші, мені й так добре». Що за уроком їй загрожує?", "options": ["Нічого: дари дано для власної насолоди", "Хто не служить даром, може його втратити", "Бог дасть їй інший дар", "Вона стане гордою"], "answer": 1, "explain": "Дари дано, щоб служити ними іншим (1 Пет. 4:10). Хто не служить даром, може його втратити.", "anchor": "ch3-s2"}, {"id": "q3-05", "type": "single", "level": "розуміння", "q": "Що, за уроком, означає, що благодать дає силу перемагати гріх (Римлян 5:20–21)?", "options": ["Благодать лише покриває гріх, тож на нього можна не зважати", "Християнин більше ніколи не зустріне спокус", "Благодать не лише покриває гріх, а й дає здатність не грішити", "Гріх перестав бути гріхом"], "answer": 2, "explain": "Де примножився гріх, там ще більше благодаті; вона дає здатність не грішити, а спонукає до цього любов до Бога, а не страх.", "anchor": "ch3-s1"}, {"id": "q3-06", "type": "single", "level": "застосування", "q": "Віруючий приходить молитися з думкою: «Я такий нещасний, може, Бог мене пожаліє». Що порадити за уроком?", "options": ["Приступати до престолу благодаті з відвагою, а не з жалем до себе", "Так і треба: Бог відповідає на жаль до себе", "Не молитися, доки не з’явиться добрий настрій", "Молитися якомога гучніше"], "answer": 0, "explain": "До престолу благодаті приступаємо з відвагою, а не з жалем до себе (Євр. 4:16).", "anchor": "ch3-s2"}, {"id": "q3-07", "type": "single", "level": "знання", "q": "Що, за уроком, Бог створює спершу – мету чи людину?", "options": ["Людину, а потім шукає, куди її визначити", "Обидва одночасно", "Людина сама створює собі мету", "Спершу мету, а потім людину для неї"], "answer": 3, "explain": "Бог спершу створює мету, а потім людину для неї; у тебе є благодать дізнатися свою мету і досягти її (Гал. 1:15; 2 Тим. 1:9).", "anchor": "ch3-s1"}, {"id": "q3-08", "type": "single", "level": "застосування", "q": "Брат часто дратується на одного з членів церкви і поступово перестає його любити, а потім дивується, чому в його житті менше благодаті. Що пояснює урок?", "options": ["Це просто збіг", "Хто перестає любити, швидко втрачає благодать; треба бути милостивим і перебувати в любові", "Треба більше постити", "Благодать з віком зменшується"], "answer": 1, "explain": "З милостивим Бог поводиться милостиво (2 Сам. 22:26–27), а хто перестає любити, швидко втрачає благодать.", "anchor": "ch3-s2"}, {"id": "q3-09", "type": "multi", "level": "знання", "q": "Що, за уроком, чинить благодать у нашому житті? Оберіть усі правильні.", "options": ["Задовольняє потреби і дає зцілення", "Звільняє від необхідності трудитися", "Дає розраду і надію", "Гарантує життя без проблем"], "answer": [0, 2], "explain": "Благодать дає спасіння, задоволення потреб і зцілення, покликання, розраду й надію, силу перемагати гріх. Вона трудиться разом з нами, а не замість нас.", "anchor": "ch3-s1"}, {"id": "q3-10", "type": "multi", "level": "розуміння", "q": "Звідки, за уроком, приходить відвага перед Богом? Оберіть усі правильні.", "options": ["Від знання Божої любові", "Від кількості прочитаних розділів Біблії", "Від послуху і чистої совісті", "Від схвалення людей"], "answer": [0, 2], "explain": "Відвага приходить від знання Божої любові (1 Ів. 4:16–18), від послуху і чистої совісті (1 Ів. 3:20–22) і від знання, що Бог чує (1 Ів. 5:14).", "anchor": "ch3-s2"}, {"id": "q3-11", "type": "truefalse", "level": "знання", "q": "Благодать для служіння приходить разом з даром: у Павла вона була для язичників, у Петра – для юдеїв.", "answer": true, "explain": "Так. Будь-яке служіння ми отримуємо з благодаті, і вона приходить разом з даром (Гал. 2:7–9).", "anchor": "ch3-s1"}, {"id": "q3-12", "type": "truefalse", "level": "розуміння", "q": "Чи буде Божа благодать у моєму житті марною, залежить від обставин, а не від мене.", "answer": false, "explain": "Ні. Це залежить лише від мене: благодать дано, щоб ми потрудилися і принесли плід (2 Кор. 6:1).", "anchor": "ch3-s2"}, {"id": "q3-13", "type": "match", "level": "розуміння", "q": "Поєднайте місце Писання з думкою уроку.", "pairs": [["Филип’ян 4:19", "Бог задовольнить кожну вашу потребу"], ["2 Коринтян 12:9", "Божа сила звершується в немочі"], ["Євреїв 4:16", "Приступати з відвагою до престолу благодаті"], ["Матвія 18:23–35", "Раб, який не помилував свого товариша"]], "explain": "Ці місця показують, що чинить благодать і що робити нам, щоб вона діяла.", "anchor": "ch3-s1", "_print_right": [0, 1, 2, 3]}, {"id": "q3-14", "type": "order", "level": "розуміння", "q": "Розставте події притчі про виноградник (Ісая 5:1–6) по порядку.", "items": ["Господар дав винограднику все потрібне", "Виноградник приніс дикі ягоди", "Виноградник було спустошено"], "explain": "Благодать дано, щоб принести плід; виноградник, що приніс дикі ягоди, було спустошено.", "anchor": "ch3-s2", "_print_order": [2, 1, 0]}, {"id": "q3-15", "type": "reflect", "level": "застосування", "q": "У чому виявляється Божа благодать у вашому житті? Як ви служите цим іншим?", "sample": "Урок: знайди, у чому виявляється Божа благодать у твоєму житті, і рухайся в цьому. Дар – те, до чого лежить серце і де все вдається; дари дано, щоб служити ними іншим."}], "sections": {"ch3-s1": "Що благодать чинить у нашому житті", "ch3-s2": "Наша участь у благодаті"}}, {"chapter": 4, "title": "Гордість: звідки вона і в чому її суть", "questions": [{"id": "q4-01", "type": "single", "level": "знання", "q": "Від кого, за уроком, походить гордість?", "options": ["Від диявола, який першим загордився", "Від поганого виховання", "Від бідності", "Від Бога як випробування"], "answer": 0, "explain": "Гордість – від диявола: він першим загордився. Хто гордиться, той несвідомо наслідує його.", "anchor": "ch4-s1"}, {"id": "q4-02", "type": "single", "level": "розуміння", "q": "Що, за уроком, є суттю гордості?", "options": ["Прагнення робити свою справу добре", "Турбота про себе", "Бажання мати успіх", "Уважати себе кращим чи духовнішим за інших"], "answer": 3, "explain": "Гордість – уважати себе кращим чи духовнішим за інших. Бог ненавидить гордовиті очі (Пр. 6:16–18).", "anchor": "ch4-s2"}, {"id": "q4-03", "type": "single", "level": "застосування", "q": "Після закінчення Біблійної школи брат зверхньо дивиться на новонавернених: «Вони ж нічого не знають». Яке джерело гордості тут діє?", "options": ["Успіх у справах", "Знання, яке надимає", "Популярність", "Помазання"], "answer": 1, "explain": "Знання надимає (1 Кор. 8:1). Гордість може прийти через знання, таланти чи позицію.", "anchor": "ch4-s1"}, {"id": "q4-04", "type": "single", "level": "застосування", "q": "На нараді хтось дає мудру пораду, а лідер відкидає її лише тому, що ідея не його. Як урок це називає?", "options": ["Обережністю", "Лідерською принциповістю", "Життєвою гордістю", "Смиренням"], "answer": 2, "explain": "Життєва гордість – відкинути мудру пораду тільки тому, що її запропонував не я (1 Ів. 2:16–17).", "anchor": "ch4-s2"}, {"id": "q4-05", "type": "single", "level": "розуміння", "q": "Що, за уроком, відбувається, коли порівнюєш себе з іншими?", "options": ["Якщо ти успішніший – приходить гордість, якщо менш успішний – заздрість; гріх не в порівнянні, а в реакції на нього", "Саме порівняння – гріх", "Порівняння завжди мотивує до зростання", "Порівняння стосується лише невіруючих"], "answer": 0, "explain": "Успішніший – приходить гордість, менш успішний – заздрість. Гріх не в порівнянні, а в реакції на нього (Лк. 18:10–11).", "anchor": "ch4-s1"}, {"id": "q4-06", "type": "single", "level": "застосування", "q": "Людина багато постить і молиться, а потім каже іншим: «Я молюся більше за вас». Що скаже урок?", "options": ["Це добрий приклад для інших", "Це ознака духовної зрілості", "Треба молитися ще більше", "Це гордість: уважати себе духовнішим за інших; для Бога важливе серце, а не досягнення"], "answer": 3, "explain": "Для Бога важливі не наші досягнення, а серце. Ісус назвав лицемірами тих, хто молиться напоказ (Мт. 6:5–6).", "anchor": "ch4-s2"}, {"id": "q4-07", "type": "single", "level": "знання", "q": "Хто, за уроком, хвалив себе і був упокорений, доки не смирився (Даниїл 4:27–34)?", "options": ["Мойсей", "Навуходоносор", "Павло", "Петро"], "answer": 1, "explain": "Навуходоносор хвалив себе і був упокорений, доки не смирився (Дан. 4:27–34).", "anchor": "ch4-s1"}, {"id": "q4-08", "type": "single", "level": "застосування", "q": "Брат помітив у собі гордість після підвищення на роботі. Що порадити йому за уроком?", "options": ["Уникати будь-якого успіху", "Ніколи не говорити про себе", "Завжди дякувати Богові й віддавати Йому славу, поважати людей і ставити Божу волю вище за свої інтереси", "Порівнювати себе з тими, хто досяг більшого"], "answer": 2, "explain": "Перемогти гордість допомагає подяка і слава Богові, повага до людей і Божа воля понад усе. Смирятися треба постійно.", "anchor": "ch4-s2"}, {"id": "q4-09", "type": "multi", "level": "знання", "q": "Що урок називає джерелами гордості? Оберіть усі правильні.", "options": ["Знання, таланти, позиція", "Регулярне читання Біблії", "Успіх і популярність", "Служіння іншим"], "answer": [0, 2], "explain": "Гордість може прийти через знання, таланти, позицію, успіх і популярність, помазання, а також через порівняння з іншими.", "anchor": "ch4-s1"}, {"id": "q4-10", "type": "multi", "level": "розуміння", "q": "До чого, за уроком, веде гордість? Оберіть усі правильні.", "options": ["До падіння і ганьби", "До пошани людей", "До сварок, непрощення і гніву", "До примноження благодаті"], "answer": [0, 2], "explain": "Гордість передує загибелі, з нею приходить ганьба (Пр. 16:18; 11:2); життєва гордість штовхає до помсти, непрощення і гніву.", "anchor": "ch4-s2"}, {"id": "q4-11", "type": "truefalse", "level": "знання", "q": "Люцифер був помазаним херувимом і печаттю досконалості, але загордився через свою красу.", "answer": true, "explain": "Так (Єз. 28:12–17). Тож ніхто не настільки досконалий, щоб уникнути гордості.", "anchor": "ch4-s1"}, {"id": "q4-12", "type": "truefalse", "level": "розуміння", "q": "Досить смиритися один раз – і з гордістю покінчено назавжди.", "answer": false, "explain": "Ні. Смирятися треба постійно – усе життя.", "anchor": "ch4-s2"}, {"id": "q4-13", "type": "match", "level": "розуміння", "q": "Поєднайте місце Писання з думкою уроку.", "pairs": [["Єзекиїль 28:12–17", "Падіння Люцифера"], ["1 Коринтян 8:1", "Знання надимає"], ["2 Хронік 32:24–26", "Єзекія не віддав Богові слави"], ["Приповісті 16:18–19", "Гордість передує загибелі"]], "explain": "Ці місця показують, звідки приходить гордість і до чого вона веде.", "anchor": "ch4-s1", "_print_right": [1, 2, 0, 3]}, {"id": "q4-14", "type": "order", "level": "розуміння", "q": "Як за уроком розгорталася історія Навуходоносора? Розставте по порядку.", "items": ["Цар хвалив себе", "Бог упокорив його", "Цар смирився"], "explain": "Навуходоносор хвалив себе і був упокорений, доки не смирився (Дан. 4:27–34).", "anchor": "ch4-s2", "_print_order": [2, 1, 0]}, {"id": "q4-15", "type": "reflect", "level": "застосування", "q": "Згадайте свій останній успіх. Що ви тоді думали про себе й інших і кому віддали славу?", "sample": "Урок: перевіряй серце саме тоді, коли є успіх. Успіх приходить тому, що з тобою Бог. Віддавай славу Богові і не порівнюй себе з іншими."}], "sections": {"ch4-s1": "Звідки приходить гордість", "ch4-s2": "Суть гордості"}}]</script>
+<script>(function () {
+  'use strict';
+  var root = document.documentElement;
+  var store = {
+    get: function (k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  };
+  function $(s, el) { return (el || document).querySelector(s); }
+  function $$(s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); }
+  function h(tag, attrs, kids) {
+    var el = document.createElement(tag);
+    for (var k in attrs || {}) {
+      if (k === 'text') el.textContent = attrs[k];
+      else if (k === 'html') el.innerHTML = attrs[k];
+      else if (k.slice(0, 2) === 'on') el.addEventListener(k.slice(2), attrs[k]);
+      else el.setAttribute(k, attrs[k]);
+    }
+    (kids || []).forEach(function (c) { if (c) el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return el;
+  }
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function range(n) { var r = []; for (var i = 0; i < n; i++) r.push(i); return r; }
+
+  /* ---------- тема і шрифт ---------- */
+  $('#themeBtn').addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('sb-theme', next); } catch (e) {}
+  });
+  var fs = store.get('sb-fs') || 18;
+  function applyFs() { root.style.setProperty('--fs', fs + 'px'); }
+  applyFs();
+  $('#fsUp').addEventListener('click', function () { fs = Math.min(24, fs + 1); applyFs(); store.set('sb-fs', fs); });
+  $('#fsDown').addEventListener('click', function () { fs = Math.max(15, fs - 1); applyFs(); store.set('sb-fs', fs); });
+
+  /* ---------- прогрес читання ---------- */
+  var bar = $('.progress span');
+  function onScroll() {
+    var max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.width = (max > 0 ? Math.min(100, scrollY / max * 100) : 0) + '%';
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- зміст ---------- */
+  var drawer = $('#toc'), scrim = $('#scrim'), tocBtn = $('#tocBtn');
+  function toggleToc(open) {
+    drawer.classList.toggle('open', open); scrim.classList.toggle('open', open);
+    tocBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  tocBtn.addEventListener('click', function () { toggleToc(!drawer.classList.contains('open')); });
+  scrim.addEventListener('click', function () { toggleToc(false); });
+  $$('#toc a').forEach(function (a) { a.addEventListener('click', function () { if (innerWidth < 1280) toggleToc(false); }); });
+  var links = {};
+  $$('#toc a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && links[e.target.id]) {
+          $$('#toc a.active').forEach(function (x) { x.classList.remove('active'); });
+          links[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-15% 0px -75% 0px' });
+    Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+  }
+
+  /* ---------- довгі уривки і режим запам'ятовування ---------- */
+  $$('.scripture.long').forEach(function (f) {
+    f.classList.add('collapsed');
+    var b = $('.more', f);
+    b.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      var c = f.classList.toggle('collapsed');
+      b.textContent = c ? 'Показати весь уривок' : 'Згорнути';
+      b.setAttribute('aria-expanded', c ? 'false' : 'true');
+    });
+  });
+  var memoBtn = $('#memoBtn');
+  memoBtn.addEventListener('click', function () {
+    var on = document.body.classList.toggle('memo');
+    memoBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    $$('.scripture.revealed').forEach(function (f) { f.classList.remove('revealed'); });
+  });
+  $$('.scripture').forEach(function (f) {
+    f.addEventListener('click', function () { if (document.body.classList.contains('memo')) f.classList.toggle('revealed'); });
+  });
+
+  /* ---------- учень і надсилання результатів ---------- */
+  var ENDPOINT = $('#quiz-data').getAttribute('data-endpoint') || '';
+  var LESSON = $('#quiz-data').getAttribute('data-lesson') || 'slovo-bozhe';
+  // «Слово Боже» зберігав результати під старим ключем – лишаємо його.
+  var RESULTS_KEY = LESSON === 'slovo-bozhe' ? 'sb-results' : 'sb-results-' + LESSON;
+  function rid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 10); }
+  var student = store.get('sb-student') || {};
+  if (!student.uid) { student.uid = rid(); store.set('sb-student', student); }
+  var outbox = store.get('sb-outbox') || [];
+  var sendState = {};  // id -> 'sending' | 'ok' | 'fail'
+
+  var who = $('#who'), whoName = $('#whoName'), whoWarn = $('#whoWarn'), whoBtn = $('#whoBtn'), whoText = $('#whoText');
+  var whoDefault = whoText.textContent;
+  function showName() {
+    whoBtn.hidden = !ENDPOINT;
+    whoBtn.textContent = student.name ? student.name : 'Вказати ім’я';
+  }
+  function openWho(reason) {
+    whoText.textContent = reason || whoDefault;
+    whoName.value = student.name || '';
+    whoWarn.textContent = '';
+    who.hidden = false;
+    setTimeout(function () { whoName.focus(); }, 30);
+  }
+  function closeWho() {
+    who.hidden = true;
+    store.set('sb-asked', true);
+  }
+  $('#whoForm').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var v = whoName.value.replace(/\s+/g, ' ').trim();
+    if (v.split(' ').length < 2 || v.length < 4) { whoWarn.textContent = 'Вкажіть, будь ласка, ім’я та прізвище.'; whoName.focus(); return; }
+    student.name = v;
+    store.set('sb-student', student);
+    showName();
+    closeWho();
+    flush();
+  });
+  $('#whoLater').addEventListener('click', closeWho);
+  who.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeWho(); });
+  whoBtn.addEventListener('click', function () { openWho(); });
+  showName();
+  if (ENDPOINT && !student.name && !store.get('sb-asked')) openWho();
+
+  function sendStatusText(id) {
+    var st = sendState[id];
+    if (st === 'ok') return ['ok', '✓ Результат надіслано пастору.'];
+    if (!student.name) return ['wait', 'Результат ще не надіслано: вкажіть ім’я, щоб його побачив пастор.'];
+    if (st === 'fail') return ['wait', 'Не вдалося надіслати. Спробуємо ще раз автоматично, коли буде інтернет.'];
+    return ['wait', 'Надсилаємо результат пастору…'];
+  }
+  function paintStatus() {
+    $$('[data-send]').forEach(function (el) {
+      var t = sendStatusText(el.getAttribute('data-send'));
+      el.className = 'send ' + t[0];
+      el.textContent = t[1];
+      if (!student.name) {
+        el.appendChild(document.createTextNode(' '));
+        el.appendChild(h('button', { class: 'linkish', type: 'button', text: 'Вказати ім’я', onclick: function () { openWho(); } }));
+      }
+    });
+    var n = $('#outboxNote');
+    if (n) n.textContent = ENDPOINT && outbox.length ? 'Ще не надіслано пастору: ' + outbox.length + '.' : '';
+  }
+  var sending = false;
+  function flush() {
+    paintStatus();
+    if (!ENDPOINT || sending || !student.name || !outbox.length) return;
+    var item = outbox[0];
+    item.name = student.name;
+    sending = true;
+    sendState[item.id] = 'sending';
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(item) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res.ok && res.error !== 'bad_data') throw new Error(res.error);
+        outbox = outbox.filter(function (x) { return x.id !== item.id; });
+        store.set('sb-outbox', outbox);
+        sendState[item.id] = 'ok';
+        sending = false;
+        flush();
+      })
+      .catch(function () {
+        sendState[item.id] = 'fail';
+        sending = false;
+        paintStatus();
+      });
+  }
+  function queueResult(entry) {
+    if (!ENDPOINT) return null;
+    entry.id = rid();
+    entry.lesson = LESSON;
+    entry.uid = student.uid;
+    entry.ts = new Date().toISOString();
+    outbox.push(entry);
+    store.set('sb-outbox', outbox);
+    if (!student.name) openWho('Щоб пастор побачив ваш результат, вкажіть ім’я та прізвище.');
+    return entry.id;
+  }
+  addEventListener('online', flush);
+  setInterval(function () { if (outbox.length) flush(); }, 60000);
+
+  /* ---------- тести ---------- */
+  var DATA = JSON.parse($('#quiz-data').textContent);
+  var LEVELS = ['знання', 'розуміння', 'застосування'];
+
+  function buildQuestion(q, i, data) {
+    var box = h('div', { class: 'q', 'data-type': q.type });
+    var lvl = h('span', { class: 'lvl' + (q.level === 'застосування' ? ' app' : ''), text: q.level || '' });
+    box.appendChild(h('div', { class: 'q-top' }, [h('span', { text: 'Питання ' + (i + 1) }), q.level ? lvl : null]));
+    box.appendChild(h('div', { class: 'q-text', text: q.q }));
+    var name = 'q' + data.chapter + '_' + i;
+    var api = { el: box, q: q };
+
+    if (q.type === 'single' || q.type === 'multi') {
+      var order = shuffle(range(q.options.length));
+      var inputs = [];
+      order.forEach(function (idx) {
+        var inp = h('input', { type: q.type === 'single' ? 'radio' : 'checkbox', name: name, value: idx });
+        inputs.push(inp);
+        box.appendChild(h('label', { class: 'opt' }, [inp, h('span', { text: q.options[idx] })]));
+      });
+      if (q.type === 'multi') box.appendChild(h('p', { class: 'q-top', text: 'Оберіть усі правильні відповіді' }));
+      api.answered = function () { return inputs.some(function (x) { return x.checked; }); };
+      api.grade = function () {
+        var picked = inputs.filter(function (x) { return x.checked; }).map(function (x) { return +x.value; });
+        var right = q.type === 'single' ? [q.answer] : q.answer;
+        inputs.forEach(function (x) {
+          var v = +x.value, lab = x.parentNode;
+          if (right.indexOf(v) >= 0) lab.classList.add('right');
+          else if (x.checked) lab.classList.add('wrong');
+          x.disabled = true;
+        });
+        var wrong = picked.filter(function (v) { return right.indexOf(v) < 0; }).length;
+        var hit = picked.filter(function (v) { return right.indexOf(v) >= 0; }).length;
+        if (!wrong && hit === right.length) return 1;
+        if (q.type === 'multi' && !wrong && hit > 0) return 0.5;
+        return 0;
+      };
+    } else if (q.type === 'truefalse') {
+      var yes = h('input', { type: 'radio', name: name, value: '1' });
+      var no = h('input', { type: 'radio', name: name, value: '0' });
+      box.appendChild(h('div', { class: 'tf' }, [
+        h('label', { class: 'opt' }, [yes, h('span', { text: 'Так, правильно' })]),
+        h('label', { class: 'opt' }, [no, h('span', { text: 'Ні, неправильно' })])
+      ]));
+      api.answered = function () { return yes.checked || no.checked; };
+      api.grade = function () {
+        var rightEl = q.answer ? yes : no, wrongEl = q.answer ? no : yes;
+        rightEl.parentNode.classList.add('right');
+        if (wrongEl.checked) wrongEl.parentNode.classList.add('wrong');
+        yes.disabled = no.disabled = true;
+        return rightEl.checked ? 1 : 0;
+      };
+    } else if (q.type === 'match') {
+      var rights = shuffle(range(q.pairs.length));
+      var sels = q.pairs.map(function (p, k) {
+        var sel = h('select', { 'aria-label': p[0] }, [h('option', { value: '', text: '— оберіть —' })]
+          .concat(rights.map(function (r) { return h('option', { value: r, text: q.pairs[r][1] }); })));
+        box.appendChild(h('div', { class: 'match-row' }, [h('div', { text: p[0] }), sel]));
+        return sel;
+      });
+      box.appendChild(h('p', { class: 'q-top', text: 'Кожен варіант підходить лише до одного пункту' }));
+      api.answered = function () { return sels.every(function (s) { return s.value !== ''; }); };
+      api.grade = function () {
+        var ok = 0;
+        sels.forEach(function (s, k) {
+          var row = s.parentNode, good = s.value !== '' && +s.value === k;
+          row.classList.add(good ? 'right' : 'wrong');
+          if (good) ok++; else row.appendChild(h('div', { class: 'fix', text: 'Правильно: ' + q.pairs[k][1] }));
+          s.disabled = true;
+        });
+        return ok / sels.length;
+      };
+    } else if (q.type === 'order') {
+      var cur = shuffle(range(q.items.length));
+      while (cur.join() === range(q.items.length).join() && cur.length > 1) cur = shuffle(cur);
+      var list = h('ol', { class: 'order-list' });
+      var draw = function () {
+        list.innerHTML = '';
+        cur.forEach(function (idx, pos) {
+          var up = h('button', { type: 'button', 'aria-label': 'Вище', text: '↑', onclick: function () { if (pos > 0) { cur.splice(pos - 1, 0, cur.splice(pos, 1)[0]); draw(); } } });
+          var dn = h('button', { type: 'button', 'aria-label': 'Нижче', text: '↓', onclick: function () { if (pos < cur.length - 1) { cur.splice(pos + 1, 0, cur.splice(pos, 1)[0]); draw(); } } });
+          list.appendChild(h('li', { 'data-i': idx }, [h('span', { text: q.items[idx] }), up, dn]));
+        });
+      };
+      draw();
+      box.appendChild(h('p', { class: 'q-top', text: 'Розставте кнопками ↑ ↓' }));
+      box.appendChild(list);
+      api.answered = function () { return true; };
+      api.grade = function () {
+        var ok = 0;
+        $$('li', list).forEach(function (li, pos) {
+          var good = +li.getAttribute('data-i') === pos;
+          li.classList.add(good ? 'right' : 'wrong');
+          if (good) ok++;
+          $$('button', li).forEach(function (b) { b.disabled = true; });
+        });
+        return ok / cur.length;
+      };
+      api.correctText = 'Правильний порядок: ' + q.items.join(' → ');
+    } else if (q.type === 'reflect') {
+      box.classList.add('reflect');
+      var ta = h('textarea', { placeholder: 'Запишіть свою відповідь. Її ніхто не побачить – вона лише для вас.' });
+      box.appendChild(ta);
+      api.answered = function () { return true; };
+      api.grade = function () { return null; };
+    }
+
+    var fb = h('div', { class: 'fb' });
+    box.appendChild(fb);
+    api.feedback = function (score) {
+      box.classList.add('done');
+      if (score === null) {
+        box.classList.add('reflect');
+        fb.appendChild(h('b', { class: 'st', text: 'Орієнтир' }));
+        fb.appendChild(document.createTextNode(q.sample || ''));
+        return;
+      }
+      var st = score === 1 ? 'Правильно' : score === 0 ? 'Неправильно' : 'Частково';
+      box.classList.add(score === 1 ? 'ok' : score === 0 ? 'bad' : 'part');
+      fb.appendChild(h('b', { class: 'st', text: st }));
+      if (api.correctText && score < 1) fb.appendChild(h('div', { text: api.correctText }));
+      if (q.explain) fb.appendChild(document.createTextNode(q.explain));
+      if (score < 1 && q.anchor && data.sections[q.anchor]) {
+        fb.appendChild(h('br'));
+        fb.appendChild(h('a', { href: '#' + q.anchor, text: '↩ Перечитати: ' + data.sections[q.anchor] }));
+      }
+    };
+    return api;
+  }
+
+  function ringSvg(pct) {
+    var r = 46, c = 2 * Math.PI * r, off = c * (1 - pct / 100);
+    var col = pct >= 85 ? 'var(--ok)' : pct >= 70 ? 'var(--gold)' : pct >= 50 ? 'var(--part)' : 'var(--bad)';
+    return '<svg class="ring" viewBox="0 0 112 112"><circle cx="56" cy="56" r="' + r + '" fill="none" stroke="var(--line)" stroke-width="10"/>' +
+      '<circle cx="56" cy="56" r="' + r + '" fill="none" stroke="' + col + '" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) +
+      '" stroke-dashoffset="' + off.toFixed(1) + '" transform="rotate(-90 56 56)"/><text x="56" y="63" text-anchor="middle">' + pct + '%</text></svg>';
+  }
+
+  function verdict(pct) {
+    if (pct >= 85) return ['Матеріал засвоєно глибоко', 'Ви не лише пам’ятаєте зміст, а й умієте застосувати його в конкретних ситуаціях.'];
+    if (pct >= 70) return ['Добре, але є прогалини', 'Основне зрозуміло. Перечитайте теми нижче, щоб закрити прогалини.'];
+    if (pct >= 50) return ['Знайомство поверхове', 'Частину думок розділу ви впізнаєте, але ще не можете на них спиратися. Перечитайте позначені теми і пройдіть тест ще раз.'];
+    return ['Розділ варто прочитати ще раз', 'Поверніться до тексту, особливо до головних думок, і пройдіть тест знову через день-два.'];
+  }
+
+  function renderQuiz(app, data) {
+    app.innerHTML = '';
+    var qs = data.questions.map(function (q, i) { var a = buildQuestion(q, i, data); app.appendChild(a.el); return a; });
+    var warn = h('span', { class: 'warn' });
+    var resultBox = h('div');
+    var checkBtn = h('button', { class: 'btn', type: 'button', text: 'Перевірити відповіді' });
+    var retry = h('button', { class: 'btn ghost', type: 'button', text: 'Пройти ще раз', style: 'display:none' });
+    var forced = false;
+    checkBtn.addEventListener('click', function () {
+      var missing = qs.filter(function (a) { return !a.answered(); });
+      qs.forEach(function (a) { a.el.classList.toggle('missing', !a.answered()); });
+      if (missing.length && !forced) {
+        forced = true;
+        warn.textContent = 'Без відповіді: ' + missing.length + '. Натисніть ще раз, щоб перевірити як є.';
+        missing[0].el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      warn.textContent = '';
+      var total = 0, max = 0, byLvl = {}, review = {}, perQ = [];
+      qs.forEach(function (a) {
+        a.el.classList.remove('missing');
+        var s = a.answered() ? a.grade() : (a.grade(), 0);
+        if (a.q.type === 'reflect') s = null;
+        a.feedback(s);
+        perQ.push(s === null ? null : Math.round(s * 100) / 100);
+        if (s === null) return;
+        total += s; max += 1;
+        var L = a.q.level || 'розуміння';
+        byLvl[L] = byLvl[L] || [0, 0]; byLvl[L][0] += s; byLvl[L][1] += 1;
+        if (s < 1 && a.q.anchor) review[a.q.anchor] = true;
+      });
+      var pct = Math.round(total / max * 100);
+      var v = verdict(pct);
+      var lv = LEVELS.filter(function (L) { return byLvl[L]; }).map(function (L) {
+        var p = Math.round(byLvl[L][0] / byLvl[L][1] * 100);
+        return '<div class="lvlbar"><span>' + L + '</span><span class="bar"><i style="width:' + p + '%"></i></span><b>' + p + '%</b></div>';
+      }).join('');
+      var rv = Object.keys(review).filter(function (k) { return data.sections[k]; });
+      resultBox.innerHTML = '<div class="result">' + ringSvg(pct) + '<div><h4>' + v[0] + '</h4><p>' + v[1] + '</p><p>Бали: ' +
+        (Math.round(total * 10) / 10) + ' з ' + max + '</p></div><div class="levels">' + lv + '</div>' +
+        (rv.length ? '<div class="review"><b>Що перечитати:</b><ul>' + rv.map(function (k) { return '<li><a href="#' + k + '">' + data.sections[k] + '</a></li>'; }).join('') + '</ul></div>' : '') +
+        '</div>';
+      checkBtn.style.display = 'none';
+      retry.style.display = '';
+      var saved = store.get(RESULTS_KEY) || {};
+      var prev = saved[data.chapter];
+      saved[data.chapter] = { pct: pct, best: Math.max(pct, prev ? prev.best || prev.pct : 0), date: new Date().toLocaleDateString('uk-UA'), tries: (prev ? prev.tries || 1 : 0) + 1 };
+      store.set(RESULTS_KEY, saved);
+      var sid = queueResult({ ch: data.chapter, title: data.title, pct: pct, score: Math.round(total * 10) / 10, max: max,
+        attempt: saved[data.chapter].tries, q: perQ });
+      if (sid) $('.result', resultBox).appendChild(h('p', { 'data-send': sid }));
+      renderSummary();
+      flush();
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+    retry.addEventListener('click', function () { renderQuiz(app, data); app.scrollIntoView({ behavior: 'smooth' }); });
+    app.appendChild(h('div', { class: 'quiz-actions' }, [checkBtn, retry, warn]));
+    app.appendChild(resultBox);
+  }
+
+  function renderSummary() {
+    var saved = store.get(RESULTS_KEY) || {};
+    var rows = DATA.map(function (d) {
+      var r = saved[d.chapter];
+      return '<tr><td>' + d.chapter + '</td><td><a href="#quiz' + d.chapter + '">' + d.title + '</a></td><td>' +
+        (r ? r.pct + '%' : '—') + '</td><td>' + (r ? r.best + '%' : '—') + '</td><td class="c-date">' + (r ? r.date : '') + '</td></tr>';
+    }).join('');
+    var done = DATA.filter(function (d) { return saved[d.chapter]; });
+    var avg = done.length ? Math.round(done.reduce(function (s, d) { return s + saved[d.chapter].best; }, 0) / done.length) : null;
+    $('#summaryTable').innerHTML = '<div class="table-wrap"><table class="sum-table"><thead><tr><th>№</th><th>Розділ</th><th>Останній</th><th>Найкращий</th><th class="c-date">Дата</th></tr></thead><tbody>' +
+      rows + '</tbody></table></div>' + (avg !== null ? '<p style="margin-top:14px">Пройдено тестів: ' + done.length + ' з ' + DATA.length + '. Середній найкращий результат: <b>' + avg + '%</b>.</p>' : '<p style="margin-top:14px">Тести ще не пройдено.</p>') + '<p class="send wait" id="outboxNote"></p>';
+    paintStatus();
+  }
+
+  DATA.forEach(function (d) {
+    var app = $('.quiz-app[data-ch="' + d.chapter + '"]');
+    if (app) renderQuiz(app, d);
+  });
+  renderSummary();
+  flush();
+})();
+</script>
+</body>
+</html>
