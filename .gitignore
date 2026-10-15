@@ -3,3 +3,4 @@ __pycache__/
 .playwright-mcp/
 apps-script/key.gs
 sources/*.pdf
+materials/

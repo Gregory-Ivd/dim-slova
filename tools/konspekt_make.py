@@ -16,7 +16,7 @@ python tools/konspekt_make.py <джерело.md> [--out <тека>]
     # Перевір себе
     1. Питання?
 
-Результат – «<title>-конспект.pdf» (типово в ~/Documents/Дім Слова – конспекти/Оригінали з обкладинкою),
+Результат – «<title>-конспект.pdf» (типово в materials/konspekty/Оригінали з обкладинкою),
 його розбирає tools/konspekt.py, тож далі – звичайний шлях: new_lesson.py → … → publish.ps1 -Konspekt <pdf>.
 Потрібно: Chrome або Edge (друк HTML у PDF), інтернет (шрифти Google Fonts).
 """
@@ -29,7 +29,7 @@ import sys
 import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.expanduser('~'), 'Documents', 'Дім Слова – конспекти', 'Оригінали з обкладинкою')
+OUT = os.path.join(os.path.dirname(HERE), 'materials', 'konspekty', 'Оригінали з обкладинкою')
 ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
 FOOTER = 'Біблійна школа «Дім Слова» · Християнська церква «Перемога», м. Рівне'
 NOTE = ('<p>Посилання подано за нумерацією перекладу «Біблія. Сучасний переклад» (УБТ).</p>'

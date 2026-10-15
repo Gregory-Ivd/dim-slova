@@ -6,7 +6,7 @@ python tools/konspekt_pdf.py <конспект.pdf> [...] [--out <тека>]
 («Християнська церква «Перемога» · м. Рівне», «Біблійна школа «Дім Слова»», «Конспект теми», назва теми,
 посилання «Самостійна робота і тести онлайн») і перенумеровує сторінки.
 Посилання веде на сторінку уроку, якщо урок з такою назвою є в src/lessons.json, інакше – на головну.
-Типова тека: ~/Documents/Дім Слова – конспекти; оригінал копіюється в її підтеку «Оригінали з обкладинкою».
+Типова тека: materials/konspekty у теці проєкту (не в git); оригінал копіюється в її підтеку «Оригінали з обкладинкою».
 Потрібно: pip install pymupdf fonttools (шрифти завантажуються в .cache/fonts при першому запуску).
 """
 import argparse
@@ -24,7 +24,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 FONTS = os.path.join(ROOT, '.cache', 'fonts')
 SITE = 'https://gregory-ivd.github.io/dim-slova/'
-OUT = os.path.join(os.path.expanduser('~'), 'Documents', 'Дім Слова – конспекти')
+OUT = os.path.join(ROOT, 'materials', 'konspekty')  # поза git (.gitignore)
 ORIG = 'Оригінали з обкладинкою'
 
 NAVY = (0x1f / 255, 0x3a / 255, 0x5f / 255)
