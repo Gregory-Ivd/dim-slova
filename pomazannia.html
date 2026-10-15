@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Помазання – Біблійна школа «Дім Слова» · Християнська церква «Перемога», м. Рівне</title>
+<meta name="description" content="Навчальний посібник Біблійної школи «Дім Слова» християнської церкви «Перемога» (Рівне): тема «Помазання», з тестами для самоперевірки.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Cg fill='none' stroke='%23d4a94f' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10'/%3E%3C/g%3E%3C/svg%3E">
+<script>
+try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<style>/* ---------- кольори ---------- */
+:root {
+  --bg: #f4efe4;
+  --paper: #fffdf8;
+  --ink: #1f2430;
+  --muted: #5d6474;
+  --navy: #1f3a5f;
+  --navy-deep: #152a45;
+  --gold: #b0852b;
+  --gold-soft: #f2e6c8;
+  --gold-line: #dcc896;
+  --scr-bg: #f8f1e1;
+  --scr-ink: #3f3320;
+  --note-bg: #edf1f6;
+  --note-line: #9fb2c8;
+  --key-bg: #1f3a5f;
+  --key-ink: #fdfaf2;
+  --mark: #f6e3ad;
+  --ok: #2f7a4f;
+  --ok-bg: #e5f2ea;
+  --bad: #a3392f;
+  --bad-bg: #f8e6e3;
+  --part: #9a6b12;
+  --part-bg: #f8eed6;
+  --line: #e4dccb;
+  --shadow: 0 1px 2px rgba(31, 36, 48, .06), 0 8px 24px rgba(31, 36, 48, .06);
+  --fs: 18px;
+  --serif: "PT Serif", Georgia, "Times New Roman", serif;
+  --display: "Cormorant Garamond", "PT Serif", Georgia, serif;
+  --sans: "Montserrat", "Segoe UI", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141c; --paper: #161b25; --ink: #e8e4da; --muted: #a3a9b6;
+    --navy: #9fbbe0; --navy-deep: #0d1a2c; --gold: #d4a94f; --gold-soft: #3a3120; --gold-line: #5c4c2b;
+    --scr-bg: #1e2230; --scr-ink: #eadfc6; --note-bg: #1a2230; --note-line: #3f5673;
+    --key-bg: #22385a; --key-ink: #f4efe2; --mark: #5a4a22;
+    --ok: #7fcf9d; --ok-bg: #1d3327; --bad: #f09a8f; --bad-bg: #3a2220; --part: #e6c170; --part-bg: #3a3020;
+    --line: #2a3140; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10141c; --paper: #161b25; --ink: #e8e4da; --muted: #a3a9b6;
+  --navy: #9fbbe0; --navy-deep: #0d1a2c; --gold: #d4a94f; --gold-soft: #3a3120; --gold-line: #5c4c2b;
+  --scr-bg: #1e2230; --scr-ink: #eadfc6; --note-bg: #1a2230; --note-line: #3f5673;
+  --key-bg: #22385a; --key-ink: #f4efe2; --mark: #5a4a22;
+  --ok: #7fcf9d; --ok-bg: #1d3327; --bad: #f09a8f; --bad-bg: #3a2220; --part: #e6c170; --part-bg: #3a3020;
+  --line: #2a3140; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  color-scheme: dark;
+}
+
+/* ---------- основа ---------- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; font-size: var(--fs); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--serif); line-height: 1.68; }
+a { color: var(--navy); text-decoration-color: var(--gold-line); text-underline-offset: 3px; }
+.print-only { display: none; }
+.lbl { display: inline-block; font-family: var(--sans); font-size: .66rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+strong { color: var(--navy); }
+main { max-width: 820px; margin: 0 auto; padding: 0 16px 64px; }
+main > section, .chapter { background: var(--paper); border-radius: 18px; box-shadow: var(--shadow); padding: clamp(22px, 5vw, 56px); margin: 22px 0; }
+p { margin: 0 0 1em; }
+
+/* ---------- верхня панель ---------- */
+.progress { position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 60; }
+.progress span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--gold), #e3c170); }
+.topbar { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; gap: 10px; padding: 8px 16px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); min-width: 0; }
+.brand .emblem { width: 30px; height: 30px; color: var(--gold); flex: none; }
+.brand b { display: block; font-family: var(--sans); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
+.brand small { display: block; font-family: var(--sans); font-size: .66rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tools { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.icon-btn, .chip { font-family: var(--sans); font-size: .72rem; font-weight: 600; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; height: 36px; min-width: 36px; padding: 0 10px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+.icon-btn:hover, .chip:hover { border-color: var(--gold); }
+.chip[aria-pressed="true"] { background: var(--gold-soft); border-color: var(--gold); }
+.chip.solid { background: var(--navy); color: var(--paper); border-color: var(--navy); }
+:root[data-theme="dark"] .chip.solid { color: #10141c; }
+@media (max-width: 720px) {
+  #memoBtn { font-size: 0; padding: 0; width: 36px; }
+  #memoBtn::before { content: "👁"; font-size: 15px; }
+  #fsDown, #fsUp { display: none; }
+  .brand small { max-width: 44vw; }
+}
+
+/* ---------- зміст ---------- */
+.toc-drawer { position: fixed; top: 0; bottom: 0; left: 0; width: min(340px, 86vw); background: var(--paper); z-index: 70; transform: translateX(-102%); transition: transform .25s ease; box-shadow: var(--shadow); overflow-y: auto; }
+.toc-drawer.open { transform: none; }
+.toc-inner { padding: 24px 22px 40px; }
+.scrim { position: fixed; inset: 0; background: rgba(10, 14, 22, .4); z-index: 65; opacity: 0; pointer-events: none; transition: opacity .25s; }
+.scrim.open { opacity: 1; pointer-events: auto; }
+.toc-list { list-style: none; margin: 10px 0 0; padding: 0; font-family: var(--sans); font-size: .8rem; }
+.toc-list > li { margin: 0 0 12px; }
+.toc-list > li > a { font-weight: 700; color: var(--ink); text-decoration: none; }
+.toc-list ol { list-style: none; padding: 4px 0 0 12px; margin: 0; border-left: 2px solid var(--line); }
+.toc-list ol a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; font-weight: 500; line-height: 1.35; }
+.toc-list a.active { color: var(--gold); }
+@media (min-width: 1280px) {
+  .toc-drawer { transform: none; top: 53px; width: 290px; background: transparent; box-shadow: none; z-index: 10; }
+  .toc-inner { padding-top: 28px; }
+  #tocBtn, .scrim { display: none; }
+  main { margin-left: max(310px, calc(50vw - 410px)); }
+}
+
+/* ---------- обкладинка ---------- */
+.cover { background: radial-gradient(120% 90% at 50% 0%, #2a4c78 0%, #1f3a5f 45%, #122540 100%) !important; color: #f7f1e3; text-align: center; min-height: min(92vh, 860px); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.cover::before, .cover::after { content: ""; position: absolute; inset: 22px; border: 1px solid rgba(212, 169, 79, .45); border-radius: 12px; pointer-events: none; }
+.cover::after { inset: 30px; border-color: rgba(212, 169, 79, .2); }
+.cover-inner { position: relative; max-width: 560px; padding: 40px 10px; }
+.cover-church { font-family: var(--sans); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: #e3c882; margin: 0 0 34px; }
+.cover-emblem { width: 92px; height: 92px; color: #d9b25e; margin: 0 auto 16px; display: block; }
+.cover-school { font-family: var(--sans); font-weight: 600; letter-spacing: .34em; text-transform: uppercase; font-size: .86rem; margin: 0; color: #f1e7cf; }
+.cover-name { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 2rem; color: #e3c882; margin: 2px 0 26px; }
+.cover h1 { font-family: var(--display); font-weight: 600; font-size: clamp(3.4rem, 12vw, 6.2rem); line-height: 1; margin: 14px 0 8px; color: #fff8e8; letter-spacing: .01em; }
+.cover-sub { font-family: var(--display); font-style: italic; font-size: 1.5rem; color: #e3c882; margin: 0 0 28px; }
+.cover-meta { font-size: .86rem; line-height: 1.7; color: #cdd6e4; max-width: 460px; margin: 0 auto 36px; }
+.cover-foot { display: flex; justify-content: center; gap: 26px; font-family: var(--sans); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: #aebbd0; margin: 0 0 26px; }
+.cover-start { display: inline-block; font-family: var(--sans); font-size: .78rem; font-weight: 600; color: #1f3a5f; background: #e3c882; padding: 12px 22px; border-radius: 999px; text-decoration: none; }
+
+/* ---------- передмова ---------- */
+.epigraph { margin: 18px 0 30px; text-align: center; }
+.epigraph blockquote { margin: 0 auto; max-width: 600px; font-family: var(--display); font-size: 1.75rem; line-height: 1.35; font-style: italic; color: var(--navy); }
+.epigraph blockquote::before { content: "“"; display: block; font-size: 3.2rem; line-height: .6; color: var(--gold); margin-bottom: 6px; }
+.epigraph figcaption, .prayer figcaption { font-family: var(--sans); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-top: 10px; }
+.lead { font-size: 1.1rem; }
+.prayer { margin: 28px 0; padding: 20px 24px; border: 1px dashed var(--gold-line); border-radius: 14px; text-align: center; }
+.prayer blockquote { margin: 8px 0 0; font-family: var(--display); font-size: 1.35rem; font-style: italic; color: var(--scr-ink); }
+.legend h3 { font-family: var(--sans); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 30px 0 12px; }
+.legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+.lg { padding: 12px 14px; border-radius: 10px; font-size: .82rem; line-height: 1.45; }
+.lg b { display: block; font-family: var(--sans); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+.lg-scr { background: var(--scr-bg); border-left: 3px solid var(--gold); }
+.lg-key { background: var(--key-bg); color: var(--key-ink); }
+.lg-key b { color: #e3c882; }
+.lg-note { background: var(--note-bg); border-left: 3px solid var(--note-line); }
+.lg-quiz { background: var(--gold-soft); }
+.source-note { margin-top: 26px; font-size: .78rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+
+/* ---------- розділ ---------- */
+.ch-head { position: relative; padding: 6px 0 26px; margin-bottom: 26px; border-bottom: 1px solid var(--gold-line); }
+.ch-head::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 90px; height: 3px; background: var(--gold); }
+.ch-num { font-family: var(--sans); font-size: .74rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+.ch-head h2 { font-family: var(--display); font-weight: 700; font-size: clamp(2.1rem, 6vw, 3.1rem); line-height: 1.08; color: var(--navy); margin: 8px 0 6px; }
+.ch-sub { font-family: var(--display); font-style: italic; font-size: 1.3rem; color: var(--muted); margin: 0; }
+h3.sec { display: flex; gap: 12px; align-items: baseline; font-family: var(--display); font-weight: 700; font-size: 1.75rem; line-height: 1.2; color: var(--navy); margin: 46px 0 18px; }
+.s-num { flex: none; display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--gold); color: #fff; font-family: var(--sans); font-size: .9rem; font-weight: 700; transform: translateY(-3px); }
+h4.sub { font-family: var(--sans); font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); margin: 34px 0 14px; display: flex; align-items: center; gap: 10px; }
+h4.sub::after { content: ""; flex: 1; height: 1px; background: var(--gold-line); }
+
+/* Святе Письмо */
+.scripture { position: relative; margin: 22px 0 24px; padding: 20px 24px 14px 26px; background: var(--scr-bg); border-left: 4px solid var(--gold); border-radius: 4px 14px 14px 4px; }
+.scripture blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-size: 1.24rem; line-height: 1.5; color: var(--scr-ink); }
+.scripture sup { font-family: var(--sans); font-size: .56rem; font-weight: 700; color: var(--gold); margin-right: 2px; vertical-align: .55em; }
+.scripture .gap { color: var(--gold); }
+.scripture figcaption { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+.scripture .ref { font-family: var(--sans); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.scripture .syn { font-family: var(--sans); font-size: .66rem; color: var(--muted); }
+.scripture .more { display: none; }
+.scripture.collapsed blockquote { max-height: 11.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+.scripture.long .more { display: inline-block; margin-top: 8px; font-family: var(--sans); font-size: .7rem; font-weight: 600; color: var(--navy); background: transparent; border: 1px solid var(--gold-line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+body.memo .scripture blockquote { filter: blur(7px); cursor: pointer; user-select: none; transition: filter .2s; }
+body.memo .scripture.revealed blockquote { filter: none; }
+body.memo .scripture::before { content: "Натисніть, щоб відкрити"; position: absolute; right: 14px; top: 10px; z-index: 1; font-family: var(--sans); font-size: .62rem; color: var(--muted); }
+body.memo .scripture.revealed::before { content: none; }
+
+/* Головна думка, пояснення */
+.key-idea { margin: 24px 0; padding: 18px 24px 16px; background: var(--key-bg); color: var(--key-ink); border-radius: 14px; position: relative; }
+.key-idea .lbl { color: #e3c882; }
+.key-idea p { margin: 6px 0 0; font-family: var(--display); font-weight: 600; font-size: 1.32rem; line-height: 1.4; }
+mark.key { background: linear-gradient(transparent 55%, var(--mark) 55%); color: inherit; font-weight: 700; padding: 0 1px; }
+.note { margin: 20px 0; padding: 14px 20px; background: var(--note-bg); border-left: 3px solid var(--note-line); border-radius: 4px 12px 12px 4px; font-size: .93rem; }
+.note .lbl { color: var(--muted); }
+.note p { margin: 4px 0 0; }
+ul.points { list-style: none; padding: 0; margin: 12px 0 18px; }
+ul.points > li { position: relative; padding-left: 26px; margin-bottom: 12px; }
+ul.points > li::before { content: ""; position: absolute; left: 4px; top: .62em; width: 9px; height: 9px; background: var(--gold); transform: rotate(45deg); }
+ul.points .li-head { margin-bottom: .35em; }
+ul.points > li > p:not(.li-head) { margin-bottom: .6em; }
+
+/* ---------- тест ---------- */
+.quiz { margin-top: 50px; padding: 26px clamp(16px, 4vw, 30px); border-radius: 16px; background: linear-gradient(180deg, var(--gold-soft), transparent 220px); border: 1px solid var(--gold-line); }
+.quiz-head h3 { font-family: var(--display); font-size: 1.9rem; color: var(--navy); margin: 6px 0 6px; line-height: 1.15; }
+.quiz-intro { font-size: .9rem; color: var(--muted); }
+.quiz-print { display: none; }
+.q { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 14px; margin: 14px 0; }
+.q-top { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; font-family: var(--sans); font-size: .64rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.q-top .lvl { padding: 3px 8px; border-radius: 999px; background: var(--note-bg); }
+.q-top .lvl.app { background: var(--gold-soft); color: var(--part); }
+.q-text { font-weight: 700; margin-bottom: 12px; line-height: 1.5; }
+.opt { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; cursor: pointer; font-size: .93rem; line-height: 1.45; }
+.opt:hover { border-color: var(--gold-line); }
+.opt input { margin-top: 4px; accent-color: var(--navy); flex: none; }
+.opt.right { border-color: var(--ok); background: var(--ok-bg); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.tf { display: flex; gap: 10px; }
+.tf .opt { flex: 1 1 0; min-width: 0; justify-content: center; }
+.match-row { display: grid; grid-template-columns: 1fr 1.4fr; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: .9rem; }
+.match-row select { width: 100%; font: inherit; font-size: .86rem; padding: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+.match-row.right select { border-color: var(--ok); background: var(--ok-bg); }
+.match-row.wrong select { border-color: var(--bad); background: var(--bad-bg); }
+.match-row .fix { grid-column: 1 / -1; font-size: .8rem; color: var(--ok); }
+@media (max-width: 560px) { .match-row { grid-template-columns: 1fr; } }
+.order-list { list-style: none; padding: 0; margin: 0; counter-reset: ord; }
+.order-list li { display: flex; gap: 8px; align-items: center; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; background: var(--paper); font-size: .9rem; line-height: 1.4; counter-increment: ord; }
+.order-list li::before { content: counter(ord); font-family: var(--sans); font-weight: 700; font-size: .75rem; color: var(--gold); width: 18px; flex: none; }
+.order-list li span { flex: 1; }
+.order-list button { font: inherit; font-size: .8rem; width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; flex: none; }
+.order-list li.right { border-color: var(--ok); background: var(--ok-bg); }
+.order-list li.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.q textarea { width: 100%; min-height: 90px; font: inherit; font-size: .92rem; padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); resize: vertical; }
+.fb { display: none; margin-top: 10px; padding: 10px 12px; border-radius: 10px; font-size: .88rem; line-height: 1.5; }
+.q.done .fb { display: block; }
+.q.ok .fb { background: var(--ok-bg); }
+.q.bad .fb { background: var(--bad-bg); }
+.q.part .fb { background: var(--part-bg); }
+.q.reflect .fb { background: var(--note-bg); }
+.fb b.st { font-family: var(--sans); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; margin-right: 6px; }
+.q.ok .fb b.st { color: var(--ok); } .q.bad .fb b.st { color: var(--bad); } .q.part .fb b.st { color: var(--part); }
+.fb a { font-family: var(--sans); font-size: .74rem; font-weight: 600; display: inline-block; margin-top: 6px; }
+.q.missing { border-color: var(--bad); }
+.quiz-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 18px; }
+.btn { font-family: var(--sans); font-weight: 700; font-size: .8rem; padding: 12px 20px; border-radius: 999px; border: 0; cursor: pointer; background: var(--navy); color: var(--paper); }
+:root[data-theme="dark"] .btn { color: #10141c; }
+.btn.ghost { background: transparent; color: var(--navy); border: 1px solid var(--gold-line); }
+.warn { font-size: .85rem; color: var(--bad); }
+.result { margin-top: 18px; padding: 20px; border-radius: 14px; background: var(--paper); border: 1px solid var(--gold-line); display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+.ring { width: 112px; height: 112px; }
+.ring text { font-family: var(--sans); font-weight: 700; font-size: 20px; fill: var(--ink); }
+.result h4 { font-family: var(--display); font-size: 1.5rem; margin: 0 0 6px; color: var(--navy); }
+.result p { margin: 0 0 8px; font-size: .9rem; }
+.levels { grid-column: 1 / -1; display: grid; gap: 8px; }
+.lvlbar { display: grid; grid-template-columns: 120px 1fr 48px; gap: 10px; align-items: center; font-family: var(--sans); font-size: .72rem; }
+.lvlbar .bar { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; }
+.lvlbar .bar i { display: block; height: 100%; background: var(--gold); border-radius: 99px; }
+.review { grid-column: 1 / -1; font-size: .88rem; }
+.review ul { margin: 6px 0 0; padding-left: 18px; }
+@media (max-width: 560px) { .result { grid-template-columns: 1fr; justify-items: start; } }
+
+/* ---------- підсумок, підвал ---------- */
+.summary h2, .answers h2 { font-family: var(--display); font-size: 2.2rem; color: var(--navy); margin: 6px 0 10px; }
+.sum-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin-top: 10px; }
+.sum-table td, .sum-table th { padding: 10px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+.sum-table th { font-family: var(--sans); font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.site-foot { text-align: center; font-size: .82rem; color: var(--muted); padding: 30px 10px 10px; }
+.site-foot .emblem { width: 36px; height: 36px; color: var(--gold); }
+.site-foot p { margin: 4px 0; }
+.site-foot .small { font-size: .72rem; }
+
+/* ---------- друк / PDF ---------- */
+@page {
+  size: A4;
+  margin: 19mm 17mm 17mm;
+  @top-left { content: "Біблійна школа «Дім Слова» · Християнська церква «Перемога», м. Рівне"; font-family: "Montserrat", sans-serif; font-size: 7pt; font-weight: 600; letter-spacing: .08em; color: #9a7a35; vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #dcc896; }
+  @top-right { content: "Помазання"; font-family: "Cormorant Garamond", serif; font-size: 10pt; font-style: italic; color: #1f3a5f; vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #dcc896; }
+  @bottom-left { content: "instagram.com/victorychurch_rv"; font-family: "Montserrat", sans-serif; font-size: 6.5pt; color: #8f96a3; }
+  @bottom-right { content: counter(page); font-family: "Montserrat", sans-serif; font-size: 8pt; font-weight: 700; color: #b0852b; }
+}
+@page cover { margin: 0; @top-left { content: none; border: 0; } @top-right { content: none; border: 0; } @bottom-left { content: none; } @bottom-right { content: none; } }
+
+@media print {
+  :root { --fs: 10.4pt; --bg: #fff; --paper: #fff; }
+  html { font-size: 10.4pt; }
+  body { background: #fff; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .screen-only, .quiz-app, .scripture .more { display: none !important; }
+  .print-only { display: block; }
+  main { max-width: none; margin: 0 !important; padding: 0; }
+  main > section, .chapter { box-shadow: none; border-radius: 0; padding: 0; margin: 0; background: none; }
+  .cover { page: cover; height: 297mm; min-height: 0; width: 210mm; border-radius: 0 !important; break-after: page; }
+  .cover::before { inset: 12mm; } .cover::after { inset: 14.5mm; }
+  .cover-name { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 2rem; color: #e3c882; margin: 2px 0 26px; }
+.cover h1 { font-size: 64pt; }
+  .preface, .toc-page, .chapter, .answers { break-before: page; }
+  .scripture blockquote { font-size: 12.2pt; }
+  .scripture:not(.long), .key-idea, .note, .lg, .prayer, .epigraph { break-inside: avoid; }
+  .scripture.collapsed blockquote { max-height: none; -webkit-mask-image: none; mask-image: none; }
+  h3.sec, h4.sub, .ch-head { break-after: avoid; }
+  h3.sec { margin-top: 26pt; }
+  p { orphans: 3; widows: 3; }
+  .quiz { break-before: page; background: none; border: 0; padding: 0; margin: 0; }
+  .quiz-print { display: block; }
+  .pq { break-inside: avoid; margin: 0 0 12pt; }
+  .pq-q { margin: 0 0 5pt; }
+  .pq-hint { font-family: var(--sans); font-size: 6.5pt; letter-spacing: .06em; text-transform: uppercase; color: #9a7a35; margin-left: 4pt; }
+  .pq-opts { list-style: none; padding: 0 0 0 14pt; margin: 0; }
+  .pq-opts li { margin: 2pt 0; display: flex; gap: 5pt; }
+  .box { display: inline-block; width: 8pt; height: 8pt; border: .7pt solid #1f3a5f; border-radius: 1.5pt; flex: none; margin-top: 3pt; }
+  .pq-tf { padding-left: 14pt; }
+  .pq-match { display: grid; grid-template-columns: 1fr 1.3fr; gap: 12pt; padding-left: 14pt; }
+  .pq-match ol { margin: 0; padding-left: 14pt; }
+  .pq-match ol.letters { list-style: none; padding: 0; }
+  .pq-match li { margin: 2pt 0; }
+  .blank { display: inline-block; width: 28pt; border-bottom: .7pt solid #1f3a5f; margin-left: 4pt; }
+  .blank.sm { width: 16pt; margin: 0 4pt 0 0; }
+  .pq-order { list-style: none; padding-left: 14pt; margin: 0; }
+  .pq-order li { margin: 3pt 0; }
+  .pq-lines { height: 58pt; margin-left: 14pt; background: repeating-linear-gradient(transparent 0 18pt, #cfc6b3 18pt 18.6pt); }
+  .toc-page .toc-list { font-size: 10pt; columns: 1; }
+  .toc-page .toc-list > li { margin-bottom: 10pt; break-inside: avoid; }
+  .toc-page .toc-list > li > a { font-family: var(--display); font-size: 15pt; color: #1f3a5f; }
+  .toc-page .toc-list a { text-decoration: none; }
+  .toc-extra { font-size: 9pt; color: #5d6474; margin-top: 14pt; }
+  .answers h3 { font-family: var(--display); font-size: 14pt; color: #1f3a5f; margin: 16pt 0 6pt; break-after: avoid; }
+  .key-list { padding-left: 16pt; font-size: 8.8pt; line-height: 1.45; }
+  .key-list li { margin-bottom: 4pt; break-inside: avoid; }
+  .k-a { color: #1f3a5f; }
+  .k-exp { color: #3b4150; }
+  .site-foot { break-inside: avoid; padding-top: 30pt; }
+  a { color: inherit; text-decoration: none; }
+}
+
+/* ---------- ім’я учня і надсилання ---------- */
+.who-chip { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; line-height: 34px; }
+.who-chip[hidden] { display: none; }
+.who { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 16px; background: rgba(16, 20, 28, .55); }
+.who[hidden] { display: none; }
+.who-box { width: 100%; max-width: 440px; background: var(--paper); color: var(--ink); border: 1px solid var(--gold-line); border-radius: 18px; padding: 26px 24px 22px; box-shadow: var(--shadow); }
+.who-box h2 { font-family: var(--display); font-size: 2rem; color: var(--navy); margin: 4px 0 8px; line-height: 1.15; }
+.who-box p { margin: 0 0 14px; font-size: .92rem; }
+.who-box input { width: 100%; font: inherit; font-size: 1rem; padding: 12px 14px; border: 1px solid var(--gold-line); border-radius: 10px; background: var(--bg); color: var(--ink); }
+.who-box input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.who-box .warn { display: block; min-height: 1.2em; margin: 6px 0 10px; }
+.who-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.send { grid-column: 1 / -1; margin: 6px 0 0; font-family: var(--sans); font-size: .76rem; }
+.send:empty { display: none; }
+.send.ok { color: var(--ok); }
+.send.wait { color: var(--part); }
+.linkish { font: inherit; color: var(--navy); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+/* ---------- вузькі екрани ---------- */
+.brand { flex: 1 1 auto; }
+.brand > span { min-width: 0; }
+.brand b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tools { flex: none; }
+.table-wrap { overflow-x: auto; }
+@media (max-width: 600px) {
+  html { font-size: min(var(--fs), 17px); }
+  main { padding: 0 8px 40px; }
+  main > section, .chapter { padding: 22px 16px; border-radius: 14px; margin: 12px 0; }
+  .cover { padding: 0; }
+  .scripture { padding: 16px 14px 12px 16px; }
+  .scripture blockquote { font-size: 1.16rem; }
+  .key-idea, .note { padding-left: 16px; padding-right: 16px; }
+  .quiz { padding: 18px 10px; }
+  .q { padding: 14px 12px 12px; }
+  .brand small { display: none; }
+  .who-chip { max-width: 96px; }
+  .sum-table .c-date { display: none; }
+  /* обкладинка: увесь текст усередині золотої рамки (inset 22–30px) */
+  .cover-inner { padding: 52px 40px; max-width: 100%; }
+  .cover-church { letter-spacing: .14em; margin-bottom: 26px; }
+  .cover-school { letter-spacing: .22em; }
+  .cover h1 { font-size: clamp(2.3rem, 11vw, 3.4rem); overflow-wrap: anywhere; }
+  .cover-sub { font-size: 1.3rem; }
+  .cover-foot { flex-wrap: wrap; gap: 6px 18px; letter-spacing: .08em; }
+}
+@media (max-width: 400px) {
+  .topbar { gap: 6px; padding: 8px 10px; }
+  .tools { gap: 4px; }
+  .brand > span { display: none; }
+  .who-chip { max-width: 64px; padding: 0 8px; }
+  .cover-inner { padding: 52px 34px; }
+  .cover-foot { font-size: .6rem; letter-spacing: .04em; }
+}
+</style>
+</head>
+<body>
+<div class="progress screen-only" aria-hidden="true"><span></span></div>
+
+<header class="topbar screen-only">
+  <button class="icon-btn" id="tocBtn" type="button" aria-controls="toc" aria-expanded="false" title="Зміст">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+  </button>
+  <a class="brand" href="./" title="Усі уроки">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <span><b>Дім Слова</b><small>Урок 11 · Помазання</small></span>
+  </a>
+  <div class="tools">
+    <button class="chip who-chip" id="whoBtn" type="button" title="Змінити ім’я" hidden></button>
+    <button class="chip" id="memoBtn" type="button" aria-pressed="false" title="Сховати тексти віршів, щоб перевірити, чи пам’ятаєте їх">Режим запам’ятовування</button>
+    <button class="icon-btn" id="fsDown" type="button" title="Менший шрифт">A−</button>
+    <button class="icon-btn" id="fsUp" type="button" title="Більший шрифт">A+</button>
+    <button class="icon-btn" id="themeBtn" type="button" title="Світла / темна тема">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="chip solid" href="pomazannia.pdf" download>PDF</a>
+  </div>
+</header>
+
+<nav class="toc-drawer screen-only" id="toc" aria-label="Зміст">
+  <div class="toc-inner">
+    <p class="lbl">Зміст</p>
+    <ol class="toc-list">
+      <li><a href="./">← Усі уроки</a></li>
+      <li><a href="#preface">Передмова</a></li>
+      <li><a href="#ch1">I. Що таке помазання</a><ol><li><a href="#ch1-s1">Що таке помазання</a></li><li><a href="#ch1-s2">Внутрішнє помазання</a></li><li><a href="#quiz1">Перевір себе</a></li></ol></li><li><a href="#ch2">II. Помазання для служіння</a><ol><li><a href="#ch2-s1">Помазання на допомогу іншим</a></li><li><a href="#ch2-s2">Як Єлисей прийняв помазання</a></li><li><a href="#quiz2">Перевір себе</a></li></ol></li><li><a href="#ch3">III. Шлях до помазання</a><ol><li><a href="#ch3-s1">Шлях до помазання</a></li><li><a href="#quiz3">Перевір себе</a></li></ol></li><li><a href="#ch4">IV. Спільне помазання</a><ol><li><a href="#ch4-s1">Спільне помазання</a></li><li><a href="#quiz4">Перевір себе</a></li></ol></li><li><a href="#ch5">V. Зцілення і зростання помазання</a><ol><li><a href="#ch5-s1">Помазання на зцілення</a></li><li><a href="#ch5-s2">Як зростає помазання</a></li><li><a href="#quiz5">Перевір себе</a></li></ol></li>
+      <li><a href="#summary">Підсумок тестів</a></li>
+    </ol>
+  </div>
+</nav>
+<div class="scrim screen-only" id="scrim"></div>
+
+<div class="who screen-only" id="who" role="dialog" aria-modal="true" aria-labelledby="whoTitle" hidden>
+  <form class="who-box" id="whoForm" novalidate>
+    <span class="lbl">Біблійна школа «Дім Слова»</span>
+    <h2 id="whoTitle">Як вас звати?</h2>
+    <p id="whoText">Вкажіть ім’я та прізвище. Результати тестів побачить пастор, щоб допомагати вам у навчанні.</p>
+    <input id="whoName" type="text" autocomplete="name" maxlength="60" placeholder="Ім’я та прізвище" aria-describedby="whoWarn">
+    <p class="warn" id="whoWarn" aria-live="polite"></p>
+    <div class="who-actions">
+      <button class="btn" type="submit">Зберегти</button>
+      <button class="btn ghost" type="button" id="whoLater">Пізніше</button>
+    </div>
+  </form>
+</div>
+
+<main id="top">
+  <section class="cover">
+    <div class="cover-inner">
+      <p class="cover-church">Християнська церква «Перемога» · м. Рівне</p>
+      <svg class="cover-emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+      <p class="cover-school">Біблійна школа</p>
+      <p class="cover-name">«Дім Слова»</p>
+      <h1>Помазання</h1>
+      <p class="cover-sub">Урок 11 · Навчальний посібник</p>
+      <p class="cover-meta">Що таке помазання · Внутрішнє помазання · Помазання на допомогу іншим · Як Єлисей прийняв помазання · Шлях до помазання · Спільне помазання · Помазання на зцілення · Як зростає помазання</p>
+      <p class="cover-foot"><span>instagram.com/victorychurch_rv</span><span>2026</span></p>
+      <a class="cover-start screen-only" href="#preface">Почати читання ↓</a>
+    </div>
+  </section>
+
+  <section class="preface" id="preface">
+  <span class="lbl">Передмова</span>
+  <figure class="epigraph">
+    <blockquote>Дух Господній на Мені, бо Він помазав Мене благовістити убогим, послав Мене [зціляти розбитих серцем], проповідувати полоненим визволення, сліпим – прозріння, і пригноблених відпустити на волю;</blockquote>
+    <figcaption>Луки 4:18</figcaption>
+  </figure>
+
+  <p class="lead">Це одинадцятий урок Біблійної школи «Дім Слова» – після уроку «Євангелізація». Його тема – помазання: що таке помазання, внутрішнє помазання, помазання на допомогу іншим, як Єлисей прийняв помазання, шлях до помазання, спільне помазання, помазання на зцілення, як зростає помазання.</p>
+
+  <p>Кожну думку тут підкріплено місцями Писання – прочитайте їх уважно, бо саме Слово Боже, а не пояснення до нього, змінює життя.</p>
+
+  <p>Кожен розділ завершується тестом. Він перевіряє, чи зрозуміла прочитане людина, і тому частина питань описує ситуації з життя, де його треба застосувати. Відповіді з поясненнями зібрано наприкінці посібника, а на вебсторінці тест перевіряється одразу і показує, які теми варто перечитати.</p>
+
+  <figure class="prayer">
+    <span class="lbl">Перед кожним заняттям</span>
+    <blockquote>Відкрий мої очі, щоб я міг побачити дивовижні властивості Твого Закону!</blockquote>
+    <figcaption>Псалом 119:18</figcaption>
+  </figure>
+
+  <div class="legend">
+    <h3>Як читати посібник</h3>
+    <div class="legend-grid">
+      <div class="lg lg-scr"><b>Святе Письмо</b><span>Біблійні тексти виділено золотою рамкою. Посилання стоїть під текстом.</span></div>
+      <div class="lg lg-key"><b>Головна думка</b><span>Висновок, який варто запам’ятати. У тексті такі речення підсвічено.</span></div>
+      <div class="lg lg-note"><b>Пояснення</b><span>Значення слова, історичний фон, приклад.</span></div>
+      <div class="lg lg-quiz"><b>Перевір себе</b><span>Тест наприкінці розділу: знання, розуміння, застосування.</span></div>
+    </div>
+  </div>
+
+  <p class="source-note">Українською перекладено та оформлено за навчальним матеріалом Біблійної школи «Робітники Царства» християнської церкви «Перемога» (м. Київ). Використано з дозволу.<br>Цитати Святого Письма наведено за виданням «Біблія. Сучасний переклад» © Українське Біблійне Товариство, 2020–2023. Посилання подано за нумерацією цього перекладу.</p>
+</section>
+
+
+  <section class="toc-page print-only">
+    <span class="lbl">Зміст</span>
+    <ol class="toc-list"><li><a href="#ch1">I. Що таке помазання</a><ol><li><a href="#ch1-s1">Що таке помазання</a></li><li><a href="#ch1-s2">Внутрішнє помазання</a></li><li><a href="#quiz1">Перевір себе</a></li></ol></li><li><a href="#ch2">II. Помазання для служіння</a><ol><li><a href="#ch2-s1">Помазання на допомогу іншим</a></li><li><a href="#ch2-s2">Як Єлисей прийняв помазання</a></li><li><a href="#quiz2">Перевір себе</a></li></ol></li><li><a href="#ch3">III. Шлях до помазання</a><ol><li><a href="#ch3-s1">Шлях до помазання</a></li><li><a href="#quiz3">Перевір себе</a></li></ol></li><li><a href="#ch4">IV. Спільне помазання</a><ol><li><a href="#ch4-s1">Спільне помазання</a></li><li><a href="#quiz4">Перевір себе</a></li></ol></li><li><a href="#ch5">V. Зцілення і зростання помазання</a><ol><li><a href="#ch5-s1">Помазання на зцілення</a></li><li><a href="#ch5-s2">Як зростає помазання</a></li><li><a href="#quiz5">Перевір себе</a></li></ol></li></ol>
+    <p class="toc-extra">Відповіді до тестів – наприкінці посібника.</p>
+  </section>
+
+  <article class="chapter" data-ch="1"><header class="ch-head" id="ch1"><span class="ch-num">Розділ I</span><h2>Що таке помазання</h2><p class="ch-sub">визначення, види і внутрішнє помазання</p></header><h3 class="sec" id="ch1-s1">Що таке помазання</h3><p>Помазання робить так, щоб те, що є в духовному світі, здійснилося і стало реальним у фізичному. Людина хвора, а згідно з Божим Словом вона вже зцілена ранами Ісуса – помазання Святого Духа переносить це зцілення в її тіло. <strong>Помазання Святого Духа</strong> – цілеспрямована, тривала дія Божої сили через людину, щоб здійснювати Божу волю у фізичному світі, а також проти демонічних сил.</p><h4 class="sub">1. Цілеспрямоване</h4><p>Людина не може бути помазана «взагалі»: помазання проявляється в конкретних ситуаціях. Можна бути помазаним на проповідь, спів, вигнання бісів і не бути помазаним на вчення чи пророцтво. У житті служителя помазання може рости і змінюватися.</p><h4 class="sub">2. Без нього служіння неплідне</h4><p>Для будь-якого служіння в Царстві Божому Бог дає відповідне помазання, без якого служіння буде неефективним. Помазання може бути на людині, але не проявлятися, якщо вона не служить Богові.</p><h4 class="sub">3. Тільки від Бога</h4><p>Помазання приходить в особі Святого Духа, і його прояв – це Його дія. Не плутай помазання з талантами: можна бути чудовим співаком і зовсім не мати помазання на прославлення. Помазання визначають не за зовнішніми проявами, а за плодами: воно долає перешкоди і руйнує діла диявола.</p><h4 class="sub">4. Щоб служити іншим</h4><p>Помазання не дається для когось особисто – його дають, щоб допомогти іншим. Та коли вода тече трубами, труби теж стають мокрими: служитель і сам щось отримує. Помазання рухається, коли ми будуємо Боже Царство; щойно починаємо будувати своє – воно відходить.</p><h4 class="sub">5. Різні міри</h4><p>Різні люди можуть співати ту саму пісню з різним помазанням. Біси й хвороби бояться не титулу служителя, а помазання: саме воно розриває всяке ярмо. Іван Хреститель не зробив жодного чуда, але помазання на ньому давало йому духовну владу в суспільстві.</p><h4 class="sub">6. Три види помазання</h4><p>Внутрішнє – змінює мене і мій характер. Помазання через людину – на допомогу іншим. Спільне – проявляється серед групи віруючих.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Помазання визначають не за зовнішніми проявами, а за результатами, тобто за плодами.</p></aside><h3 class="sec" id="ch1-s2">Внутрішнє помазання</h3><p><strong>Внутрішнє помазання</strong> – дія Святого Духа в серці, душі й внутрішньому світі людини, щоб змінювати її якості, погляди й підходи до життя і робити її подібною до Христа. Воно не для служіння, а для особистого ходіння перед Богом. Для Бога стан нашого серця важливіший, ніж помазання, що проявляється через нас для інших. Саме внутрішнє помазання – основа, щоб помазання на допомогу іншим прийшло і зростало; без нього служитель довго не встоїть під атаками диявола. Неправильні книжки, фільми, спілкування гасять його.</p><h4 class="sub">1. Оживляє молитву і читання Слова</h4><p>Молитва – не формальні слова: під час неї щось насправді відбувається, а Біблія відкривається як одкровення. Розвивати внутрішнє помазання можна через спілкування зі Святим Духом, регулярну молитву і роздуми над Словом.</p><h4 class="sub">2. Змінює характер</h4><p>Розвиває плід Духа. Будь-який служитель, хоч яким духовним він є, постійно потребує внутрішнього помазання для змін.</p><h4 class="sub">3. Допомагає поклонятися</h4><p>Перебування в Божій присутності робить людину більш помазаною в житті й служінні і допомагає ближче пізнати Бога та Його волю.</p><h4 class="sub">4. Навчає й наставляє на істину</h4><p>Помазання вчить усього – і так само Святий Дух учить усього: те, що Дух робить у нас, і є помазання. Він бере від Ісуса і дає нам, робить Ісуса реальнішим у нашому житті. Внутрішнє помазання дає змогу розрізняти, що від Бога, а що ні.</p><figure class="scripture"><blockquote><sup>20</sup>Та ви маєте помазання від Святого, і всі ви знаєте. <span class="gap">…</span> <sup>27</sup>А помазання, яке ви прийняли від Нього, воно у вас перебуває, і ви не потребуєте, щоб вас хтось навчав. Але як те помазання навчає вас у всьому, – і є істинне й необманне, – так, як воно вас навчило, в тому й перебувайте.</blockquote><figcaption><span class="ref">1 Івана 2:20, 27</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>26</sup>А Утішитель – Дух Святий, Якого Отець пошле в Моє Ім’я, Той вас навчить усього і пригадає вам усе, що Я вам говорив.</blockquote><figcaption><span class="ref">Івана 14:26</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>13</sup>Коли ж прийде Він, Дух Істини, то поведе вас до повної істини, бо не від Себе буде говорити, але що почує, те й говоритиме, і сповістить вам те, що має настати. <sup>14</sup>Він Мене прославить, бо від Мого одержить і сповістить вам.</blockquote><figcaption><span class="ref">Івана 16:13–14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>14</sup>А тверда їжа – для дорослих, які мають вироблені звичкою почуття розрізняти добро і зло.</blockquote><figcaption><span class="ref">Євреїв 5:14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Очищає і освячує</h4><p>Освячення не закінчується. Внутрішнє помазання очищає думки, уяву, звички, вчинки і допомагає судити себе у світлі Божого Слова – уміти судити себе і змінюватися є ознакою зрілого віруючого. Воно не лише викриває, а й утішає, радить, захищає.</p><figure class="scripture"><blockquote><sup>11</sup>Неправедний нехай надалі чинить неправедність, і нечестивий нехай ще опоганюється, а праведний нехай далі чинить праведність, і святий нехай ще освячується.</blockquote><figcaption><span class="ref">Об’явлення 22:11</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>16</sup>Пильнуй себе і навчання; тримайся цього, бо, роблячи так, і себе спасеш, і тих, хто тебе слухає.</blockquote><figcaption><span class="ref">1 Тимофія 4:16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Для Бога стан нашого серця перед Ним набагато важливіший, ніж помазання, яке проявляється через нас на допомогу іншим.</p></aside><section class="quiz" id="quiz1" data-ch="1"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 1</span><h3>Що таке помазання</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="1"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що таке помазання Святого Духа за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Сильне емоційне переживання під час служіння</li><li><span class="box"></span><b>Б)</b> Природний талант, який Бог благословляє</li><li><span class="box"></span><b>В)</b> Звання служителя, яке людині дає церква</li><li><span class="box"></span><b>Г)</b> Цілеспрямована, тривала дія Божої сили через людину, щоб здійснювати Божу волю у фізичному світі і проти демонічних сил</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Брат чудово грає на гітарі, усі ним захоплюються, але через його служіння нічого не змінюється. Що про це каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Він помазаний, бо його служіння гарне і правильне</li><li><span class="box"></span><b>Б)</b> Талант – не помазання: помазання визначають не за зовнішніми проявами, а за плодами</li><li><span class="box"></span><b>В)</b> Помазання на прославлення залежить від рівня майстерності</li><li><span class="box"></span><b>Г)</b> Помазання в нього є, просто воно й не має проявлятися</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Для чого, за уроком, дається помазання? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Щоб служитель мав внутрішнє задоволення</li><li><span class="box"></span><b>Б)</b> Щоб відрізнити зрілих християн від новачків</li><li><span class="box"></span><b>В)</b> Щоб служити іншим людям і будувати Боже Царство</li><li><span class="box"></span><b>Г)</b> Для особистого успіху того, хто його отримав</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Служитель почав використовувати служіння, щоб будувати власне ім’я і вплив – «своє царство». Що, за уроком, станеться? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Помазання відійде, а нечисті духи можуть цим скористатися</li><li><span class="box"></span><b>Б)</b> Помазання зросте, бо служіння розширюється</li><li><span class="box"></span><b>В)</b> Нічого: помазання дається раз і назавжди</li><li><span class="box"></span><b>Г)</b> Помазання перейде на його помічників</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Новий служитель каже: «Коли мене висвятять на пастора, біси мене боятимуться». Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Він правий: духовний титул дає владу над бісами</li><li><span class="box"></span><b>Б)</b> Біси бояться гучної молитви, а не людини</li><li><span class="box"></span><b>В)</b> Біси бояться великих зібрань</li><li><span class="box"></span><b>Г)</b> Біси й хвороби бояться не титулу служителя, а помазання, яке розриває всяке ярмо</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Чому внутрішнє помазання важливе і для служіння іншим? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Воно потрібне тільки тим, хто не має помазання на служіння</li><li><span class="box"></span><b>Б)</b> Воно – основа: без нього служитель довго не встоїть під атаками диявола</li><li><span class="box"></span><b>В)</b> Воно замінює помазання на служіння</li><li><span class="box"></span><b>Г)</b> Воно стосується лише молитви і на служіння не впливає</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Що, за уроком, разом показують 1 Івана 2:20, 27 та Івана 14:26? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Що віруючим не потрібні вчителі в церкві</li><li><span class="box"></span><b>Б)</b> Що помазання мали тільки апостоли</li><li><span class="box"></span><b>В)</b> Помазання вчить усього – і Святий Дух учить усього: те, що Дух робить у нас, і є помазання</li><li><span class="box"></span><b>Г)</b> Що Святий Дух нагадує лише слова Старого Заповіту</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Сестра помітила, що молитва стала формальною, а Біблія «не відкривається». Вечорами вона дивиться сумнівні серіали. Що порадити за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Неправильні фільми гасять внутрішнє помазання; розвивати його через спілкування зі Святим Духом, молитву і роздуми над Словом</li><li><span class="box"></span><b>Б)</b> Більше служити іншим – і внутрішнє помазання прийде саме</li><li><span class="box"></span><b>В)</b> Почекати, доки повернуться почуття</li><li><span class="box"></span><b>Г)</b> Знайти більш помазаного проповідника</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які види помазання називає урок? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Внутрішнє – змінює мене і мій характер</li><li><span class="box"></span><b>Б)</b> Родинне – передається від батьків дітям</li><li><span class="box"></span><b>В)</b> Спільне – проявляється серед групи віруючих</li><li><span class="box"></span><b>Г)</b> Особисте – дається для власного успіху</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що робить внутрішнє помазання? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Розвиває плід Духа</li><li><span class="box"></span><b>Б)</b> Звільняє від потреби судити себе</li><li><span class="box"></span><b>В)</b> Дає змогу розрізняти, що від Бога, а що ні</li><li><span class="box"></span><b>Г)</b> Замінює регулярну молитву</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Помазання може бути на людині, але не проявлятися, якщо вона не служить Богові. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> За Об’явлення 22:11 і уроком, освячення має кінець: зрілому служителю внутрішнє помазання для змін уже не потрібне. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> Поєднайте місце Писання з думкою уроку. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Івана 16:13–14 <span class="blank"></span></li><li>Євреїв 5:14 <span class="blank"></span></li><li>1 Тимофія 4:16 <span class="blank"></span></li><li>Об’явлення 22:11 <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Розрізняти добро і зло</li><li><b>Б)</b> Пильнувати себе і вчення</li><li><b>В)</b> Святий нехай ще освячується</li><li><b>Г)</b> Дух бере від Ісуса і дає нам</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Як, за уроком, помазання робить Божу волю реальною? Розставте по порядку. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Зцілення стає реальним у фізичному тілі</li><li><span class="blank sm"></span> Діє помазання Святого Духа</li><li><span class="blank sm"></span> У духовному світі людина вже зцілена ранами Ісуса</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Чи є ділянка, де Бог міг би вас помазати, але помазання не проявляється, бо ви там не служите? Що почнете робити? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="2"><header class="ch-head" id="ch2"><span class="ch-num">Розділ II</span><h2>Помазання для служіння</h2><p class="ch-sub">помазання на допомогу іншим і приклад Єлисея</p></header><h3 class="sec" id="ch2-s1">Помазання на допомогу іншим</h3><p>Це помазання рухається через віруючого на допомогу іншим людям, щоб будувати Царство Боже. Воно не сходить на лінивих і бездіяльних, а приходить порціями: від того, що ти зробиш з черговою порцією, залежить, чи дасть Бог наступну. Емоції і помазання – не одне й те саме.</p><h4 class="sub">1. Помазати – значить відокремити</h4><p>Спершу Бог відокремлює людину на щось, а підтвердженням стає зішестя Святого Духа з відповідною силою. Ісус говорить, на які конкретні справи Його помазано: Бог не помазує без конкретної мети.</p><figure class="scripture"><blockquote><sup>18</sup>Дух Господній на Мені, бо Він помазав Мене благовістити убогим, послав Мене [зціляти розбитих серцем], проповідувати полоненим визволення, сліпим – прозріння, і пригноблених відпустити на волю; <sup>19</sup>звіщати рік Господнього помилування!</blockquote><figcaption><span class="ref">Луки 4:18–19</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Присутність і сила</h4><p>Помазання – не просто присутність Святого Духа, а поєднання Його присутності й сили: Бог помазав Ісуса Духом Святим і силою. Сила з’явилася в служінні Ісуса після сорокаденного посту. Коли Бог з тобою, Його сила може діяти, навіть якщо ти нічого не відчуваєш, – тому рухатися в Божій силі треба вірою, а не відчуттями.</p><figure class="scripture"><blockquote><sup>38</sup>про Ісуса з Назарета: як помазав Його Бог Духом Святим і силою, і Він ходив, роблячи добро й оздоровлюючи всіх поневолених дияволом, тому що Бог був з Ним!</blockquote><figcaption><span class="ref">Дії 10:38</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Бог утверджує і помазує</h4><p>Внутрішнє утвердження – це внутрішнє помазання, а вже після нього приходить зовнішнє. Помазання на служіння приходить тільки від Бога, хоч багато хто став помазаним, служачи іншим помазаникам, як Єлисей – Іллі. Справжнє помазання прийде, коли Бог побачить, що ти справді утверджений усередині: інакше успіх і благословення тебе зіпсують.</p><figure class="scripture"><blockquote><sup>21</sup>Той, Хто зміцнює нас з вами в Христі й Хто помазав нас, – це Бог.</blockquote><figcaption><span class="ref">2 Коринтян 1:21</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Помазання Боже на людині завжди має конкретну мету.</p></aside><h3 class="sec" id="ch2-s2">Як Єлисей прийняв помазання</h3><h4 class="sub">1. Бог помазує зайнятих</h4><p>Єлисей орав землю, коли Ілля накинув на нього свій плащ. Помазання на служіння не допускає впливу людей – це визначає тільки Бог. Та Бог діє через людей: Ісуса Навина Він помазав через Мойсея, Савла приєднав до учнів через Варнаву. Хто ізолює себе від інших віруючих, легко пропустить своє помазання.</p><figure class="scripture long"><blockquote><sup>16</sup>А Єгу, сина Німші, помажеш царем над Ізраїлем. Потім помажеш Єлисея, Шафатового сина з Авел-Мехоли, пророком замість себе! <sup>17</sup>Буде так: того, хто врятується від меча Хазаїла, вб’є Єгу, а хто втече від меча Єгу, того знищить Єлисей. <sup>18</sup>Що ж до Ізраїлю, то Я залишу там сім тисяч тих, котрі не схилили своїх колін перед Ваалом, і уста яких його не цілували. <sup>19</sup>Отже, вирушивши звідти, він знайшов Єлисея, Шафатового сина, який орав дванадцятьма парами волів. Дванадцять упряжок йшли попереду нього, і він, особисто, був за дванадцятою. Тож Ілля підійшов до нього, та накинув на нього свій плащ. <sup>20</sup>Єлисей, негайно залишивши волів, побіг за Іллею і сказав: Дозволь мені лише попрощатись з моїм батьком та моєю матір’ю, а тоді вже піду за тобою! А той відповів йому: Йди, але повертайся, бо що залежало від мене, те я для тебе вчинив. <sup>21</sup>Повернувшись до нього, Єлисей взяв пару волів й приніс їх у жертву, а з ярма й упряжі тих волів розвів вогонь, приготував м’ясо, й роздав людям, які його з’їли. Після цього він устав й пішов за Іллею, та прислуговував йому.</blockquote><figcaption><span class="ref">1 Царів 19:16–21</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Залишити те, на що покладався</h4><p>Єлисей був заможним, але заколов волів, спалив плуг і пішов служити Іллі. Помазання вимагає першого місця в житті: коли воно прийшло, треба міняти пріоритети. Ми спершу посвячуємо себе Ісусові, а потім служимо помазаникам.</p><h4 class="sub">3. Якості Єлисея</h4><p>Працьовитий; готовий служити Іллі – серце слуги, вірність у чужому; рішучий; залишив те, на що покладався; розумів духовні принципи – одразу зреагував на плащ; шанував батьків.</p><h4 class="sub">4. Два плащі</h4><p>Перший плащ – покликання, відокремлення на служіння пророка; другий, коли Іллю було взято, – пророче помазання з Божою силою. Між ними – період підготовки: Єлисей лив воду на руки Іллі, а Бог працював над його серцем. Ґехазій цієї школи не пройшов і отримав проказу замість помазання.</p><h4 class="sub">5. Принцип «Ілля і Єлисей»</h4><p>Один служитель духовно народжує іншого; рідко хтось піднімається сам. Так Бог робить, щоб кожен потребував Тіла Христового і не було сектантства; разом з помазанням передаються досвід і мудрість. Спочатку молодий служитель може наслідувати свого вчителя, але згодом увійде у своє унікальне служіння.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Помазання вимагає першого, пріоритетного місця в житті.</p></aside><section class="quiz" id="quiz2" data-ch="2"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 2</span><h3>Помазання для служіння</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="2"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що, за уроком, показує Луки 4:18–19? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Помазання – це передусім відчуття Божої присутності</li><li><span class="box"></span><b>Б)</b> Бог не помазує без конкретної мети: Ісус називає справи, на які Його помазано</li><li><span class="box"></span><b>В)</b> Ісус отримав помазання лише після воскресіння</li><li><span class="box"></span><b>Г)</b> Помазання дається всім однаково і без мети</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Молодий служитель каже: «Сьогодні я нічого не відчуваю, тож за хворих молитися не буду». Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Він правий: без відчуттів помазання немає</li><li><span class="box"></span><b>Б)</b> Йому треба спершу викликати в собі емоції</li><li><span class="box"></span><b>В)</b> Коли Бог з тобою, Його сила діє, навіть якщо ти нічого не відчуваєш; рухатися треба вірою, а не відчуттями</li><li><span class="box"></span><b>Г)</b> За хворих можуть молитися лише старші служителі</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Як, за Дії 10:38, Бог помазав Ісуса? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Духом Святим і силою</li><li><span class="box"></span><b>Б)</b> Лише присутністю Святого Духа</li><li><span class="box"></span><b>В)</b> Через руки Івана Хрестителя</li><li><span class="box"></span><b>Г)</b> Олією в храмі</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Брат отримав несподіваний успіх у служінні й почав ним хизуватися. Що урок каже про те, коли Бог дає справжнє помазання на служіння? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Коли людина досягне певного віку</li><li><span class="box"></span><b>Б)</b> Коли служіння стане достатньо великим</li><li><span class="box"></span><b>В)</b> Коли людина познайомиться з найпомазанішим служителем</li><li><span class="box"></span><b>Г)</b> Коли бачить, що людина утверджена всередині, – інакше успіх і благословення її зіпсують</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Чоловік каже: «Помазання від Бога, тож церква і служителі мені не потрібні». Що відповідає урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Він правий: помазання не залежить від інших віруючих</li><li><span class="box"></span><b>Б)</b> Помазання від Бога, але Бог діє через людей: хто ізолює себе, легко пропустить своє помазання</li><li><span class="box"></span><b>В)</b> Без особистого знайомства з найпомазанішим служителем помазання не буде</li><li><span class="box"></span><b>Г)</b> Ізоляція допомагає краще чути Бога</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Що зробив Єлисей після того, як Ілля накинув на нього плащ? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Узяв плащ і одразу почав пророкувати</li><li><span class="box"></span><b>Б)</b> Попросив час подумати</li><li><span class="box"></span><b>В)</b> Попрощався з батьками, заколов волів, спалив плуг і пішов служити Іллі</li><li><span class="box"></span><b>Г)</b> Продовжив орати, чекаючи наступного знаку</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Що означали два плащі Іллі? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Перший – покликання, відокремлення на служіння пророка; другий – пророче помазання з Божою силою</li><li><span class="box"></span><b>Б)</b> Перший – для Єлисея, другий – для його учнів</li><li><span class="box"></span><b>В)</b> Обидва означали одне й те саме</li><li><span class="box"></span><b>Г)</b> Перший – помазання, другий – нагорода за вірність</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Новонавернений хоче одразу великого служіння і вважає «дрібницею» допомагати пасторові з побутовими справами. Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Він правий: дрібні справи не мають стосунку до помазання</li><li><span class="box"></span><b>Б)</b> Йому треба шукати церкву, де відразу дадуть служіння</li><li><span class="box"></span><b>В)</b> Помазання дається відразу, без підготовки</li><li><span class="box"></span><b>Г)</b> Це період підготовки, як у Єлисея, що лив воду на руки Іллі: тоді Бог працює над серцем; Ґехазій цієї школи не пройшов</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які якості Єлисея допомогли йому прийняти помазання? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Працьовитість</li><li><span class="box"></span><b>Б)</b> Обережність: він довго зважував рішення</li><li><span class="box"></span><b>В)</b> Готовність служити Іллі – серце слуги</li><li><span class="box"></span><b>Г)</b> Прагнення до незалежності</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що урок каже про помазання на допомогу іншим? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Воно приходить порціями</li><li><span class="box"></span><b>Б)</b> Емоції і помазання – одне й те саме</li><li><span class="box"></span><b>В)</b> Воно не сходить на лінивих і бездіяльних</li><li><span class="box"></span><b>Г)</b> Його отримують, просто познайомившись зі служителем</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Помазання на служіння визначає тільки Бог, а не голосування чи вплив людей. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Служити помазаникам треба навіть тоді, коли це йде на шкоду нашій відданості Ісусові. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> Поєднайте місце Писання з думкою уроку. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Луки 4:18–19 <span class="blank"></span></li><li>Дії 10:38 <span class="blank"></span></li><li>2 Коринтян 1:21 <span class="blank"></span></li><li>1 Царів 19:16–21 <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Помазаний Духом Святим і силою</li><li><b>Б)</b> Бог утверджує і помазує</li><li><b>В)</b> Ісус називає справи, на які Його помазано</li><li><b>Г)</b> Ілля накидає плащ на Єлисея</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Як, за уроком, Бог помазує на служіння? Розставте по порядку. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Відокремлення підтверджується на ділі</li><li><span class="blank sm"></span> Святий Дух сходить на неї з відповідною силою</li><li><span class="blank sm"></span> Бог відокремлює людину на щось</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Від чого вам, як Єлисею, треба відмовитися («заколоти волів»), щоб помазання мало перше місце у вашому житті? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="3"><header class="ch-head" id="ch3"><span class="ch-num">Розділ III</span><h2>Шлях до помазання</h2><p class="ch-sub">Ґілґал, Бетель, Єрихон, Йордан</p></header><h3 class="sec" id="ch3-s1">Шлях до помазання</h3><p>Шлях Єлисея за Іллею має духовний зміст – це кроки до помазання. На кожному з них приходять випробування.</p><figure class="scripture long"><blockquote><sup>1</sup>Господь у вихорі забрав Іллю на небо. А відбулось це так: Ілля з Єлисеєм подорожували з Ґілґала. <sup>2</sup>Ілля сказав Єлисею: Залишайся тут, оскільки Господь мене посилає в Бетель. Але Єлисей відповів: Як живий Господь, і як живий ти, я не залишу тебе! І вони пішли до Бетеля. <sup>3</sup>Пророчі учні, котрі були в Бетелі, підійшли до Єлисея й сказали йому: Чи ти знаєш, що сьогодні Господь піднесе твого господаря над твоєю головою? А він відповів: Я про це знаю, – мовчіть! <sup>4</sup>Там Ілля сказав Єлисею: Залишайся тут, адже Господь посилає мене в Єрихон. І знову Єлисей відповів: Як живий Господь, і як живий ти, я не залишу тебе! І вони подались до Єрихона. <sup>5</sup>Тут також підійшли до Єлисея пророчі учні, котрі були в Єрихоні, й сказали йому: Чи тобі відомо, що сьогодні Господь забере твого господаря понад твоєю головою? А він відповів: Я про це знаю, – мовчіть! <sup>6</sup>Ілля ще раз запропонував Єлисею: Залишайся тут, тому що Господь посилає мене до Йордану. Однак той відповів: Як живий Господь, і як живий ти, я не залишу тебе! І вони далі пішли вдвох. <sup>7</sup>Пішли також п’ятдесят чоловік пророчих учнів й стали здалека навпроти. Вони ж обидва зупинились над Йорданом. <sup>8</sup>Тоді Ілля взяв свій плащ, згорнув його і вдарив по воді, – вода розступилася в обидва боки, так що вони обидва перейшли по суходолу. <sup>9</sup>Так сталося, що коли вони перейшли, то Ілля промовив до Єлисея: Проси, що я мав би для тебе зробити, перш ніж я буду взятий від тебе! А Єлисей відповів: Нехай на мені подвійною мірою спочине твій дух! <sup>10</sup>Трудного ти жадаєш, – відповів Ілля, – але якщо ти побачиш, як я буду взятий від тебе, то так і станеться. А якщо не побачиш, то цього не буде. <sup>11</sup>Отже, коли вони далі так рухались, розмовляючи між собою, раптом з’явилися вогненна колісниця, і такі ж вогненні коні, й розділили їх між собою. Тож у вихорі Ілля був піднятий на небо. <sup>12</sup>На все це дивлячись, Єлисей закричав: Батеньку мій! Батеньку мій! О, колісниця Ізраїлю і його кіннота! І коли Іллі вже більше не було видно, Єлисей вхопився за свій одяг і роздер його на дві частини. <sup>13</sup>Потім він підняв плащ Іллі, який упав з нього, згорнув його і, повертаючись, зупинився на березі Йордану. <sup>14</sup>Він узяв плащ Іллі, який упав з нього, вдарив по воді й сказав: Де Господь, Бог Іллі? Він так само вдарив по воді, як Ілля, – і вода розступилася в обидва боки, тому Єлисей перейшов. <sup>15</sup>Коли це побачили пророчі учні з Єрихона, що стояли здалеку, то сказали: Дух Іллі спочив на Єлисеєві. Тож вони вийшли йому назустріч, і долілиць поклонилися йому.</blockquote><figcaption><span class="ref">2 Царів 2:1–15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">1. Ґілґал – вийти з колеса</h4><p>«Ґілґал» означає «коло, колесо» – прообраз звичного одноманітного життя за релігійними догмами. У колесі немає помазання. Життя за звичкою дає відчуття захищеності, але Бог не живе за програмою: щодня Він творить нове. Так виходили зі свого колеса Авраам, Яків, Йосип, Мойсей.</p><h4 class="sub">2. Бетель – Божа присутність</h4><p>Ілля пропонував Єлисею залишитися, але помазання отримують наполегливі: якщо Бог покликав тебе бути поруч з помазаником, будь з ним до кінця. «Бетель» – дім Божий, місце Його присутності. Присутність і помазання – не одне й те саме, але на шляху до помазання присутність має бути. Вимірюють її не почуттями, а Божим Словом. Офіційність, формалізм і традиції виганяють зі служіння Божу присутність.</p><h4 class="sub">3. Єрихон – духовна війна</h4><p>Єрихон символізує духовну війну: на помазаного диявол нападатиме, тож треба навчитися воювати й перемагати. Єрихонські мури – твердині в житті: хіть, гордість, гнів, прив’язаності; невидимі спершу треба виявити. Багато хто, перемігши бідність і диявола, зупиняється – але є ще один рівень.</p><h4 class="sub">4. Йордан – зрілість і відповідальність</h4><p>Тут почалося служіння Ісуса, тут Ізраїль увійшов в обіцяну землю і манна перестала падати. Це місце, де людина бере відповідальність за своє покликання. Єлисей попросив подвійної міри духу Іллі. Просити в Бога мало – не смирення, а невіра; просити багато – не гордість, а віра. Можна пройти всю дорогу і пропустити найважливішу мить, коли приходить Бог.</p><h4 class="sub">5. Покликання, підготовка, доручення</h4><p>Покликання і доручення – не одне й те саме. Першим плащем вода б не розступилася: якщо Бог тебе покликав, це ще не означає, що можна йти куди завгодно. Важливо не дивитися на плащ і не показувати його, а взяти його і ввійти в служіння. Сьогодні в силі Святого Духа ми наступаємо на обставини через ім’я Ісуса.</p><h4 class="sub">6. Гоніння</h4><p>Коли приходить помазання, приходять і гоніння: Давида переслідували після помазання на царство, Ісуса хотіли вбити від народження. Нейтральних людей не буде – одні радітимуть, інші заздритимуть. Не можна кидати служіння через випробування.</p><h4 class="sub">7. Як отримати і зберегти помазання</h4><p>Формули немає. Потрібно перебувати в Божому Слові, мати спрагу за Богом, спілкуватися зі Святим Духом і бути готовим змінюватися. Залишайся в тому, до чого тебе покликав Бог; умій судити себе; постійно вправляйся у своєму помазанні; перебувай у пості й молитві; нехай розвивається плід Духа.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Просити в Бога мало – це не смирення, а невіра. Просити в Бога багато – це не гордість, а віра.</p></aside><section class="quiz" id="quiz3" data-ch="3"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 3</span><h3>Шлях до помазання</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="3"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що означає «Ґілґал» і що він символізує в уроці? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> «Дім Божий» – місце Його присутності</li><li><span class="box"></span><b>Б)</b> Духовну війну і перемогу над твердинями</li><li><span class="box"></span><b>В)</b> «Коло, колесо» – одноманітне життя за звичками і релігійними догмами</li><li><span class="box"></span><b>Г)</b> Місце зрілості і відповідальності за покликання</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Церква роками робить усе однаково, «бо так заведено», і служіння стало сухим. Який крок шляху до помазання їм потрібен? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Вийти з «Ґілґалу» – колеса звичок і традицій</li><li><span class="box"></span><b>Б)</b> Залишитися на місці, бо стабільність – ознака помазання</li><li><span class="box"></span><b>В)</b> Одразу просити подвійної міри</li><li><span class="box"></span><b>Г)</b> Додати ще зібрань за тим самим порядком</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Що урок каже про Божу присутність, яку символізує Бетель? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Присутність і помазання – одне й те саме</li><li><span class="box"></span><b>Б)</b> Присутність вимірюють силою почуттів</li><li><span class="box"></span><b>В)</b> На шляху до помазання Божа присутність не потрібна</li><li><span class="box"></span><b>Г)</b> Присутність і помазання – не одне й те саме, але на шляху до помазання присутність має бути; її вимірюють Словом, а не почуттями</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Брат переміг бідність, навчився духовної війни і каже: «Я вже всього досяг». Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Він справді досяг найвищого рівня</li><li><span class="box"></span><b>Б)</b> Багато хто зупиняється після Єрихону, але є ще один рівень – Йордан</li><li><span class="box"></span><b>В)</b> Йому треба повернутися в Ґілґал</li><li><span class="box"></span><b>Г)</b> Тепер йому потрібна лише Божа присутність</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Що символізує Єрихон на шляху до помазання? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Місце відпочинку після випробувань</li><li><span class="box"></span><b>Б)</b> Місце, де людина бере відповідальність за покликання</li><li><span class="box"></span><b>В)</b> Духовну війну: треба навчитися воювати й перемагати твердині</li><li><span class="box"></span><b>Г)</b> Звичне релігійне життя</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Сестра молиться: «Господи, дай мені хоч трохи – мені багато не треба», – і вважає це смиренням. Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Просити в Бога мало – не смирення, а невіра; просити багато – не гордість, а віра</li><li><span class="box"></span><b>Б)</b> Це правильне смирення</li><li><span class="box"></span><b>В)</b> Просити багато – завжди гордість</li><li><span class="box"></span><b>Г)</b> Просити можна лише те, що вже мав інший служитель</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Чого попросив Єлисей в Іллі перед тим, як Іллю було взято (2 Царів 2:9)? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Плаща Іллі на згадку</li><li><span class="box"></span><b>Б)</b> Благословення для своєї сім’ї</li><li><span class="box"></span><b>В)</b> Щоб Ілля залишився з ним</li><li><span class="box"></span><b>Г)</b> Подвійної міри духу Іллі</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Щойно покликаний служитель каже: «Бог мене покликав, тож тепер можу служити де завгодно і як хочу». Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Він правий: покликання і доручення – одне й те саме</li><li><span class="box"></span><b>Б)</b> Покликання і доручення – не одне й те саме: між ними підготовка; першим плащем вода б не розступилася</li><li><span class="box"></span><b>В)</b> Йому треба чекати, поки люди дадуть йому другий плащ</li><li><span class="box"></span><b>Г)</b> Покликання для служіння взагалі не потрібне</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Що, за уроком, потрібно, щоб отримати і зберегти помазання? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Перебувати в Божому Слові, у пості й молитві</li><li><span class="box"></span><b>Б)</b> Знайти точну формулу, як у Єлисея</li><li><span class="box"></span><b>В)</b> Залишатися в тому, до чого покликав Бог</li><li><span class="box"></span><b>Г)</b> Не змінюватися, щоб зберегти досягнуте</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що, за уроком, виганяє Божу присутність зі служіння? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Формалізм</li><li><span class="box"></span><b>Б)</b> Наполегливість</li><li><span class="box"></span><b>В)</b> Офіційність і традиції</li><li><span class="box"></span><b>Г)</b> Спрага за Богом</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Коли приходить помазання, нейтральних людей не буде: одні радітимуть, інші заздритимуть. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> За 2 Царів 2:1–15, коли Ілля запропонував Єлисею залишитися, той погодився. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> Поєднайте місце на шляху Єлисея з його значенням. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Ґілґал <span class="blank"></span></li><li>Бетель <span class="blank"></span></li><li>Єрихон <span class="blank"></span></li><li>Йордан <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Вийти з колеса звичок</li><li><b>Б)</b> Божа присутність</li><li><b>В)</b> Духовна війна</li><li><b>Г)</b> Зрілість і відповідальність</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Через які місця, за 2 Царів 2:1–6, пройшли Ілля і Єлисей? Розставте по порядку. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Ґілґал</li><li><span class="blank sm"></span> Йордан</li><li><span class="blank sm"></span> Єрихон</li><li><span class="blank sm"></span> Бетель</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Який із кроків – Ґілґал, Бетель, Єрихон чи Йордан – зараз ваш? Що вам треба зробити, щоб іти далі? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="4"><header class="ch-head" id="ch4"><span class="ch-num">Розділ IV</span><h2>Спільне помазання</h2><p class="ch-sub">помазання церкви: єдність, молитва, поклоніння</p></header><h3 class="sec" id="ch4-s1">Спільне помазання</h3><p><strong>Спільне помазання</strong> проявляється серед певної групи віруючих – церкви чи служіння. Коли віруючі збираються разом, Божа присутність проявляється особливо; помазання на окремих людях його не замінить. Щоб досягти Євангелієм міста, не досить помазання великих євангелістів: потрібне велике помазання на помісних церквах. Помазання на церкві багато в чому залежить від пастора: олія спершу стікає на голову.</p><figure class="scripture"><blockquote><sup>19</sup>Знову запевняю вас: коли двоє з вас на землі погодяться просити про будь‑яку річ, яку лише просять, буде їм дано від Мого Отця Небесного. <sup>20</sup>Адже де двоє або троє зберуться в Ім’я Моє, там і Я серед них!</blockquote><figcaption><span class="ref">Матвія 18:19–20</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>1</sup>Пісня при наближенні до Храму. Псалом Давида. О, як же добре і як приємно, коли брати живуть у згоді! <sup>2</sup>Це, наче дорогоцінне миро, що з голови стікає на бороду, – на бороду Аарона, стікає на край його одежі.</blockquote><figcaption><span class="ref">Пс. 133:1–2</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">1. Єдність і молитва</h4><p>Єдність – обов’язкова умова: помазання не проявиться там, де люди ворогують, бо поділене царство не встоїть. Єдність треба досягти; зазвичай вона будується навколо бачення, яке Бог дає пасторові. Учні були однодушно в молитві перед П’ятидесятницею – і церква за день зросла на три тисячі. Спільна молитва найбільше допомагає досягти єдності.</p><figure class="scripture"><blockquote><sup>20</sup>Та благаю не лише за них, а й за тих, хто повірить у Мене через їхнє слово, <sup>21</sup>щоб усі були одне, – так, як Ти, Отче, в Мені, а Я в Тобі, – щоб і вони в Нас були; аби світ повірив, що Ти Мене послав.</blockquote><figcaption><span class="ref">Івана 17:20–21</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>14</sup>Усі вони з жінками, з Марією, матір’ю Ісуса, та Його братами перебували однодушно в молитві [й благанні].</blockquote><figcaption><span class="ref">Дії 1:14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>1</sup>Коли настав день П’ятдесятниці, всі вони були однодушно разом. <span class="gap">…</span> <sup>4</sup>І всі вони наповнилися Духом Святим і почали говорити іншими мовами, як Дух велів їм промовляти. <span class="gap">…</span> <sup>41</sup>Отже, вони, прийнявши [з любов’ю] його слово, охрестилися; і приєдналися до них того дня зо три тисячі душ.</blockquote><figcaption><span class="ref">Дії 2:1, 4, 41</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Священики у святилищі</h4><p>Усі священики освятилися без різниці відділів, і славу Господню побачили всі. Рух почався згори: важливо, щоб пастори й лідери бували в Божій присутності, перш ніж служити людям. Що більше членів церкви регулярно буває в Його присутності, то більше спільне помазання.</p><figure class="scripture long"><blockquote><sup>11</sup>Так сталося, що коли священики виходили зі Святилища, – адже всі зібрані там священики, незалежно від своєї череди (зміни), були освячені, – <sup>12</sup>коли всі левіти-хористи на чолі з Асафом, Геманом, Єдутуном та їхніми синами й братами, одягнуті в одежі з вісону, стояли зі східного боку від жертовника й співали в супроводі цимбалів, цитрів та арф, сто двадцять священиків, трубили в труби; <sup>13</sup>коли звуки їхніх труб разом з голосами тих, що співали, зливались в одну злагоджену мелодію хвали та прославлення Господа; і коли в супроводі труб, цимбалів та інших музичних інструментів всі заспівали, прославляючи Господа, бо Він достойний і Його милосердя вічне, – Храм Господній, усе Святилище сповнилось хмарою Його слави! <sup>14</sup>Тому священики не могли далі стояти і здійснювати служіння через ту хмару, оскільки Господня слава заповнила Божий Храм.</blockquote><figcaption><span class="ref">2 Хронік 5:11–14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Залежність від Бога</h4><p>Після погроз апостоли однодушно звернулися до Бога, просячи сміливості і знамень, – місце захиталося, і всі сповнилися Святим Духом. Дух щось робить у тобі і щось через тебе. Де бракує молитви, прославлення і Слова, церква стає формальною і сухою.</p><figure class="scripture long"><blockquote><sup>23</sup>Коли їх відпустили, вони прийшли до своїх і переказали те, що їм говорили первосвященики і старші. <sup>24</sup>Ті, коли почули, однодушно піднесли голос до Бога й сказали: Владико [Боже], Ти, Котрий створив небо й землю, море й усе, що в них! <sup>25</sup>Який Святим Духом устами нашого батька, Твого слуги Давида, сказав: Чому розбушувалися люди, й народи задумали марноту? <sup>26</sup>Зійшлися земні царі, зібралися правителі разом проти Господа та проти Його Христа! <sup>27</sup>Адже справді в цьому місті зібралися проти святого Слуги Твого Ісуса, Якого Ти помазав, – Ірод і Понтій Пилат із язичниками та людьми Ізраїлю, <sup>28</sup>аби здійснити те, що наперед призначила Твоя рука і Твоя воля, щоб воно сталося. <sup>29</sup>Тепер же, Господи, поглянь на їхні погрози і дай Своїм рабам з усією сміливістю говорити Твоє слово, <sup>30</sup>коли простягнеш Свою руку для оздоровлення, ознак і чудес, щоби збувалися вони святим Ім’ям Твого слуги Ісуса! <sup>31</sup>І як вони помолилися, затряслося те місце, де вони були зібрані, й усі наповнилися Святим Духом і сміливо почали говорити Боже Слово.</blockquote><figcaption><span class="ref">Дії 4:23–31</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Прославлення і поклоніння</h4><p>Вони притягують Бога до тих, хто в них бере участь, а з Ним приходить спільне помазання. Павло і Сила в темниці співали Богові – стався землетрус, кайдани спали, а сторож з усім домом навернувся.</p><figure class="scripture"><blockquote><sup>4</sup>Але ж Ти, Святий, перебуваєш у хваліннях Ізраїлю.</blockquote><figcaption><span class="ref">Пс. 22:4</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>25</sup>Опівночі Павло й Сила, молячись, співом прославляли Бога, а в’язні слухали їх. <sup>26</sup>Раптом стався великий землетрус, аж порушилася основа в’язниці; враз повідчинялися всі двері, і з усіх поспадали кайдани.</blockquote><figcaption><span class="ref">Дії 16:25–26</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Там, де служать Господу</h4><p>В Антіохії, коли служили Господу і постили, Святий Дух відокремив Варнаву і Савла. Господь з’являється там, де Йому служать.</p><figure class="scripture"><blockquote><sup>1</sup>В Антіохійській Церкві були [деякі] пророки й учителі: Варнава, Симон, прозваний Нігером, Луцій киринеєць, Манаїл, вихований разом з тетрархом Іродом, і Савло. <sup>2</sup>Як служили вони Господу й постили, Святий Дух сказав: Відділіть Мені Варнаву та Савла на діло, на яке Я покликав їх.</blockquote><figcaption><span class="ref">Дії 13:1–2</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Єдність є обов’язковою умовою для прояву спільного помазання.</p></aside><section class="quiz" id="quiz4" data-ch="4"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 4</span><h3>Спільне помазання</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="4"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що таке спільне помазання? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Помазання, що проявляється серед певної групи віруючих – церкви чи служіння</li><li><span class="box"></span><b>Б)</b> Помазання, яке пастор передає кожному окремо</li><li><span class="box"></span><b>В)</b> Просто сума помазань окремих людей у групі</li><li><span class="box"></span><b>Г)</b> Помазання, яке буває лише на великих конференціях</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Що, за уроком, показує Псалом 133:1–2 про олію, що стікає з голови? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Помазання дається тільки пасторам</li><li><span class="box"></span><b>Б)</b> Єдність на помазання не впливає</li><li><span class="box"></span><b>В)</b> Помазання тече від членів церкви до пастора</li><li><span class="box"></span><b>Г)</b> Помазання на церкві багато в чому залежить від пастора: олія спершу стікає на голову</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> У малій групі постійні сварки й образи, але всі хочуть «сильного помазання». Що порадити за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Запросити помазаного гостя</li><li><span class="box"></span><b>Б)</b> Єдність – обов’язкова умова: помазання не проявиться там, де ворогують; допомагає спільна молитва</li><li><span class="box"></span><b>В)</b> Помазання прийде, якщо довше співати</li><li><span class="box"></span><b>Г)</b> Розділитися на дві групи</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> У церкві кожне служіння тягне в свій бік і має своє бачення. Навколо чого, за уроком, зазвичай будується єдність? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Навколо спільних уподобань</li><li><span class="box"></span><b>Б)</b> Навколо думки більшості</li><li><span class="box"></span><b>В)</b> Навколо бачення, яке Бог дає пасторові</li><li><span class="box"></span><b>Г)</b> Навколо традицій церкви</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Що сталося, коли учні однодушно перебували в молитві (Дії 1:14; 2:1, 4, 41)? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Усі сповнилися Святим Духом, і церква за день зросла на три тисячі</li><li><span class="box"></span><b>Б)</b> Їх вигнали з Єрусалима</li><li><span class="box"></span><b>В)</b> Вони отримали нові плащі для служіння</li><li><span class="box"></span><b>Г)</b> Вони розійшлися проповідувати поодинці</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Пастор і лідери щонеділі приходять просто «відпрацювати» зібрання, не проводячи часу в Божій присутності. Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Це неважливо: помазання залежить лише від хору</li><li><span class="box"></span><b>Б)</b> Досить гарної проповіді</li><li><span class="box"></span><b>В)</b> Це справа тільки пастора, решти не стосується</li><li><span class="box"></span><b>Г)</b> Рух починається згори: лідерам важливо бувати в Божій присутності, перш ніж служити людям</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Церква перестала збиратися на молитву і прославлення, зібрання короткі й «по програмі». Що за уроком відбувається з такою церквою? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Це ознака духовної зрілості</li><li><span class="box"></span><b>Б)</b> Вона стає формальною і сухою, служіння йде механічно</li><li><span class="box"></span><b>В)</b> Помазання від цього не залежить</li><li><span class="box"></span><b>Г)</b> Головне – кількість людей на зібранні</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Що сталося, коли Павло і Сила співали Богові в темниці (Дії 16:25–26)? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Їх негайно звільнила влада</li><li><span class="box"></span><b>Б)</b> Нічого не сталося, але вони отримали мир</li><li><span class="box"></span><b>В)</b> Стався землетрус, кайдани спали, а сторож з усім домом навернувся</li><li><span class="box"></span><b>Г)</b> Ангел вивів лише Павла</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Що, за уроком, створює атмосферу для спільного помазання? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Єдність і молитва</li><li><span class="box"></span><b>Б)</b> Суворі традиції</li><li><span class="box"></span><b>В)</b> Прославлення і поклоніння</li><li><span class="box"></span><b>Г)</b> Змагання між служіннями</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що сталося в Дії 4:23–31? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Апостоли однодушно звернулися до Бога, просячи сміливості</li><li><span class="box"></span><b>Б)</b> Апостоли вирішили на час перестати проповідувати</li><li><span class="box"></span><b>В)</b> Місце захиталося, і всі сповнилися Святим Духом</li><li><span class="box"></span><b>Г)</b> Первосвященики приєдналися до їхньої молитви</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Спільне помазання не можна замінити помазанням на кожній окремій людині з групи. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Щоб досягти Євангелієм міста, досить помазання великих євангелістів. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> Поєднайте місце Писання з думкою уроку. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Матвія 18:19–20 <span class="blank"></span></li><li>Івана 17:20–21 <span class="blank"></span></li><li>2 Хронік 5:11–14 <span class="blank"></span></li><li>Дії 13:1–2 <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Щоб усі були одно – і світ повірив</li><li><b>Б)</b> Слава Господня наповнила храм</li><li><b>В)</b> Де двоє чи троє зібрані в Його ім’я</li><li><b>Г)</b> Святий Дух відокремив Варнаву і Савла</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Що сталося на П’ятидесятницю? Розставте по порядку. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> До церкви приєдналося близько трьох тисяч</li><li><span class="blank sm"></span> Усі сповнилися Святим Духом</li><li><span class="blank sm"></span> Учні однодушно перебували в молитві</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Що особисто ви можете зробити для єдності у вашій церкві чи групі? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="5"><header class="ch-head" id="ch5"><span class="ch-num">Розділ V</span><h2>Зцілення і зростання помазання</h2><p class="ch-sub">помазання на зцілення і рівні води з Єзекиїля 47</p></header><h3 class="sec" id="ch5-s1">Помазання на зцілення</h3><p>У Бога є конкретне помазання на зцілення хворих. Бог помазав Ісуса Духом Святим і силою, і Він ходив і зціляв. Хвороби людям приносить диявол, а не Бог; помазання – протиотрута від усього, що робить диявол.</p><figure class="scripture"><blockquote><sup>38</sup>про Ісуса з Назарета: як помазав Його Бог Духом Святим і силою, і Він ходив, роблячи добро й оздоровлюючи всіх поневолених дияволом, тому що Бог був з Ним!</blockquote><figcaption><span class="ref">Дії 10:38</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>27</sup>У той час станеться таке: тягар Ассирії буде знятий з твоїх плечей, і її ярмо – з твоєї шиї, – ярмо розпадеться на зміцнілій твоїй шиї…</blockquote><figcaption><span class="ref">Ісая 10:27</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">1. Помазання діє через віру</h4><p>Жінка з кровотечею хворіла, доки сама не повірила і не доторкнулася до Ісуса – і помазання відчутно перейшло на неї. Ісуса тиснуло багато людей, та ніхто не зцілився, бо не мали віри. Помазання на зцілення в Бога є завжди, але з боку людей потрібна віра.</p><figure class="scripture long"><blockquote><sup>25</sup>А жінка, яка страждала від кровотечі дванадцять років <sup>26</sup>та багато натерпілася від численних лікарів, – витратила все своє майно й жодного полегшення не мала, але стало їй ще гірше, – <sup>27</sup>почувши про Ісуса, підійшла в натовпі ззаду й доторкнулася до Його одягу. <sup>28</sup>Вона говорила: Якщо лише доторкнуся до Його одягу, – одужаю! <sup>29</sup>І враз припинилася її кровотеча, і вона відчула в тілі, що видужала від хвороби. <sup>30</sup>Тієї ж миті Ісус відчув у Собі, що сила вийшла з Нього. Обернувшись до натовпу, Він запитав: Хто доторкнувся до Мого одягу? <sup>31</sup>А Його учні говорили Йому: Ти ж бачиш, що натовп Тебе тіснить, і запитуєш: Хто доторкнувся до Мене? <sup>32</sup>І оглядався, щоби побачити ту, яка це зробила. <sup>33</sup>А жінка злякалася і тремтіла, знаючи, що сталося з нею; прийшла і впала перед Ним, і сказала Йому всю правду. <sup>34</sup>Він же промовив до неї: Дочко, віра твоя спасла тебе! Іди з миром і будь здоровою від своєї недуги.</blockquote><figcaption><span class="ref">Марка 5:25–34</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Переходить на одяг</h4><p>Люди торкалися краю одягу Ісуса і зцілялися; з Павла помазання переходило на хустки й пояси.</p><figure class="scripture"><blockquote><sup>35</sup>Впізнавши Його, люди цієї місцевості сповістили всю околицю, принесли до Нього всіх хворих <sup>36</sup>і благали Його, щоб тільки доторкнутися до краю Його одягу; і ті, хто доторкався, – одужували.</blockquote><figcaption><span class="ref">Матвія 14:35–36</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>17</sup>Зійшовши, Він став з ними на рівному місці; також була велика юрба Його учнів та безліч народу з усієї Юдеї і Єрусалиму, і з приморського Тира й Сидона, <sup>18</sup>які посходилися послухати Його й зцілитися від своїх недуг, а також ті, хто страждав від нечистих духів, – і оздоровлялися. <sup>19</sup>І кожний з натовпу намагався доторкнутися до Нього, бо з Нього виходила сила й оздоровляла всіх.</blockquote><figcaption><span class="ref">Луки 6:17–19</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>11</sup>Бог чинив надзвичайні чудеса руками Павла, <sup>12</sup>так що на хворих клали хусточки й пояси з його тіла, і вони оздоровлялися від недуг, а злі духи виходили.</blockquote><figcaption><span class="ref">Дії 19:11–12</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Не джерело, а канал</h4><p>Буває помазання на певні хвороби, а на різних зібраннях – на різні. Через людину тече Божа сила, але джерело – Святий Дух, що живе в нас. Живи життям очікування.</p><h4 class="sub">4. Зберегти зцілення</h4><p>Симптоми можуть повернутися, але якщо людина їм протистоїть, хвороба не повернеться. Після зцілення треба більше, ніж звичайно, перебувати в Слові і практикувати Божі обітниці про зцілення.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Помазання на зцілення в Бога є завжди, але потрібна віра з боку людей, щоб воно проявилося.</p></aside><h3 class="sec" id="ch5-s2">Як зростає помазання</h3><p>Кожен вид помазання може зростати. Давид спершу був помазаний перемогти Ґоліята, потім – на царя над Юдою, а згодом – над усім Ізраїлем. Ріки живої води – образ Святого Духа, носія помазання; ми – храм Бога Живого.</p><figure class="scripture"><blockquote><sup>38</sup>Хто вірить у Мене, як каже Писання, ріки живої води з нутра його потечуть. <sup>39</sup>Це Він сказав про Духа, Якого мали одержати ті, котрі повірили в Нього. Але Духа ще не було, бо Ісус ще не був прославлений.</blockquote><figcaption><span class="ref">Івана 7:38–39</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture long"><blockquote><sup>1</sup>Провідник знову привів мене до входу в Храм. Тут я побачив, як з-під порога Храму тече на схід вода, адже Храм своїм фасадом був звернений у східному напрямку, – вода витікала з правого боку Храму, південніше жертовника. <sup>2</sup>Він вивів мене північною брамою і повів мене обхідною дорогою до зовнішньої брами, що в східному напрямку, – і ось вода виприскує з правого боку брами. <sup>3</sup>Пішов той муж на схід, тримаючи в руці мірний шнур, – він відміряв тисячу ліктів й перевів мене через воду, – води було по кісточки. <sup>4</sup>Тоді відміряв ще тисячу й знову перевів мене через воду, – вода сягала до колін. Відміряв ще тисячу, й перевів мене, – води вже стало до пояса. <sup>5</sup>Він знову відміряв тисячу, – і цей потік я вже не міг перейти, оскільки вода була такою глибокою, що потрібно було плисти, – потік став непрохідним. <sup>6</sup>Тоді він сказав до мене: Ти все побачив, сину людський? І він повів мене назад, повернувши мене на берег ріки. <sup>7</sup>Коли я повернувся назад, то побачив на обох берегах ріки дуже багато дерев. <sup>8</sup>А він сказав мені: Ці води течуть у напрямку східної округи краю, спускаються на рівнину й потрапляють у море, – коли вони увійдуть у брудне море, його вода стане здоровою. <sup>9</sup>І куди лише цей потік потече, там кожне живе створіння, що існує, намножуватиметься. Тож буде там дуже багато риби, – адже щойно ця вода туди досягне, все стане здоровим і оживе. Куди тільки прийде цей потік, усе буде оживляти. <sup>10</sup>Станеться так, що на обох берегах стоятимуть рибалки: від Ен-Ґеді й аж до Ен-Еґлаїму будуть місця для сушіння сітей. Розмаїття його риби буде таке велике, і її буде так багато, як у Великому Морі. <sup>11</sup>Але його мочарі і його озерця не будуть оздоровлені. Вони такими й залишаться, щоб звідти добувати сіль. <sup>12</sup>Біля потоку на обох його берегах будуть рости різноманітні фруктові дерева. Їхнє листя не в’янутиме, а їхні плоди не переведуться, бо щомісяця дозріватимуть нові. Адже їх буде зрошувати вода, що виходить зі Святилища. Плоди дерев будуть на їжу, а їхнє листя – на оздоровлення.</blockquote><figcaption><span class="ref">Єзекиїль 47:1–12</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">1. Струмок</h4><p>Вода тече з-під порога храму – початок помазання, малопомітний і для самої людини, і для інших.</p><h4 class="sub">2. По кісточки</h4><p>Помазання і присутність Духа зростають, люди вже помічають силу. Але з такої води легко вийти і повернутися назад.</p><h4 class="sub">3. По коліна</h4><p>Вистрибнути вже нелегко. Помазання тече на значному рівні, і інші ясно бачать, що людина не така, як вони.</p><h4 class="sub">4. По пояс</h4><p>Людину повністю взяв Бог: вона відокремлена для служіння, через неї багато хто приходить до Ісуса. Служителі мають бути хоча б на цьому рівні. Пріоритети змінюються, тож для інших така людина здається дивною.</p><h4 class="sub">5. Потік, через який треба пливти</h4><p>Найвищий рівень: дна не дістати, опора – тільки Бог. Пливти треба за течією; хто воює з потоком, гине. Так жили Павло, Петро та інші.</p><h4 class="sub">6. Не залишай джерела</h4><p>Ріка може якийсь час текти без джерела, але потім зникне. Бережи первинні істини спасіння, навіть якщо ти вже великий євангеліст. Великому помазаникові неприпустимі навіть дрібні гріхи; та помазані теж помиляються, і Бог готовий відновити. Коли люди відвертаються, підбадьорюй себе в Господі, як Давид.</p><h4 class="sub">7. Життя для інших</h4><p>Де тече цей потік, усе оживає і рибі немає ліку: помазання потрібне, щоб ловити людей для Божого Царства. Хто перестає текти з потоком, стає болотом, залишеним для солі.</p><figure class="scripture long"><blockquote><sup>7</sup>Коли я повернувся назад, то побачив на обох берегах ріки дуже багато дерев. <sup>8</sup>А він сказав мені: Ці води течуть у напрямку східної округи краю, спускаються на рівнину й потрапляють у море, – коли вони увійдуть у брудне море, його вода стане здоровою. <sup>9</sup>І куди лише цей потік потече, там кожне живе створіння, що існує, намножуватиметься. Тож буде там дуже багато риби, – адже щойно ця вода туди досягне, все стане здоровим і оживе. Куди тільки прийде цей потік, усе буде оживляти. <sup>10</sup>Станеться так, що на обох берегах стоятимуть рибалки: від Ен-Ґеді й аж до Ен-Еґлаїму будуть місця для сушіння сітей. Розмаїття його риби буде таке велике, і її буде так багато, як у Великому Морі. <sup>11</sup>Але його мочарі і його озерця не будуть оздоровлені. Вони такими й залишаться, щоб звідти добувати сіль.</blockquote><figcaption><span class="ref">Єзекиїль 47:7–11</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Помазання Боже – не дешеве, воно дороге для людини, але воно справді того варте.</p></aside><section class="quiz" id="quiz5" data-ch="5"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 5</span><h3>Зцілення і зростання помазання</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="5"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Хто, за уроком, приносить людям хвороби? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бог – як покарання</li><li><span class="box"></span><b>Б)</b> Ніхто: хвороби – природний процес</li><li><span class="box"></span><b>В)</b> Самі люди, через брак знань</li><li><span class="box"></span><b>Г)</b> Диявол, а Ісус зціляв</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Чому жінка з кровотечею зцілилася, а інші, хто тиснув Ісуса, – ні (Марка 5:25–34)? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Вона стояла ближче за інших</li><li><span class="box"></span><b>Б)</b> Вона повірила і доторкнулася до помазання; в інших не було віри</li><li><span class="box"></span><b>В)</b> Ісус вибрав саме її</li><li><span class="box"></span><b>Г)</b> Вона довго страждала і заслужила зцілення</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Людину зцілили, а через тиждень симптоми повернулися, і вона вирішила: «Значить, хвороба повернулася». Що порадити за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Погодитися, що зцілення не було</li><li><span class="box"></span><b>Б)</b> Чекати іншого служителя</li><li><span class="box"></span><b>В)</b> Протистояти симптомам, більше перебувати в Слові і практикувати обітниці про зцілення</li><li><span class="box"></span><b>Г)</b> Нічого не робити</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Після зцілень на зібранні люди почали шанувати служителя як джерело сили. Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Через людину тече Божа сила, але джерело – Святий Дух, що живе в нас</li><li><span class="box"></span><b>Б)</b> Служитель і є джерелом сили</li><li><span class="box"></span><b>В)</b> Сила міститься в одязі служителя</li><li><span class="box"></span><b>Г)</b> Зцілює лише віра хворого, без Бога</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Що відбувається на рівні води «по кісточки»? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Опора – тільки Бог, дна не дістати</li><li><span class="box"></span><b>Б)</b> Людину повністю взяв Бог для служіння</li><li><span class="box"></span><b>В)</b> Помазання майже непомітне</li><li><span class="box"></span><b>Г)</b> Помазання вже помітне, але з такої води легко вийти і повернутися назад</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Відомий євангеліст каже: «Мені вже не треба повертатися до основ спасіння – я це давно пройшов». Що каже урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Він правий: основи – для новонавернених</li><li><span class="box"></span><b>Б)</b> Ріка без джерела з часом зникне: треба берегти первинні істини спасіння</li><li><span class="box"></span><b>В)</b> Головне – масштаб служіння</li><li><span class="box"></span><b>Г)</b> Основи можна повторювати раз на рік</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Служителя підвели люди, на яких він розраховував, і він думає, що все скінчено. Що радить урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Залишити служіння</li><li><span class="box"></span><b>Б)</b> Шукати нових людей, на яких спертися</li><li><span class="box"></span><b>В)</b> Підбадьорювати себе в Господі, як Давид</li><li><span class="box"></span><b>Г)</b> Вирішити, що помазання відійшло</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Що, за уроком, означає образ з Єзекиїля 47: де тече потік, усе оживає і рибі немає ліку? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Помазання потрібне, щоб оживляти людей і ловити їх для Божого Царства</li><li><span class="box"></span><b>Б)</b> Матеріальне благословення віруючих</li><li><span class="box"></span><b>В)</b> Риболовлю як заняття перших учнів</li><li><span class="box"></span><b>Г)</b> Події кінця світу</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Як, за уроком, помазання на зцілення переходило через Ісуса і Павла? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Люди торкалися краю одягу Ісуса</li><li><span class="box"></span><b>Б)</b> Тільки через довгу молитву служителя</li><li><span class="box"></span><b>В)</b> На хворих клали хустки й пояси Павла</li><li><span class="box"></span><b>Г)</b> Лише в храмі</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що урок каже про найвищий рівень – потік, через який треба пливти? Оберіть усі правильні. <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Опора – тільки Бог</li><li><span class="box"></span><b>Б)</b> З потоком можна воювати</li><li><span class="box"></span><b>В)</b> Пливти треба за течією</li><li><span class="box"></span><b>Г)</b> Там уже немає жодних труднощів</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Помазання на зцілення в Бога є завжди, але з боку людей потрібна віра, щоб воно проявилося. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Помазані служителі ніколи не помиляються. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> Поєднайте місце Писання з думкою уроку. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Марка 5:25–34 <span class="blank"></span></li><li>Дії 19:11–12 <span class="blank"></span></li><li>Івана 7:38–39 <span class="blank"></span></li><li>Єзекиїль 47:1–12 <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Жінка доторкнулася до одягу Ісуса</li><li><b>Б)</b> Ріки живої води – про Духа</li><li><b>В)</b> Хустки й пояси Павла</li><li><b>Г)</b> Вода тече з-під порога храму</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Як, за Єзекиїля 47, зростає помазання? Розставте рівні по порядку. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> По пояс</li><li><span class="blank sm"></span> Струмок з-під порога храму</li><li><span class="blank sm"></span> По кісточки</li><li><span class="blank sm"></span> По коліна</li><li><span class="blank sm"></span> Потік, через який треба пливти</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> На якому рівні «води» з Єзекиїля 47 ви зараз? Що зробите, щоб помазання у вашому житті зростало? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article>
+
+  <section class="summary screen-only" id="summary">
+    <span class="lbl">Підсумок</span>
+    <h2>Ваші результати</h2>
+    <p>Результати зберігаються у вашому браузері і надсилаються пастору Біблійної школи разом з ім’ям, яке ви вказали.</p>
+    <div id="summaryTable"></div>
+  </section>
+
+  <section class="answers print-only" id="answers">
+    <span class="lbl">Додаток</span>
+    <h2>Відповіді до тестів</h2>
+    <p>Для питань на відповідність літери відповідають правому стовпчику в тесті. Для питань на порядок подано правильну послідовність.</p>
+    <section class="key-ch"><h3>Розділ 1. Що таке помазання</h3><ol class="key-list"><li><b class="k-a">Г.</b> <span class="k-exp">Помазання – цілеспрямована, тривала дія Божої сили через людину для здійснення Божої волі у фізичному світі, а також проти демонічних сил.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Не можна плутати помазання з талантами. Помазання долає перешкоди і руйнує діла диявола; його визначають за результатами, тобто за плодами.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Помазання не дається для когось особисто – його дають, щоб допомогти іншим. Служитель і сам щось отримує, як мокріють труби, якими тече вода, але це не головна мета.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Помазання рухається, коли ми будуємо Боже Царство; щойно починаємо будувати своє, воно відходить, і нечисті духи можуть увійти в життя помазаника.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Біси, хвороби і все дияволове бояться не титулу чи звання служителя, а помазання: саме воно, а не титул, розриває всяке ярмо.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Саме внутрішнє помазання – основа, щоб помазання на допомогу іншим прийшло і зростало; без нього служитель не встоїть довго під атаками диявола.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Помазання вчить усього (1 Ів. 2:27), і Святий Дух навчить усього (Ів. 14:26). Те, що Дух робить у нас, і є помазання.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Неправильні книжки, фільми, спілкування гасять внутрішнє помазання. Розвивають його спілкування зі Святим Духом, регулярна молитва і роздуми над Словом.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Урок називає три види: внутрішнє, помазання через людину на допомогу іншим і спільне.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Внутрішнє помазання змінює характер і розвиває плід Духа, дає розрізняти добро і зло (Євр. 5:14) і допомагає судити себе у світлі Слова.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Так. Та якщо людина довго чимось займається в служінні, з часом стане видно, чи є на ній помазання.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ні. Освячення не закінчується, і будь-який служитель, хоч яким духовним він є, постійно потребує внутрішнього помазання для змін.</span></li><li><b class="k-a">1 – Г; 2 – А; 3 – Б; 4 – В.</b> <span class="k-exp">Ці місця показують, як внутрішнє помазання навчає, дає розрізнення й очищає.</span></li><li><b class="k-a">У духовному світі людина вже зцілена ранами Ісуса → Діє помазання Святого Духа → Зцілення стає реальним у фізичному тілі.</b> <span class="k-exp">Помазання робить так, щоб те, що є в духовному світі, здійснилося і стало реальним у фізичному.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Урок: помазання може бути на людині, але не проявлятися, якщо вона не служить Богові. Воно дається, щоб служити іншим, і визначається за плодами.</span></li></ol></section><section class="key-ch"><h3>Розділ 2. Помазання для служіння</h3><ol class="key-list"><li><b class="k-a">Б.</b> <span class="k-exp">Ісус говорить, на які конкретні справи Його помазано (Лк. 4:18–19). Помазання Боже на людині завжди має конкретну мету.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Коли Бог з тобою, Його сила може проявлятися, навіть коли ти нічого не відчуваєш. Тому рухатися в Божій силі треба вірою, а не відчуттями.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Помазання – не просто присутність Святого Духа, а поєднання Його присутності й сили: Бог помазав Ісуса Духом Святим і силою (Дії 10:38).</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Помазання приносить успіх і благословення. Щоб служитель не зіпсувався від успіху, потрібне внутрішнє утвердження; справжнє помазання приходить, коли Бог бачить, що ти утверджений усередині (2 Кор. 1:21).</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Помазання визначає тільки Бог, але Бог діє через людей: Ісуса Навина Він помазав через Мойсея, Савла приєднав через Варнаву. Хто ізолює себе, легко пропустить своє помазання.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Єлисей зруйнував те, на що покладався раніше, і пішов служити Іллі (1 Цар. 19:19–21).</span></li><li><b class="k-a">А.</b> <span class="k-exp">Перший плащ – покликання; другий, коли Іллю було взято, – пророче помазання з Божою силою. Між ними був період підготовки.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Між першим і другим плащем Єлисей робив, здавалося б, незначні речі, а Бог працював над його серцем. Ґехазій цієї школи не пройшов і отримав проказу замість помазання.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Єлисей був працьовитим, готовим служити, рішучим, залишив те, на що покладався, розумів духовні принципи і шанував батьків.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Помазання приходить порціями, і від того, що ти зробиш з черговою, залежить наступна. Воно не сходить на лінивих. Емоції і помазання – не одне й те саме.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Так. Ілля не голосував за Єлисея: Бог покликав його з власної ініціативи.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ні. Ми спершу посвячуємо себе Ісусові, а потім служимо помазаникам, не на шкоду відданості Йому.</span></li><li><b class="k-a">1 – В; 2 – А; 3 – Б; 4 – Г.</b> <span class="k-exp">Кожне місце розкриває, як приходить помазання на служіння.</span></li><li><b class="k-a">Бог відокремлює людину на щось → Святий Дух сходить на неї з відповідною силою → Відокремлення підтверджується на ділі.</b> <span class="k-exp">Помазати – значить відокремити. Підтвердженням відокремлення стає зішестя Святого Духа з відповідною силою, як в Ісуса.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Урок: Єлисей заколов волів і спалив плуг, залишивши те, на що покладався. Помазання вимагає першого, пріоритетного місця в житті.</span></li></ol></section><section class="key-ch"><h3>Розділ 3. Шлях до помазання</h3><ol class="key-list"><li><b class="k-a">В.</b> <span class="k-exp">«Ґілґал» означає «коло, колесо» – прообраз звичного одноманітного життя за релігійними догмами. У колесі немає помазання.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Щоб отримати помазання, Єлисею довелося вийти за Іллею з колеса. Бог не живе за програмою: щодня Він творить нове.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">«Бетель» – дім Божий. Присутність і помазання різні, але присутність на шляху до помазання має бути; вимірюють її Божим Словом, а не почуттями.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Багато хто, перемігши бідність і диявола, зупиняється, бо вирішує, що вже всього досяг. Але є ще один рівень.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Єрихон символізує духовну війну: на помазаного диявол нападатиме. Єрихонські мури – твердині в житті: хіть, гордість, гнів, прив’язаності.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Єлисей попросив подвійної міри духу Іллі. Просити в Бога мало – не смирення, а невіра; просити багато – не гордість, а віра.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Єлисей не скромничав: він попросив, щоб дух Іллі був на ньому подвійною мірою (2 Цар. 2:9).</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Є покликання, підготовка, доручення. Якщо Бог тебе покликав, це ще не означає, що можна йти куди завгодно і робити що завгодно.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Формули немає. Потрібно перебувати в Слові, мати спрагу за Богом, спілкуватися зі Святим Духом, бути готовим змінюватися, залишатися в покликанні, судити себе, вправлятися в помазанні, пості й молитві.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Офіційність, формалізм і традиції виганяють зі служіння Божу присутність.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Так. Коли приходить помазання, приходять і гоніння, як у Давида після помазання на царство.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ні. Щоразу Єлисей відповідав: «Я не залишу тебе!» Помазання отримують наполегливі.</span></li><li><b class="k-a">1 – А; 2 – Б; 3 – В; 4 – Г.</b> <span class="k-exp">Шлях Єлисея за Іллею має духовний зміст – це кроки до помазання.</span></li><li><b class="k-a">Ґілґал → Бетель → Єрихон → Йордан.</b> <span class="k-exp">Ілля з Єлисеєм вийшли з Ґілґала, пішли до Бетеля, потім до Єрихона і до Йордану.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Урок: вийти з колеса звичок, увійти в Божу присутність, навчитися перемагати твердині і взяти відповідальність за покликання, просячи в Бога багато.</span></li></ol></section><section class="key-ch"><h3>Розділ 4. Спільне помазання</h3><ol class="key-list"><li><b class="k-a">А.</b> <span class="k-exp">Спільне помазання проявляється серед групи віруючих; його не можна замінити помазанням на кожній окремій людині.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Олія спершу стікає на голову, а потім на все тіло (Пс. 133:1–2): помазання на церкві багато в чому залежить від пастора.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Помазання не проявиться там, де люди ворогують, бо поділене царство не встоїть. Спільна молитва найбільше допомагає досягти єдності.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Єдність не приходить сама: її треба досягти, і зазвичай вона будується навколо бачення, яке Бог дає пасторові.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Завдяки єдності учні не лише сповнилися Святим Духом, а й церква за один день зросла на три тисячі.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">У храмі рух почався згори: священики вийшли зі святилища (2 Хр. 5:11–14). Пастори й лідери мають бувати в Божій присутності, перш ніж служити людям.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Де бракує молитви, прославлення і Слова, церква стає формальною і сухою і рухається в служінні механічно, за інерцією.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Прославлення притягує Бога, а з Ним приходить помазання: землетрус відчинив двері, кайдани спали, а сторож навернувся.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Урок називає єдність і молитву, прославлення і поклоніння і служіння Господу.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Після погроз апостоли однодушно молилися про сміливість і знамення – місце захиталося, і всі сповнилися Святим Духом.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Так. Коли віруючі збираються разом, Божа присутність проявляється особливо.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ні. Потрібно, щоб велике помазання було на помісних церквах і впливало через них на все місто.</span></li><li><b class="k-a">1 – В; 2 – А; 3 – Б; 4 – Г.</b> <span class="k-exp">Ці місця показують, як проявляється спільне помазання.</span></li><li><b class="k-a">Учні однодушно перебували в молитві → Усі сповнилися Святим Духом → До церкви приєдналося близько трьох тисяч.</b> <span class="k-exp">Єдність у молитві передувала зішестю Святого Духа, а за ним церква зросла на три тисячі (Дії 1:14; 2:1, 4, 41).</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Урок: єдність – обов’язкова умова спільного помазання. Її треба досягти; допомагають спільна молитва, щире спілкування, бачення пастора.</span></li></ol></section><section class="key-ch"><h3>Розділ 5. Зцілення і зростання помазання</h3><ol class="key-list"><li><b class="k-a">Г.</b> <span class="k-exp">Дехто вважає, що хворобу дав Бог у покарання. Насправді хвороби приносить диявол, а Ісус зціляв; помазання – протиотрута від усього, що робить диявол.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Помазання на зцілення в Бога є завжди, але потрібна віра з боку людей. Ісуса тиснуло багато людей, та ніхто не зцілився, бо не мали віри.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Якщо людина протистоїть симптомам, хвороба не повернеться. Після зцілення треба більше, ніж звичайно, перебувати в Слові.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Через людину може текти Божа сила, але вона не джерело сили. Джерело – Святий Дух, що живе в нас.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">На рівні «по кісточки» люди вже помічають силу, але помазання ще не сильно тримає людину: з такої води легко вийти.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Ріка може якийсь час текти без джерела, але потім зникне. Бережи первинні істини спасіння, навіть якщо ти вже великий євангеліст.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Буває, що люди, на чию допомогу ми розраховуємо, відвертаються. Давид підбадьорив себе в Господі – і ти підбадьорюй.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Де тече потік, усе оживає, і риби багато, коли рухається помазання: воно потрібне, щоб ловити людей для Божого Царства (Єз. 47:7–11).</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Помазання переходило на одяг Ісуса (Мт. 14:35–36; Лк. 6:17–19), а з Павла – на хустки й пояси (Дії 19:11–12).</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Дна не дістати, опора – тільки Бог. Пливти треба за течією; хто воює з потоком, гине.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Так. Жінка хворіла, доки сама не повірила і не доторкнулася до помазання.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ні. Помазані теж помиляються, але Бог готовий відновити.</span></li><li><b class="k-a">1 – А; 2 – В; 3 – Б; 4 – Г.</b> <span class="k-exp">Ці місця показують помазання на зцілення і його зростання.</span></li><li><b class="k-a">Струмок з-під порога храму → По кісточки → По коліна → По пояс → Потік, через який треба пливти.</b> <span class="k-exp">Помазання зростає поступово – від малопомітного струмка до потоку, де опора тільки Бог.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Урок: кожен вид помазання може зростати. Не залишай джерела – первинних істин спасіння; ті, хто перестає текти з потоком, стають болотом.</span></li></ol></section>
+  </section>
+
+  <footer class="site-foot">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <p><b>Біблійна школа «Дім Слова»</b> · Християнська церква «Перемога», м. Рівне</p>
+    <p class="links"><a href="https://www.instagram.com/victorychurch_rv/" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=100077340400434" rel="noopener">Facebook</a></p>
+    <p class="small">Українською перекладено та оформлено за навчальним матеріалом Біблійної школи «Робітники Царства» християнської церкви «Перемога» (м. Київ). Використано з дозволу.</p>
+    <p class="small">Цитати Святого Письма – «Біблія. Сучасний переклад» © Українське Біблійне Товариство, 2020–2023.</p>
+  </footer>
+</main>
+
+<script type="application/json" id="quiz-data" data-endpoint="https://script.google.com/macros/s/AKfycbyyOJP3nvwp38aiZIJQHnpvppkgWD4EYnmRpf0tdZVsY2Ls4fPLwr7fvoc4AycUOZA/exec" data-lesson="pomazannia">[{"chapter": 1, "title": "Що таке помазання", "questions": [{"id": "q1-01", "type": "single", "level": "знання", "q": "Що таке помазання Святого Духа за уроком?", "options": ["Сильне емоційне переживання під час служіння", "Природний талант, який Бог благословляє", "Звання служителя, яке людині дає церква", "Цілеспрямована, тривала дія Божої сили через людину, щоб здійснювати Божу волю у фізичному світі і проти демонічних сил"], "answer": 3, "explain": "Помазання – цілеспрямована, тривала дія Божої сили через людину для здійснення Божої волі у фізичному світі, а також проти демонічних сил.", "anchor": "ch1-s1"}, {"id": "q1-02", "type": "single", "level": "застосування", "q": "Брат чудово грає на гітарі, усі ним захоплюються, але через його служіння нічого не змінюється. Що про це каже урок?", "options": ["Він помазаний, бо його служіння гарне і правильне", "Талант – не помазання: помазання визначають не за зовнішніми проявами, а за плодами", "Помазання на прославлення залежить від рівня майстерності", "Помазання в нього є, просто воно й не має проявлятися"], "answer": 1, "explain": "Не можна плутати помазання з талантами. Помазання долає перешкоди і руйнує діла диявола; його визначають за результатами, тобто за плодами.", "anchor": "ch1-s1"}, {"id": "q1-03", "type": "single", "level": "розуміння", "q": "Для чого, за уроком, дається помазання?", "options": ["Щоб служитель мав внутрішнє задоволення", "Щоб відрізнити зрілих християн від новачків", "Щоб служити іншим людям і будувати Боже Царство", "Для особистого успіху того, хто його отримав"], "answer": 2, "explain": "Помазання не дається для когось особисто – його дають, щоб допомогти іншим. Служитель і сам щось отримує, як мокріють труби, якими тече вода, але це не головна мета.", "anchor": "ch1-s1"}, {"id": "q1-04", "type": "single", "level": "застосування", "q": "Служитель почав використовувати служіння, щоб будувати власне ім’я і вплив – «своє царство». Що, за уроком, станеться?", "options": ["Помазання відійде, а нечисті духи можуть цим скористатися", "Помазання зросте, бо служіння розширюється", "Нічого: помазання дається раз і назавжди", "Помазання перейде на його помічників"], "answer": 0, "explain": "Помазання рухається, коли ми будуємо Боже Царство; щойно починаємо будувати своє, воно відходить, і нечисті духи можуть увійти в життя помазаника.", "anchor": "ch1-s1"}, {"id": "q1-05", "type": "single", "level": "застосування", "q": "Новий служитель каже: «Коли мене висвятять на пастора, біси мене боятимуться». Що каже урок?", "options": ["Він правий: духовний титул дає владу над бісами", "Біси бояться гучної молитви, а не людини", "Біси бояться великих зібрань", "Біси й хвороби бояться не титулу служителя, а помазання, яке розриває всяке ярмо"], "answer": 3, "explain": "Біси, хвороби і все дияволове бояться не титулу чи звання служителя, а помазання: саме воно, а не титул, розриває всяке ярмо.", "anchor": "ch1-s1"}, {"id": "q1-06", "type": "single", "level": "розуміння", "q": "Чому внутрішнє помазання важливе і для служіння іншим?", "options": ["Воно потрібне тільки тим, хто не має помазання на служіння", "Воно – основа: без нього служитель довго не встоїть під атаками диявола", "Воно замінює помазання на служіння", "Воно стосується лише молитви і на служіння не впливає"], "answer": 1, "explain": "Саме внутрішнє помазання – основа, щоб помазання на допомогу іншим прийшло і зростало; без нього служитель не встоїть довго під атаками диявола.", "anchor": "ch1-s2"}, {"id": "q1-07", "type": "single", "level": "знання", "q": "Що, за уроком, разом показують 1 Івана 2:20, 27 та Івана 14:26?", "options": ["Що віруючим не потрібні вчителі в церкві", "Що помазання мали тільки апостоли", "Помазання вчить усього – і Святий Дух учить усього: те, що Дух робить у нас, і є помазання", "Що Святий Дух нагадує лише слова Старого Заповіту"], "answer": 2, "explain": "Помазання вчить усього (1 Ів. 2:27), і Святий Дух навчить усього (Ів. 14:26). Те, що Дух робить у нас, і є помазання.", "anchor": "ch1-s2"}, {"id": "q1-08", "type": "single", "level": "застосування", "q": "Сестра помітила, що молитва стала формальною, а Біблія «не відкривається». Вечорами вона дивиться сумнівні серіали. Що порадити за уроком?", "options": ["Неправильні фільми гасять внутрішнє помазання; розвивати його через спілкування зі Святим Духом, молитву і роздуми над Словом", "Більше служити іншим – і внутрішнє помазання прийде саме", "Почекати, доки повернуться почуття", "Знайти більш помазаного проповідника"], "answer": 0, "explain": "Неправильні книжки, фільми, спілкування гасять внутрішнє помазання. Розвивають його спілкування зі Святим Духом, регулярна молитва і роздуми над Словом.", "anchor": "ch1-s2"}, {"id": "q1-09", "type": "multi", "level": "знання", "q": "Які види помазання називає урок? Оберіть усі правильні.", "options": ["Внутрішнє – змінює мене і мій характер", "Родинне – передається від батьків дітям", "Спільне – проявляється серед групи віруючих", "Особисте – дається для власного успіху"], "answer": [0, 2], "explain": "Урок називає три види: внутрішнє, помазання через людину на допомогу іншим і спільне.", "anchor": "ch1-s1"}, {"id": "q1-10", "type": "multi", "level": "розуміння", "q": "Що робить внутрішнє помазання? Оберіть усі правильні.", "options": ["Розвиває плід Духа", "Звільняє від потреби судити себе", "Дає змогу розрізняти, що від Бога, а що ні", "Замінює регулярну молитву"], "answer": [0, 2], "explain": "Внутрішнє помазання змінює характер і розвиває плід Духа, дає розрізняти добро і зло (Євр. 5:14) і допомагає судити себе у світлі Слова.", "anchor": "ch1-s2"}, {"id": "q1-11", "type": "truefalse", "level": "знання", "q": "Помазання може бути на людині, але не проявлятися, якщо вона не служить Богові.", "answer": true, "explain": "Так. Та якщо людина довго чимось займається в служінні, з часом стане видно, чи є на ній помазання.", "anchor": "ch1-s1"}, {"id": "q1-12", "type": "truefalse", "level": "розуміння", "q": "За Об’явлення 22:11 і уроком, освячення має кінець: зрілому служителю внутрішнє помазання для змін уже не потрібне.", "answer": false, "explain": "Ні. Освячення не закінчується, і будь-який служитель, хоч яким духовним він є, постійно потребує внутрішнього помазання для змін.", "anchor": "ch1-s2"}, {"id": "q1-13", "type": "match", "level": "розуміння", "q": "Поєднайте місце Писання з думкою уроку.", "pairs": [["Івана 16:13–14", "Дух бере від Ісуса і дає нам"], ["Євреїв 5:14", "Розрізняти добро і зло"], ["1 Тимофія 4:16", "Пильнувати себе і вчення"], ["Об’явлення 22:11", "Святий нехай ще освячується"]], "explain": "Ці місця показують, як внутрішнє помазання навчає, дає розрізнення й очищає.", "anchor": "ch1-s2", "_print_right": [1, 2, 3, 0]}, {"id": "q1-14", "type": "order", "level": "розуміння", "q": "Як, за уроком, помазання робить Божу волю реальною? Розставте по порядку.", "items": ["У духовному світі людина вже зцілена ранами Ісуса", "Діє помазання Святого Духа", "Зцілення стає реальним у фізичному тілі"], "explain": "Помазання робить так, щоб те, що є в духовному світі, здійснилося і стало реальним у фізичному.", "anchor": "ch1-s1", "_print_order": [2, 1, 0]}, {"id": "q1-15", "type": "reflect", "level": "застосування", "q": "Чи є ділянка, де Бог міг би вас помазати, але помазання не проявляється, бо ви там не служите? Що почнете робити?", "sample": "Урок: помазання може бути на людині, але не проявлятися, якщо вона не служить Богові. Воно дається, щоб служити іншим, і визначається за плодами."}], "sections": {"ch1-s1": "Що таке помазання", "ch1-s2": "Внутрішнє помазання"}}, {"chapter": 2, "title": "Помазання для служіння", "questions": [{"id": "q2-01", "type": "single", "level": "розуміння", "q": "Що, за уроком, показує Луки 4:18–19?", "options": ["Помазання – це передусім відчуття Божої присутності", "Бог не помазує без конкретної мети: Ісус називає справи, на які Його помазано", "Ісус отримав помазання лише після воскресіння", "Помазання дається всім однаково і без мети"], "answer": 1, "explain": "Ісус говорить, на які конкретні справи Його помазано (Лк. 4:18–19). Помазання Боже на людині завжди має конкретну мету.", "anchor": "ch2-s1"}, {"id": "q2-02", "type": "single", "level": "застосування", "q": "Молодий служитель каже: «Сьогодні я нічого не відчуваю, тож за хворих молитися не буду». Що каже урок?", "options": ["Він правий: без відчуттів помазання немає", "Йому треба спершу викликати в собі емоції", "Коли Бог з тобою, Його сила діє, навіть якщо ти нічого не відчуваєш; рухатися треба вірою, а не відчуттями", "За хворих можуть молитися лише старші служителі"], "answer": 2, "explain": "Коли Бог з тобою, Його сила може проявлятися, навіть коли ти нічого не відчуваєш. Тому рухатися в Божій силі треба вірою, а не відчуттями.", "anchor": "ch2-s1"}, {"id": "q2-03", "type": "single", "level": "знання", "q": "Як, за Дії 10:38, Бог помазав Ісуса?", "options": ["Духом Святим і силою", "Лише присутністю Святого Духа", "Через руки Івана Хрестителя", "Олією в храмі"], "answer": 0, "explain": "Помазання – не просто присутність Святого Духа, а поєднання Його присутності й сили: Бог помазав Ісуса Духом Святим і силою (Дії 10:38).", "anchor": "ch2-s1"}, {"id": "q2-04", "type": "single", "level": "застосування", "q": "Брат отримав несподіваний успіх у служінні й почав ним хизуватися. Що урок каже про те, коли Бог дає справжнє помазання на служіння?", "options": ["Коли людина досягне певного віку", "Коли служіння стане достатньо великим", "Коли людина познайомиться з найпомазанішим служителем", "Коли бачить, що людина утверджена всередині, – інакше успіх і благословення її зіпсують"], "answer": 3, "explain": "Помазання приносить успіх і благословення. Щоб служитель не зіпсувався від успіху, потрібне внутрішнє утвердження; справжнє помазання приходить, коли Бог бачить, що ти утверджений усередині (2 Кор. 1:21).", "anchor": "ch2-s1"}, {"id": "q2-05", "type": "single", "level": "застосування", "q": "Чоловік каже: «Помазання від Бога, тож церква і служителі мені не потрібні». Що відповідає урок?", "options": ["Він правий: помазання не залежить від інших віруючих", "Помазання від Бога, але Бог діє через людей: хто ізолює себе, легко пропустить своє помазання", "Без особистого знайомства з найпомазанішим служителем помазання не буде", "Ізоляція допомагає краще чути Бога"], "answer": 1, "explain": "Помазання визначає тільки Бог, але Бог діє через людей: Ісуса Навина Він помазав через Мойсея, Савла приєднав через Варнаву. Хто ізолює себе, легко пропустить своє помазання.", "anchor": "ch2-s2"}, {"id": "q2-06", "type": "single", "level": "знання", "q": "Що зробив Єлисей після того, як Ілля накинув на нього плащ?", "options": ["Узяв плащ і одразу почав пророкувати", "Попросив час подумати", "Попрощався з батьками, заколов волів, спалив плуг і пішов служити Іллі", "Продовжив орати, чекаючи наступного знаку"], "answer": 2, "explain": "Єлисей зруйнував те, на що покладався раніше, і пішов служити Іллі (1 Цар. 19:19–21).", "anchor": "ch2-s2"}, {"id": "q2-07", "type": "single", "level": "розуміння", "q": "Що означали два плащі Іллі?", "options": ["Перший – покликання, відокремлення на служіння пророка; другий – пророче помазання з Божою силою", "Перший – для Єлисея, другий – для його учнів", "Обидва означали одне й те саме", "Перший – помазання, другий – нагорода за вірність"], "answer": 0, "explain": "Перший плащ – покликання; другий, коли Іллю було взято, – пророче помазання з Божою силою. Між ними був період підготовки.", "anchor": "ch2-s2"}, {"id": "q2-08", "type": "single", "level": "застосування", "q": "Новонавернений хоче одразу великого служіння і вважає «дрібницею» допомагати пасторові з побутовими справами. Що каже урок?", "options": ["Він правий: дрібні справи не мають стосунку до помазання", "Йому треба шукати церкву, де відразу дадуть служіння", "Помазання дається відразу, без підготовки", "Це період підготовки, як у Єлисея, що лив воду на руки Іллі: тоді Бог працює над серцем; Ґехазій цієї школи не пройшов"], "answer": 3, "explain": "Між першим і другим плащем Єлисей робив, здавалося б, незначні речі, а Бог працював над його серцем. Ґехазій цієї школи не пройшов і отримав проказу замість помазання.", "anchor": "ch2-s2"}, {"id": "q2-09", "type": "multi", "level": "знання", "q": "Які якості Єлисея допомогли йому прийняти помазання? Оберіть усі правильні.", "options": ["Працьовитість", "Обережність: він довго зважував рішення", "Готовність служити Іллі – серце слуги", "Прагнення до незалежності"], "answer": [0, 2], "explain": "Єлисей був працьовитим, готовим служити, рішучим, залишив те, на що покладався, розумів духовні принципи і шанував батьків.", "anchor": "ch2-s2"}, {"id": "q2-10", "type": "multi", "level": "розуміння", "q": "Що урок каже про помазання на допомогу іншим? Оберіть усі правильні.", "options": ["Воно приходить порціями", "Емоції і помазання – одне й те саме", "Воно не сходить на лінивих і бездіяльних", "Його отримують, просто познайомившись зі служителем"], "answer": [0, 2], "explain": "Помазання приходить порціями, і від того, що ти зробиш з черговою, залежить наступна. Воно не сходить на лінивих. Емоції і помазання – не одне й те саме.", "anchor": "ch2-s1"}, {"id": "q2-11", "type": "truefalse", "level": "знання", "q": "Помазання на служіння визначає тільки Бог, а не голосування чи вплив людей.", "answer": true, "explain": "Так. Ілля не голосував за Єлисея: Бог покликав його з власної ініціативи.", "anchor": "ch2-s2"}, {"id": "q2-12", "type": "truefalse", "level": "розуміння", "q": "Служити помазаникам треба навіть тоді, коли це йде на шкоду нашій відданості Ісусові.", "answer": false, "explain": "Ні. Ми спершу посвячуємо себе Ісусові, а потім служимо помазаникам, не на шкоду відданості Йому.", "anchor": "ch2-s2"}, {"id": "q2-13", "type": "match", "level": "знання", "q": "Поєднайте місце Писання з думкою уроку.", "pairs": [["Луки 4:18–19", "Ісус називає справи, на які Його помазано"], ["Дії 10:38", "Помазаний Духом Святим і силою"], ["2 Коринтян 1:21", "Бог утверджує і помазує"], ["1 Царів 19:16–21", "Ілля накидає плащ на Єлисея"]], "explain": "Кожне місце розкриває, як приходить помазання на служіння.", "anchor": "ch2-s1", "_print_right": [1, 2, 0, 3]}, {"id": "q2-14", "type": "order", "level": "розуміння", "q": "Як, за уроком, Бог помазує на служіння? Розставте по порядку.", "items": ["Бог відокремлює людину на щось", "Святий Дух сходить на неї з відповідною силою", "Відокремлення підтверджується на ділі"], "explain": "Помазати – значить відокремити. Підтвердженням відокремлення стає зішестя Святого Духа з відповідною силою, як в Ісуса.", "anchor": "ch2-s1", "_print_order": [2, 1, 0]}, {"id": "q2-15", "type": "reflect", "level": "застосування", "q": "Від чого вам, як Єлисею, треба відмовитися («заколоти волів»), щоб помазання мало перше місце у вашому житті?", "sample": "Урок: Єлисей заколов волів і спалив плуг, залишивши те, на що покладався. Помазання вимагає першого, пріоритетного місця в житті."}], "sections": {"ch2-s1": "Помазання на допомогу іншим", "ch2-s2": "Як Єлисей прийняв помазання"}}, {"chapter": 3, "title": "Шлях до помазання", "questions": [{"id": "q3-01", "type": "single", "level": "знання", "q": "Що означає «Ґілґал» і що він символізує в уроці?", "options": ["«Дім Божий» – місце Його присутності", "Духовну війну і перемогу над твердинями", "«Коло, колесо» – одноманітне життя за звичками і релігійними догмами", "Місце зрілості і відповідальності за покликання"], "answer": 2, "explain": "«Ґілґал» означає «коло, колесо» – прообраз звичного одноманітного життя за релігійними догмами. У колесі немає помазання.", "anchor": "ch3-s1"}, {"id": "q3-02", "type": "single", "level": "застосування", "q": "Церква роками робить усе однаково, «бо так заведено», і служіння стало сухим. Який крок шляху до помазання їм потрібен?", "options": ["Вийти з «Ґілґалу» – колеса звичок і традицій", "Залишитися на місці, бо стабільність – ознака помазання", "Одразу просити подвійної міри", "Додати ще зібрань за тим самим порядком"], "answer": 0, "explain": "Щоб отримати помазання, Єлисею довелося вийти за Іллею з колеса. Бог не живе за програмою: щодня Він творить нове.", "anchor": "ch3-s1"}, {"id": "q3-03", "type": "single", "level": "розуміння", "q": "Що урок каже про Божу присутність, яку символізує Бетель?", "options": ["Присутність і помазання – одне й те саме", "Присутність вимірюють силою почуттів", "На шляху до помазання Божа присутність не потрібна", "Присутність і помазання – не одне й те саме, але на шляху до помазання присутність має бути; її вимірюють Словом, а не почуттями"], "answer": 3, "explain": "«Бетель» – дім Божий. Присутність і помазання різні, але присутність на шляху до помазання має бути; вимірюють її Божим Словом, а не почуттями.", "anchor": "ch3-s1"}, {"id": "q3-04", "type": "single", "level": "застосування", "q": "Брат переміг бідність, навчився духовної війни і каже: «Я вже всього досяг». Що каже урок?", "options": ["Він справді досяг найвищого рівня", "Багато хто зупиняється після Єрихону, але є ще один рівень – Йордан", "Йому треба повернутися в Ґілґал", "Тепер йому потрібна лише Божа присутність"], "answer": 1, "explain": "Багато хто, перемігши бідність і диявола, зупиняється, бо вирішує, що вже всього досяг. Але є ще один рівень.", "anchor": "ch3-s1"}, {"id": "q3-05", "type": "single", "level": "розуміння", "q": "Що символізує Єрихон на шляху до помазання?", "options": ["Місце відпочинку після випробувань", "Місце, де людина бере відповідальність за покликання", "Духовну війну: треба навчитися воювати й перемагати твердині", "Звичне релігійне життя"], "answer": 2, "explain": "Єрихон символізує духовну війну: на помазаного диявол нападатиме. Єрихонські мури – твердині в житті: хіть, гордість, гнів, прив’язаності.", "anchor": "ch3-s1"}, {"id": "q3-06", "type": "single", "level": "застосування", "q": "Сестра молиться: «Господи, дай мені хоч трохи – мені багато не треба», – і вважає це смиренням. Що каже урок?", "options": ["Просити в Бога мало – не смирення, а невіра; просити багато – не гордість, а віра", "Це правильне смирення", "Просити багато – завжди гордість", "Просити можна лише те, що вже мав інший служитель"], "answer": 0, "explain": "Єлисей попросив подвійної міри духу Іллі. Просити в Бога мало – не смирення, а невіра; просити багато – не гордість, а віра.", "anchor": "ch3-s1"}, {"id": "q3-07", "type": "single", "level": "знання", "q": "Чого попросив Єлисей в Іллі перед тим, як Іллю було взято (2 Царів 2:9)?", "options": ["Плаща Іллі на згадку", "Благословення для своєї сім’ї", "Щоб Ілля залишився з ним", "Подвійної міри духу Іллі"], "answer": 3, "explain": "Єлисей не скромничав: він попросив, щоб дух Іллі був на ньому подвійною мірою (2 Цар. 2:9).", "anchor": "ch3-s1"}, {"id": "q3-08", "type": "single", "level": "застосування", "q": "Щойно покликаний служитель каже: «Бог мене покликав, тож тепер можу служити де завгодно і як хочу». Що каже урок?", "options": ["Він правий: покликання і доручення – одне й те саме", "Покликання і доручення – не одне й те саме: між ними підготовка; першим плащем вода б не розступилася", "Йому треба чекати, поки люди дадуть йому другий плащ", "Покликання для служіння взагалі не потрібне"], "answer": 1, "explain": "Є покликання, підготовка, доручення. Якщо Бог тебе покликав, це ще не означає, що можна йти куди завгодно і робити що завгодно.", "anchor": "ch3-s1"}, {"id": "q3-09", "type": "multi", "level": "розуміння", "q": "Що, за уроком, потрібно, щоб отримати і зберегти помазання? Оберіть усі правильні.", "options": ["Перебувати в Божому Слові, у пості й молитві", "Знайти точну формулу, як у Єлисея", "Залишатися в тому, до чого покликав Бог", "Не змінюватися, щоб зберегти досягнуте"], "answer": [0, 2], "explain": "Формули немає. Потрібно перебувати в Слові, мати спрагу за Богом, спілкуватися зі Святим Духом, бути готовим змінюватися, залишатися в покликанні, судити себе, вправлятися в помазанні, пості й молитві.", "anchor": "ch3-s1"}, {"id": "q3-10", "type": "multi", "level": "знання", "q": "Що, за уроком, виганяє Божу присутність зі служіння? Оберіть усі правильні.", "options": ["Формалізм", "Наполегливість", "Офіційність і традиції", "Спрага за Богом"], "answer": [0, 2], "explain": "Офіційність, формалізм і традиції виганяють зі служіння Божу присутність.", "anchor": "ch3-s1"}, {"id": "q3-11", "type": "truefalse", "level": "знання", "q": "Коли приходить помазання, нейтральних людей не буде: одні радітимуть, інші заздритимуть.", "answer": true, "explain": "Так. Коли приходить помазання, приходять і гоніння, як у Давида після помазання на царство.", "anchor": "ch3-s1"}, {"id": "q3-12", "type": "truefalse", "level": "розуміння", "q": "За 2 Царів 2:1–15, коли Ілля запропонував Єлисею залишитися, той погодився.", "answer": false, "explain": "Ні. Щоразу Єлисей відповідав: «Я не залишу тебе!» Помазання отримують наполегливі.", "anchor": "ch3-s1"}, {"id": "q3-13", "type": "match", "level": "розуміння", "q": "Поєднайте місце на шляху Єлисея з його значенням.", "pairs": [["Ґілґал", "Вийти з колеса звичок"], ["Бетель", "Божа присутність"], ["Єрихон", "Духовна війна"], ["Йордан", "Зрілість і відповідальність"]], "explain": "Шлях Єлисея за Іллею має духовний зміст – це кроки до помазання.", "anchor": "ch3-s1", "_print_right": [0, 1, 2, 3]}, {"id": "q3-14", "type": "order", "level": "знання", "q": "Через які місця, за 2 Царів 2:1–6, пройшли Ілля і Єлисей? Розставте по порядку.", "items": ["Ґілґал", "Бетель", "Єрихон", "Йордан"], "explain": "Ілля з Єлисеєм вийшли з Ґілґала, пішли до Бетеля, потім до Єрихона і до Йордану.", "anchor": "ch3-s1", "_print_order": [0, 3, 2, 1]}, {"id": "q3-15", "type": "reflect", "level": "застосування", "q": "Який із кроків – Ґілґал, Бетель, Єрихон чи Йордан – зараз ваш? Що вам треба зробити, щоб іти далі?", "sample": "Урок: вийти з колеса звичок, увійти в Божу присутність, навчитися перемагати твердині і взяти відповідальність за покликання, просячи в Бога багато."}], "sections": {"ch3-s1": "Шлях до помазання"}}, {"chapter": 4, "title": "Спільне помазання", "questions": [{"id": "q4-01", "type": "single", "level": "знання", "q": "Що таке спільне помазання?", "options": ["Помазання, що проявляється серед певної групи віруючих – церкви чи служіння", "Помазання, яке пастор передає кожному окремо", "Просто сума помазань окремих людей у групі", "Помазання, яке буває лише на великих конференціях"], "answer": 0, "explain": "Спільне помазання проявляється серед групи віруючих; його не можна замінити помазанням на кожній окремій людині.", "anchor": "ch4-s1"}, {"id": "q4-02", "type": "single", "level": "розуміння", "q": "Що, за уроком, показує Псалом 133:1–2 про олію, що стікає з голови?", "options": ["Помазання дається тільки пасторам", "Єдність на помазання не впливає", "Помазання тече від членів церкви до пастора", "Помазання на церкві багато в чому залежить від пастора: олія спершу стікає на голову"], "answer": 3, "explain": "Олія спершу стікає на голову, а потім на все тіло (Пс. 133:1–2): помазання на церкві багато в чому залежить від пастора.", "anchor": "ch4-s1"}, {"id": "q4-03", "type": "single", "level": "застосування", "q": "У малій групі постійні сварки й образи, але всі хочуть «сильного помазання». Що порадити за уроком?", "options": ["Запросити помазаного гостя", "Єдність – обов’язкова умова: помазання не проявиться там, де ворогують; допомагає спільна молитва", "Помазання прийде, якщо довше співати", "Розділитися на дві групи"], "answer": 1, "explain": "Помазання не проявиться там, де люди ворогують, бо поділене царство не встоїть. Спільна молитва найбільше допомагає досягти єдності.", "anchor": "ch4-s1"}, {"id": "q4-04", "type": "single", "level": "застосування", "q": "У церкві кожне служіння тягне в свій бік і має своє бачення. Навколо чого, за уроком, зазвичай будується єдність?", "options": ["Навколо спільних уподобань", "Навколо думки більшості", "Навколо бачення, яке Бог дає пасторові", "Навколо традицій церкви"], "answer": 2, "explain": "Єдність не приходить сама: її треба досягти, і зазвичай вона будується навколо бачення, яке Бог дає пасторові.", "anchor": "ch4-s1"}, {"id": "q4-05", "type": "single", "level": "знання", "q": "Що сталося, коли учні однодушно перебували в молитві (Дії 1:14; 2:1, 4, 41)?", "options": ["Усі сповнилися Святим Духом, і церква за день зросла на три тисячі", "Їх вигнали з Єрусалима", "Вони отримали нові плащі для служіння", "Вони розійшлися проповідувати поодинці"], "answer": 0, "explain": "Завдяки єдності учні не лише сповнилися Святим Духом, а й церква за один день зросла на три тисячі.", "anchor": "ch4-s1"}, {"id": "q4-06", "type": "single", "level": "застосування", "q": "Пастор і лідери щонеділі приходять просто «відпрацювати» зібрання, не проводячи часу в Божій присутності. Що каже урок?", "options": ["Це неважливо: помазання залежить лише від хору", "Досить гарної проповіді", "Це справа тільки пастора, решти не стосується", "Рух починається згори: лідерам важливо бувати в Божій присутності, перш ніж служити людям"], "answer": 3, "explain": "У храмі рух почався згори: священики вийшли зі святилища (2 Хр. 5:11–14). Пастори й лідери мають бувати в Божій присутності, перш ніж служити людям.", "anchor": "ch4-s1"}, {"id": "q4-07", "type": "single", "level": "застосування", "q": "Церква перестала збиратися на молитву і прославлення, зібрання короткі й «по програмі». Що за уроком відбувається з такою церквою?", "options": ["Це ознака духовної зрілості", "Вона стає формальною і сухою, служіння йде механічно", "Помазання від цього не залежить", "Головне – кількість людей на зібранні"], "answer": 1, "explain": "Де бракує молитви, прославлення і Слова, церква стає формальною і сухою і рухається в служінні механічно, за інерцією.", "anchor": "ch4-s1"}, {"id": "q4-08", "type": "single", "level": "розуміння", "q": "Що сталося, коли Павло і Сила співали Богові в темниці (Дії 16:25–26)?", "options": ["Їх негайно звільнила влада", "Нічого не сталося, але вони отримали мир", "Стався землетрус, кайдани спали, а сторож з усім домом навернувся", "Ангел вивів лише Павла"], "answer": 2, "explain": "Прославлення притягує Бога, а з Ним приходить помазання: землетрус відчинив двері, кайдани спали, а сторож навернувся.", "anchor": "ch4-s1"}, {"id": "q4-09", "type": "multi", "level": "знання", "q": "Що, за уроком, створює атмосферу для спільного помазання? Оберіть усі правильні.", "options": ["Єдність і молитва", "Суворі традиції", "Прославлення і поклоніння", "Змагання між служіннями"], "answer": [0, 2], "explain": "Урок називає єдність і молитву, прославлення і поклоніння і служіння Господу.", "anchor": "ch4-s1"}, {"id": "q4-10", "type": "multi", "level": "розуміння", "q": "Що сталося в Дії 4:23–31? Оберіть усі правильні.", "options": ["Апостоли однодушно звернулися до Бога, просячи сміливості", "Апостоли вирішили на час перестати проповідувати", "Місце захиталося, і всі сповнилися Святим Духом", "Первосвященики приєдналися до їхньої молитви"], "answer": [0, 2], "explain": "Після погроз апостоли однодушно молилися про сміливість і знамення – місце захиталося, і всі сповнилися Святим Духом.", "anchor": "ch4-s1"}, {"id": "q4-11", "type": "truefalse", "level": "знання", "q": "Спільне помазання не можна замінити помазанням на кожній окремій людині з групи.", "answer": true, "explain": "Так. Коли віруючі збираються разом, Божа присутність проявляється особливо.", "anchor": "ch4-s1"}, {"id": "q4-12", "type": "truefalse", "level": "розуміння", "q": "Щоб досягти Євангелієм міста, досить помазання великих євангелістів.", "answer": false, "explain": "Ні. Потрібно, щоб велике помазання було на помісних церквах і впливало через них на все місто.", "anchor": "ch4-s1"}, {"id": "q4-13", "type": "match", "level": "знання", "q": "Поєднайте місце Писання з думкою уроку.", "pairs": [["Матвія 18:19–20", "Де двоє чи троє зібрані в Його ім’я"], ["Івана 17:20–21", "Щоб усі були одно – і світ повірив"], ["2 Хронік 5:11–14", "Слава Господня наповнила храм"], ["Дії 13:1–2", "Святий Дух відокремив Варнаву і Савла"]], "explain": "Ці місця показують, як проявляється спільне помазання.", "anchor": "ch4-s1", "_print_right": [1, 2, 0, 3]}, {"id": "q4-14", "type": "order", "level": "розуміння", "q": "Що сталося на П’ятидесятницю? Розставте по порядку.", "items": ["Учні однодушно перебували в молитві", "Усі сповнилися Святим Духом", "До церкви приєдналося близько трьох тисяч"], "explain": "Єдність у молитві передувала зішестю Святого Духа, а за ним церква зросла на три тисячі (Дії 1:14; 2:1, 4, 41).", "anchor": "ch4-s1", "_print_order": [2, 1, 0]}, {"id": "q4-15", "type": "reflect", "level": "застосування", "q": "Що особисто ви можете зробити для єдності у вашій церкві чи групі?", "sample": "Урок: єдність – обов’язкова умова спільного помазання. Її треба досягти; допомагають спільна молитва, щире спілкування, бачення пастора."}], "sections": {"ch4-s1": "Спільне помазання"}}, {"chapter": 5, "title": "Зцілення і зростання помазання", "questions": [{"id": "q5-01", "type": "single", "level": "знання", "q": "Хто, за уроком, приносить людям хвороби?", "options": ["Бог – як покарання", "Ніхто: хвороби – природний процес", "Самі люди, через брак знань", "Диявол, а Ісус зціляв"], "answer": 3, "explain": "Дехто вважає, що хворобу дав Бог у покарання. Насправді хвороби приносить диявол, а Ісус зціляв; помазання – протиотрута від усього, що робить диявол.", "anchor": "ch5-s1"}, {"id": "q5-02", "type": "single", "level": "розуміння", "q": "Чому жінка з кровотечею зцілилася, а інші, хто тиснув Ісуса, – ні (Марка 5:25–34)?", "options": ["Вона стояла ближче за інших", "Вона повірила і доторкнулася до помазання; в інших не було віри", "Ісус вибрав саме її", "Вона довго страждала і заслужила зцілення"], "answer": 1, "explain": "Помазання на зцілення в Бога є завжди, але потрібна віра з боку людей. Ісуса тиснуло багато людей, та ніхто не зцілився, бо не мали віри.", "anchor": "ch5-s1"}, {"id": "q5-03", "type": "single", "level": "застосування", "q": "Людину зцілили, а через тиждень симптоми повернулися, і вона вирішила: «Значить, хвороба повернулася». Що порадити за уроком?", "options": ["Погодитися, що зцілення не було", "Чекати іншого служителя", "Протистояти симптомам, більше перебувати в Слові і практикувати обітниці про зцілення", "Нічого не робити"], "answer": 2, "explain": "Якщо людина протистоїть симптомам, хвороба не повернеться. Після зцілення треба більше, ніж звичайно, перебувати в Слові.", "anchor": "ch5-s1"}, {"id": "q5-04", "type": "single", "level": "застосування", "q": "Після зцілень на зібранні люди почали шанувати служителя як джерело сили. Що каже урок?", "options": ["Через людину тече Божа сила, але джерело – Святий Дух, що живе в нас", "Служитель і є джерелом сили", "Сила міститься в одязі служителя", "Зцілює лише віра хворого, без Бога"], "answer": 0, "explain": "Через людину може текти Божа сила, але вона не джерело сили. Джерело – Святий Дух, що живе в нас.", "anchor": "ch5-s1"}, {"id": "q5-05", "type": "single", "level": "знання", "q": "Що відбувається на рівні води «по кісточки»?", "options": ["Опора – тільки Бог, дна не дістати", "Людину повністю взяв Бог для служіння", "Помазання майже непомітне", "Помазання вже помітне, але з такої води легко вийти і повернутися назад"], "answer": 3, "explain": "На рівні «по кісточки» люди вже помічають силу, але помазання ще не сильно тримає людину: з такої води легко вийти.", "anchor": "ch5-s2"}, {"id": "q5-06", "type": "single", "level": "застосування", "q": "Відомий євангеліст каже: «Мені вже не треба повертатися до основ спасіння – я це давно пройшов». Що каже урок?", "options": ["Він правий: основи – для новонавернених", "Ріка без джерела з часом зникне: треба берегти первинні істини спасіння", "Головне – масштаб служіння", "Основи можна повторювати раз на рік"], "answer": 1, "explain": "Ріка може якийсь час текти без джерела, але потім зникне. Бережи первинні істини спасіння, навіть якщо ти вже великий євангеліст.", "anchor": "ch5-s2"}, {"id": "q5-07", "type": "single", "level": "застосування", "q": "Служителя підвели люди, на яких він розраховував, і він думає, що все скінчено. Що радить урок?", "options": ["Залишити служіння", "Шукати нових людей, на яких спертися", "Підбадьорювати себе в Господі, як Давид", "Вирішити, що помазання відійшло"], "answer": 2, "explain": "Буває, що люди, на чию допомогу ми розраховуємо, відвертаються. Давид підбадьорив себе в Господі – і ти підбадьорюй.", "anchor": "ch5-s2"}, {"id": "q5-08", "type": "single", "level": "розуміння", "q": "Що, за уроком, означає образ з Єзекиїля 47: де тече потік, усе оживає і рибі немає ліку?", "options": ["Помазання потрібне, щоб оживляти людей і ловити їх для Божого Царства", "Матеріальне благословення віруючих", "Риболовлю як заняття перших учнів", "Події кінця світу"], "answer": 0, "explain": "Де тече потік, усе оживає, і риби багато, коли рухається помазання: воно потрібне, щоб ловити людей для Божого Царства (Єз. 47:7–11).", "anchor": "ch5-s2"}, {"id": "q5-09", "type": "multi", "level": "знання", "q": "Як, за уроком, помазання на зцілення переходило через Ісуса і Павла? Оберіть усі правильні.", "options": ["Люди торкалися краю одягу Ісуса", "Тільки через довгу молитву служителя", "На хворих клали хустки й пояси Павла", "Лише в храмі"], "answer": [0, 2], "explain": "Помазання переходило на одяг Ісуса (Мт. 14:35–36; Лк. 6:17–19), а з Павла – на хустки й пояси (Дії 19:11–12).", "anchor": "ch5-s1"}, {"id": "q5-10", "type": "multi", "level": "розуміння", "q": "Що урок каже про найвищий рівень – потік, через який треба пливти? Оберіть усі правильні.", "options": ["Опора – тільки Бог", "З потоком можна воювати", "Пливти треба за течією", "Там уже немає жодних труднощів"], "answer": [0, 2], "explain": "Дна не дістати, опора – тільки Бог. Пливти треба за течією; хто воює з потоком, гине.", "anchor": "ch5-s2"}, {"id": "q5-11", "type": "truefalse", "level": "знання", "q": "Помазання на зцілення в Бога є завжди, але з боку людей потрібна віра, щоб воно проявилося.", "answer": true, "explain": "Так. Жінка хворіла, доки сама не повірила і не доторкнулася до помазання.", "anchor": "ch5-s1"}, {"id": "q5-12", "type": "truefalse", "level": "розуміння", "q": "Помазані служителі ніколи не помиляються.", "answer": false, "explain": "Ні. Помазані теж помиляються, але Бог готовий відновити.", "anchor": "ch5-s2"}, {"id": "q5-13", "type": "match", "level": "знання", "q": "Поєднайте місце Писання з думкою уроку.", "pairs": [["Марка 5:25–34", "Жінка доторкнулася до одягу Ісуса"], ["Дії 19:11–12", "Хустки й пояси Павла"], ["Івана 7:38–39", "Ріки живої води – про Духа"], ["Єзекиїль 47:1–12", "Вода тече з-під порога храму"]], "explain": "Ці місця показують помазання на зцілення і його зростання.", "anchor": "ch5-s2", "_print_right": [0, 2, 1, 3]}, {"id": "q5-14", "type": "order", "level": "розуміння", "q": "Як, за Єзекиїля 47, зростає помазання? Розставте рівні по порядку.", "items": ["Струмок з-під порога храму", "По кісточки", "По коліна", "По пояс", "Потік, через який треба пливти"], "explain": "Помазання зростає поступово – від малопомітного струмка до потоку, де опора тільки Бог.", "anchor": "ch5-s2", "_print_order": [3, 0, 1, 2, 4]}, {"id": "q5-15", "type": "reflect", "level": "застосування", "q": "На якому рівні «води» з Єзекиїля 47 ви зараз? Що зробите, щоб помазання у вашому житті зростало?", "sample": "Урок: кожен вид помазання може зростати. Не залишай джерела – первинних істин спасіння; ті, хто перестає текти з потоком, стають болотом."}], "sections": {"ch5-s1": "Помазання на зцілення", "ch5-s2": "Як зростає помазання"}}]</script>
+<script>(function () {
+  'use strict';
+  var root = document.documentElement;
+  var store = {
+    get: function (k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  };
+  function $(s, el) { return (el || document).querySelector(s); }
+  function $$(s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); }
+  function h(tag, attrs, kids) {
+    var el = document.createElement(tag);
+    for (var k in attrs || {}) {
+      if (k === 'text') el.textContent = attrs[k];
+      else if (k === 'html') el.innerHTML = attrs[k];
+      else if (k.slice(0, 2) === 'on') el.addEventListener(k.slice(2), attrs[k]);
+      else el.setAttribute(k, attrs[k]);
+    }
+    (kids || []).forEach(function (c) { if (c) el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return el;
+  }
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function range(n) { var r = []; for (var i = 0; i < n; i++) r.push(i); return r; }
+
+  /* ---------- тема і шрифт ---------- */
+  $('#themeBtn').addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('sb-theme', next); } catch (e) {}
+  });
+  var fs = store.get('sb-fs') || 18;
+  function applyFs() { root.style.setProperty('--fs', fs + 'px'); }
+  applyFs();
+  $('#fsUp').addEventListener('click', function () { fs = Math.min(24, fs + 1); applyFs(); store.set('sb-fs', fs); });
+  $('#fsDown').addEventListener('click', function () { fs = Math.max(15, fs - 1); applyFs(); store.set('sb-fs', fs); });
+
+  /* ---------- прогрес читання ---------- */
+  var bar = $('.progress span');
+  function onScroll() {
+    var max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.width = (max > 0 ? Math.min(100, scrollY / max * 100) : 0) + '%';
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- зміст ---------- */
+  var drawer = $('#toc'), scrim = $('#scrim'), tocBtn = $('#tocBtn');
+  function toggleToc(open) {
+    drawer.classList.toggle('open', open); scrim.classList.toggle('open', open);
+    tocBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  tocBtn.addEventListener('click', function () { toggleToc(!drawer.classList.contains('open')); });
+  scrim.addEventListener('click', function () { toggleToc(false); });
+  $$('#toc a').forEach(function (a) { a.addEventListener('click', function () { if (innerWidth < 1280) toggleToc(false); }); });
+  var links = {};
+  $$('#toc a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && links[e.target.id]) {
+          $$('#toc a.active').forEach(function (x) { x.classList.remove('active'); });
+          links[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-15% 0px -75% 0px' });
+    Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+  }
+
+  /* ---------- довгі уривки і режим запам'ятовування ---------- */
+  $$('.scripture.long').forEach(function (f) {
+    f.classList.add('collapsed');
+    var b = $('.more', f);
+    b.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      var c = f.classList.toggle('collapsed');
+      b.textContent = c ? 'Показати весь уривок' : 'Згорнути';
+      b.setAttribute('aria-expanded', c ? 'false' : 'true');
+    });
+  });
+  var memoBtn = $('#memoBtn');
+  memoBtn.addEventListener('click', function () {
+    var on = document.body.classList.toggle('memo');
+    memoBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    $$('.scripture.revealed').forEach(function (f) { f.classList.remove('revealed'); });
+  });
+  $$('.scripture').forEach(function (f) {
+    f.addEventListener('click', function () { if (document.body.classList.contains('memo')) f.classList.toggle('revealed'); });
+  });
+
+  /* ---------- учень і надсилання результатів ---------- */
+  var ENDPOINT = $('#quiz-data').getAttribute('data-endpoint') || '';
+  var LESSON = $('#quiz-data').getAttribute('data-lesson') || 'slovo-bozhe';
+  // «Слово Боже» зберігав результати під старим ключем – лишаємо його.
+  var RESULTS_KEY = LESSON === 'slovo-bozhe' ? 'sb-results' : 'sb-results-' + LESSON;
+  function rid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 10); }
+  var student = store.get('sb-student') || {};
+  if (!student.uid) { student.uid = rid(); store.set('sb-student', student); }
+  var outbox = store.get('sb-outbox') || [];
+  var sendState = {};  // id -> 'sending' | 'ok' | 'fail'
+
+  var who = $('#who'), whoName = $('#whoName'), whoWarn = $('#whoWarn'), whoBtn = $('#whoBtn'), whoText = $('#whoText');
+  var whoDefault = whoText.textContent;
+  function showName() {
+    whoBtn.hidden = !ENDPOINT;
+    whoBtn.textContent = student.name ? student.name : 'Вказати ім’я';
+  }
+  function openWho(reason) {
+    whoText.textContent = reason || whoDefault;
+    whoName.value = student.name || '';
+    whoWarn.textContent = '';
+    who.hidden = false;
+    setTimeout(function () { whoName.focus(); }, 30);
+  }
+  function closeWho() {
+    who.hidden = true;
+    store.set('sb-asked', true);
+  }
+  $('#whoForm').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var v = whoName.value.replace(/\s+/g, ' ').trim();
+    if (v.split(' ').length < 2 || v.length < 4) { whoWarn.textContent = 'Вкажіть, будь ласка, ім’я та прізвище.'; whoName.focus(); return; }
+    student.name = v;
+    store.set('sb-student', student);
+    showName();
+    closeWho();
+    flush();
+  });
+  $('#whoLater').addEventListener('click', closeWho);
+  who.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeWho(); });
+  whoBtn.addEventListener('click', function () { openWho(); });
+  showName();
+  if (ENDPOINT && !student.name && !store.get('sb-asked')) openWho();
+
+  function sendStatusText(id) {
+    var st = sendState[id];
+    if (st === 'ok') return ['ok', '✓ Результат надіслано пастору.'];
+    if (!student.name) return ['wait', 'Результат ще не надіслано: вкажіть ім’я, щоб його побачив пастор.'];
+    if (st === 'fail') return ['wait', 'Не вдалося надіслати. Спробуємо ще раз автоматично, коли буде інтернет.'];
+    return ['wait', 'Надсилаємо результат пастору…'];
+  }
+  function paintStatus() {
+    $$('[data-send]').forEach(function (el) {
+      var t = sendStatusText(el.getAttribute('data-send'));
+      el.className = 'send ' + t[0];
+      el.textContent = t[1];
+      if (!student.name) {
+        el.appendChild(document.createTextNode(' '));
+        el.appendChild(h('button', { class: 'linkish', type: 'button', text: 'Вказати ім’я', onclick: function () { openWho(); } }));
+      }
+    });
+    var n = $('#outboxNote');
+    if (n) n.textContent = ENDPOINT && outbox.length ? 'Ще не надіслано пастору: ' + outbox.length + '.' : '';
+  }
+  var sending = false;
+  function flush() {
+    paintStatus();
+    if (!ENDPOINT || sending || !student.name || !outbox.length) return;
+    var item = outbox[0];
+    item.name = student.name;
+    sending = true;
+    sendState[item.id] = 'sending';
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(item) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res.ok && res.error !== 'bad_data') throw new Error(res.error);
+        outbox = outbox.filter(function (x) { return x.id !== item.id; });
+        store.set('sb-outbox', outbox);
+        sendState[item.id] = 'ok';
+        sending = false;
+        flush();
+      })
+      .catch(function () {
+        sendState[item.id] = 'fail';
+        sending = false;
+        paintStatus();
+      });
+  }
+  function queueResult(entry) {
+    if (!ENDPOINT) return null;
+    entry.id = rid();
+    entry.lesson = LESSON;
+    entry.uid = student.uid;
+    entry.ts = new Date().toISOString();
+    outbox.push(entry);
+    store.set('sb-outbox', outbox);
+    if (!student.name) openWho('Щоб пастор побачив ваш результат, вкажіть ім’я та прізвище.');
+    return entry.id;
+  }
+  addEventListener('online', flush);
+  setInterval(function () { if (outbox.length) flush(); }, 60000);
+
+  /* ---------- тести ---------- */
+  var DATA = JSON.parse($('#quiz-data').textContent);
+  var LEVELS = ['знання', 'розуміння', 'застосування'];
+
+  function buildQuestion(q, i, data) {
+    var box = h('div', { class: 'q', 'data-type': q.type });
+    var lvl = h('span', { class: 'lvl' + (q.level === 'застосування' ? ' app' : ''), text: q.level || '' });
+    box.appendChild(h('div', { class: 'q-top' }, [h('span', { text: 'Питання ' + (i + 1) }), q.level ? lvl : null]));
+    box.appendChild(h('div', { class: 'q-text', text: q.q }));
+    var name = 'q' + data.chapter + '_' + i;
+    var api = { el: box, q: q };
+
+    if (q.type === 'single' || q.type === 'multi') {
+      var order = shuffle(range(q.options.length));
+      var inputs = [];
+      order.forEach(function (idx) {
+        var inp = h('input', { type: q.type === 'single' ? 'radio' : 'checkbox', name: name, value: idx });
+        inputs.push(inp);
+        box.appendChild(h('label', { class: 'opt' }, [inp, h('span', { text: q.options[idx] })]));
+      });
+      if (q.type === 'multi') box.appendChild(h('p', { class: 'q-top', text: 'Оберіть усі правильні відповіді' }));
+      api.answered = function () { return inputs.some(function (x) { return x.checked; }); };
+      api.grade = function () {
+        var picked = inputs.filter(function (x) { return x.checked; }).map(function (x) { return +x.value; });
+        var right = q.type === 'single' ? [q.answer] : q.answer;
+        inputs.forEach(function (x) {
+          var v = +x.value, lab = x.parentNode;
+          if (right.indexOf(v) >= 0) lab.classList.add('right');
+          else if (x.checked) lab.classList.add('wrong');
+          x.disabled = true;
+        });
+        var wrong = picked.filter(function (v) { return right.indexOf(v) < 0; }).length;
+        var hit = picked.filter(function (v) { return right.indexOf(v) >= 0; }).length;
+        if (!wrong && hit === right.length) return 1;
+        if (q.type === 'multi' && !wrong && hit > 0) return 0.5;
+        return 0;
+      };
+    } else if (q.type === 'truefalse') {
+      var yes = h('input', { type: 'radio', name: name, value: '1' });
+      var no = h('input', { type: 'radio', name: name, value: '0' });
+      box.appendChild(h('div', { class: 'tf' }, [
+        h('label', { class: 'opt' }, [yes, h('span', { text: 'Так, правильно' })]),
+        h('label', { class: 'opt' }, [no, h('span', { text: 'Ні, неправильно' })])
+      ]));
+      api.answered = function () { return yes.checked || no.checked; };
+      api.grade = function () {
+        var rightEl = q.answer ? yes : no, wrongEl = q.answer ? no : yes;
+        rightEl.parentNode.classList.add('right');
+        if (wrongEl.checked) wrongEl.parentNode.classList.add('wrong');
+        yes.disabled = no.disabled = true;
+        return rightEl.checked ? 1 : 0;
+      };
+    } else if (q.type === 'match') {
+      var rights = shuffle(range(q.pairs.length));
+      var sels = q.pairs.map(function (p, k) {
+        var sel = h('select', { 'aria-label': p[0] }, [h('option', { value: '', text: '— оберіть —' })]
+          .concat(rights.map(function (r) { return h('option', { value: r, text: q.pairs[r][1] }); })));
+        box.appendChild(h('div', { class: 'match-row' }, [h('div', { text: p[0] }), sel]));
+        return sel;
+      });
+      box.appendChild(h('p', { class: 'q-top', text: 'Кожен варіант підходить лише до одного пункту' }));
+      api.answered = function () { return sels.every(function (s) { return s.value !== ''; }); };
+      api.grade = function () {
+        var ok = 0;
+        sels.forEach(function (s, k) {
+          var row = s.parentNode, good = s.value !== '' && +s.value === k;
+          row.classList.add(good ? 'right' : 'wrong');
+          if (good) ok++; else row.appendChild(h('div', { class: 'fix', text: 'Правильно: ' + q.pairs[k][1] }));
+          s.disabled = true;
+        });
+        return ok / sels.length;
+      };
+    } else if (q.type === 'order') {
+      var cur = shuffle(range(q.items.length));
+      while (cur.join() === range(q.items.length).join() && cur.length > 1) cur = shuffle(cur);
+      var list = h('ol', { class: 'order-list' });
+      var draw = function () {
+        list.innerHTML = '';
+        cur.forEach(function (idx, pos) {
+          var up = h('button', { type: 'button', 'aria-label': 'Вище', text: '↑', onclick: function () { if (pos > 0) { cur.splice(pos - 1, 0, cur.splice(pos, 1)[0]); draw(); } } });
+          var dn = h('button', { type: 'button', 'aria-label': 'Нижче', text: '↓', onclick: function () { if (pos < cur.length - 1) { cur.splice(pos + 1, 0, cur.splice(pos, 1)[0]); draw(); } } });
+          list.appendChild(h('li', { 'data-i': idx }, [h('span', { text: q.items[idx] }), up, dn]));
+        });
+      };
+      draw();
+      box.appendChild(h('p', { class: 'q-top', text: 'Розставте кнопками ↑ ↓' }));
+      box.appendChild(list);
+      api.answered = function () { return true; };
+      api.grade = function () {
+        var ok = 0;
+        $$('li', list).forEach(function (li, pos) {
+          var good = +li.getAttribute('data-i') === pos;
+          li.classList.add(good ? 'right' : 'wrong');
+          if (good) ok++;
+          $$('button', li).forEach(function (b) { b.disabled = true; });
+        });
+        return ok / cur.length;
+      };
+      api.correctText = 'Правильний порядок: ' + q.items.join(' → ');
+    } else if (q.type === 'reflect') {
+      box.classList.add('reflect');
+      var ta = h('textarea', { placeholder: 'Запишіть свою відповідь. Її ніхто не побачить – вона лише для вас.' });
+      box.appendChild(ta);
+      api.answered = function () { return true; };
+      api.grade = function () { return null; };
+    }
+
+    var fb = h('div', { class: 'fb' });
+    box.appendChild(fb);
+    api.feedback = function (score) {
+      box.classList.add('done');
+      if (score === null) {
+        box.classList.add('reflect');
+        fb.appendChild(h('b', { class: 'st', text: 'Орієнтир' }));
+        fb.appendChild(document.createTextNode(q.sample || ''));
+        return;
+      }
+      var st = score === 1 ? 'Правильно' : score === 0 ? 'Неправильно' : 'Частково';
+      box.classList.add(score === 1 ? 'ok' : score === 0 ? 'bad' : 'part');
+      fb.appendChild(h('b', { class: 'st', text: st }));
+      if (api.correctText && score < 1) fb.appendChild(h('div', { text: api.correctText }));
+      if (q.explain) fb.appendChild(document.createTextNode(q.explain));
+      if (score < 1 && q.anchor && data.sections[q.anchor]) {
+        fb.appendChild(h('br'));
+        fb.appendChild(h('a', { href: '#' + q.anchor, text: '↩ Перечитати: ' + data.sections[q.anchor] }));
+      }
+    };
+    return api;
+  }
+
+  function ringSvg(pct) {
+    var r = 46, c = 2 * Math.PI * r, off = c * (1 - pct / 100);
+    var col = pct >= 85 ? 'var(--ok)' : pct >= 70 ? 'var(--gold)' : pct >= 50 ? 'var(--part)' : 'var(--bad)';
+    return '<svg class="ring" viewBox="0 0 112 112"><circle cx="56" cy="56" r="' + r + '" fill="none" stroke="var(--line)" stroke-width="10"/>' +
+      '<circle cx="56" cy="56" r="' + r + '" fill="none" stroke="' + col + '" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) +
+      '" stroke-dashoffset="' + off.toFixed(1) + '" transform="rotate(-90 56 56)"/><text x="56" y="63" text-anchor="middle">' + pct + '%</text></svg>';
+  }
+
+  function verdict(pct) {
+    if (pct >= 85) return ['Матеріал засвоєно глибоко', 'Ви не лише пам’ятаєте зміст, а й умієте застосувати його в конкретних ситуаціях.'];
+    if (pct >= 70) return ['Добре, але є прогалини', 'Основне зрозуміло. Перечитайте теми нижче, щоб закрити прогалини.'];
+    if (pct >= 50) return ['Знайомство поверхове', 'Частину думок розділу ви впізнаєте, але ще не можете на них спиратися. Перечитайте позначені теми і пройдіть тест ще раз.'];
+    return ['Розділ варто прочитати ще раз', 'Поверніться до тексту, особливо до головних думок, і пройдіть тест знову через день-два.'];
+  }
+
+  function renderQuiz(app, data) {
+    app.innerHTML = '';
+    var qs = data.questions.map(function (q, i) { var a = buildQuestion(q, i, data); app.appendChild(a.el); return a; });
+    var warn = h('span', { class: 'warn' });
+    var resultBox = h('div');
+    var checkBtn = h('button', { class: 'btn', type: 'button', text: 'Перевірити відповіді' });
+    var retry = h('button', { class: 'btn ghost', type: 'button', text: 'Пройти ще раз', style: 'display:none' });
+    var forced = false;
+    checkBtn.addEventListener('click', function () {
+      var missing = qs.filter(function (a) { return !a.answered(); });
+      qs.forEach(function (a) { a.el.classList.toggle('missing', !a.answered()); });
+      if (missing.length && !forced) {
+        forced = true;
+        warn.textContent = 'Без відповіді: ' + missing.length + '. Натисніть ще раз, щоб перевірити як є.';
+        missing[0].el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      warn.textContent = '';
+      var total = 0, max = 0, byLvl = {}, review = {}, perQ = [];
+      qs.forEach(function (a) {
+        a.el.classList.remove('missing');
+        var s = a.answered() ? a.grade() : (a.grade(), 0);
+        if (a.q.type === 'reflect') s = null;
+        a.feedback(s);
+        perQ.push(s === null ? null : Math.round(s * 100) / 100);
+        if (s === null) return;
+        total += s; max += 1;
+        var L = a.q.level || 'розуміння';
+        byLvl[L] = byLvl[L] || [0, 0]; byLvl[L][0] += s; byLvl[L][1] += 1;
+        if (s < 1 && a.q.anchor) review[a.q.anchor] = true;
+      });
+      var pct = Math.round(total / max * 100);
+      var v = verdict(pct);
+      var lv = LEVELS.filter(function (L) { return byLvl[L]; }).map(function (L) {
+        var p = Math.round(byLvl[L][0] / byLvl[L][1] * 100);
+        return '<div class="lvlbar"><span>' + L + '</span><span class="bar"><i style="width:' + p + '%"></i></span><b>' + p + '%</b></div>';
+      }).join('');
+      var rv = Object.keys(review).filter(function (k) { return data.sections[k]; });
+      resultBox.innerHTML = '<div class="result">' + ringSvg(pct) + '<div><h4>' + v[0] + '</h4><p>' + v[1] + '</p><p>Бали: ' +
+        (Math.round(total * 10) / 10) + ' з ' + max + '</p></div><div class="levels">' + lv + '</div>' +
+        (rv.length ? '<div class="review"><b>Що перечитати:</b><ul>' + rv.map(function (k) { return '<li><a href="#' + k + '">' + data.sections[k] + '</a></li>'; }).join('') + '</ul></div>' : '') +
+        '</div>';
+      checkBtn.style.display = 'none';
+      retry.style.display = '';
+      var saved = store.get(RESULTS_KEY) || {};
+      var prev = saved[data.chapter];
+      saved[data.chapter] = { pct: pct, best: Math.max(pct, prev ? prev.best || prev.pct : 0), date: new Date().toLocaleDateString('uk-UA'), tries: (prev ? prev.tries || 1 : 0) + 1 };
+      store.set(RESULTS_KEY, saved);
+      var sid = queueResult({ ch: data.chapter, title: data.title, pct: pct, score: Math.round(total * 10) / 10, max: max,
+        attempt: saved[data.chapter].tries, q: perQ });
+      if (sid) $('.result', resultBox).appendChild(h('p', { 'data-send': sid }));
+      renderSummary();
+      flush();
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+    retry.addEventListener('click', function () { renderQuiz(app, data); app.scrollIntoView({ behavior: 'smooth' }); });
+    app.appendChild(h('div', { class: 'quiz-actions' }, [checkBtn, retry, warn]));
+    app.appendChild(resultBox);
+  }
+
+  function renderSummary() {
+    var saved = store.get(RESULTS_KEY) || {};
+    var rows = DATA.map(function (d) {
+      var r = saved[d.chapter];
+      return '<tr><td>' + d.chapter + '</td><td><a href="#quiz' + d.chapter + '">' + d.title + '</a></td><td>' +
+        (r ? r.pct + '%' : '—') + '</td><td>' + (r ? r.best + '%' : '—') + '</td><td class="c-date">' + (r ? r.date : '') + '</td></tr>';
+    }).join('');
+    var done = DATA.filter(function (d) { return saved[d.chapter]; });
+    var avg = done.length ? Math.round(done.reduce(function (s, d) { return s + saved[d.chapter].best; }, 0) / done.length) : null;
+    $('#summaryTable').innerHTML = '<div class="table-wrap"><table class="sum-table"><thead><tr><th>№</th><th>Розділ</th><th>Останній</th><th>Найкращий</th><th class="c-date">Дата</th></tr></thead><tbody>' +
+      rows + '</tbody></table></div>' + (avg !== null ? '<p style="margin-top:14px">Пройдено тестів: ' + done.length + ' з ' + DATA.length + '. Середній найкращий результат: <b>' + avg + '%</b>.</p>' : '<p style="margin-top:14px">Тести ще не пройдено.</p>') + '<p class="send wait" id="outboxNote"></p>';
+    paintStatus();
+  }
+
+  DATA.forEach(function (d) {
+    var app = $('.quiz-app[data-ch="' + d.chapter + '"]');
+    if (app) renderQuiz(app, d);
+  });
+  renderSummary();
+  flush();
+})();
+</script>
+</body>
+</html>

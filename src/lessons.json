@@ -30,5 +30,25 @@
  {
   "slug": "blahodat",
   "label": "Урок 7"
+ },
+ {
+  "slug": "dukhovna-viina",
+  "label": "Урок 8"
+ },
+ {
+  "slug": "tserkva",
+  "label": "Урок 9"
+ },
+ {
+  "slug": "yevanhelizatsiia",
+  "label": "Урок 10"
+ },
+ {
+  "slug": "pomazannia",
+  "label": "Урок 11"
+ },
+ {
+  "slug": "sertse-sluhy",
+  "label": "Урок 12"
  }
 ]
