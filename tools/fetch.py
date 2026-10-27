@@ -7,13 +7,16 @@ def clean(t):
 import re,sys,os,urllib.request,time
 from html.parser import HTMLParser
 D=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','.cache')
+def _cls(cls,name):
+    # bible.com змінив імена класів (ChapterContent_verse__x -> cat7xG_verse): шукаємо слово між підкресленнями
+    return any(_re.search(r'(^|_)'+name+r'($|_)',t) for t in cls.split())
 class P(HTMLParser):
     def __init__(s):
         super().__init__(); s.stack=[]; s.v={}; s.heads=[]; s.cur=None
     def handle_starttag(s,tag,a):
         a=dict(a); cls=a.get('class','') or ''
-        info={'tag':tag,'verse':None,'note':'__note' in cls,'content':'__content' in cls,'head':'__heading' in cls,'label':'__label' in cls}
-        if '__verse' in cls and a.get('data-usfm'):
+        info={'tag':tag,'verse':None,'note':_cls(cls,'note'),'content':_cls(cls,'content'),'head':_cls(cls,'heading'),'label':_cls(cls,'label')}
+        if _cls(cls,'verse') and a.get('data-usfm'):
             info['verse']=a['data-usfm']
         s.stack.append(info)
         s.newspan=True
