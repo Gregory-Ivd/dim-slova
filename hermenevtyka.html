@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Герменевтика – Біблійна школа «Дім Слова» · Християнська церква «Перемога», м. Рівне</title>
+<meta name="description" content="Навчальний посібник Біблійної школи «Дім Слова» християнської церкви «Перемога» (Рівне): тема «Герменевтика», з тестами для самоперевірки.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Cg fill='none' stroke='%23d4a94f' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10'/%3E%3C/g%3E%3C/svg%3E">
+<script>
+try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<style>/* ---------- кольори ---------- */
+:root {
+  --bg: #f4efe4;
+  --paper: #fffdf8;
+  --ink: #1f2430;
+  --muted: #5d6474;
+  --navy: #1f3a5f;
+  --navy-deep: #152a45;
+  --gold: #b0852b;
+  --gold-soft: #f2e6c8;
+  --gold-line: #dcc896;
+  --scr-bg: #f8f1e1;
+  --scr-ink: #3f3320;
+  --note-bg: #edf1f6;
+  --note-line: #9fb2c8;
+  --key-bg: #1f3a5f;
+  --key-ink: #fdfaf2;
+  --mark: #f6e3ad;
+  --ok: #2f7a4f;
+  --ok-bg: #e5f2ea;
+  --bad: #a3392f;
+  --bad-bg: #f8e6e3;
+  --part: #9a6b12;
+  --part-bg: #f8eed6;
+  --line: #e4dccb;
+  --shadow: 0 1px 2px rgba(31, 36, 48, .06), 0 8px 24px rgba(31, 36, 48, .06);
+  --fs: 18px;
+  --serif: "PT Serif", Georgia, "Times New Roman", serif;
+  --display: "Cormorant Garamond", "PT Serif", Georgia, serif;
+  --sans: "Montserrat", "Segoe UI", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141c; --paper: #161b25; --ink: #e8e4da; --muted: #a3a9b6;
+    --navy: #9fbbe0; --navy-deep: #0d1a2c; --gold: #d4a94f; --gold-soft: #3a3120; --gold-line: #5c4c2b;
+    --scr-bg: #1e2230; --scr-ink: #eadfc6; --note-bg: #1a2230; --note-line: #3f5673;
+    --key-bg: #22385a; --key-ink: #f4efe2; --mark: #5a4a22;
+    --ok: #7fcf9d; --ok-bg: #1d3327; --bad: #f09a8f; --bad-bg: #3a2220; --part: #e6c170; --part-bg: #3a3020;
+    --line: #2a3140; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10141c; --paper: #161b25; --ink: #e8e4da; --muted: #a3a9b6;
+  --navy: #9fbbe0; --navy-deep: #0d1a2c; --gold: #d4a94f; --gold-soft: #3a3120; --gold-line: #5c4c2b;
+  --scr-bg: #1e2230; --scr-ink: #eadfc6; --note-bg: #1a2230; --note-line: #3f5673;
+  --key-bg: #22385a; --key-ink: #f4efe2; --mark: #5a4a22;
+  --ok: #7fcf9d; --ok-bg: #1d3327; --bad: #f09a8f; --bad-bg: #3a2220; --part: #e6c170; --part-bg: #3a3020;
+  --line: #2a3140; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  color-scheme: dark;
+}
+
+/* ---------- основа ---------- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; font-size: var(--fs); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--serif); line-height: 1.68; }
+a { color: var(--navy); text-decoration-color: var(--gold-line); text-underline-offset: 3px; }
+.print-only { display: none; }
+.lbl { display: inline-block; font-family: var(--sans); font-size: .66rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+strong { color: var(--navy); }
+main { max-width: 820px; margin: 0 auto; padding: 0 16px 64px; }
+main > section, .chapter { background: var(--paper); border-radius: 18px; box-shadow: var(--shadow); padding: clamp(22px, 5vw, 56px); margin: 22px 0; }
+p { margin: 0 0 1em; }
+
+/* ---------- верхня панель ---------- */
+.progress { position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 60; }
+.progress span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--gold), #e3c170); }
+.topbar { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; gap: 10px; padding: 8px 16px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); min-width: 0; }
+.brand .emblem { width: 30px; height: 30px; color: var(--gold); flex: none; }
+.brand b { display: block; font-family: var(--sans); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
+.brand small { display: block; font-family: var(--sans); font-size: .66rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tools { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.icon-btn, .chip { font-family: var(--sans); font-size: .72rem; font-weight: 600; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; height: 36px; min-width: 36px; padding: 0 10px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+.icon-btn:hover, .chip:hover { border-color: var(--gold); }
+.chip[aria-pressed="true"] { background: var(--gold-soft); border-color: var(--gold); }
+.chip.solid { background: var(--navy); color: var(--paper); border-color: var(--navy); }
+:root[data-theme="dark"] .chip.solid { color: #10141c; }
+@media (max-width: 720px) {
+  #memoBtn { font-size: 0; padding: 0; width: 36px; }
+  #memoBtn::before { content: "👁"; font-size: 15px; }
+  #fsDown, #fsUp { display: none; }
+  .brand small { max-width: 44vw; }
+}
+
+/* ---------- зміст ---------- */
+.toc-drawer { position: fixed; top: 0; bottom: 0; left: 0; width: min(340px, 86vw); background: var(--paper); z-index: 70; transform: translateX(-102%); transition: transform .25s ease; box-shadow: var(--shadow); overflow-y: auto; }
+.toc-drawer.open { transform: none; }
+.toc-inner { padding: 24px 22px 40px; }
+.scrim { position: fixed; inset: 0; background: rgba(10, 14, 22, .4); z-index: 65; opacity: 0; pointer-events: none; transition: opacity .25s; }
+.scrim.open { opacity: 1; pointer-events: auto; }
+.toc-list { list-style: none; margin: 10px 0 0; padding: 0; font-family: var(--sans); font-size: .8rem; }
+.toc-list > li { margin: 0 0 12px; }
+.toc-list > li > a { font-weight: 700; color: var(--ink); text-decoration: none; }
+.toc-list ol { list-style: none; padding: 4px 0 0 12px; margin: 0; border-left: 2px solid var(--line); }
+.toc-list ol a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; font-weight: 500; line-height: 1.35; }
+.toc-list a.active { color: var(--gold); }
+@media (min-width: 1280px) {
+  .toc-drawer { transform: none; top: 53px; width: 290px; background: transparent; box-shadow: none; z-index: 10; }
+  .toc-inner { padding-top: 28px; }
+  #tocBtn, .scrim { display: none; }
+  main { margin-left: max(310px, calc(50vw - 410px)); }
+}
+
+/* ---------- обкладинка ---------- */
+.cover { background: radial-gradient(120% 90% at 50% 0%, #2a4c78 0%, #1f3a5f 45%, #122540 100%) !important; color: #f7f1e3; text-align: center; min-height: min(92vh, 860px); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.cover::before, .cover::after { content: ""; position: absolute; inset: 22px; border: 1px solid rgba(212, 169, 79, .45); border-radius: 12px; pointer-events: none; }
+.cover::after { inset: 30px; border-color: rgba(212, 169, 79, .2); }
+.cover-inner { position: relative; max-width: 560px; padding: 40px 10px; }
+.cover-church { font-family: var(--sans); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: #e3c882; margin: 0 0 34px; }
+.cover-emblem { width: 92px; height: 92px; color: #d9b25e; margin: 0 auto 16px; display: block; }
+.cover-school { font-family: var(--sans); font-weight: 600; letter-spacing: .34em; text-transform: uppercase; font-size: .86rem; margin: 0; color: #f1e7cf; }
+.cover-name { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 2rem; color: #e3c882; margin: 2px 0 26px; }
+.cover h1 { font-family: var(--display); font-weight: 600; font-size: clamp(3.4rem, 12vw, 6.2rem); line-height: 1; margin: 14px 0 8px; color: #fff8e8; letter-spacing: .01em; }
+.cover-sub { font-family: var(--display); font-style: italic; font-size: 1.5rem; color: #e3c882; margin: 0 0 28px; }
+.cover-meta { font-size: .86rem; line-height: 1.7; color: #cdd6e4; max-width: 460px; margin: 0 auto 36px; }
+.cover-foot { display: flex; justify-content: center; gap: 26px; font-family: var(--sans); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: #aebbd0; margin: 0 0 26px; }
+.cover-start { display: inline-block; font-family: var(--sans); font-size: .78rem; font-weight: 600; color: #1f3a5f; background: #e3c882; padding: 12px 22px; border-radius: 999px; text-decoration: none; }
+
+/* ---------- передмова ---------- */
+.epigraph { margin: 18px 0 30px; text-align: center; }
+.epigraph blockquote { margin: 0 auto; max-width: 600px; font-family: var(--display); font-size: 1.75rem; line-height: 1.35; font-style: italic; color: var(--navy); }
+.epigraph blockquote::before { content: "“"; display: block; font-size: 3.2rem; line-height: .6; color: var(--gold); margin-bottom: 6px; }
+.epigraph figcaption, .prayer figcaption { font-family: var(--sans); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-top: 10px; }
+.lead { font-size: 1.1rem; }
+.prayer { margin: 28px 0; padding: 20px 24px; border: 1px dashed var(--gold-line); border-radius: 14px; text-align: center; }
+.prayer blockquote { margin: 8px 0 0; font-family: var(--display); font-size: 1.35rem; font-style: italic; color: var(--scr-ink); }
+.legend h3 { font-family: var(--sans); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 30px 0 12px; }
+.legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+.lg { padding: 12px 14px; border-radius: 10px; font-size: .82rem; line-height: 1.45; }
+.lg b { display: block; font-family: var(--sans); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+.lg-scr { background: var(--scr-bg); border-left: 3px solid var(--gold); }
+.lg-key { background: var(--key-bg); color: var(--key-ink); }
+.lg-key b { color: #e3c882; }
+.lg-note { background: var(--note-bg); border-left: 3px solid var(--note-line); }
+.lg-quiz { background: var(--gold-soft); }
+.source-note { margin-top: 26px; font-size: .78rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+
+/* ---------- розділ ---------- */
+.ch-head { position: relative; padding: 6px 0 26px; margin-bottom: 26px; border-bottom: 1px solid var(--gold-line); }
+.ch-head::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 90px; height: 3px; background: var(--gold); }
+.ch-num { font-family: var(--sans); font-size: .74rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+.ch-head h2 { font-family: var(--display); font-weight: 700; font-size: clamp(2.1rem, 6vw, 3.1rem); line-height: 1.08; color: var(--navy); margin: 8px 0 6px; }
+.ch-sub { font-family: var(--display); font-style: italic; font-size: 1.3rem; color: var(--muted); margin: 0; }
+h3.sec { display: flex; gap: 12px; align-items: baseline; font-family: var(--display); font-weight: 700; font-size: 1.75rem; line-height: 1.2; color: var(--navy); margin: 46px 0 18px; }
+.s-num { flex: none; display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--gold); color: #fff; font-family: var(--sans); font-size: .9rem; font-weight: 700; transform: translateY(-3px); }
+h4.sub { font-family: var(--sans); font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); margin: 34px 0 14px; display: flex; align-items: center; gap: 10px; }
+h4.sub::after { content: ""; flex: 1; height: 1px; background: var(--gold-line); }
+
+/* Святе Письмо */
+.scripture { position: relative; margin: 22px 0 24px; padding: 20px 24px 14px 26px; background: var(--scr-bg); border-left: 4px solid var(--gold); border-radius: 4px 14px 14px 4px; }
+.scripture blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-size: 1.24rem; line-height: 1.5; color: var(--scr-ink); }
+.scripture sup { font-family: var(--sans); font-size: .56rem; font-weight: 700; color: var(--gold); margin-right: 2px; vertical-align: .55em; }
+.scripture .gap { color: var(--gold); }
+.scripture figcaption { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+.scripture .ref { font-family: var(--sans); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.scripture .syn { font-family: var(--sans); font-size: .66rem; color: var(--muted); }
+.scripture .more { display: none; }
+.scripture.collapsed blockquote { max-height: 11.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+.scripture.long .more { display: inline-block; margin-top: 8px; font-family: var(--sans); font-size: .7rem; font-weight: 600; color: var(--navy); background: transparent; border: 1px solid var(--gold-line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+body.memo .scripture blockquote { filter: blur(7px); cursor: pointer; user-select: none; transition: filter .2s; }
+body.memo .scripture.revealed blockquote { filter: none; }
+body.memo .scripture::before { content: "Натисніть, щоб відкрити"; position: absolute; right: 14px; top: 10px; z-index: 1; font-family: var(--sans); font-size: .62rem; color: var(--muted); }
+body.memo .scripture.revealed::before { content: none; }
+
+/* Головна думка, пояснення */
+.key-idea { margin: 24px 0; padding: 18px 24px 16px; background: var(--key-bg); color: var(--key-ink); border-radius: 14px; position: relative; }
+.key-idea .lbl { color: #e3c882; }
+.key-idea p { margin: 6px 0 0; font-family: var(--display); font-weight: 600; font-size: 1.32rem; line-height: 1.4; }
+mark.key { background: linear-gradient(transparent 55%, var(--mark) 55%); color: inherit; font-weight: 700; padding: 0 1px; }
+.note { margin: 20px 0; padding: 14px 20px; background: var(--note-bg); border-left: 3px solid var(--note-line); border-radius: 4px 12px 12px 4px; font-size: .93rem; }
+.note .lbl { color: var(--muted); }
+.note p { margin: 4px 0 0; }
+ul.points { list-style: none; padding: 0; margin: 12px 0 18px; }
+ul.points > li { position: relative; padding-left: 26px; margin-bottom: 12px; }
+ul.points > li::before { content: ""; position: absolute; left: 4px; top: .62em; width: 9px; height: 9px; background: var(--gold); transform: rotate(45deg); }
+ul.points .li-head { margin-bottom: .35em; }
+ul.points > li > p:not(.li-head) { margin-bottom: .6em; }
+
+/* ---------- тест ---------- */
+.quiz { margin-top: 50px; padding: 26px clamp(16px, 4vw, 30px); border-radius: 16px; background: linear-gradient(180deg, var(--gold-soft), transparent 220px); border: 1px solid var(--gold-line); }
+.quiz-head h3 { font-family: var(--display); font-size: 1.9rem; color: var(--navy); margin: 6px 0 6px; line-height: 1.15; }
+.quiz-intro { font-size: .9rem; color: var(--muted); }
+.quiz-print { display: none; }
+.q { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 14px; margin: 14px 0; }
+.q-top { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; font-family: var(--sans); font-size: .64rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.q-top .lvl { padding: 3px 8px; border-radius: 999px; background: var(--note-bg); }
+.q-top .lvl.app { background: var(--gold-soft); color: var(--part); }
+.q-text { font-weight: 700; margin-bottom: 12px; line-height: 1.5; }
+.opt { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; cursor: pointer; font-size: .93rem; line-height: 1.45; }
+.opt:hover { border-color: var(--gold-line); }
+.opt input { margin-top: 4px; accent-color: var(--navy); flex: none; }
+.opt.right { border-color: var(--ok); background: var(--ok-bg); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.tf { display: flex; gap: 10px; }
+.tf .opt { flex: 1 1 0; min-width: 0; justify-content: center; }
+.match-row { display: grid; grid-template-columns: 1fr 1.4fr; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: .9rem; }
+.match-row select { width: 100%; font: inherit; font-size: .86rem; padding: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+.match-row.right select { border-color: var(--ok); background: var(--ok-bg); }
+.match-row.wrong select { border-color: var(--bad); background: var(--bad-bg); }
+.match-row .fix { grid-column: 1 / -1; font-size: .8rem; color: var(--ok); }
+@media (max-width: 560px) { .match-row { grid-template-columns: 1fr; } }
+.order-list { list-style: none; padding: 0; margin: 0; counter-reset: ord; }
+.order-list li { display: flex; gap: 8px; align-items: center; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; background: var(--paper); font-size: .9rem; line-height: 1.4; counter-increment: ord; }
+.order-list li::before { content: counter(ord); font-family: var(--sans); font-weight: 700; font-size: .75rem; color: var(--gold); width: 18px; flex: none; }
+.order-list li span { flex: 1; }
+.order-list button { font: inherit; font-size: .8rem; width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; flex: none; }
+.order-list li.right { border-color: var(--ok); background: var(--ok-bg); }
+.order-list li.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.q textarea { width: 100%; min-height: 90px; font: inherit; font-size: .92rem; padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); resize: vertical; }
+.fb { display: none; margin-top: 10px; padding: 10px 12px; border-radius: 10px; font-size: .88rem; line-height: 1.5; }
+.q.done .fb { display: block; }
+.q.ok .fb { background: var(--ok-bg); }
+.q.bad .fb { background: var(--bad-bg); }
+.q.part .fb { background: var(--part-bg); }
+.q.reflect .fb { background: var(--note-bg); }
+.fb b.st { font-family: var(--sans); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; margin-right: 6px; }
+.q.ok .fb b.st { color: var(--ok); } .q.bad .fb b.st { color: var(--bad); } .q.part .fb b.st { color: var(--part); }
+.fb a { font-family: var(--sans); font-size: .74rem; font-weight: 600; display: inline-block; margin-top: 6px; }
+.q.missing { border-color: var(--bad); }
+.quiz-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 18px; }
+.btn { font-family: var(--sans); font-weight: 700; font-size: .8rem; padding: 12px 20px; border-radius: 999px; border: 0; cursor: pointer; background: var(--navy); color: var(--paper); }
+:root[data-theme="dark"] .btn { color: #10141c; }
+.btn.ghost { background: transparent; color: var(--navy); border: 1px solid var(--gold-line); }
+.warn { font-size: .85rem; color: var(--bad); }
+.result { margin-top: 18px; padding: 20px; border-radius: 14px; background: var(--paper); border: 1px solid var(--gold-line); display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+.ring { width: 112px; height: 112px; }
+.ring text { font-family: var(--sans); font-weight: 700; font-size: 20px; fill: var(--ink); }
+.result h4 { font-family: var(--display); font-size: 1.5rem; margin: 0 0 6px; color: var(--navy); }
+.result p { margin: 0 0 8px; font-size: .9rem; }
+.levels { grid-column: 1 / -1; display: grid; gap: 8px; }
+.lvlbar { display: grid; grid-template-columns: 120px 1fr 48px; gap: 10px; align-items: center; font-family: var(--sans); font-size: .72rem; }
+.lvlbar .bar { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; }
+.lvlbar .bar i { display: block; height: 100%; background: var(--gold); border-radius: 99px; }
+.review { grid-column: 1 / -1; font-size: .88rem; }
+.review ul { margin: 6px 0 0; padding-left: 18px; }
+@media (max-width: 560px) { .result { grid-template-columns: 1fr; justify-items: start; } }
+
+/* ---------- підсумок, підвал ---------- */
+.summary h2, .answers h2 { font-family: var(--display); font-size: 2.2rem; color: var(--navy); margin: 6px 0 10px; }
+.sum-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin-top: 10px; }
+.sum-table td, .sum-table th { padding: 10px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+.sum-table th { font-family: var(--sans); font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.site-foot { text-align: center; font-size: .82rem; color: var(--muted); padding: 30px 10px 10px; }
+.site-foot .emblem { width: 36px; height: 36px; color: var(--gold); }
+.site-foot p { margin: 4px 0; }
+.site-foot .small { font-size: .72rem; }
+
+/* ---------- друк / PDF ---------- */
+@page {
+  size: A4;
+  margin: 19mm 17mm 17mm;
+  @top-left { content: "Біблійна школа «Дім Слова» · Християнська церква «Перемога», м. Рівне"; font-family: "Montserrat", sans-serif; font-size: 7pt; font-weight: 600; letter-spacing: .08em; color: #9a7a35; vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #dcc896; }
+  @top-right { content: "Герменевтика"; font-family: "Cormorant Garamond", serif; font-size: 10pt; font-style: italic; color: #1f3a5f; vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #dcc896; }
+  @bottom-left { content: "instagram.com/victorychurch_rv"; font-family: "Montserrat", sans-serif; font-size: 6.5pt; color: #8f96a3; }
+  @bottom-right { content: counter(page); font-family: "Montserrat", sans-serif; font-size: 8pt; font-weight: 700; color: #b0852b; }
+}
+@page cover { margin: 0; @top-left { content: none; border: 0; } @top-right { content: none; border: 0; } @bottom-left { content: none; } @bottom-right { content: none; } }
+
+@media print {
+  :root { --fs: 10.4pt; --bg: #fff; --paper: #fff; }
+  html { font-size: 10.4pt; }
+  body { background: #fff; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .screen-only, .quiz-app, .scripture .more { display: none !important; }
+  .print-only { display: block; }
+  main { max-width: none; margin: 0 !important; padding: 0; }
+  main > section, .chapter { box-shadow: none; border-radius: 0; padding: 0; margin: 0; background: none; }
+  .cover { page: cover; height: 297mm; min-height: 0; width: 210mm; border-radius: 0 !important; break-after: page; }
+  .cover::before { inset: 12mm; } .cover::after { inset: 14.5mm; }
+  .cover-name { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 2rem; color: #e3c882; margin: 2px 0 26px; }
+.cover h1 { font-size: 64pt; }
+  .preface, .toc-page, .chapter, .answers { break-before: page; }
+  .scripture blockquote { font-size: 12.2pt; }
+  .scripture:not(.long), .key-idea, .note, .lg, .prayer, .epigraph { break-inside: avoid; }
+  .scripture.collapsed blockquote { max-height: none; -webkit-mask-image: none; mask-image: none; }
+  h3.sec, h4.sub, .ch-head { break-after: avoid; }
+  h3.sec { margin-top: 26pt; }
+  p { orphans: 3; widows: 3; }
+  .quiz { break-before: page; background: none; border: 0; padding: 0; margin: 0; }
+  .quiz-print { display: block; }
+  .pq { break-inside: avoid; margin: 0 0 12pt; }
+  .pq-q { margin: 0 0 5pt; }
+  .pq-hint { font-family: var(--sans); font-size: 6.5pt; letter-spacing: .06em; text-transform: uppercase; color: #9a7a35; margin-left: 4pt; }
+  .pq-opts { list-style: none; padding: 0 0 0 14pt; margin: 0; }
+  .pq-opts li { margin: 2pt 0; display: flex; gap: 5pt; }
+  .box { display: inline-block; width: 8pt; height: 8pt; border: .7pt solid #1f3a5f; border-radius: 1.5pt; flex: none; margin-top: 3pt; }
+  .pq-tf { padding-left: 14pt; }
+  .pq-match { display: grid; grid-template-columns: 1fr 1.3fr; gap: 12pt; padding-left: 14pt; }
+  .pq-match ol { margin: 0; padding-left: 14pt; }
+  .pq-match ol.letters { list-style: none; padding: 0; }
+  .pq-match li { margin: 2pt 0; }
+  .blank { display: inline-block; width: 28pt; border-bottom: .7pt solid #1f3a5f; margin-left: 4pt; }
+  .blank.sm { width: 16pt; margin: 0 4pt 0 0; }
+  .pq-order { list-style: none; padding-left: 14pt; margin: 0; }
+  .pq-order li { margin: 3pt 0; }
+  .pq-lines { height: 58pt; margin-left: 14pt; background: repeating-linear-gradient(transparent 0 18pt, #cfc6b3 18pt 18.6pt); }
+  .toc-page .toc-list { font-size: 10pt; columns: 1; }
+  .toc-page .toc-list > li { margin-bottom: 10pt; break-inside: avoid; }
+  .toc-page .toc-list > li > a { font-family: var(--display); font-size: 15pt; color: #1f3a5f; }
+  .toc-page .toc-list a { text-decoration: none; }
+  .toc-extra { font-size: 9pt; color: #5d6474; margin-top: 14pt; }
+  .answers h3 { font-family: var(--display); font-size: 14pt; color: #1f3a5f; margin: 16pt 0 6pt; break-after: avoid; }
+  .key-list { padding-left: 16pt; font-size: 8.8pt; line-height: 1.45; }
+  .key-list li { margin-bottom: 4pt; break-inside: avoid; }
+  .k-a { color: #1f3a5f; }
+  .k-exp { color: #3b4150; }
+  .site-foot { break-inside: avoid; padding-top: 30pt; }
+  a { color: inherit; text-decoration: none; }
+}
+
+/* ---------- ім’я учня і надсилання ---------- */
+.who-chip { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; line-height: 34px; }
+.who-chip[hidden] { display: none; }
+.who { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 16px; background: rgba(16, 20, 28, .55); }
+.who[hidden] { display: none; }
+.who-box { width: 100%; max-width: 440px; background: var(--paper); color: var(--ink); border: 1px solid var(--gold-line); border-radius: 18px; padding: 26px 24px 22px; box-shadow: var(--shadow); }
+.who-box h2 { font-family: var(--display); font-size: 2rem; color: var(--navy); margin: 4px 0 8px; line-height: 1.15; }
+.who-box p { margin: 0 0 14px; font-size: .92rem; }
+.who-box input { width: 100%; font: inherit; font-size: 1rem; padding: 12px 14px; border: 1px solid var(--gold-line); border-radius: 10px; background: var(--bg); color: var(--ink); }
+.who-box input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.who-box .warn { display: block; min-height: 1.2em; margin: 6px 0 10px; }
+.who-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.send { grid-column: 1 / -1; margin: 6px 0 0; font-family: var(--sans); font-size: .76rem; }
+.send:empty { display: none; }
+.send.ok { color: var(--ok); }
+.send.wait { color: var(--part); }
+.linkish { font: inherit; color: var(--navy); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+/* ---------- вузькі екрани ---------- */
+.brand { flex: 1 1 auto; }
+.brand > span { min-width: 0; }
+.brand b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tools { flex: none; }
+.table-wrap { overflow-x: auto; }
+@media (max-width: 600px) {
+  html { font-size: min(var(--fs), 17px); }
+  main { padding: 0 8px 40px; }
+  main > section, .chapter { padding: 22px 16px; border-radius: 14px; margin: 12px 0; }
+  .cover { padding: 0; }
+  .scripture { padding: 16px 14px 12px 16px; }
+  .scripture blockquote { font-size: 1.16rem; }
+  .key-idea, .note { padding-left: 16px; padding-right: 16px; }
+  .quiz { padding: 18px 10px; }
+  .q { padding: 14px 12px 12px; }
+  .brand small { display: none; }
+  .who-chip { max-width: 96px; }
+  .sum-table .c-date { display: none; }
+  /* обкладинка: увесь текст усередині золотої рамки (inset 22–30px) */
+  .cover-inner { padding: 52px 40px; max-width: 100%; }
+  .cover-church { letter-spacing: .14em; margin-bottom: 26px; }
+  .cover-school { letter-spacing: .22em; }
+  .cover h1 { font-size: clamp(2.3rem, 11vw, 3.4rem); overflow-wrap: anywhere; }
+  .cover-sub { font-size: 1.3rem; }
+  .cover-foot { flex-wrap: wrap; gap: 6px 18px; letter-spacing: .08em; }
+}
+@media (max-width: 400px) {
+  .topbar { gap: 6px; padding: 8px 10px; }
+  .tools { gap: 4px; }
+  .brand > span { display: none; }
+  .who-chip { max-width: 64px; padding: 0 8px; }
+  .cover-inner { padding: 52px 34px; }
+  .cover-foot { font-size: .6rem; letter-spacing: .04em; }
+}
+</style>
+</head>
+<body>
+<div class="progress screen-only" aria-hidden="true"><span></span></div>
+
+<header class="topbar screen-only">
+  <button class="icon-btn" id="tocBtn" type="button" aria-controls="toc" aria-expanded="false" title="Зміст">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+  </button>
+  <a class="brand" href="./" title="Усі уроки">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <span><b>Дім Слова</b><small>Урок 33 · Герменевтика</small></span>
+  </a>
+  <div class="tools">
+    <button class="chip who-chip" id="whoBtn" type="button" title="Змінити ім’я" hidden></button>
+    <button class="chip" id="memoBtn" type="button" aria-pressed="false" title="Сховати тексти віршів, щоб перевірити, чи пам’ятаєте їх">Режим запам’ятовування</button>
+    <button class="icon-btn" id="fsDown" type="button" title="Менший шрифт">A−</button>
+    <button class="icon-btn" id="fsUp" type="button" title="Більший шрифт">A+</button>
+    <button class="icon-btn" id="themeBtn" type="button" title="Світла / темна тема">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="chip solid" href="hermenevtyka.pdf" download>PDF</a>
+  </div>
+</header>
+
+<nav class="toc-drawer screen-only" id="toc" aria-label="Зміст">
+  <div class="toc-inner">
+    <p class="lbl">Зміст</p>
+    <ol class="toc-list">
+      <li><a href="./">← Усі уроки</a></li>
+      <li><a href="#preface">Передмова</a></li>
+      <li><a href="#ch1">I. Вивчення Біблії й навіщо герменевтика</a><ol><li><a href="#ch1-s1">Що таке вивчення Біблії</a></li><li><a href="#ch1-s2">Навіщо потрібна герменевтика</a></li><li><a href="#quiz1">Перевір себе</a></li></ol></li><li><a href="#ch2">II. Історія тлумачення й аналіз тексту</a><ol><li><a href="#ch2-s1">Історія тлумачення</a></li><li><a href="#ch2-s2">Історико-культурний, контекстний і лексико-синтаксичний аналіз</a></li><li><a href="#quiz2">Перевір себе</a></li></ol></li><li><a href="#ch3">III. Притчі, алегорії, прообрази й пророцтва</a><ol><li><a href="#ch3-s1">Богословський аналіз і літературні прийоми</a></li><li><a href="#ch3-s2">Прообрази й пророцтва</a></li><li><a href="#quiz3">Перевір себе</a></li></ol></li><li><a href="#ch4">IV. Застосування заповідей</a><ol><li><a href="#ch4-s1">Застосування заповідей</a></li><li><a href="#quiz4">Перевір себе</a></li></ol></li>
+      <li><a href="#summary">Підсумок тестів</a></li>
+    </ol>
+  </div>
+</nav>
+<div class="scrim screen-only" id="scrim"></div>
+
+<div class="who screen-only" id="who" role="dialog" aria-modal="true" aria-labelledby="whoTitle" hidden>
+  <form class="who-box" id="whoForm" novalidate>
+    <span class="lbl">Біблійна школа «Дім Слова»</span>
+    <h2 id="whoTitle">Як вас звати?</h2>
+    <p id="whoText">Вкажіть ім’я та прізвище. Результати тестів побачить пастор, щоб допомагати вам у навчанні.</p>
+    <input id="whoName" type="text" autocomplete="name" maxlength="60" placeholder="Ім’я та прізвище" aria-describedby="whoWarn">
+    <p class="warn" id="whoWarn" aria-live="polite"></p>
+    <div class="who-actions">
+      <button class="btn" type="submit">Зберегти</button>
+      <button class="btn ghost" type="button" id="whoLater">Пізніше</button>
+    </div>
+  </form>
+</div>
+
+<main id="top">
+  <section class="cover">
+    <div class="cover-inner">
+      <p class="cover-church">Християнська церква «Перемога» · м. Рівне</p>
+      <svg class="cover-emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+      <p class="cover-school">Біблійна школа</p>
+      <p class="cover-name">«Дім Слова»</p>
+      <h1>Герменевтика</h1>
+      <p class="cover-sub">Урок 33 · Навчальний посібник</p>
+      <p class="cover-meta">Що таке вивчення Біблії · Навіщо потрібна герменевтика · Історія тлумачення · Контекст і слова · Богословський аналіз · Притчі й алегорії · Прообрази й пророцтва · Застосування заповідей</p>
+      <p class="cover-foot"><span>instagram.com/victorychurch_rv</span><span>2026</span></p>
+      <a class="cover-start screen-only" href="#preface">Почати читання ↓</a>
+    </div>
+  </section>
+
+  <section class="preface" id="preface">
+  <span class="lbl">Передмова</span>
+  <figure class="epigraph">
+    <blockquote>Усе Писання богонатхненне й корисне для навчання, для докору, для виправлення, для виховання в праведності,</blockquote>
+    <figcaption>2 Тимофія 3:16</figcaption>
+  </figure>
+
+  <p class="lead">Це урок 33 Біблійної школи «Дім Слова» після уроку «Історія християнства». Його тема – «Герменевтика»: що таке вивчення біблії, навіщо потрібна герменевтика, історія тлумачення, контекст і слова, богословський аналіз, притчі й алегорії, прообрази й пророцтва, застосування заповідей.</p>
+
+  <p>Кожну думку тут підкріплено місцями Писання – прочитайте їх уважно, бо саме Слово Боже, а не пояснення до нього, змінює життя.</p>
+
+  <p>Кожен розділ завершується тестом. Він перевіряє, чи зрозуміла прочитане людина, і тому частина питань описує ситуації з життя, де його треба застосувати. Відповіді з поясненнями зібрано наприкінці посібника, а на вебсторінці тест перевіряється одразу і показує, які теми варто перечитати.</p>
+
+  <figure class="prayer">
+    <span class="lbl">Перед кожним заняттям</span>
+    <blockquote>Відкрий мої очі, щоб я міг побачити дивовижні властивості Твого Закону!</blockquote>
+    <figcaption>Псалом 119:18</figcaption>
+  </figure>
+
+  <div class="legend">
+    <h3>Як читати посібник</h3>
+    <div class="legend-grid">
+      <div class="lg lg-scr"><b>Святе Письмо</b><span>Біблійні тексти виділено золотою рамкою. Посилання стоїть під текстом.</span></div>
+      <div class="lg lg-key"><b>Головна думка</b><span>Висновок, який варто запам’ятати. У тексті такі речення підсвічено.</span></div>
+      <div class="lg lg-note"><b>Пояснення</b><span>Значення слова, історичний фон, приклад.</span></div>
+      <div class="lg lg-quiz"><b>Перевір себе</b><span>Тест наприкінці розділу: знання, розуміння, застосування.</span></div>
+    </div>
+  </div>
+
+  <p class="source-note">Українською перекладено та оформлено за навчальним матеріалом Біблійної школи «Робітники Царства» християнської церкви «Перемога» (м. Київ). Використано з дозволу.<br>Цитати Святого Письма наведено за виданням «Біблія. Сучасний переклад» © Українське Біблійне Товариство, 2020–2023. Посилання подано за нумерацією цього перекладу.</p>
+</section>
+
+
+  <section class="toc-page print-only">
+    <span class="lbl">Зміст</span>
+    <ol class="toc-list"><li><a href="#ch1">I. Вивчення Біблії й навіщо герменевтика</a><ol><li><a href="#ch1-s1">Що таке вивчення Біблії</a></li><li><a href="#ch1-s2">Навіщо потрібна герменевтика</a></li><li><a href="#quiz1">Перевір себе</a></li></ol></li><li><a href="#ch2">II. Історія тлумачення й аналіз тексту</a><ol><li><a href="#ch2-s1">Історія тлумачення</a></li><li><a href="#ch2-s2">Історико-культурний, контекстний і лексико-синтаксичний аналіз</a></li><li><a href="#quiz2">Перевір себе</a></li></ol></li><li><a href="#ch3">III. Притчі, алегорії, прообрази й пророцтва</a><ol><li><a href="#ch3-s1">Богословський аналіз і літературні прийоми</a></li><li><a href="#ch3-s2">Прообрази й пророцтва</a></li><li><a href="#quiz3">Перевір себе</a></li></ol></li><li><a href="#ch4">IV. Застосування заповідей</a><ol><li><a href="#ch4-s1">Застосування заповідей</a></li><li><a href="#quiz4">Перевір себе</a></li></ol></li></ol>
+    <p class="toc-extra">Відповіді до тестів – наприкінці посібника.</p>
+  </section>
+
+  <article class="chapter" data-ch="1"><header class="ch-head" id="ch1"><span class="ch-num">Розділ I</span><h2>Вивчення Біблії й навіщо герменевтика</h2><p class="ch-sub">мірило, помилки, чотири прірви</p></header><h3 class="sec" id="ch1-s1">Що таке вивчення Біблії</h3><h4 class="sub">1. Біблія – еталон</h4><p>Писання – мірило, за яким ми оцінюємо всі доктрини, ідеї й рішення; історія, традиції й розум можуть вводити в оману, а Біблія неухильно проголошує Божі істини. Сатана докладає зусиль, щоб підірвати довіру до Біблії й завадити її розумінню; хибне тлумачення породило безліч суперечок і розділень. Служитель має бути впевнений, що розуміє й застосовує Слово правильно.</p><figure class="scripture"><blockquote><sup>16</sup>Усе Писання богонатхненне й корисне для навчання, для докору, для виправлення, для виховання в праведності,</blockquote><figcaption><span class="ref">2 Тимофія 3:16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Помилкові уявлення про вивчення</h4><p>Вивчення – не просто читання (воно дає лише поверхневе значення й ризик неправильно зрозуміти). Не лише заучування напам’ять (цитата може бути вирвана з контексту). Не лише вивчення доктрини, коли слухаємо чужі думки, а Біблію використовуємо як аргумент. Не підготовка проповіді, коли під готову тему добираємо вірші за «Симфонією».</p><h4 class="sub">3. Справжнє вивчення</h4><p>У центрі – Біблія й Святий Дух, а не коментатори. Бажання вчитися: з позиції учня, а не лише для підтвердження вже відомого. Мета – застосування у власному житті.</p><h4 class="sub">4. Основні поняття</h4><p>Герменевтика – наука й мистецтво біблійного тлумачення: наука, бо має правила, мистецтво, бо повідомлення динамічне, і механічне застосування правил може його спотворити. Загальна герменевтика: історико-культурний, контекстний, лексико-синтаксичний і богословський аналіз. Спеціальна: правила для жанрів (притчі, алегорії, прообрази, пророцтва). Екзегетика – «виймати» значення з тексту, а не вкладати своє (ейзегетика).</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Вивчати Біблію – значить пребувати в ній: уважно, смиренно й з наміром застосувати.</p></aside><h3 class="sec" id="ch1-s2">Навіщо потрібна герменевтика</h3><h4 class="sub">1. Чотири прірви</h4><p>Ми розуміємо спонтанно, доки нічого не заважає. У Біблії стоять чотири перешкоди: прірва в часі (напр., жорстокість ніневіян пояснює звернення Йони), культурна («золоті рибки в різних акваріумах»), мовна (івритські ідіоми на кшталт «Бог ожорстоцив серце фараона»), світоглядна.</p><h4 class="sub">2. Від чого залежить застосування</h4><p>Чи Писання – божественно керовані, але недосконалі людські твори, чи богодухновенне й безпомилкове; чи має текст одне вірне значення, чи будь-яка інтерпретація; як відрізнити буквальне, метафоричне й символічне; як духовний стан людини впливає на розуміння.</p><h4 class="sub">3. Погляди на натхнення</h4><p>Ліберальний: біблійні автори натхненні, як Шекспір; неортодоксальний: Бог відкривав Себе в діях, а не в словах, Біблія стає Словом Божим, коли має для мене значення. Ортодоксальний: Бог діяв через особистості авторів, не порушуючи їхнього стилю, і саме Писання натхненне; воно є скарбницею об’єктивної істини, незалежно від того, читаємо ми його чи ні.</p><figure class="scripture"><blockquote><sup>16</sup>Усе Писання богонатхненне й корисне для навчання, для докору, для виправлення, для виховання в праведності,</blockquote><figcaption><span class="ref">2 Тимофія 3:16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>21</sup>Адже пророцтво ніколи не було з волі людини, але від Бога звіщали мужі, натхнені Святим Духом.</blockquote><figcaption><span class="ref">2 Петра 1:21</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Споріднені дисципліни</h4><p>Канон, текстологія (порівняння рукописів), історична критика (автор, дата, обставини), екзегетика, біблійне богослов’я (розвиток одкровення) і систематичне (за темами).</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Герменевтика потрібна, бо між нами й авторами Біблії є прірви часу, культури, мови й світогляду.</p></aside><section class="quiz" id="quiz1" data-ch="1"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 1</span><h3>Вивчення Біблії</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="1"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що, за уроком, є мірилом усіх доктрин, ідей і рішень? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Традиція</li><li><span class="box"></span><b>Б)</b> Розум</li><li><span class="box"></span><b>В)</b> Історія</li><li><span class="box"></span><b>Г)</b> Писання (Біблія)</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Чому, за уроком, просте читання Біблії недостатнє? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бо Біблія складна</li><li><span class="box"></span><b>Б)</b> Дає лише поверхневе значення й ризик неправильно зрозуміти, часто не веде до застосування</li><li><span class="box"></span><b>В)</b> Бо читати нудно</li><li><span class="box"></span><b>Г)</b> Бо немає часу</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Проповідник вибирає тему, а потім знаходить за «Симфонією» вірші на підтримку. Що, за уроком, це? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Найкращий метод</li><li><span class="box"></span><b>Б)</b> Герменевтика</li><li><span class="box"></span><b>В)</b> Не справжнє вивчення: сам проповідник дізнається мало нового</li><li><span class="box"></span><b>Г)</b> Екзегетика</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Вам кажуть: «Цей вірш означає те, що я відчуваю». Що, за уроком, не так? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Треба питати, що це означало для автора, а потім – що значить для нас; тлумачення має бути основане на тексті</li><li><span class="box"></span><b>Б)</b> Усе гаразд</li><li><span class="box"></span><b>В)</b> Дух завжди так каже</li><li><span class="box"></span><b>Г)</b> Немає правильного значення</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Які чотири прірви, за уроком, роблять герменевтику потрібною? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Лише мови</li><li><span class="box"></span><b>Б)</b> Лише часу</li><li><span class="box"></span><b>В)</b> Лише грошей</li><li><span class="box"></span><b>Г)</b> Прірви в часі, культурі, мові й світогляді</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Чому, за уроком, ортодоксальний погляд на натхнення цінує герменевтику? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бо Біблія – людська книга</li><li><span class="box"></span><b>Б)</b> Бо Писання – скарбниця об’єктивної істини, і герменевтика допомагає точніше її розкрити</li><li><span class="box"></span><b>В)</b> Бо Біблія стає Словом тільки при читанні</li><li><span class="box"></span><b>Г)</b> Бо Бог не промовляв словами</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Що, за уроком, означає екзегетика? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Вкладати своє</li><li><span class="box"></span><b>Б)</b> Лише перекладати</li><li><span class="box"></span><b>В)</b> Виймати значення з тексту (на відміну від ейзегетики, що вкладає своє)</li><li><span class="box"></span><b>Г)</b> Лише коментувати</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Яка мета справжнього вивчення Біблії, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Застосування вивченого у власному житті</li><li><span class="box"></span><b>Б)</b> Накопичити знання</li><li><span class="box"></span><b>В)</b> Блиснути цитатою</li><li><span class="box"></span><b>Г)</b> Перемогти в суперечці</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які помилкові уявлення про вивчення Біблії називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Вивчення = читання</li><li><span class="box"></span><b>Б)</b> Лише заучування напам’ять</li><li><span class="box"></span><b>В)</b> Вивчення доктрини як чужих думок</li><li><span class="box"></span><b>Г)</b> Вивчення з Духом</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Які риси справжнього вивчення Біблії? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Біблія в центрі</li><li><span class="box"></span><b>Б)</b> Бажання вчитися</li><li><span class="box"></span><b>В)</b> Мета – застосування</li><li><span class="box"></span><b>Г)</b> Лише мета – виграти суперечку</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Герменевтика – наука, бо має правила, і мистецтво, бо повідомлення динамічне. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Ліберальний погляд на натхнення вважає Біблію безпомилковим Словом Божим. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> З’єднайте поняття з поясненням. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Екзегетика <span class="blank"></span></li><li>Ейзегетика <span class="blank"></span></li><li>Герменевтика <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Вкладати своє значення</li><li><b>Б)</b> Наука й мистецтво тлумачення</li><li><b>В)</b> Виймати значення з тексту</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розташуйте за уроком перешкоди розуміння Біблії. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Прірва в світогляді</li><li><span class="blank sm"></span> Прірва в культурі</li><li><span class="blank sm"></span> Прірва в мові</li><li><span class="blank sm"></span> Прірва в часі</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Як ви вивчаєте Біблію зараз і що змінюєте після цього уроку? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="2"><header class="ch-head" id="ch2"><span class="ch-num">Розділ II</span><h2>Історія тлумачення й аналіз тексту</h2><p class="ch-sub">контекст, мета книги, слова</p></header><h3 class="sec" id="ch2-s1">Історія тлумачення</h3><h4 class="sub">1. Давні тлумачі</h4><p>Іудейські тлумачі шукали багато значень в одному тексті. Ісус і апостоли використовували Старий Завіт як Слово Боже й вказували на його сповнення в Христі.</p><h4 class="sub">2. Отці церкви</h4><p>Климент і Оріген тяжіли до алегоричного тлумачення, Августин мав вплив на весь Захід, а Сирійсько-Антіохійська школа наголошувала на буквальному й історичному значенні.</p><h4 class="sub">3. Середньовіччя</h4><p>Часто домінувала алегорія й традиція.</p><h4 class="sub">4. Реформація</h4><p>Лютер і Кальвін повернулися до прямого, історичного значення тексту й до верховенства Писання.</p><h4 class="sub">5. Нові часи</h4><p>Протестантські сповідання, пієтизм; раціоналізм ставив розум вище одкровення; лібералізм і неоортодоксія по-новому дивилися на натхнення. Герменевтика ортодоксального євангельського християнства прагне зрозуміти авторське значення оригіналу.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Історія тлумачення показує, що хибні методи (алегоризація, раціоналізм) відривали людей від Писання, а повернення до тексту його оновлювало.</p></aside><h3 class="sec" id="ch2-s2">Історико-культурний, контекстний і лексико-синтаксичний аналіз</h3><h4 class="sub">1. Шість етапів</h4><p>Історико-культурний і контекстний аналіз; лексико-синтаксичний; богословський; літературний; порівняння з іншими тлумачами; застосування. Перші три – загальна герменевтика, четвертий – спеціальна, шостий – переклад значення в нашу культуру.</p><h4 class="sub">2. Що значив текст для автора?</h4><p>Приклад: «Не пересувай межі давньої» (Приповісті 22:28) означає не «не змінюй порядку» й не «не пересувай дорожніх знаків», а «не кради землі сусіда»: давня межа розділяла ділянки. Без контексту ми питаємо «що це значить для мене», замість «що це значило для автора».</p><figure class="scripture"><blockquote><sup>28</sup>Не пересувай давньої межі, яку встановили твої батьки.</blockquote><figcaption><span class="ref">Приповісті 22:28</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Три питання контексту</h4><p>Загальна історична ситуація (політична, економічна, суспільна); особлива мета книги; безпосередній контекст. Знання звичаїв пояснює текст: корван (Марка 7), малі світильники й тривале очікування нареченого (десять дів), чоловік із глечиком води як таємний знак (Марка 14). Духовний рівень аудиторії: Осія, якого без контексту легко прийняти за «психопата».</p><figure class="scripture long"><blockquote><sup>1</sup>Зібралися до Нього фарисеї та дехто з книжників, які прийшли з Єрусалима. <sup>2</sup>І помітили, що деякі з Його учнів їли хліб нечистими, тобто немитими, руками. <sup>3</sup>Адже фарисеї і всі юдеї не їдять, якщо добре не вимиють рук, дотримуючись передань старших. <sup>4</sup>І, повернувшись з торгу, поки не помиються, не їдять. Є і багато чого іншого, що вони прийняли, щоби дотримуватися: миття чашок, глечиків, мідного посуду, лежаків. <sup>5</sup>І запитують Його фарисеї та книжники: Чому Твої учні не дотримуються передань старших і немитими руками їдять хліб? <sup>6</sup>А Він відповів їм: Добре Ісая пророкував про вас, лицемірів, як написано: Цей народ устами шанує Мене, серце ж їхнє далеко від Мене. <sup>7</sup>Та даремно поклоняються Мені, навчаючи людських заповідей. <sup>8</sup>Залишивши Божу заповідь, ви тримаєтеся людських передань: [миєте глечики, чашки й робите багато чого іншого, подібного до цього]. <sup>9</sup>І Він говорив їм: Ви вміло відкидаєте Божу заповідь, аби лише зберегти передання ваші. <sup>10</sup>Адже Мойсей сказав: Шануй свого батька і свою матір; і ще: Хто лихословить батька або матір, нехай смертю помре. <sup>11</sup>Ви ж кажете: Якщо хто скаже батькові або матері: корван, тобто дар Богові є те, що ви мали б одержати від мене, <sup>12</sup>то після цього вже дозволяється нічого не робити для батька чи для матері, – <sup>13</sup>усуваєте Боже Слово оцим вашим переданням, яке ви ж і встановили. І робите багато інших подібних речей!</blockquote><figcaption><span class="ref">Марка 7:1–13</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture long"><blockquote><sup>1</sup>Тоді Царство Небесне буде подібне до десятьох дів, які, взявши свої каганці, вийшли назустріч молодому. <sup>2</sup>П’ять із них були нерозумні, а п’ять – мудрі. <sup>3</sup>Нерозумні, взявши свої каганці, не взяли із собою олії. <sup>4</sup>А мудрі разом зі своїми каганцями в посудинах взяли олію. <sup>5</sup>Оскільки молодий запізнювався, всі задрімали й поснули. <sup>6</sup>А опівночі пролунав крик: Ось молодий, виходьте йому назустріч! <sup>7</sup>Тоді всі ті діви встали і приготували свої каганці. <sup>8</sup>Нерозумні сказали мудрим: Дайте нам вашої олії, бо наші каганці гаснуть! <sup>9</sup>А мудрі у відповідь сказали: Щоби часом не забракло і нам, і вам, краще підіть до продавців та й купіть собі. <sup>10</sup>Коли вони пішли купувати, прийшов молодий, і ті, які були готові, пішли з ним на весілля, і за ними замкнули двері. <sup>11</sup>Потім приходять й інші діви та й кажуть: Пане, пане, відчини нам! <sup>12</sup>А він у відповідь сказав: Запевняю вас, я вас не знаю! <sup>13</sup>Тож пильнуйте, бо не знаєте ні дня, ні години, [коли Син Людський прийде].</blockquote><figcaption><span class="ref">Матвія 25:1–13</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>12</sup>Першого дня Опрісноків, коли приносили пасхальну жертву, Його учні говорять Йому: Де Ти хочеш, щоб ми пішли приготувати пасху, аби Ти спожив? <sup>13</sup>Він посилає двох Своїх учнів і каже їм: Ідіть до міста, зустріне вас чоловік, який буде нести в глечикові воду, – ступайте за ним. <sup>14</sup>Куди він увійде, скажіть господареві того дому, що Вчитель каже: Де Моя світлиця, в якій Я буду споживати з Моїми учнями пасху?</blockquote><figcaption><span class="ref">Марка 14:12–14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Мета книги</h4><p>Її видно з явних заяв (Луки 1:1–4; Івана 20:31), з настанов (Євреїв 10:32–35: не повертатися в іудаїзм), із того, що автор опускає чи підкреслює (Хроніки вибирають події, щоб показати: Ізраїль процвітає лише у вірності завітові). Перевірка: сформулюй мету одним реченням.</p><figure class="scripture"><blockquote><sup>1</sup>Оскільки багато хто брався складати розповіді про події, що відбулися в нас, <sup>2</sup>і як нам передали їх ті, які із самого початку були очевидцями й служителями Слова, <sup>3</sup>то задумав і я, дослідивши пильно все від початку, написати за порядком тобі, високоповажний Теофіле, <sup>4</sup>щоб ти переконався в достовірності науки, якої навчився.</blockquote><figcaption><span class="ref">Луки 1:1–4</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>31</sup>А це було написане, щоб ви повірили, що Ісус є Христос, Син Божий, і щоб вірячи, життя мали ви в Його Ім’я.</blockquote><figcaption><span class="ref">Івана 20:31</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Безпосередній контекст</h4><p>Як розділено матеріал; як уривок вписується в хід думки; точка зору автора; описова чи наказова істина (опис вчинків не означає схвалення; Божі методи в Євангеліях не обов’язково норма для всіх); головний урок чи випадкові деталі (пелагіани, виводячи з притчі про блудного сина, що посередник не потрібен); кому адресований уривок («усі обітниці Біблії – мої» – хибний підхід, як і жарт про юнака, що шукав волю Божу навмання).</p><h4 class="sub">6. Лексико-синтаксичний аналіз</h4><p>Вивчення значення слів і їхнього зв’язку; не сліпий буквалізм: «Я – двері» – метафора, «візьми постіль і йди» – буквальне. У контексті слово має одне задумане значення. Без аналізу ми не знаємо, що саме мав на увазі Бог, і не можемо стверджувати, що наше тлумачення краще, ніж єретичне. Шість кроків: жанр; розвиток теми; природний поділ тексту; сполучні слова; значення слів (за контекстом, синонімами, вживанням у Біблії); синтаксис.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Читай текст у контексті: хто, кому, коли, навіщо, і лише потім питай, що це значить для мене.</p></aside><section class="quiz" id="quiz2" data-ch="2"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 2</span><h3>Контекст і слова</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="2"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що, за Приповістей 22:28, означає «Не пересувай межі давньої»? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Не змінюй порядку</li><li><span class="box"></span><b>Б)</b> Не красти землі сусіда: давня межа розділяла ділянки</li><li><span class="box"></span><b>В)</b> Не пересувай дорожніх знаків</li><li><span class="box"></span><b>Г)</b> Не будуй доріг</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Яке питання, за уроком, потрібно поставити першим при тлумаченні? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Що це значить для мене?</li><li><span class="box"></span><b>Б)</b> Що сказав коментатор?</li><li><span class="box"></span><b>В)</b> Що цей текст означав для автора й його аудиторії?</li><li><span class="box"></span><b>Г)</b> Що кажуть друзі?</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Чому, за уроком, знання звичаїв допомагає розуміти Біблію? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Корван (Марка 7), малі світильники десяти дів – звичаї пояснюють сенс</li><li><span class="box"></span><b>Б)</b> Бо там усе про звичаї</li><li><span class="box"></span><b>В)</b> Бо звичаї змінилися</li><li><span class="box"></span><b>Г)</b> Бо вони забуті</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Як, за уроком, можна визначити мету книги? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Лише з назви</li><li><span class="box"></span><b>Б)</b> Лише з коментаря</li><li><span class="box"></span><b>В)</b> Не можна</li><li><span class="box"></span><b>Г)</b> З явних заяв, повторів, настанов, а також із того, що автор опускає чи підкреслює</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Фраза «Усі обітниці Біблії – мої». Що, за уроком, не так? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Нічого</li><li><span class="box"></span><b>Б)</b> Треба питати, кому адресований текст: усі обітниці й заповіді не стосуються нас (напр., Авраам і Ісаак)</li><li><span class="box"></span><b>В)</b> Це завжди правда</li><li><span class="box"></span><b>Г)</b> Це не про Біблію</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Опис вчинків людей у Біблії без коментарів, – що, за уроком, це означає? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бог схвалює</li><li><span class="box"></span><b>Б)</b> Це норма для всіх</li><li><span class="box"></span><b>В)</b> Не означає схвалення Богом; описові й наказові місця різні</li><li><span class="box"></span><b>Г)</b> Це закон</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Що, за уроком, робить лексико-синтаксичний аналіз? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Вивчає слова й їхній зв’язок, щоб визначити задуманий автором сенс; допомагає відрізнити буквальне, метафоричне й символічне</li><li><span class="box"></span><b>Б)</b> Закріплює буквалізм</li><li><span class="box"></span><b>В)</b> Ігнорує контекст</li><li><span class="box"></span><b>Г)</b> Лише перекладає</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Чому, за уроком, пелагіани помилилися в тлумаченні притчі про блудного сина? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Не читали притчі</li><li><span class="box"></span><b>Б)</b> Не вміли читати</li><li><span class="box"></span><b>В)</b> Перекрутили переклад</li><li><span class="box"></span><b>Г)</b> Вони зробили головним випадкову деталь: що син повернувся без посередника</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які питання, за уроком, ставимо щодо безпосереднього контексту? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Як розділено матеріал</li><li><span class="box"></span><b>Б)</b> Яка точка зору автора</li><li><span class="box"></span><b>В)</b> Описова чи наказова істина</li><li><span class="box"></span><b>Г)</b> Що сказав мій друг</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Які етапи лексико-синтаксичного аналізу називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Визначити жанр</li><li><span class="box"></span><b>Б)</b> Простежити розвиток теми</li><li><span class="box"></span><b>В)</b> Проаналізувати синтаксис</li><li><span class="box"></span><b>Г)</b> Вгадати значення</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Контекст допомагає відрізнити описову й наказову істину. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Вірш, вирваний з контексту, можна використовувати для визначення волі Божої. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> З’єднайте етап із питанням. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Історико-культурний аналіз <span class="blank"></span></li><li>Контекстний аналіз <span class="blank"></span></li><li>Лексико-синтаксичний <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Яка була історична ситуація?</li><li><b>Б)</b> Як уривок вписується в книгу?</li><li><b>В)</b> Що означають слова й зв’язки?</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розташуйте шість етапів тлумачення за уроком (перші чотири). <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Літературний</li><li><span class="blank sm"></span> Богословський</li><li><span class="blank sm"></span> Історико-культурний і контекстний</li><li><span class="blank sm"></span> Лексико-синтаксичний</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Який вірш ви цитуєте, ніколи не вивчивши контексту, і як це виправите? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="3"><header class="ch-head" id="ch3"><span class="ch-num">Розділ III</span><h2>Притчі, алегорії, прообрази й пророцтва</h2><p class="ch-sub">богословський аналіз, літературні прийоми</p></header><h3 class="sec" id="ch3-s1">Богословський аналіз і літературні прийоми</h3><h4 class="sub">1. Богословський аналіз</h4><p>Як уривок вписується в загальну схему Божого одкровення? Небезпеки: вкладати власну схему в текст і не усвідомлювати, що це лише теорія. Кроки: виробити власний погляд на стосунки Бога з людиною; визначити, як він впливає на розуміння; оцінити обсяг знань первісних слухачів; визначити значення для них; урахувати подальше одкровення.</p><h4 class="sub">2. Прийоми</h4><p>Порівняння й метафора (виражене й невиражене); притча – розширене порівняння, алегорія – розширена метафора. У притчі виклад і пояснення розділені (Ісая 5:1–7), в алегорії переплетені. Приказка – стисла притча чи алегорія.</p><figure class="scripture long"><blockquote><sup>1</sup>Заспіваю моєму Улюбленому пісню мого Улюбленого про Його виноградник. В мого Улюбленого був виноградник у родючому місці на схилі гори. <sup>2</sup>Він перекопав його, очистив його від каміння і засадив його добірною виноградною лозою, – побудував посеред нього башту і викопав у ньому чавило. Він очікував, що лоза родитиме хороші грона винограду, а вона вродила дикі ягоди. <sup>3</sup>Тепер же ви, мешканці Єрусалима і мужі Юди, розсудіть між Мною і між Моїм виноградником. <sup>4</sup>Що ще Я мав би зробити для Мого виноградника, чого Я для нього не зробив? Чому ж, коли Я чекав, що він принесе добрий виноград, а він вродив дикі ягоди? <sup>5</sup>Отже, тепер Я сповіщу вам, що зроблю з Моїм виноградником. Заберу його огорожу, і нехай його нищать, – зруйную його стіну, і його топтатимуть, – <sup>6</sup>залишу його на спустошення. Його не будуть ні обрізувати, ні обкопувати, і він заросте терниною і будяками. А ще Я накажу хмарам, щоб не зрошували його дощем. <sup>7</sup>Виноградник Господа Саваота – це рід Ізраїля, і нащадки Юди – Його улюблені саджанці. Він сподівався правосуддя, – а тут кровопролиття, справедливості, – а ось голосіння.</blockquote><figcaption><span class="ref">Ісая 5:1–7</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Приповісті</h4><p>Це моральний бік Закону для повсякденного життя, у центрі – премудрість, що починається зі страху Господнього. Приказка зазвичай містить одну думку: дружина «як купецькі кораблі» – не про талію, а про дальні вилазки по харчі.</p><figure class="scripture"><blockquote><sup>14</sup>Вона, наче комерційні кораблі, здалека привозить свій хліб.</blockquote><figcaption><span class="ref">Приповісті 31:14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Притчі</h4><p>Мета двояка: відкрити істину віруючим (жінка й суддя, фарисей і митар, Натан і Давид) і приховати її від тих, хто затвердів серцем. Затверділість робить людину нездатною розуміти.</p><figure class="scripture"><blockquote><sup>10</sup>Підійшовши, учні запитали Його: Чому Ти говориш до них притчами? <sup>11</sup>А Він у відповідь сказав їм: Бо вам дано пізнати таємниці Царства Небесного, а їм не дано. <sup>12</sup>Адже хто має, тому дасться, і матиме понад міру, а хто не має, то й те, що має, буде забране від нього. <sup>13</sup>Я тому говорю до них притчами, що, дивлячись, вони не бачать, а слухаючи, – не чують і не розуміють; <sup>14</sup>і збувається щодо них пророцтво Ісаї, в якому говориться: Слухом будете чути, та не зрозумієте, і вдивляючись, будете дивитися, та не побачите. <sup>15</sup>Адже серце цього народу огрубіло, і вухами недочувають, і очі свої замружили, аби не побачити очима і не почути вухами; та й серцем не зрозуміли і не навернулися, щоб Я зцілив їх.</blockquote><figcaption><span class="ref">Матвія 13:10–15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>9</sup>А для тих, які надіються на себе, ніби вони праведні й за ніщо мають інших, розповів таку притчу: <sup>10</sup>Два чоловіки увійшли до храму помолитися: один фарисей, а другий митник. <sup>11</sup>Фарисей, ставши, про себе так молився: Боже, дякую Тобі, що я не такий, як інші люди, – грабіжники, несправедливі, перелюбники, або як оцей митник; <sup>12</sup>я пощу двічі на тиждень, даю десятину з усього, що надбаю. <sup>13</sup>А митник, здалека стоячи, не смів навіть очей звести до неба, але бив себе в груди, промовляючи: Боже, будь милосердний до мене, грішного! <sup>14</sup>Кажу вам, що цей повернувся до свого дому оправданий більше, ніж той, бо кожний, хто підноситься, – буде понижений, а хто себе понижує, – піднесений буде!</blockquote><figcaption><span class="ref">Луки 18:9–14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture long"><blockquote><sup>1</sup>Тому Господь послав до Давида Натана, який, прийшовши, розповів Давидові: В одному місті жили два чоловіки: один – багатий, а другий – бідний. <sup>2</sup>У багатого були отари овець і дуже великі стада, <sup>3</sup>а в бідняка не було нічого, крім однієї малої овечки, яку він купив маленькою і вигодував. Вона в нього разом з його дітьми виросла. Вона їла його хліб, пила з його чаші та на його грудях засинала, – була йому як дочка. <sup>4</sup>Якось до багатого чоловіка зайшов подорожній, і той пожалів узяти щось зі своєї отари, або зі своїх стад, аби пригостити подорожнього, що до нього прийшов, а він відібрав овечку бідняка й приготував її для чоловіка, який до нього зайшов. <sup>5</sup>Давид спалахнув великим гнівом на того чоловіка, і сказав Натанові: Як живий Господь, чоловік, який це вчинив, заслуговує смерті <sup>6</sup>за те, що вчинив таку ганебну річ, і не виявив жодного співчуття; а за ту овечку він має заплатити в чотирикратному розмірі! <sup>7</sup>Тоді Натан промовив до Давида: Ти є тим чоловіком! Так говорить Господь, Бог Ізраїлю: Я помазав тебе царем над Ізраїлем, і Я спас тебе від рук Саула!</blockquote><figcaption><span class="ref">2 Самуїла 12:1–7</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Правила тлумачення притч</h4><p>Контекст: притча про робітників у винограднику – лагідний докір Петрові, що мислив як найманець після запитання про нагороду. Доктрину не будують лише на притчі: Фауст Социн вивів із притчі про злого раба, що Бог прощає без посередника. Головна думка одна, деталі мають значення лише наскільки стосуються її (Ісус сам пояснив сіяча й пшеницю з кукілем).</p><figure class="scripture long"><blockquote><sup>1</sup>Царство Небесне подібне до господаря, який вийшов якось вранці найняти робітників до свого виноградника. <sup>2</sup>Домовившись з робітниками по динарію за день, він послав їх до свого виноградника. <sup>3</sup>Вийшовши о третій годині, побачив інших, які стояли без діла на ринку, <sup>4</sup>і сказав їм: Ідіть і ви у виноградник – і дам вам по справедливості. <sup>5</sup>Вони пішли. Далі, вийшовши о шостій та о дев’ятій годинах, зробив так само. <sup>6</sup>Коли вийшов об одинадцятій годині, знайшов інших, які стояли, і каже їм: Чому ви стоїте тут без діла цілий день? <sup>7</sup>Кажуть йому: Бо нас ніхто не найняв. Він каже їм: Ідіть і ви у виноградник [мій – і одержите, що вам належить]. <sup>8</sup>Коли настав вечір, каже господар виноградника до свого управителя: Поклич робітників і дай їм платню, почавши від останніх і аж до перших. <sup>9</sup>Ті, хто прийшов об одинадцятій годині, одержали по динарію. <sup>10</sup>А коли підійшли перші, то думали, що одержать більше, але й вони отримали по динарію. <sup>11</sup>Відтак, одержавши, нарікали на пана, <sup>12</sup>кажучи: Оці останні попрацювали одну годину, а ти прирівняв їх до нас, які винесли тягар дня і спеку. <sup>13</sup>А він у відповідь сказав одному з них: Друже, не кривджу тебе; чи не за динарія домовився ти зі мною? <sup>14</sup>Візьми своє і йди. Я хочу й цьому останньому дати так само, як і тобі; <sup>15</sup>хіба не можна мені зробити з моїм те, що я бажаю? Чи твоє око лукаве через те, що я добрий? <sup>16</sup>Так останні будуть першими, а перші – останніми, [бо багато є покликаних, а мало вибраних].</blockquote><figcaption><span class="ref">Матвія 20:1–16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture long"><blockquote><sup>1</sup>Того дня Ісус вийшов з дому і сидів біля моря; <sup>2</sup>і зібралося біля Нього безліч людей; Він увійшов у човен і сів, а всі люди стояли на березі. <sup>3</sup>І Він багато розповідав їм притчами, кажучи: Ось вийшов сіяч сіяти. <sup>4</sup>І коли сіяв, одне зерно впало при дорозі, й прилетіли птахи та визбирали його. <sup>5</sup>Інше впало на кам’янистий ґрунт, де не було багато землі, й швидко зійшло, бо не мало глибокої землі, <sup>6</sup>а як піднялося сонце, – зів’яло і, не маючи кореня, засохло. <sup>7</sup>Інше впало в терня, а терня виросло й заглушило його. <sup>8</sup>А інше впало на добру землю і давало плід: одне в сто, одне в шістдесят, одне в тридцять разів. <sup>9</sup>Хто має вуха [щоби слухати], нехай слухає! <sup>10</sup>Підійшовши, учні запитали Його: Чому Ти говориш до них притчами? <sup>11</sup>А Він у відповідь сказав їм: Бо вам дано пізнати таємниці Царства Небесного, а їм не дано. <sup>12</sup>Адже хто має, тому дасться, і матиме понад міру, а хто не має, то й те, що має, буде забране від нього. <sup>13</sup>Я тому говорю до них притчами, що, дивлячись, вони не бачать, а слухаючи, – не чують і не розуміють; <sup>14</sup>і збувається щодо них пророцтво Ісаї, в якому говориться: Слухом будете чути, та не зрозумієте, і вдивляючись, будете дивитися, та не побачите. <sup>15</sup>Адже серце цього народу огрубіло, і вухами недочувають, і очі свої замружили, аби не побачити очима і не почути вухами; та й серцем не зрозуміли і не навернулися, щоб Я зцілив їх. <sup>16</sup>Ваші ж очі та ваші вуха блаженні, бо бачать і чують. <sup>17</sup>Запевняю вас, що багато пророків і праведників бажали бачити те, що ви бачите, але не бачили; і чути хотіли те, що ви чуєте, але не чули. <sup>18</sup>Отже, послухайте притчу про сіяча. <sup>19</sup>До кожного, хто слухає слово про Царство, та не розуміє, приходить лукавий і викрадає посіяне в його серці; це те, що посіяне при дорозі. <sup>20</sup>А посіяне на кам’янистому ґрунті – це той, хто слухає слово і відразу з радістю його приймає, <sup>21</sup>але, не маючи в собі кореня, він є непостійний, і коли настають труднощі або переслідування за слово, він відразу спокушується. <sup>22</sup>Посіяне в тернях – це той, хто слухає слово, але клопоти цього віку та омана багатства заглушають те слово, і воно залишається без плоду. <sup>23</sup>А посіяне в добру землю – це той, хто слухає слово і розуміє, тому приносить плід – один родить у сто разів, інший – у шістдесят, а ще інший – у тридцять.</blockquote><figcaption><span class="ref">Матвія 13:1–23</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture long"><blockquote><sup>24</sup>Іншу притчу подав їм, кажучи: Подібне Царство Небесне до людини, яка посіяла добірне насіння на своєму полі. <sup>25</sup>Коли люди спали, прийшов ворог, посіяв кукіль серед пшениці та й пішов. <sup>26</sup>А як зійшло збіжжя і дало колос, тоді ж з’явився і кукіль. <sup>27</sup>Тож прийшли слуги господаря і сказали йому: Пане, хіба не добірне насіння ти сіяв на своєму полі? Звідки ж узявся кукіль? <sup>28</sup>А він сказав їм: Людина‑ворог це зробила. І кажуть йому раби: Хочеш, щоб ми пішли й випололи його? <sup>29</sup>Він же сказав: Ні, щоб ви часом, виполюючи кукіль, не повиривали разом з ним і пшениці. <sup>30</sup>Залиште, щоб і те, й друге разом росло до жнив, а під час жнив скажу женцям: зберіть спершу кукіль та пов’яжіть його в снопи, аби спалити його, а пшеницю зберіть до моєї клуні. <span class="gap">…</span> <sup>36</sup>Відпустивши натовп, Він прийшов у дім. І підійшли до Нього учні Його, кажучи: Роз’ясни нам притчу про польовий кукіль. <sup>37</sup>Він же, відповідаючи, сказав: Той, Хто сіє добірне насіння, – це Син Людський, <sup>38</sup>а поле – це світ; добірне ж насіння – це сини Царства; кукіль – це сини лукавого; <sup>39</sup>ворог, що його посіяв, – це диявол; жнива – це кінець світу, а женці – це ангели. <sup>40</sup>Отже, як збирають кукіль і палять у вогні, так буде при кінці світу: <sup>41</sup>Син Людський пошле Своїх ангелів, які зберуть з Його Царства всі спокуси й тих, хто чинить беззаконня, <sup>42</sup>і вкинуть їх у вогняну піч; там буде плач і скрегіт зубів. <sup>43</sup>Тоді праведники засяють, як сонце, в Царстві Отця Свого. Хто має вуха, нехай слухає.</blockquote><figcaption><span class="ref">Матвія 13:24–30, 36–43</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">6. Алегорії</h4><p>У притчі одна головна думка, в алегорії може бути кілька пунктів порівняння. Лоза: Христос – лоза, Отець – виноградар, учні – гілки; пребування в Ньому – плід. Зброя Божа в Ефесян 6 – кілька пунктів, кожен важливий.</p><figure class="scripture long"><blockquote><sup>1</sup>Я є справжня Виноградна Лоза, а Мій Отець – Виноградар. <sup>2</sup>Усяку галузку в Мені, яка не приносить плоду, Він відтинає, а всяку, яка родить плід, очищає, щоб рясніше родила. <sup>3</sup>Ви вже чисті через слово, яке Я вам сказав. <sup>4</sup>Перебувайте в Мені, а Я – у вас. Як галузка не може приносити плоду сама по собі, якщо не буде на виноградній лозі, так і ви, якщо не будете перебувати в Мені. <sup>5</sup>Я є Виноградна Лоза, ви – галузки. Хто перебуває в Мені, а Я в ньому, той приносить рясний урожай, бо без Мене не можете робити нічого. <sup>6</sup>Хто в Мені не перебуває, буде відкинений геть, мов та гілка, і всохне; їх збирають і кидають у вогонь, і вони згорають. <sup>7</sup>Якщо ж будете перебувати в Мені, а Мої слова перебуватимуть у вас, то чого б тільки забажали, просіть – і станеться вам. <sup>8</sup>У цьому прославлений Мій Отець, щоб ви приносили багатий урожай і стали Моїми учнями. <sup>9</sup>Як полюбив Мене Отець, так і Я полюбив вас; тож перебувайте в Моїй любові. <sup>10</sup>Якщо будете зберігати Мої заповіді, то перебуватимете в любові Моїй, так само, як Я, зберігши заповіді Мого Отця, перебуваю в Його любові. <sup>11</sup>Це Я сказав вам, щоб Моя радість перебувала у вас і щоб ваша радість була повною. <sup>12</sup>Ось Моя заповідь: щоб ви любили один одного так, як Я вас полюбив. <sup>13</sup>Більшої любові ніхто не має за ту, коли хто душу свою кладе за друзів своїх. <sup>14</sup>Ви – друзі Мої, якщо чините те, що Я заповідаю вам. <sup>15</sup>Не називаю вас більше рабами, бо раб не знає, що робить його пан; вас же назвав Я друзями, оскільки сказав вам усе, що почув від Мого Отця. <sup>16</sup>Не ви Мене вибрали, але Я вибрав вас і настановив вас, щоб ви йшли та плід приносили, і щоби плід ваш залишався, аби те, що тільки попросите від Отця в Моє Ім’я, Він вам дав. <sup>17</sup>Заповідаю вам, щоб ви любили один одного.</blockquote><figcaption><span class="ref">Івана 15:1–17</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Притча має одну головну думку, алегорія – кілька; доктрину будують на ясних місцях Писання.</p></aside><h3 class="sec" id="ch3-s2">Прообрази й пророцтва</h3><h4 class="sub">1. Прообрази</h4><p>«Тупос» – подібність. Прообраз – представницькі стосунки між особами, подіями й установленнями ранніх і пізніших часів історії спасіння. Приклад: Мойсеїв змій і піднесений Син Людський. Прообраз має три ознаки: подібність, Боже встановлення, виконання в майбутньому. Відрізняється від символу (хліб і вино – символи) і від алегоризації (яка вкладає в текст власні значення).</p><figure class="scripture"><blockquote><sup>14</sup>Як Мойсей підняв змія в пустелі, так має бути піднятий Син Людський, <sup>15</sup>щоб кожний, хто вірить у Нього, [не загинув, але] мав вічне життя.</blockquote><figcaption><span class="ref">Івана 3:14–15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Види</h4><p>Особи (Адам – прообраз Христа), події (покарання невірного Ізраїлю як попередження), установлення (кров агнців – кров Христа; субота – вічний спокій), служіння (Мойсей-пророк, Мелхиседек, Давид), дії (Ісая наг і босий; одруження Осії). Тлумачення: історико-культурний, лексичний, богословський аналіз, потім знайти подібності й суттєві відмінності, не надаючи значення кожній деталі.</p><figure class="scripture"><blockquote><sup>14</sup>Та смерть панувала від Адама до Мойсея і над тими, які не згрішили подібно до переступу Адама, котрий є прообразом майбутнього.</blockquote><figcaption><span class="ref">Римлян 5:14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture long"><blockquote><sup>1</sup>Не хочу, брати, щоб ви не знали, що всі наші батьки були під хмарою, і всі перейшли через море; <sup>2</sup>всі хрестилися в Мойсея – у хмарі та в морі; <sup>3</sup>всі їли ту саму духовну їжу; <sup>4</sup>всі пили той самий духовний напій, бо пили з духовної скелі, що йшла слідом за ними, а тою скелею був Христос. <sup>5</sup>Але небагатьох їх уподобав Бог, тож вони полягли в пустелі. <sup>6</sup>Вони стали прикладом для нас, щоб ми не були пожадливі на зло, як були пожадливі вони. <sup>7</sup>Не служіть ідолам, як деякі з них, як написано: Народ сів їсти й пити, і встали, щоби забавлятися. <sup>8</sup>Не піддаваймося розпусті, як деякі з них чинили блуд, і полягло їх одного дня двадцять три тисячі. <sup>9</sup>Не будемо спокушати Христа, як деякі з них спокушали і загинули від змій. <sup>10</sup>Не нарікайте, як деякі з них нарікали і загинули від губителя. <sup>11</sup>[Все] це сталося з ними як прообраз, і записано як пересторога для нас, для яких настав кінець віків.</blockquote><figcaption><span class="ref">1 Коринтян 10:1–11</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>15</sup>І був там, поки не помер Ірод, аби збулося сказане Господом через пророка, який говорив: З Єгипту покликав Я Мого Сина.</blockquote><figcaption><span class="ref">Матвія 2:15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>15</sup>Так говорить Господь: У Рамі лунають звуки голосіння та гіркого ридання, – Рахиль оплакує своїх дітей. Вона відмовляється від розради через долю своїх дітей, бо їх вже немає.</blockquote><figcaption><span class="ref">Єремія 31:15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Пророцтва</h4><p>Пророк – глашатай Божої волі. Пророцтво – це передбачення майбутнього, відкриття прихованих фактів сьогодення, повчання й потіха. Близько 27 % віршів Біблії були передбаченнями в момент написання. Передбачення зазвичай служить настанові: «оскільки Бог зробить… нам слід жити побожно». Слово «апокаліпсис» – «відкриття». Від пророцтва апокаліптика відрізняється письмовою формою, довжиною, символікою (тварини), дуалізмом, наголосом на втіху залишку.</p><figure class="scripture"><blockquote><sup>3</sup>Блаженний той, хто читає, і ті, хто слухає слова пророцтва та дотримується написаного в ньому, адже час близький!</blockquote><figcaption><span class="ref">Об’явлення 1:3</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>11</sup>Коли все це таким чином буде знищене, то якими треба бути у святому житті й у побожності вам,</blockquote><figcaption><span class="ref">2 Петра 3:11</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Правила тлумачення пророцтв</h4><p>Використовуємо ті самі аналізи, що й для інших жанрів. Спірне питання – одне значення чи кілька; одне значення не виключає різних застосувань. Історичний аналіз визначає, чи виповнилося пророцтво. Шукати паралельні місця, чекати символів, порівнювати результати з працями знавців.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Прообраз і пророцтво розкриваються, коли ми розуміємо їх у світлі історії спасіння й обмежуємося задумом автора.</p></aside><section class="quiz" id="quiz3" data-ch="3"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 3</span><h3>Прийоми й жанри</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="3"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Чим притча відрізняється від алегорії, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Нічим</li><li><span class="box"></span><b>Б)</b> Притча коротша</li><li><span class="box"></span><b>В)</b> Притча – розширене порівняння з відокремленим поясненням, алегорія – розширена метафора з переплетеним поясненням</li><li><span class="box"></span><b>Г)</b> Алегорія завжди історична</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Яка головна мета притч, за Матвія 13:10–15? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Відкрити істину віруючим і приховати її від тих, хто затвердів серцем</li><li><span class="box"></span><b>Б)</b> Лише відкрити</li><li><span class="box"></span><b>В)</b> Лише приховати</li><li><span class="box"></span><b>Г)</b> Розважити</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Проповідник виводить доктрину з однієї притчі про злого раба. Що, за уроком, не так? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Це правильно</li><li><span class="box"></span><b>Б)</b> Притчі завжди ясні</li><li><span class="box"></span><b>В)</b> Притчі не потрібні</li><li><span class="box"></span><b>Г)</b> Доктрину не будують лише на притчі: ясні місця Писання тлумачать менш ясні; Социн дійшов хибного висновку</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Скільки головних думок, за уроком, має притча? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Скільки деталей</li><li><span class="box"></span><b>Б)</b> Одну головну, а деталі мають значення лише наскільки стосуються її</li><li><span class="box"></span><b>В)</b> Жодної</li><li><span class="box"></span><b>Г)</b> Три</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Яка головна мета притчі про робітників у винограднику (Матвія 20), за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Про робочий день</li><li><span class="box"></span><b>Б)</b> Про оплату праці</li><li><span class="box"></span><b>В)</b> Лагідний докір Петрові: він мислив як найманець («що буде нам?»), а мотив служіння – любов</li><li><span class="box"></span><b>Г)</b> Про виноград</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Що таке прообраз, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Представницькі стосунки між особою, подією чи установленням раніше й пізніше в історії спасіння</li><li><span class="box"></span><b>Б)</b> Символ</li><li><span class="box"></span><b>В)</b> Алегоризація</li><li><span class="box"></span><b>Г)</b> Приказка</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Яка ознака відрізняє прообраз від символу? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Нічого</li><li><span class="box"></span><b>Б)</b> Прообраз завжди слово</li><li><span class="box"></span><b>В)</b> Символ – прообраз</li><li><span class="box"></span><b>Г)</b> Прообраз має подібність до того, що зображає, і спрямований у майбутнє; символ не обов’язково</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Як, за уроком, апокаліптика відрізняється від пророцтва? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Коротша</li><li><span class="box"></span><b>Б)</b> Має письмову форму, довша, більше символів і дуалізму, втішає залишок</li><li><span class="box"></span><b>В)</b> Лише усна</li><li><span class="box"></span><b>Г)</b> Без символів</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які три ознаки прообразу, за уроком? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Подібність</li><li><span class="box"></span><b>Б)</b> Божа установа</li><li><span class="box"></span><b>В)</b> Виконання в майбутньому</li><li><span class="box"></span><b>Г)</b> Випадковість</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Які види прообразів називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Особи</li><li><span class="box"></span><b>Б)</b> Події</li><li><span class="box"></span><b>В)</b> Установлення</li><li><span class="box"></span><b>Г)</b> Помилки</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Приказка зазвичай містить одну думку. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Притчі краще тлумачити, надаючи значення кожній деталі. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> З’єднайте прийом із прикладом. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Притча <span class="blank"></span></li><li>Алегорія <span class="blank"></span></li><li>Прообраз <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Фарисей і митар</li><li><b>Б)</b> Мойсеїв змій</li><li><b>В)</b> Лоза й гілки</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розташуйте за уроком прийоми від найпростішого. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Порівняння й метафора</li><li><span class="blank sm"></span> Пророцтва й апокаліптика</li><li><span class="blank sm"></span> Прообрази</li><li><span class="blank sm"></span> Притча й алегорія</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Яку притчу чи образ Христа ви недавно тлумачили без урахування контексту і як виправите? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="4"><header class="ch-head" id="ch4"><span class="ch-num">Розділ IV</span><h2>Застосування заповідей</h2><p class="ch-sub">принципізація, культура</p></header><h3 class="sec" id="ch4-s1">Застосування заповідей</h3><h4 class="sub">1. Від значення для автора до значення для нас</h4><p>Після питання «що значило» ставимо «що це означає для нас». Принципізація (виявлення принципів) – замість алегоризації: ми шукаємо в оповіданні духовні, моральні, богословські принципи, що мають непроминуще значення, і виходимо з достовірності історії.</p><h4 class="sub">2. Приклад: «чужий вогонь» Надава й Авіуда</h4><p>Їх убито за самовільне служіння в день посвячення священиків. Контекст: Ізраїль серед ідолопоклонників, загроза синкретизму. Принцип: примирення з Богом залежить від Його милості, а не від вигаданих обрядів; служителі мають розрізняти святе від несвятого й вчити, що спасіння – за милістю, а не за ділами. Думати, що ми творці спасіння, – значить накликати Божий гнів.</p><figure class="scripture long"><blockquote><sup>1</sup>Ааронові сини, Надав та Авігу, взяли кожен свою кадильницю, поклали в них вогню, насипали на нього ладану і принесли перед Господом сторонній вогонь, якого Він не велів їм приносити. <sup>2</sup>Тож вийшов від Господа вогонь та поглинув їх, так що вони померли перед Господом. <sup>3</sup>Мойсей сказав Ааронові: Це те, про що говорив Господь кажучи: Серед тих, що близькі до Мене, виявиться святість Моя, і перед усією громадою Я прославлюся. Аарон же мовчав. <sup>4</sup>Тоді Мойсей покликав Мішаїла та Елцафана, синів Уззіїла, Ааронового дядька, і сказав їм: Підійдіть і винесіть ваших братів геть зі Святині за табір. <sup>5</sup>Ті підійшли й забрали їх у їхніх хітонах й винесли за табір, як сказав Мойсей. <sup>6</sup>Після цього Мойсей сказав Ааронові та його синам, Елеазарові й Ітамарові: Не відкривайте своїх голів і не роздирайте свого одягу, щоб ви не померли, і щоб Господь не розгнівався на всю громаду. Проте ваші брати, увесь дім Ізраїля, нехай оплакують спалення, яке здійснив Господь. <sup>7</sup>Ви ж не залишайте входу в Намет Свідчення, щоб вам не померти, бо на вас єлей Господнього помазання. Вони учинили так, як сказав їм Мойсей. <sup>8</sup>Господь звернувся до Аарона з такими словами: <sup>9</sup>Коли будете входити в Намет Свідчення, то не питимете вина ні міцного напою ні ти, ні твої сини з тобою, бо помрете. Це вічна постанова для вас і ваших поколінь. <sup>10</sup>Ви повинні вміти розрізняти між святим і несвятим, між нечистим і між чистим. <sup>11</sup>Навчайте Ізраїльських нащадків тим законам, які Господь переказав їм через Мойсея.</blockquote><figcaption><span class="ref">Левит 10:1–11</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Культурно зумовлені заповіді</h4><p>Деякі заповіді (святий поцілунок, покриття голови, омивання ніг) церкви застосовують по-різному. Поведінка має різне значення у різних культурах: треба відрізняти поведінку й принцип. Три варіанти: зберегти і принцип, і форму; зберегти принцип, змінити форму; змінити і принцип, і форму.</p><figure class="scripture long"><blockquote><sup>2</sup>Хвалю вас, брати, що про все моє пам’ятаєте й дотримуєтеся передань так, як я вам передав. <sup>3</sup>Хочу, щоб ви знали, що Христос є головою для кожного чоловіка, для жінки голова – чоловік, а голова Христа – Бог. <sup>4</sup>Кожний чоловік, який молиться або пророкує з покритою головою, соромить свою голову. <sup>5</sup>Кожна жінка, яка молиться або пророкує з відкритою головою, соромить голову свою, бо це те саме, якби була обстрижена. <sup>6</sup>Тож якщо жінка не покривається, нехай острижеться. А якщо жінці соромно стригтися чи голитися, нехай покривається. <sup>7</sup>Чоловік, будучи образом і славою Бога, не повинен покривати голову, а жінка є славою чоловіка. <sup>8</sup>Адже чоловік не походить від жінки, але жінка від чоловіка, <sup>9</sup>оскільки чоловік не був створений задля жінки, але жінка – задля чоловіка. <sup>10</sup>Через це жінка повинна мати на голові знак влади задля ангелів. <sup>11</sup>Однак у Господі – ні чоловік без жінки, ні жінка без чоловіка. <sup>12</sup>Бо як жінка від чоловіка, так і чоловік через жінку, але все – від Бога. <sup>13</sup>Посудіть самі: чи годиться жінці молитися Богові непокритою? <sup>14</sup>Чи ж сама природа вас не вчить, що коли чоловік запускає довге волосся, це сором для нього? <sup>15</sup>Коли жінка відрощує довге волосся, це для неї слава: їй дано волосся замість покривала. <sup>16</sup>Та якщо хто бажає сперечатися, то такого звичаю не маємо ні ми, ні Божі Церкви.</blockquote><figcaption><span class="ref">1 Коринтян 11:2–16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>12</sup>А коли помив їхні ноги і надів Свій одяг, знову сів при столі й сказав їм: Чи ви знаєте, що Я зробив вам? <sup>13</sup>Ви називаєте Мене Вчителем і Господом, і добре ви кажете, бо Я Ним є. <sup>14</sup>Отже, коли Я, Господь і Учитель, помив вам ноги, то й ви повинні мити ноги один одному. <sup>15</sup>Адже Я дав вам приклад, щоб і ви робили так, як Я зробив вам. <sup>16</sup>Істинно, істинно кажу вам, що раб не більший за свого пана, як і посланець не більший від того, хто послав його.</blockquote><figcaption><span class="ref">Івана 13:12–16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Орієнтири</h4><p>З’ясуй причину принципу: якщо вона ґрунтується на незмінній природі Бога (милість, любов, моральний закон), принцип незмінний. Форму можна змінити, якщо вона була частиною звичаїв епохи (Якова 2:1–9 про неупередженість). Дії, заборонені Писанням у язичницькій культурі (блуд, перелюб, спіритизм), заборонені й тепер. Визнач, кому адресована заповідь.</p><figure class="scripture long"><blockquote><sup>1</sup>Брати мої, не зважайте на особу, майте віру в нашого Господа слави – Ісуса Христа! <sup>2</sup>Адже коли до вашого зібрання ввійде чоловік із золотим перснем, у блискучих шатах, та ввійде бідний у вбогому одязі, <sup>3</sup>а ви поглянете на того, хто в шатах блискучих, і скажете: Ти сядь отут зручно, а бідному скажете: Ти стань отам або сядь тут на моєму підніжку, – <sup>4</sup>то хіба не вчинили ви поділ між собою, хіба не стали суддями з лихими задумами? <sup>5</sup>Слухайте, любі брати мої: хіба не обрав Бог бідних світу як багатих вірою і спадкоємців Царства, яке пообіцяв тим, хто любить Його? <sup>6</sup>А ви зневажили бідного. Хіба не багаті гнітять вас, і хіба не вони тягнуть вас на суди? <sup>7</sup>Хіба не вони ганьблять добре ім’я, яким вас названо? <sup>8</sup>Отже, коли ви виконуєте царський закон згідно з написаним: Люби свого ближнього, як самого себе, – добре робите. <sup>9</sup>Коли ж зважаєте на особу, то чините гріх: Закон звинувачує вас як порушників.</blockquote><figcaption><span class="ref">Якова 2:1–9</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Кроки перекладу</h4><p>Точно визначити принцип; з’ясувати, чи він транскультурний; перевірити, чи форма доречна в нашій культурі (критерій – не відповідність звичаям суспільства, а точність вираження Божого принципу); запропонувати культурний еквівалент (рукостискання замість святого цілунку); якщо питання лишається відкритим – у смиренні виконувати біблійну заповідь. Останній крок застосовують лише після старанного дослідження.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Принцип лишається, форма може змінитися, але нам не дозволено вилучати з Писання неприємне.</p></aside><section class="quiz" id="quiz4" data-ch="4"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 4</span><h3>Застосування</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="4"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що таке принципізація, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Виявлення в оповіданні духовних, моральних і богословських принципів, що мають непроминуще значення, без вкладання чужих значень</li><li><span class="box"></span><b>Б)</b> Алегоризація</li><li><span class="box"></span><b>В)</b> Демітологізація</li><li><span class="box"></span><b>Г)</b> Просте переказування</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Чому Надав і Авіуд, за Левит 10, були покарані? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> За гординю</li><li><span class="box"></span><b>Б)</b> За крадіжку</li><li><span class="box"></span><b>В)</b> За лінощі</li><li><span class="box"></span><b>Г)</b> Принесли «чужий вогонь» – самовільне служіння, не за Божим наказом</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Який урок із історії Надава й Авіуда, за уроком, для служителів? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Ритуали важливіші за серце</li><li><span class="box"></span><b>Б)</b> Вони мають розрізняти святе й несвяте й вчити, що спасіння – за Божою милістю, а не за ділами</li><li><span class="box"></span><b>В)</b> Кожен створює власний обряд</li><li><span class="box"></span><b>Г)</b> Бог не карає</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Як, за уроком, треба ставитися до такої заповіді, як «святий поцілунок»? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Скасувати принцип</li><li><span class="box"></span><b>Б)</b> Відкинути як застарілу</li><li><span class="box"></span><b>В)</b> Відрізняти поведінку й принцип: принцип (братня любов) лишається, форму можна змінити на культурний еквівалент</li><li><span class="box"></span><b>Г)</b> Нічого не міняти</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Які три варіанти перекладу заповіді, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Зберегти принцип і форму; зберегти принцип, змінити форму; змінити і принцип, і форму</li><li><span class="box"></span><b>Б)</b> Лише зберегти</li><li><span class="box"></span><b>В)</b> Лише скасувати</li><li><span class="box"></span><b>Г)</b> Лише забути</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Що, за уроком, є критерієм застосування заповіді, а що – ні? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Відповідність звичаям суспільства</li><li><span class="box"></span><b>Б)</b> Мода</li><li><span class="box"></span><b>В)</b> Особисті вподобання</li><li><span class="box"></span><b>Г)</b> Критерій – чи вона точно виражає Божий принцип, а не відповідність звичаям суспільства</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Що слід робити, якщо після дослідження питання про заповідь залишається відкритим? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Відкинути</li><li><span class="box"></span><b>Б)</b> У смиренні виконувати біблійну заповідь</li><li><span class="box"></span><b>В)</b> Ігнорувати</li><li><span class="box"></span><b>Г)</b> Чекати кілька років</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Що, за уроком, вказує на те, що принцип незмінний? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Нічого</li><li><span class="box"></span><b>Б)</b> Якщо він давній</li><li><span class="box"></span><b>В)</b> Якщо його причина ґрунтується на незмінній природі Бога: Його милості, любові, моральному законі</li><li><span class="box"></span><b>Г)</b> Якщо він складний</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які кроки перекладу заповіді називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Визначити принцип</li><li><span class="box"></span><b>Б)</b> З’ясувати, чи він транскультурний</li><li><span class="box"></span><b>В)</b> Запропонувати культурний еквівалент</li><li><span class="box"></span><b>Г)</b> Проігнорувати</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Які приклади культурно зумовлених заповідей згадує урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Святий поцілунок</li><li><span class="box"></span><b>Б)</b> Покриття голови</li><li><span class="box"></span><b>В)</b> Омивання ніг</li><li><span class="box"></span><b>Г)</b> Десятина</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Принципізація вкладає в текст значення, яких автор не мав на увазі. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Одне й те саме поведінка може мати різне значення в різних культурах. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> З’єднайте поняття з поясненням. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Транскультурний принцип <span class="blank"></span></li><li>Ендемокультурний <span class="blank"></span></li><li>Культурний еквівалент <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Нова форма того ж принципу</li><li><b>Б)</b> Діє в усіх культурах</li><li><b>В)</b> Належить лише своїй культурі</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розташуйте кроки перекладу заповіді за уроком. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Перевірити форму в нашій культурі</li><li><span class="blank sm"></span> Запропонувати еквівалент</li><li><span class="blank sm"></span> Визначити принцип</li><li><span class="blank sm"></span> З’ясувати чи він транскультурний</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Яку біблійну заповідь ви раніше вважали «культурною» і як тепер до неї ставитеся? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article>
+
+  <section class="summary screen-only" id="summary">
+    <span class="lbl">Підсумок</span>
+    <h2>Ваші результати</h2>
+    <p>Результати зберігаються у вашому браузері і надсилаються пастору Біблійної школи разом з ім’ям, яке ви вказали.</p>
+    <div id="summaryTable"></div>
+  </section>
+
+  <section class="answers print-only" id="answers">
+    <span class="lbl">Додаток</span>
+    <h2>Відповіді до тестів</h2>
+    <p>Для питань на відповідність літери відповідають правому стовпчику в тесті. Для питань на порядок подано правильну послідовність.</p>
+    <section class="key-ch"><h3>Розділ 1. Вивчення Біблії</h3><ol class="key-list"><li><b class="k-a">Г.</b> <span class="k-exp">Історія, традиції й розум можуть вводити в оману.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Потрібне пребування в Слові.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Справжнє вивчення спершу збагачує особисте пізнання Бога.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Екзегетика – виймати значення з тексту.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Золоті рибки в різних акваріумах.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">2 Тимофія 3:16; 2 Петра 1:21.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Приставка «екс» – «з».</span></li><li><b class="k-a">А.</b> <span class="k-exp">У центрі – Біблія й Дух.</span></li><li><b class="k-a">А, Б, В.</b> <span class="k-exp">Також підготовка проповіді.</span></li><li><b class="k-a">А, Б, В.</b> <span class="k-exp">Три риси.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Механічне застосування правил може спотворити зміст.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Ліберальний – як у Шекспіра.</span></li><li><b class="k-a">1 – В; 2 – А; 3 – Б.</b> <span class="k-exp">Основні поняття.</span></li><li><b class="k-a">Прірва в часі → Прірва в культурі → Прірва в мові → Прірва в світогляді.</b> <span class="k-exp">Чотири прірви.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Орієнтир: чесно оцінити; конкретна зміна.</span></li></ol></section><section class="key-ch"><h3>Розділ 2. Контекст і слова</h3><ol class="key-list"><li><b class="k-a">Б.</b> <span class="k-exp">Без контексту ми питаємо «що це значить для мене».</span></li><li><b class="k-a">В.</b> <span class="k-exp">Спершу значення для автора.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Матвія 25:1–13.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Евреїв 10:32–35; Луки 1:1–4.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Хто говорить, кому адресовано.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Контекст розрізняє описове й наказове.</span></li><li><b class="k-a">А.</b> <span class="k-exp">«Я – двері» – метафора.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Поучальна суть – не випадкова деталь.</span></li><li><b class="k-a">А, Б, В.</b> <span class="k-exp">Також, що поучальна суть, а що випадкова деталь; кому адресовано.</span></li><li><b class="k-a">А, Б, В.</b> <span class="k-exp">Усього шість етапів.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Це найнадійніший спосіб.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Приклад жарту про юнака, що тлумачив навмання.</span></li><li><b class="k-a">1 – А; 2 – Б; 3 – В.</b> <span class="k-exp">Етапи тлумачення.</span></li><li><b class="k-a">Історико-культурний і контекстний → Лексико-синтаксичний → Богословський → Літературний.</b> <span class="k-exp">Далі порівняння й застосування.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Орієнтир: назвати вірш; прочитати контекст.</span></li></ol></section><section class="key-ch"><h3>Розділ 3. Прийоми й жанри</h3><ol class="key-list"><li><b class="k-a">В.</b> <span class="k-exp">Ісая 5:1–7: притча.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Затверділість робить людину нездатною розуміти.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Матвія 18:23–35.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Ісус сам пояснив притчі про сіяча й пшеницю з кукілем.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Контекст – багатий юнак.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Мойсеїв змій і піднесений Син Людський.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Хліб і вино – символи.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Пророцтво часто докоряє номінальним віруючим.</span></li><li><b class="k-a">А, Б, В.</b> <span class="k-exp">Усі три потрібні.</span></li><li><b class="k-a">А, Б, В.</b> <span class="k-exp">Також служіння й дії.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Приповісті 31:14.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Лише тим деталям, що стосуються головної думки.</span></li><li><b class="k-a">1 – А; 2 – В; 3 – Б.</b> <span class="k-exp">Літературні прийоми.</span></li><li><b class="k-a">Порівняння й метафора → Притча й алегорія → Прообрази → Пророцтва й апокаліптика.</b> <span class="k-exp">Логіка уроку.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Орієнтир: назвати; перечитати контекст.</span></li></ol></section><section class="key-ch"><h3>Розділ 4. Застосування</h3><ol class="key-list"><li><b class="k-a">А.</b> <span class="k-exp">Основа – достовірність історичних подробиць.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Урок: примирення з Богом – від Його милості, а не вигаданих обрядів.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Думати, що ми творці спасіння, – накликати гнів.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Рукостискання може бути еквівалентом.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Наприклад, покриття голови (1 Коринтян 11).</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Римлян 12:2.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Це інструмент останнього кроку.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Також дії, заборонені в Писанні, як-от блуд, спіритизм.</span></li><li><b class="k-a">А, Б, В.</b> <span class="k-exp">Також у смиренні виконувати, якщо питання відкрите.</span></li><li><b class="k-a">А, Б, В.</b> <span class="k-exp">Десятина не згадана.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Це робить алегоризація.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Тому треба відрізняти принцип і форму.</span></li><li><b class="k-a">1 – Б; 2 – В; 3 – А.</b> <span class="k-exp">Культура й заповіді.</span></li><li><b class="k-a">Визначити принцип → З’ясувати чи він транскультурний → Перевірити форму в нашій культурі → Запропонувати еквівалент.</b> <span class="k-exp">П’ятий крок – смиренне виконання.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Орієнтир: назвати; принцип; крок.</span></li></ol></section>
+  </section>
+
+  <footer class="site-foot">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <p><b>Біблійна школа «Дім Слова»</b> · Християнська церква «Перемога», м. Рівне</p>
+    <p class="links"><a href="https://www.instagram.com/victorychurch_rv/" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=100077340400434" rel="noopener">Facebook</a></p>
+    <p class="small">Українською перекладено та оформлено за навчальним матеріалом Біблійної школи «Робітники Царства» християнської церкви «Перемога» (м. Київ). Використано з дозволу.</p>
+    <p class="small">Цитати Святого Письма – «Біблія. Сучасний переклад» © Українське Біблійне Товариство, 2020–2023.</p>
+  </footer>
+</main>
+
+<script type="application/json" id="quiz-data" data-endpoint="https://script.google.com/macros/s/AKfycbyyOJP3nvwp38aiZIJQHnpvppkgWD4EYnmRpf0tdZVsY2Ls4fPLwr7fvoc4AycUOZA/exec" data-lesson="hermenevtyka">[{"chapter": 1, "title": "Вивчення Біблії", "questions": [{"id": "q1-01", "type": "single", "level": "знання", "q": "Що, за уроком, є мірилом усіх доктрин, ідей і рішень?", "anchor": "ch1-s1", "options": ["Традиція", "Розум", "Історія", "Писання (Біблія)"], "answer": 3, "explain": "Історія, традиції й розум можуть вводити в оману."}, {"id": "q1-02", "type": "single", "level": "розуміння", "q": "Чому, за уроком, просте читання Біблії недостатнє?", "anchor": "ch1-s1", "options": ["Бо Біблія складна", "Дає лише поверхневе значення й ризик неправильно зрозуміти, часто не веде до застосування", "Бо читати нудно", "Бо немає часу"], "answer": 1, "explain": "Потрібне пребування в Слові."}, {"id": "q1-03", "type": "single", "level": "застосування", "q": "Проповідник вибирає тему, а потім знаходить за «Симфонією» вірші на підтримку. Що, за уроком, це?", "anchor": "ch1-s1", "options": ["Найкращий метод", "Герменевтика", "Не справжнє вивчення: сам проповідник дізнається мало нового", "Екзегетика"], "answer": 2, "explain": "Справжнє вивчення спершу збагачує особисте пізнання Бога."}, {"id": "q1-04", "type": "single", "level": "застосування", "q": "Вам кажуть: «Цей вірш означає те, що я відчуваю». Що, за уроком, не так?", "anchor": "ch1-s2", "options": ["Треба питати, що це означало для автора, а потім – що значить для нас; тлумачення має бути основане на тексті", "Усе гаразд", "Дух завжди так каже", "Немає правильного значення"], "answer": 0, "explain": "Екзегетика – виймати значення з тексту."}, {"id": "q1-05", "type": "single", "level": "розуміння", "q": "Які чотири прірви, за уроком, роблять герменевтику потрібною?", "anchor": "ch1-s2", "options": ["Лише мови", "Лише часу", "Лише грошей", "Прірви в часі, культурі, мові й світогляді"], "answer": 3, "explain": "Золоті рибки в різних акваріумах."}, {"id": "q1-06", "type": "single", "level": "застосування", "q": "Чому, за уроком, ортодоксальний погляд на натхнення цінує герменевтику?", "anchor": "ch1-s2", "options": ["Бо Біблія – людська книга", "Бо Писання – скарбниця об’єктивної істини, і герменевтика допомагає точніше її розкрити", "Бо Біблія стає Словом тільки при читанні", "Бо Бог не промовляв словами"], "answer": 1, "explain": "2 Тимофія 3:16; 2 Петра 1:21."}, {"id": "q1-07", "type": "single", "level": "знання", "q": "Що, за уроком, означає екзегетика?", "anchor": "ch1-s2", "options": ["Вкладати своє", "Лише перекладати", "Виймати значення з тексту (на відміну від ейзегетики, що вкладає своє)", "Лише коментувати"], "answer": 2, "explain": "Приставка «екс» – «з»."}, {"id": "q1-08", "type": "single", "level": "застосування", "q": "Яка мета справжнього вивчення Біблії, за уроком?", "anchor": "ch1-s2", "options": ["Застосування вивченого у власному житті", "Накопичити знання", "Блиснути цитатою", "Перемогти в суперечці"], "answer": 0, "explain": "У центрі – Біблія й Дух."}, {"id": "q1-09", "type": "multi", "level": "знання", "q": "Які помилкові уявлення про вивчення Біблії називає урок?", "anchor": "ch1-s1", "options": ["Вивчення = читання", "Лише заучування напам’ять", "Вивчення доктрини як чужих думок", "Вивчення з Духом"], "answer": [0, 1, 2], "explain": "Також підготовка проповіді."}, {"id": "q1-10", "type": "multi", "level": "розуміння", "q": "Які риси справжнього вивчення Біблії?", "anchor": "ch1-s2", "options": ["Біблія в центрі", "Бажання вчитися", "Мета – застосування", "Лише мета – виграти суперечку"], "answer": [0, 1, 2], "explain": "Три риси."}, {"id": "q1-11", "type": "truefalse", "level": "знання", "q": "Герменевтика – наука, бо має правила, і мистецтво, бо повідомлення динамічне.", "anchor": "ch1-s1", "answer": true, "explain": "Механічне застосування правил може спотворити зміст."}, {"id": "q1-12", "type": "truefalse", "level": "розуміння", "q": "Ліберальний погляд на натхнення вважає Біблію безпомилковим Словом Божим.", "anchor": "ch1-s2", "answer": false, "explain": "Ліберальний – як у Шекспіра."}, {"id": "q1-13", "type": "match", "level": "розуміння", "q": "З’єднайте поняття з поясненням.", "anchor": "ch1-s1", "pairs": [["Екзегетика", "Виймати значення з тексту"], ["Ейзегетика", "Вкладати своє значення"], ["Герменевтика", "Наука й мистецтво тлумачення"]], "explain": "Основні поняття.", "_print_right": [1, 2, 0]}, {"id": "q1-14", "type": "order", "level": "розуміння", "q": "Розташуйте за уроком перешкоди розуміння Біблії.", "anchor": "ch1-s2", "items": ["Прірва в часі", "Прірва в культурі", "Прірва в мові", "Прірва в світогляді"], "explain": "Чотири прірви.", "_print_order": [3, 1, 2, 0]}, {"id": "q1-15", "type": "reflect", "level": "застосування", "q": "Як ви вивчаєте Біблію зараз і що змінюєте після цього уроку?", "sample": "Орієнтир: чесно оцінити; конкретна зміна."}], "sections": {"ch1-s1": "Що таке вивчення Біблії", "ch1-s2": "Навіщо потрібна герменевтика"}}, {"chapter": 2, "title": "Контекст і слова", "questions": [{"id": "q2-01", "type": "single", "level": "знання", "q": "Що, за Приповістей 22:28, означає «Не пересувай межі давньої»?", "anchor": "ch2-s1", "options": ["Не змінюй порядку", "Не красти землі сусіда: давня межа розділяла ділянки", "Не пересувай дорожніх знаків", "Не будуй доріг"], "answer": 1, "explain": "Без контексту ми питаємо «що це значить для мене»."}, {"id": "q2-02", "type": "single", "level": "розуміння", "q": "Яке питання, за уроком, потрібно поставити першим при тлумаченні?", "anchor": "ch2-s1", "options": ["Що це значить для мене?", "Що сказав коментатор?", "Що цей текст означав для автора й його аудиторії?", "Що кажуть друзі?"], "answer": 2, "explain": "Спершу значення для автора."}, {"id": "q2-03", "type": "single", "level": "застосування", "q": "Чому, за уроком, знання звичаїв допомагає розуміти Біблію?", "anchor": "ch2-s1", "options": ["Корван (Марка 7), малі світильники десяти дів – звичаї пояснюють сенс", "Бо там усе про звичаї", "Бо звичаї змінилися", "Бо вони забуті"], "answer": 0, "explain": "Матвія 25:1–13."}, {"id": "q2-04", "type": "single", "level": "застосування", "q": "Як, за уроком, можна визначити мету книги?", "anchor": "ch2-s1", "options": ["Лише з назви", "Лише з коментаря", "Не можна", "З явних заяв, повторів, настанов, а також із того, що автор опускає чи підкреслює"], "answer": 3, "explain": "Евреїв 10:32–35; Луки 1:1–4."}, {"id": "q2-05", "type": "single", "level": "розуміння", "q": "Фраза «Усі обітниці Біблії – мої». Що, за уроком, не так?", "anchor": "ch2-s2", "options": ["Нічого", "Треба питати, кому адресований текст: усі обітниці й заповіді не стосуються нас (напр., Авраам і Ісаак)", "Це завжди правда", "Це не про Біблію"], "answer": 1, "explain": "Хто говорить, кому адресовано."}, {"id": "q2-06", "type": "single", "level": "застосування", "q": "Опис вчинків людей у Біблії без коментарів, – що, за уроком, це означає?", "anchor": "ch2-s2", "options": ["Бог схвалює", "Це норма для всіх", "Не означає схвалення Богом; описові й наказові місця різні", "Це закон"], "answer": 2, "explain": "Контекст розрізняє описове й наказове."}, {"id": "q2-07", "type": "single", "level": "знання", "q": "Що, за уроком, робить лексико-синтаксичний аналіз?", "anchor": "ch2-s2", "options": ["Вивчає слова й їхній зв’язок, щоб визначити задуманий автором сенс; допомагає відрізнити буквальне, метафоричне й символічне", "Закріплює буквалізм", "Ігнорує контекст", "Лише перекладає"], "answer": 0, "explain": "«Я – двері» – метафора."}, {"id": "q2-08", "type": "single", "level": "застосування", "q": "Чому, за уроком, пелагіани помилилися в тлумаченні притчі про блудного сина?", "anchor": "ch2-s2", "options": ["Не читали притчі", "Не вміли читати", "Перекрутили переклад", "Вони зробили головним випадкову деталь: що син повернувся без посередника"], "answer": 3, "explain": "Поучальна суть – не випадкова деталь."}, {"id": "q2-09", "type": "multi", "level": "знання", "q": "Які питання, за уроком, ставимо щодо безпосереднього контексту?", "anchor": "ch2-s1", "options": ["Як розділено матеріал", "Яка точка зору автора", "Описова чи наказова істина", "Що сказав мій друг"], "answer": [0, 1, 2], "explain": "Також, що поучальна суть, а що випадкова деталь; кому адресовано."}, {"id": "q2-10", "type": "multi", "level": "розуміння", "q": "Які етапи лексико-синтаксичного аналізу називає урок?", "anchor": "ch2-s2", "options": ["Визначити жанр", "Простежити розвиток теми", "Проаналізувати синтаксис", "Вгадати значення"], "answer": [0, 1, 2], "explain": "Усього шість етапів."}, {"id": "q2-11", "type": "truefalse", "level": "знання", "q": "Контекст допомагає відрізнити описову й наказову істину.", "anchor": "ch2-s1", "answer": true, "explain": "Це найнадійніший спосіб."}, {"id": "q2-12", "type": "truefalse", "level": "розуміння", "q": "Вірш, вирваний з контексту, можна використовувати для визначення волі Божої.", "anchor": "ch2-s2", "answer": false, "explain": "Приклад жарту про юнака, що тлумачив навмання."}, {"id": "q2-13", "type": "match", "level": "розуміння", "q": "З’єднайте етап із питанням.", "anchor": "ch2-s1", "pairs": [["Історико-культурний аналіз", "Яка була історична ситуація?"], ["Контекстний аналіз", "Як уривок вписується в книгу?"], ["Лексико-синтаксичний", "Що означають слова й зв’язки?"]], "explain": "Етапи тлумачення.", "_print_right": [0, 1, 2]}, {"id": "q2-14", "type": "order", "level": "розуміння", "q": "Розташуйте шість етапів тлумачення за уроком (перші чотири).", "anchor": "ch2-s2", "items": ["Історико-культурний і контекстний", "Лексико-синтаксичний", "Богословський", "Літературний"], "explain": "Далі порівняння й застосування.", "_print_order": [3, 2, 0, 1]}, {"id": "q2-15", "type": "reflect", "level": "застосування", "q": "Який вірш ви цитуєте, ніколи не вивчивши контексту, і як це виправите?", "sample": "Орієнтир: назвати вірш; прочитати контекст."}], "sections": {"ch2-s1": "Історія тлумачення", "ch2-s2": "Історико-культурний, контекстний і лексико-синтаксичний аналіз"}}, {"chapter": 3, "title": "Прийоми й жанри", "questions": [{"id": "q3-01", "type": "single", "level": "знання", "q": "Чим притча відрізняється від алегорії, за уроком?", "anchor": "ch3-s1", "options": ["Нічим", "Притча коротша", "Притча – розширене порівняння з відокремленим поясненням, алегорія – розширена метафора з переплетеним поясненням", "Алегорія завжди історична"], "answer": 2, "explain": "Ісая 5:1–7: притча."}, {"id": "q3-02", "type": "single", "level": "розуміння", "q": "Яка головна мета притч, за Матвія 13:10–15?", "anchor": "ch3-s1", "options": ["Відкрити істину віруючим і приховати її від тих, хто затвердів серцем", "Лише відкрити", "Лише приховати", "Розважити"], "answer": 0, "explain": "Затверділість робить людину нездатною розуміти."}, {"id": "q3-03", "type": "single", "level": "застосування", "q": "Проповідник виводить доктрину з однієї притчі про злого раба. Що, за уроком, не так?", "anchor": "ch3-s1", "options": ["Це правильно", "Притчі завжди ясні", "Притчі не потрібні", "Доктрину не будують лише на притчі: ясні місця Писання тлумачать менш ясні; Социн дійшов хибного висновку"], "answer": 3, "explain": "Матвія 18:23–35."}, {"id": "q3-04", "type": "single", "level": "застосування", "q": "Скільки головних думок, за уроком, має притча?", "anchor": "ch3-s1", "options": ["Скільки деталей", "Одну головну, а деталі мають значення лише наскільки стосуються її", "Жодної", "Три"], "answer": 1, "explain": "Ісус сам пояснив притчі про сіяча й пшеницю з кукілем."}, {"id": "q3-05", "type": "single", "level": "розуміння", "q": "Яка головна мета притчі про робітників у винограднику (Матвія 20), за уроком?", "anchor": "ch3-s2", "options": ["Про робочий день", "Про оплату праці", "Лагідний докір Петрові: він мислив як найманець («що буде нам?»), а мотив служіння – любов", "Про виноград"], "answer": 2, "explain": "Контекст – багатий юнак."}, {"id": "q3-06", "type": "single", "level": "застосування", "q": "Що таке прообраз, за уроком?", "anchor": "ch3-s2", "options": ["Представницькі стосунки між особою, подією чи установленням раніше й пізніше в історії спасіння", "Символ", "Алегоризація", "Приказка"], "answer": 0, "explain": "Мойсеїв змій і піднесений Син Людський."}, {"id": "q3-07", "type": "single", "level": "знання", "q": "Яка ознака відрізняє прообраз від символу?", "anchor": "ch3-s2", "options": ["Нічого", "Прообраз завжди слово", "Символ – прообраз", "Прообраз має подібність до того, що зображає, і спрямований у майбутнє; символ не обов’язково"], "answer": 3, "explain": "Хліб і вино – символи."}, {"id": "q3-08", "type": "single", "level": "застосування", "q": "Як, за уроком, апокаліптика відрізняється від пророцтва?", "anchor": "ch3-s2", "options": ["Коротша", "Має письмову форму, довша, більше символів і дуалізму, втішає залишок", "Лише усна", "Без символів"], "answer": 1, "explain": "Пророцтво часто докоряє номінальним віруючим."}, {"id": "q3-09", "type": "multi", "level": "знання", "q": "Які три ознаки прообразу, за уроком?", "anchor": "ch3-s1", "options": ["Подібність", "Божа установа", "Виконання в майбутньому", "Випадковість"], "answer": [0, 1, 2], "explain": "Усі три потрібні."}, {"id": "q3-10", "type": "multi", "level": "розуміння", "q": "Які види прообразів називає урок?", "anchor": "ch3-s2", "options": ["Особи", "Події", "Установлення", "Помилки"], "answer": [0, 1, 2], "explain": "Також служіння й дії."}, {"id": "q3-11", "type": "truefalse", "level": "знання", "q": "Приказка зазвичай містить одну думку.", "anchor": "ch3-s1", "answer": true, "explain": "Приповісті 31:14."}, {"id": "q3-12", "type": "truefalse", "level": "розуміння", "q": "Притчі краще тлумачити, надаючи значення кожній деталі.", "anchor": "ch3-s2", "answer": false, "explain": "Лише тим деталям, що стосуються головної думки."}, {"id": "q3-13", "type": "match", "level": "розуміння", "q": "З’єднайте прийом із прикладом.", "anchor": "ch3-s1", "pairs": [["Притча", "Фарисей і митар"], ["Алегорія", "Лоза й гілки"], ["Прообраз", "Мойсеїв змій"]], "explain": "Літературні прийоми.", "_print_right": [0, 2, 1]}, {"id": "q3-14", "type": "order", "level": "розуміння", "q": "Розташуйте за уроком прийоми від найпростішого.", "anchor": "ch3-s2", "items": ["Порівняння й метафора", "Притча й алегорія", "Прообрази", "Пророцтва й апокаліптика"], "explain": "Логіка уроку.", "_print_order": [0, 3, 2, 1]}, {"id": "q3-15", "type": "reflect", "level": "застосування", "q": "Яку притчу чи образ Христа ви недавно тлумачили без урахування контексту і як виправите?", "sample": "Орієнтир: назвати; перечитати контекст."}], "sections": {"ch3-s1": "Богословський аналіз і літературні прийоми", "ch3-s2": "Прообрази й пророцтва"}}, {"chapter": 4, "title": "Застосування", "questions": [{"id": "q4-01", "type": "single", "level": "знання", "q": "Що таке принципізація, за уроком?", "anchor": "ch4-s1", "options": ["Виявлення в оповіданні духовних, моральних і богословських принципів, що мають непроминуще значення, без вкладання чужих значень", "Алегоризація", "Демітологізація", "Просте переказування"], "answer": 0, "explain": "Основа – достовірність історичних подробиць."}, {"id": "q4-02", "type": "single", "level": "розуміння", "q": "Чому Надав і Авіуд, за Левит 10, були покарані?", "anchor": "ch4-s1", "options": ["За гординю", "За крадіжку", "За лінощі", "Принесли «чужий вогонь» – самовільне служіння, не за Божим наказом"], "answer": 3, "explain": "Урок: примирення з Богом – від Його милості, а не вигаданих обрядів."}, {"id": "q4-03", "type": "single", "level": "застосування", "q": "Який урок із історії Надава й Авіуда, за уроком, для служителів?", "anchor": "ch4-s1", "options": ["Ритуали важливіші за серце", "Вони мають розрізняти святе й несвяте й вчити, що спасіння – за Божою милістю, а не за ділами", "Кожен створює власний обряд", "Бог не карає"], "answer": 1, "explain": "Думати, що ми творці спасіння, – накликати гнів."}, {"id": "q4-04", "type": "single", "level": "застосування", "q": "Як, за уроком, треба ставитися до такої заповіді, як «святий поцілунок»?", "anchor": "ch4-s1", "options": ["Скасувати принцип", "Відкинути як застарілу", "Відрізняти поведінку й принцип: принцип (братня любов) лишається, форму можна змінити на культурний еквівалент", "Нічого не міняти"], "answer": 2, "explain": "Рукостискання може бути еквівалентом."}, {"id": "q4-05", "type": "single", "level": "розуміння", "q": "Які три варіанти перекладу заповіді, за уроком?", "anchor": "ch4-s1", "options": ["Зберегти принцип і форму; зберегти принцип, змінити форму; змінити і принцип, і форму", "Лише зберегти", "Лише скасувати", "Лише забути"], "answer": 0, "explain": "Наприклад, покриття голови (1 Коринтян 11)."}, {"id": "q4-06", "type": "single", "level": "застосування", "q": "Що, за уроком, є критерієм застосування заповіді, а що – ні?", "anchor": "ch4-s1", "options": ["Відповідність звичаям суспільства", "Мода", "Особисті вподобання", "Критерій – чи вона точно виражає Божий принцип, а не відповідність звичаям суспільства"], "answer": 3, "explain": "Римлян 12:2."}, {"id": "q4-07", "type": "single", "level": "знання", "q": "Що слід робити, якщо після дослідження питання про заповідь залишається відкритим?", "anchor": "ch4-s1", "options": ["Відкинути", "У смиренні виконувати біблійну заповідь", "Ігнорувати", "Чекати кілька років"], "answer": 1, "explain": "Це інструмент останнього кроку."}, {"id": "q4-08", "type": "single", "level": "застосування", "q": "Що, за уроком, вказує на те, що принцип незмінний?", "anchor": "ch4-s1", "options": ["Нічого", "Якщо він давній", "Якщо його причина ґрунтується на незмінній природі Бога: Його милості, любові, моральному законі", "Якщо він складний"], "answer": 2, "explain": "Також дії, заборонені в Писанні, як-от блуд, спіритизм."}, {"id": "q4-09", "type": "multi", "level": "знання", "q": "Які кроки перекладу заповіді називає урок?", "anchor": "ch4-s1", "options": ["Визначити принцип", "З’ясувати, чи він транскультурний", "Запропонувати культурний еквівалент", "Проігнорувати"], "answer": [0, 1, 2], "explain": "Також у смиренні виконувати, якщо питання відкрите."}, {"id": "q4-10", "type": "multi", "level": "розуміння", "q": "Які приклади культурно зумовлених заповідей згадує урок?", "anchor": "ch4-s1", "options": ["Святий поцілунок", "Покриття голови", "Омивання ніг", "Десятина"], "answer": [0, 1, 2], "explain": "Десятина не згадана."}, {"id": "q4-11", "type": "truefalse", "level": "знання", "q": "Принципізація вкладає в текст значення, яких автор не мав на увазі.", "anchor": "ch4-s1", "answer": false, "explain": "Це робить алегоризація."}, {"id": "q4-12", "type": "truefalse", "level": "розуміння", "q": "Одне й те саме поведінка може мати різне значення в різних культурах.", "anchor": "ch4-s1", "answer": true, "explain": "Тому треба відрізняти принцип і форму."}, {"id": "q4-13", "type": "match", "level": "розуміння", "q": "З’єднайте поняття з поясненням.", "anchor": "ch4-s1", "pairs": [["Транскультурний принцип", "Діє в усіх культурах"], ["Ендемокультурний", "Належить лише своїй культурі"], ["Культурний еквівалент", "Нова форма того ж принципу"]], "explain": "Культура й заповіді.", "_print_right": [2, 0, 1]}, {"id": "q4-14", "type": "order", "level": "розуміння", "q": "Розташуйте кроки перекладу заповіді за уроком.", "anchor": "ch4-s1", "items": ["Визначити принцип", "З’ясувати чи він транскультурний", "Перевірити форму в нашій культурі", "Запропонувати еквівалент"], "explain": "П’ятий крок – смиренне виконання.", "_print_order": [2, 3, 0, 1]}, {"id": "q4-15", "type": "reflect", "level": "застосування", "q": "Яку біблійну заповідь ви раніше вважали «культурною» і як тепер до неї ставитеся?", "sample": "Орієнтир: назвати; принцип; крок."}], "sections": {"ch4-s1": "Застосування заповідей"}}]</script>
+<script>(function () {
+  'use strict';
+  var root = document.documentElement;
+  var store = {
+    get: function (k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  };
+  function $(s, el) { return (el || document).querySelector(s); }
+  function $$(s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); }
+  function h(tag, attrs, kids) {
+    var el = document.createElement(tag);
+    for (var k in attrs || {}) {
+      if (k === 'text') el.textContent = attrs[k];
+      else if (k === 'html') el.innerHTML = attrs[k];
+      else if (k.slice(0, 2) === 'on') el.addEventListener(k.slice(2), attrs[k]);
+      else el.setAttribute(k, attrs[k]);
+    }
+    (kids || []).forEach(function (c) { if (c) el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return el;
+  }
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function range(n) { var r = []; for (var i = 0; i < n; i++) r.push(i); return r; }
+
+  /* ---------- тема і шрифт ---------- */
+  $('#themeBtn').addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('sb-theme', next); } catch (e) {}
+  });
+  var fs = store.get('sb-fs') || 18;
+  function applyFs() { root.style.setProperty('--fs', fs + 'px'); }
+  applyFs();
+  $('#fsUp').addEventListener('click', function () { fs = Math.min(24, fs + 1); applyFs(); store.set('sb-fs', fs); });
+  $('#fsDown').addEventListener('click', function () { fs = Math.max(15, fs - 1); applyFs(); store.set('sb-fs', fs); });
+
+  /* ---------- прогрес читання ---------- */
+  var bar = $('.progress span');
+  function onScroll() {
+    var max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.width = (max > 0 ? Math.min(100, scrollY / max * 100) : 0) + '%';
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- зміст ---------- */
+  var drawer = $('#toc'), scrim = $('#scrim'), tocBtn = $('#tocBtn');
+  function toggleToc(open) {
+    drawer.classList.toggle('open', open); scrim.classList.toggle('open', open);
+    tocBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  tocBtn.addEventListener('click', function () { toggleToc(!drawer.classList.contains('open')); });
+  scrim.addEventListener('click', function () { toggleToc(false); });
+  $$('#toc a').forEach(function (a) { a.addEventListener('click', function () { if (innerWidth < 1280) toggleToc(false); }); });
+  var links = {};
+  $$('#toc a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && links[e.target.id]) {
+          $$('#toc a.active').forEach(function (x) { x.classList.remove('active'); });
+          links[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-15% 0px -75% 0px' });
+    Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+  }
+
+  /* ---------- довгі уривки і режим запам'ятовування ---------- */
+  $$('.scripture.long').forEach(function (f) {
+    f.classList.add('collapsed');
+    var b = $('.more', f);
+    b.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      var c = f.classList.toggle('collapsed');
+      b.textContent = c ? 'Показати весь уривок' : 'Згорнути';
+      b.setAttribute('aria-expanded', c ? 'false' : 'true');
+    });
+  });
+  var memoBtn = $('#memoBtn');
+  memoBtn.addEventListener('click', function () {
+    var on = document.body.classList.toggle('memo');
+    memoBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    $$('.scripture.revealed').forEach(function (f) { f.classList.remove('revealed'); });
+  });
+  $$('.scripture').forEach(function (f) {
+    f.addEventListener('click', function () { if (document.body.classList.contains('memo')) f.classList.toggle('revealed'); });
+  });
+
+  /* ---------- учень і надсилання результатів ---------- */
+  var ENDPOINT = $('#quiz-data').getAttribute('data-endpoint') || '';
+  var LESSON = $('#quiz-data').getAttribute('data-lesson') || 'slovo-bozhe';
+  // «Слово Боже» зберігав результати під старим ключем – лишаємо його.
+  var RESULTS_KEY = LESSON === 'slovo-bozhe' ? 'sb-results' : 'sb-results-' + LESSON;
+  function rid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 10); }
+  var student = store.get('sb-student') || {};
+  if (!student.uid) { student.uid = rid(); store.set('sb-student', student); }
+  var outbox = store.get('sb-outbox') || [];
+  var sendState = {};  // id -> 'sending' | 'ok' | 'fail'
+
+  var who = $('#who'), whoName = $('#whoName'), whoWarn = $('#whoWarn'), whoBtn = $('#whoBtn'), whoText = $('#whoText');
+  var whoDefault = whoText.textContent;
+  function showName() {
+    whoBtn.hidden = !ENDPOINT;
+    whoBtn.textContent = student.name ? student.name : 'Вказати ім’я';
+  }
+  function openWho(reason) {
+    whoText.textContent = reason || whoDefault;
+    whoName.value = student.name || '';
+    whoWarn.textContent = '';
+    who.hidden = false;
+    setTimeout(function () { whoName.focus(); }, 30);
+  }
+  function closeWho() {
+    who.hidden = true;
+    store.set('sb-asked', true);
+  }
+  $('#whoForm').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var v = whoName.value.replace(/\s+/g, ' ').trim();
+    if (v.split(' ').length < 2 || v.length < 4) { whoWarn.textContent = 'Вкажіть, будь ласка, ім’я та прізвище.'; whoName.focus(); return; }
+    student.name = v;
+    store.set('sb-student', student);
+    showName();
+    closeWho();
+    flush();
+  });
+  $('#whoLater').addEventListener('click', closeWho);
+  who.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeWho(); });
+  whoBtn.addEventListener('click', function () { openWho(); });
+  showName();
+  if (ENDPOINT && !student.name && !store.get('sb-asked')) openWho();
+
+  function sendStatusText(id) {
+    var st = sendState[id];
+    if (st === 'ok') return ['ok', '✓ Результат надіслано пастору.'];
+    if (!student.name) return ['wait', 'Результат ще не надіслано: вкажіть ім’я, щоб його побачив пастор.'];
+    if (st === 'fail') return ['wait', 'Не вдалося надіслати. Спробуємо ще раз автоматично, коли буде інтернет.'];
+    return ['wait', 'Надсилаємо результат пастору…'];
+  }
+  function paintStatus() {
+    $$('[data-send]').forEach(function (el) {
+      var t = sendStatusText(el.getAttribute('data-send'));
+      el.className = 'send ' + t[0];
+      el.textContent = t[1];
+      if (!student.name) {
+        el.appendChild(document.createTextNode(' '));
+        el.appendChild(h('button', { class: 'linkish', type: 'button', text: 'Вказати ім’я', onclick: function () { openWho(); } }));
+      }
+    });
+    var n = $('#outboxNote');
+    if (n) n.textContent = ENDPOINT && outbox.length ? 'Ще не надіслано пастору: ' + outbox.length + '.' : '';
+  }
+  var sending = false;
+  function flush() {
+    paintStatus();
+    if (!ENDPOINT || sending || !student.name || !outbox.length) return;
+    var item = outbox[0];
+    item.name = student.name;
+    sending = true;
+    sendState[item.id] = 'sending';
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(item) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res.ok && res.error !== 'bad_data') throw new Error(res.error);
+        outbox = outbox.filter(function (x) { return x.id !== item.id; });
+        store.set('sb-outbox', outbox);
+        sendState[item.id] = 'ok';
+        sending = false;
+        flush();
+      })
+      .catch(function () {
+        sendState[item.id] = 'fail';
+        sending = false;
+        paintStatus();
+      });
+  }
+  function queueResult(entry) {
+    if (!ENDPOINT) return null;
+    entry.id = rid();
+    entry.lesson = LESSON;
+    entry.uid = student.uid;
+    entry.ts = new Date().toISOString();
+    outbox.push(entry);
+    store.set('sb-outbox', outbox);
+    if (!student.name) openWho('Щоб пастор побачив ваш результат, вкажіть ім’я та прізвище.');
+    return entry.id;
+  }
+  addEventListener('online', flush);
+  setInterval(function () { if (outbox.length) flush(); }, 60000);
+
+  /* ---------- тести ---------- */
+  var DATA = JSON.parse($('#quiz-data').textContent);
+  var LEVELS = ['знання', 'розуміння', 'застосування'];
+
+  function buildQuestion(q, i, data) {
+    var box = h('div', { class: 'q', 'data-type': q.type });
+    var lvl = h('span', { class: 'lvl' + (q.level === 'застосування' ? ' app' : ''), text: q.level || '' });
+    box.appendChild(h('div', { class: 'q-top' }, [h('span', { text: 'Питання ' + (i + 1) }), q.level ? lvl : null]));
+    box.appendChild(h('div', { class: 'q-text', text: q.q }));
+    var name = 'q' + data.chapter + '_' + i;
+    var api = { el: box, q: q };
+
+    if (q.type === 'single' || q.type === 'multi') {
+      var order = shuffle(range(q.options.length));
+      var inputs = [];
+      order.forEach(function (idx) {
+        var inp = h('input', { type: q.type === 'single' ? 'radio' : 'checkbox', name: name, value: idx });
+        inputs.push(inp);
+        box.appendChild(h('label', { class: 'opt' }, [inp, h('span', { text: q.options[idx] })]));
+      });
+      if (q.type === 'multi') box.appendChild(h('p', { class: 'q-top', text: 'Оберіть усі правильні відповіді' }));
+      api.answered = function () { return inputs.some(function (x) { return x.checked; }); };
+      api.grade = function () {
+        var picked = inputs.filter(function (x) { return x.checked; }).map(function (x) { return +x.value; });
+        var right = q.type === 'single' ? [q.answer] : q.answer;
+        inputs.forEach(function (x) {
+          var v = +x.value, lab = x.parentNode;
+          if (right.indexOf(v) >= 0) lab.classList.add('right');
+          else if (x.checked) lab.classList.add('wrong');
+          x.disabled = true;
+        });
+        var wrong = picked.filter(function (v) { return right.indexOf(v) < 0; }).length;
+        var hit = picked.filter(function (v) { return right.indexOf(v) >= 0; }).length;
+        if (!wrong && hit === right.length) return 1;
+        if (q.type === 'multi' && !wrong && hit > 0) return 0.5;
+        return 0;
+      };
+    } else if (q.type === 'truefalse') {
+      var yes = h('input', { type: 'radio', name: name, value: '1' });
+      var no = h('input', { type: 'radio', name: name, value: '0' });
+      box.appendChild(h('div', { class: 'tf' }, [
+        h('label', { class: 'opt' }, [yes, h('span', { text: 'Так, правильно' })]),
+        h('label', { class: 'opt' }, [no, h('span', { text: 'Ні, неправильно' })])
+      ]));
+      api.answered = function () { return yes.checked || no.checked; };
+      api.grade = function () {
+        var rightEl = q.answer ? yes : no, wrongEl = q.answer ? no : yes;
+        rightEl.parentNode.classList.add('right');
+        if (wrongEl.checked) wrongEl.parentNode.classList.add('wrong');
+        yes.disabled = no.disabled = true;
+        return rightEl.checked ? 1 : 0;
+      };
+    } else if (q.type === 'match') {
+      var rights = shuffle(range(q.pairs.length));
+      var sels = q.pairs.map(function (p, k) {
+        var sel = h('select', { 'aria-label': p[0] }, [h('option', { value: '', text: '— оберіть —' })]
+          .concat(rights.map(function (r) { return h('option', { value: r, text: q.pairs[r][1] }); })));
+        box.appendChild(h('div', { class: 'match-row' }, [h('div', { text: p[0] }), sel]));
+        return sel;
+      });
+      box.appendChild(h('p', { class: 'q-top', text: 'Кожен варіант підходить лише до одного пункту' }));
+      api.answered = function () { return sels.every(function (s) { return s.value !== ''; }); };
+      api.grade = function () {
+        var ok = 0;
+        sels.forEach(function (s, k) {
+          var row = s.parentNode, good = s.value !== '' && +s.value === k;
+          row.classList.add(good ? 'right' : 'wrong');
+          if (good) ok++; else row.appendChild(h('div', { class: 'fix', text: 'Правильно: ' + q.pairs[k][1] }));
+          s.disabled = true;
+        });
+        return ok / sels.length;
+      };
+    } else if (q.type === 'order') {
+      var cur = shuffle(range(q.items.length));
+      while (cur.join() === range(q.items.length).join() && cur.length > 1) cur = shuffle(cur);
+      var list = h('ol', { class: 'order-list' });
+      var draw = function () {
+        list.innerHTML = '';
+        cur.forEach(function (idx, pos) {
+          var up = h('button', { type: 'button', 'aria-label': 'Вище', text: '↑', onclick: function () { if (pos > 0) { cur.splice(pos - 1, 0, cur.splice(pos, 1)[0]); draw(); } } });
+          var dn = h('button', { type: 'button', 'aria-label': 'Нижче', text: '↓', onclick: function () { if (pos < cur.length - 1) { cur.splice(pos + 1, 0, cur.splice(pos, 1)[0]); draw(); } } });
+          list.appendChild(h('li', { 'data-i': idx }, [h('span', { text: q.items[idx] }), up, dn]));
+        });
+      };
+      draw();
+      box.appendChild(h('p', { class: 'q-top', text: 'Розставте кнопками ↑ ↓' }));
+      box.appendChild(list);
+      api.answered = function () { return true; };
+      api.grade = function () {
+        var ok = 0;
+        $$('li', list).forEach(function (li, pos) {
+          var good = +li.getAttribute('data-i') === pos;
+          li.classList.add(good ? 'right' : 'wrong');
+          if (good) ok++;
+          $$('button', li).forEach(function (b) { b.disabled = true; });
+        });
+        return ok / cur.length;
+      };
+      api.correctText = 'Правильний порядок: ' + q.items.join(' → ');
+    } else if (q.type === 'reflect') {
+      box.classList.add('reflect');
+      var ta = h('textarea', { placeholder: 'Запишіть свою відповідь. Її ніхто не побачить – вона лише для вас.' });
+      box.appendChild(ta);
+      api.answered = function () { return true; };
+      api.grade = function () { return null; };
+    }
+
+    var fb = h('div', { class: 'fb' });
+    box.appendChild(fb);
+    api.feedback = function (score) {
+      box.classList.add('done');
+      if (score === null) {
+        box.classList.add('reflect');
+        fb.appendChild(h('b', { class: 'st', text: 'Орієнтир' }));
+        fb.appendChild(document.createTextNode(q.sample || ''));
+        return;
+      }
+      var st = score === 1 ? 'Правильно' : score === 0 ? 'Неправильно' : 'Частково';
+      box.classList.add(score === 1 ? 'ok' : score === 0 ? 'bad' : 'part');
+      fb.appendChild(h('b', { class: 'st', text: st }));
+      if (api.correctText && score < 1) fb.appendChild(h('div', { text: api.correctText }));
+      if (q.explain) fb.appendChild(document.createTextNode(q.explain));
+      if (score < 1 && q.anchor && data.sections[q.anchor]) {
+        fb.appendChild(h('br'));
+        fb.appendChild(h('a', { href: '#' + q.anchor, text: '↩ Перечитати: ' + data.sections[q.anchor] }));
+      }
+    };
+    return api;
+  }
+
+  function ringSvg(pct) {
+    var r = 46, c = 2 * Math.PI * r, off = c * (1 - pct / 100);
+    var col = pct >= 85 ? 'var(--ok)' : pct >= 70 ? 'var(--gold)' : pct >= 50 ? 'var(--part)' : 'var(--bad)';
+    return '<svg class="ring" viewBox="0 0 112 112"><circle cx="56" cy="56" r="' + r + '" fill="none" stroke="var(--line)" stroke-width="10"/>' +
+      '<circle cx="56" cy="56" r="' + r + '" fill="none" stroke="' + col + '" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) +
+      '" stroke-dashoffset="' + off.toFixed(1) + '" transform="rotate(-90 56 56)"/><text x="56" y="63" text-anchor="middle">' + pct + '%</text></svg>';
+  }
+
+  function verdict(pct) {
+    if (pct >= 85) return ['Матеріал засвоєно глибоко', 'Ви не лише пам’ятаєте зміст, а й умієте застосувати його в конкретних ситуаціях.'];
+    if (pct >= 70) return ['Добре, але є прогалини', 'Основне зрозуміло. Перечитайте теми нижче, щоб закрити прогалини.'];
+    if (pct >= 50) return ['Знайомство поверхове', 'Частину думок розділу ви впізнаєте, але ще не можете на них спиратися. Перечитайте позначені теми і пройдіть тест ще раз.'];
+    return ['Розділ варто прочитати ще раз', 'Поверніться до тексту, особливо до головних думок, і пройдіть тест знову через день-два.'];
+  }
+
+  function renderQuiz(app, data) {
+    app.innerHTML = '';
+    var qs = data.questions.map(function (q, i) { var a = buildQuestion(q, i, data); app.appendChild(a.el); return a; });
+    var warn = h('span', { class: 'warn' });
+    var resultBox = h('div');
+    var checkBtn = h('button', { class: 'btn', type: 'button', text: 'Перевірити відповіді' });
+    var retry = h('button', { class: 'btn ghost', type: 'button', text: 'Пройти ще раз', style: 'display:none' });
+    var forced = false;
+    checkBtn.addEventListener('click', function () {
+      var missing = qs.filter(function (a) { return !a.answered(); });
+      qs.forEach(function (a) { a.el.classList.toggle('missing', !a.answered()); });
+      if (missing.length && !forced) {
+        forced = true;
+        warn.textContent = 'Без відповіді: ' + missing.length + '. Натисніть ще раз, щоб перевірити як є.';
+        missing[0].el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      warn.textContent = '';
+      var total = 0, max = 0, byLvl = {}, review = {}, perQ = [];
+      qs.forEach(function (a) {
+        a.el.classList.remove('missing');
+        var s = a.answered() ? a.grade() : (a.grade(), 0);
+        if (a.q.type === 'reflect') s = null;
+        a.feedback(s);
+        perQ.push(s === null ? null : Math.round(s * 100) / 100);
+        if (s === null) return;
+        total += s; max += 1;
+        var L = a.q.level || 'розуміння';
+        byLvl[L] = byLvl[L] || [0, 0]; byLvl[L][0] += s; byLvl[L][1] += 1;
+        if (s < 1 && a.q.anchor) review[a.q.anchor] = true;
+      });
+      var pct = Math.round(total / max * 100);
+      var v = verdict(pct);
+      var lv = LEVELS.filter(function (L) { return byLvl[L]; }).map(function (L) {
+        var p = Math.round(byLvl[L][0] / byLvl[L][1] * 100);
+        return '<div class="lvlbar"><span>' + L + '</span><span class="bar"><i style="width:' + p + '%"></i></span><b>' + p + '%</b></div>';
+      }).join('');
+      var rv = Object.keys(review).filter(function (k) { return data.sections[k]; });
+      resultBox.innerHTML = '<div class="result">' + ringSvg(pct) + '<div><h4>' + v[0] + '</h4><p>' + v[1] + '</p><p>Бали: ' +
+        (Math.round(total * 10) / 10) + ' з ' + max + '</p></div><div class="levels">' + lv + '</div>' +
+        (rv.length ? '<div class="review"><b>Що перечитати:</b><ul>' + rv.map(function (k) { return '<li><a href="#' + k + '">' + data.sections[k] + '</a></li>'; }).join('') + '</ul></div>' : '') +
+        '</div>';
+      checkBtn.style.display = 'none';
+      retry.style.display = '';
+      var saved = store.get(RESULTS_KEY) || {};
+      var prev = saved[data.chapter];
+      saved[data.chapter] = { pct: pct, best: Math.max(pct, prev ? prev.best || prev.pct : 0), date: new Date().toLocaleDateString('uk-UA'), tries: (prev ? prev.tries || 1 : 0) + 1 };
+      store.set(RESULTS_KEY, saved);
+      var sid = queueResult({ ch: data.chapter, title: data.title, pct: pct, score: Math.round(total * 10) / 10, max: max,
+        attempt: saved[data.chapter].tries, q: perQ });
+      if (sid) $('.result', resultBox).appendChild(h('p', { 'data-send': sid }));
+      renderSummary();
+      flush();
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+    retry.addEventListener('click', function () { renderQuiz(app, data); app.scrollIntoView({ behavior: 'smooth' }); });
+    app.appendChild(h('div', { class: 'quiz-actions' }, [checkBtn, retry, warn]));
+    app.appendChild(resultBox);
+  }
+
+  function renderSummary() {
+    var saved = store.get(RESULTS_KEY) || {};
+    var rows = DATA.map(function (d) {
+      var r = saved[d.chapter];
+      return '<tr><td>' + d.chapter + '</td><td><a href="#quiz' + d.chapter + '">' + d.title + '</a></td><td>' +
+        (r ? r.pct + '%' : '—') + '</td><td>' + (r ? r.best + '%' : '—') + '</td><td class="c-date">' + (r ? r.date : '') + '</td></tr>';
+    }).join('');
+    var done = DATA.filter(function (d) { return saved[d.chapter]; });
+    var avg = done.length ? Math.round(done.reduce(function (s, d) { return s + saved[d.chapter].best; }, 0) / done.length) : null;
+    $('#summaryTable').innerHTML = '<div class="table-wrap"><table class="sum-table"><thead><tr><th>№</th><th>Розділ</th><th>Останній</th><th>Найкращий</th><th class="c-date">Дата</th></tr></thead><tbody>' +
+      rows + '</tbody></table></div>' + (avg !== null ? '<p style="margin-top:14px">Пройдено тестів: ' + done.length + ' з ' + DATA.length + '. Середній найкращий результат: <b>' + avg + '%</b>.</p>' : '<p style="margin-top:14px">Тести ще не пройдено.</p>') + '<p class="send wait" id="outboxNote"></p>';
+    paintStatus();
+  }
+
+  DATA.forEach(function (d) {
+    var app = $('.quiz-app[data-ch="' + d.chapter + '"]');
+    if (app) renderQuiz(app, d);
+  });
+  renderSummary();
+  flush();
+})();
+</script>
+</body>
+</html>
