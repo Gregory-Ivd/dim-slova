@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Консультування – Біблійна школа «Дім Слова» · Християнська церква «Перемога», м. Рівне</title>
+<meta name="description" content="Навчальний посібник Біблійної школи «Дім Слова» християнської церкви «Перемога» (Рівне): тема «Консультування», з тестами для самоперевірки.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Cg fill='none' stroke='%23d4a94f' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10'/%3E%3C/g%3E%3C/svg%3E">
+<script>
+try { var t = localStorage.getItem('sb-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<style>/* ---------- кольори ---------- */
+:root {
+  --bg: #f4efe4;
+  --paper: #fffdf8;
+  --ink: #1f2430;
+  --muted: #5d6474;
+  --navy: #1f3a5f;
+  --navy-deep: #152a45;
+  --gold: #b0852b;
+  --gold-soft: #f2e6c8;
+  --gold-line: #dcc896;
+  --scr-bg: #f8f1e1;
+  --scr-ink: #3f3320;
+  --note-bg: #edf1f6;
+  --note-line: #9fb2c8;
+  --key-bg: #1f3a5f;
+  --key-ink: #fdfaf2;
+  --mark: #f6e3ad;
+  --ok: #2f7a4f;
+  --ok-bg: #e5f2ea;
+  --bad: #a3392f;
+  --bad-bg: #f8e6e3;
+  --part: #9a6b12;
+  --part-bg: #f8eed6;
+  --line: #e4dccb;
+  --shadow: 0 1px 2px rgba(31, 36, 48, .06), 0 8px 24px rgba(31, 36, 48, .06);
+  --fs: 18px;
+  --serif: "PT Serif", Georgia, "Times New Roman", serif;
+  --display: "Cormorant Garamond", "PT Serif", Georgia, serif;
+  --sans: "Montserrat", "Segoe UI", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141c; --paper: #161b25; --ink: #e8e4da; --muted: #a3a9b6;
+    --navy: #9fbbe0; --navy-deep: #0d1a2c; --gold: #d4a94f; --gold-soft: #3a3120; --gold-line: #5c4c2b;
+    --scr-bg: #1e2230; --scr-ink: #eadfc6; --note-bg: #1a2230; --note-line: #3f5673;
+    --key-bg: #22385a; --key-ink: #f4efe2; --mark: #5a4a22;
+    --ok: #7fcf9d; --ok-bg: #1d3327; --bad: #f09a8f; --bad-bg: #3a2220; --part: #e6c170; --part-bg: #3a3020;
+    --line: #2a3140; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10141c; --paper: #161b25; --ink: #e8e4da; --muted: #a3a9b6;
+  --navy: #9fbbe0; --navy-deep: #0d1a2c; --gold: #d4a94f; --gold-soft: #3a3120; --gold-line: #5c4c2b;
+  --scr-bg: #1e2230; --scr-ink: #eadfc6; --note-bg: #1a2230; --note-line: #3f5673;
+  --key-bg: #22385a; --key-ink: #f4efe2; --mark: #5a4a22;
+  --ok: #7fcf9d; --ok-bg: #1d3327; --bad: #f09a8f; --bad-bg: #3a2220; --part: #e6c170; --part-bg: #3a3020;
+  --line: #2a3140; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  color-scheme: dark;
+}
+
+/* ---------- основа ---------- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; font-size: var(--fs); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--serif); line-height: 1.68; }
+a { color: var(--navy); text-decoration-color: var(--gold-line); text-underline-offset: 3px; }
+.print-only { display: none; }
+.lbl { display: inline-block; font-family: var(--sans); font-size: .66rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+strong { color: var(--navy); }
+main { max-width: 820px; margin: 0 auto; padding: 0 16px 64px; }
+main > section, .chapter { background: var(--paper); border-radius: 18px; box-shadow: var(--shadow); padding: clamp(22px, 5vw, 56px); margin: 22px 0; }
+p { margin: 0 0 1em; }
+
+/* ---------- верхня панель ---------- */
+.progress { position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 60; }
+.progress span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--gold), #e3c170); }
+.topbar { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; gap: 10px; padding: 8px 16px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); min-width: 0; }
+.brand .emblem { width: 30px; height: 30px; color: var(--gold); flex: none; }
+.brand b { display: block; font-family: var(--sans); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
+.brand small { display: block; font-family: var(--sans); font-size: .66rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tools { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.icon-btn, .chip { font-family: var(--sans); font-size: .72rem; font-weight: 600; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; height: 36px; min-width: 36px; padding: 0 10px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+.icon-btn:hover, .chip:hover { border-color: var(--gold); }
+.chip[aria-pressed="true"] { background: var(--gold-soft); border-color: var(--gold); }
+.chip.solid { background: var(--navy); color: var(--paper); border-color: var(--navy); }
+:root[data-theme="dark"] .chip.solid { color: #10141c; }
+@media (max-width: 720px) {
+  #memoBtn { font-size: 0; padding: 0; width: 36px; }
+  #memoBtn::before { content: "👁"; font-size: 15px; }
+  #fsDown, #fsUp { display: none; }
+  .brand small { max-width: 44vw; }
+}
+
+/* ---------- зміст ---------- */
+.toc-drawer { position: fixed; top: 0; bottom: 0; left: 0; width: min(340px, 86vw); background: var(--paper); z-index: 70; transform: translateX(-102%); transition: transform .25s ease; box-shadow: var(--shadow); overflow-y: auto; }
+.toc-drawer.open { transform: none; }
+.toc-inner { padding: 24px 22px 40px; }
+.scrim { position: fixed; inset: 0; background: rgba(10, 14, 22, .4); z-index: 65; opacity: 0; pointer-events: none; transition: opacity .25s; }
+.scrim.open { opacity: 1; pointer-events: auto; }
+.toc-list { list-style: none; margin: 10px 0 0; padding: 0; font-family: var(--sans); font-size: .8rem; }
+.toc-list > li { margin: 0 0 12px; }
+.toc-list > li > a { font-weight: 700; color: var(--ink); text-decoration: none; }
+.toc-list ol { list-style: none; padding: 4px 0 0 12px; margin: 0; border-left: 2px solid var(--line); }
+.toc-list ol a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; font-weight: 500; line-height: 1.35; }
+.toc-list a.active { color: var(--gold); }
+@media (min-width: 1280px) {
+  .toc-drawer { transform: none; top: 53px; width: 290px; background: transparent; box-shadow: none; z-index: 10; }
+  .toc-inner { padding-top: 28px; }
+  #tocBtn, .scrim { display: none; }
+  main { margin-left: max(310px, calc(50vw - 410px)); }
+}
+
+/* ---------- обкладинка ---------- */
+.cover { background: radial-gradient(120% 90% at 50% 0%, #2a4c78 0%, #1f3a5f 45%, #122540 100%) !important; color: #f7f1e3; text-align: center; min-height: min(92vh, 860px); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.cover::before, .cover::after { content: ""; position: absolute; inset: 22px; border: 1px solid rgba(212, 169, 79, .45); border-radius: 12px; pointer-events: none; }
+.cover::after { inset: 30px; border-color: rgba(212, 169, 79, .2); }
+.cover-inner { position: relative; max-width: 560px; padding: 40px 10px; }
+.cover-church { font-family: var(--sans); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: #e3c882; margin: 0 0 34px; }
+.cover-emblem { width: 92px; height: 92px; color: #d9b25e; margin: 0 auto 16px; display: block; }
+.cover-school { font-family: var(--sans); font-weight: 600; letter-spacing: .34em; text-transform: uppercase; font-size: .86rem; margin: 0; color: #f1e7cf; }
+.cover-name { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 2rem; color: #e3c882; margin: 2px 0 26px; }
+.cover h1 { font-family: var(--display); font-weight: 600; font-size: clamp(3.4rem, 12vw, 6.2rem); line-height: 1; margin: 14px 0 8px; color: #fff8e8; letter-spacing: .01em; }
+.cover-sub { font-family: var(--display); font-style: italic; font-size: 1.5rem; color: #e3c882; margin: 0 0 28px; }
+.cover-meta { font-size: .86rem; line-height: 1.7; color: #cdd6e4; max-width: 460px; margin: 0 auto 36px; }
+.cover-foot { display: flex; justify-content: center; gap: 26px; font-family: var(--sans); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: #aebbd0; margin: 0 0 26px; }
+.cover-start { display: inline-block; font-family: var(--sans); font-size: .78rem; font-weight: 600; color: #1f3a5f; background: #e3c882; padding: 12px 22px; border-radius: 999px; text-decoration: none; }
+
+/* ---------- передмова ---------- */
+.epigraph { margin: 18px 0 30px; text-align: center; }
+.epigraph blockquote { margin: 0 auto; max-width: 600px; font-family: var(--display); font-size: 1.75rem; line-height: 1.35; font-style: italic; color: var(--navy); }
+.epigraph blockquote::before { content: "“"; display: block; font-size: 3.2rem; line-height: .6; color: var(--gold); margin-bottom: 6px; }
+.epigraph figcaption, .prayer figcaption { font-family: var(--sans); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-top: 10px; }
+.lead { font-size: 1.1rem; }
+.prayer { margin: 28px 0; padding: 20px 24px; border: 1px dashed var(--gold-line); border-radius: 14px; text-align: center; }
+.prayer blockquote { margin: 8px 0 0; font-family: var(--display); font-size: 1.35rem; font-style: italic; color: var(--scr-ink); }
+.legend h3 { font-family: var(--sans); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 30px 0 12px; }
+.legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+.lg { padding: 12px 14px; border-radius: 10px; font-size: .82rem; line-height: 1.45; }
+.lg b { display: block; font-family: var(--sans); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+.lg-scr { background: var(--scr-bg); border-left: 3px solid var(--gold); }
+.lg-key { background: var(--key-bg); color: var(--key-ink); }
+.lg-key b { color: #e3c882; }
+.lg-note { background: var(--note-bg); border-left: 3px solid var(--note-line); }
+.lg-quiz { background: var(--gold-soft); }
+.source-note { margin-top: 26px; font-size: .78rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+
+/* ---------- розділ ---------- */
+.ch-head { position: relative; padding: 6px 0 26px; margin-bottom: 26px; border-bottom: 1px solid var(--gold-line); }
+.ch-head::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 90px; height: 3px; background: var(--gold); }
+.ch-num { font-family: var(--sans); font-size: .74rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+.ch-head h2 { font-family: var(--display); font-weight: 700; font-size: clamp(2.1rem, 6vw, 3.1rem); line-height: 1.08; color: var(--navy); margin: 8px 0 6px; }
+.ch-sub { font-family: var(--display); font-style: italic; font-size: 1.3rem; color: var(--muted); margin: 0; }
+h3.sec { display: flex; gap: 12px; align-items: baseline; font-family: var(--display); font-weight: 700; font-size: 1.75rem; line-height: 1.2; color: var(--navy); margin: 46px 0 18px; }
+.s-num { flex: none; display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--gold); color: #fff; font-family: var(--sans); font-size: .9rem; font-weight: 700; transform: translateY(-3px); }
+h4.sub { font-family: var(--sans); font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); margin: 34px 0 14px; display: flex; align-items: center; gap: 10px; }
+h4.sub::after { content: ""; flex: 1; height: 1px; background: var(--gold-line); }
+
+/* Святе Письмо */
+.scripture { position: relative; margin: 22px 0 24px; padding: 20px 24px 14px 26px; background: var(--scr-bg); border-left: 4px solid var(--gold); border-radius: 4px 14px 14px 4px; }
+.scripture blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-size: 1.24rem; line-height: 1.5; color: var(--scr-ink); }
+.scripture sup { font-family: var(--sans); font-size: .56rem; font-weight: 700; color: var(--gold); margin-right: 2px; vertical-align: .55em; }
+.scripture .gap { color: var(--gold); }
+.scripture figcaption { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+.scripture .ref { font-family: var(--sans); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.scripture .syn { font-family: var(--sans); font-size: .66rem; color: var(--muted); }
+.scripture .more { display: none; }
+.scripture.collapsed blockquote { max-height: 11.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+.scripture.long .more { display: inline-block; margin-top: 8px; font-family: var(--sans); font-size: .7rem; font-weight: 600; color: var(--navy); background: transparent; border: 1px solid var(--gold-line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+body.memo .scripture blockquote { filter: blur(7px); cursor: pointer; user-select: none; transition: filter .2s; }
+body.memo .scripture.revealed blockquote { filter: none; }
+body.memo .scripture::before { content: "Натисніть, щоб відкрити"; position: absolute; right: 14px; top: 10px; z-index: 1; font-family: var(--sans); font-size: .62rem; color: var(--muted); }
+body.memo .scripture.revealed::before { content: none; }
+
+/* Головна думка, пояснення */
+.key-idea { margin: 24px 0; padding: 18px 24px 16px; background: var(--key-bg); color: var(--key-ink); border-radius: 14px; position: relative; }
+.key-idea .lbl { color: #e3c882; }
+.key-idea p { margin: 6px 0 0; font-family: var(--display); font-weight: 600; font-size: 1.32rem; line-height: 1.4; }
+mark.key { background: linear-gradient(transparent 55%, var(--mark) 55%); color: inherit; font-weight: 700; padding: 0 1px; }
+.note { margin: 20px 0; padding: 14px 20px; background: var(--note-bg); border-left: 3px solid var(--note-line); border-radius: 4px 12px 12px 4px; font-size: .93rem; }
+.note .lbl { color: var(--muted); }
+.note p { margin: 4px 0 0; }
+ul.points { list-style: none; padding: 0; margin: 12px 0 18px; }
+ul.points > li { position: relative; padding-left: 26px; margin-bottom: 12px; }
+ul.points > li::before { content: ""; position: absolute; left: 4px; top: .62em; width: 9px; height: 9px; background: var(--gold); transform: rotate(45deg); }
+ul.points .li-head { margin-bottom: .35em; }
+ul.points > li > p:not(.li-head) { margin-bottom: .6em; }
+
+/* ---------- тест ---------- */
+.quiz { margin-top: 50px; padding: 26px clamp(16px, 4vw, 30px); border-radius: 16px; background: linear-gradient(180deg, var(--gold-soft), transparent 220px); border: 1px solid var(--gold-line); }
+.quiz-head h3 { font-family: var(--display); font-size: 1.9rem; color: var(--navy); margin: 6px 0 6px; line-height: 1.15; }
+.quiz-intro { font-size: .9rem; color: var(--muted); }
+.quiz-print { display: none; }
+.q { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 14px; margin: 14px 0; }
+.q-top { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; font-family: var(--sans); font-size: .64rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.q-top .lvl { padding: 3px 8px; border-radius: 999px; background: var(--note-bg); }
+.q-top .lvl.app { background: var(--gold-soft); color: var(--part); }
+.q-text { font-weight: 700; margin-bottom: 12px; line-height: 1.5; }
+.opt { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; cursor: pointer; font-size: .93rem; line-height: 1.45; }
+.opt:hover { border-color: var(--gold-line); }
+.opt input { margin-top: 4px; accent-color: var(--navy); flex: none; }
+.opt.right { border-color: var(--ok); background: var(--ok-bg); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.tf { display: flex; gap: 10px; }
+.tf .opt { flex: 1 1 0; min-width: 0; justify-content: center; }
+.match-row { display: grid; grid-template-columns: 1fr 1.4fr; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: .9rem; }
+.match-row select { width: 100%; font: inherit; font-size: .86rem; padding: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+.match-row.right select { border-color: var(--ok); background: var(--ok-bg); }
+.match-row.wrong select { border-color: var(--bad); background: var(--bad-bg); }
+.match-row .fix { grid-column: 1 / -1; font-size: .8rem; color: var(--ok); }
+@media (max-width: 560px) { .match-row { grid-template-columns: 1fr; } }
+.order-list { list-style: none; padding: 0; margin: 0; counter-reset: ord; }
+.order-list li { display: flex; gap: 8px; align-items: center; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; background: var(--paper); font-size: .9rem; line-height: 1.4; counter-increment: ord; }
+.order-list li::before { content: counter(ord); font-family: var(--sans); font-weight: 700; font-size: .75rem; color: var(--gold); width: 18px; flex: none; }
+.order-list li span { flex: 1; }
+.order-list button { font: inherit; font-size: .8rem; width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; flex: none; }
+.order-list li.right { border-color: var(--ok); background: var(--ok-bg); }
+.order-list li.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.q textarea { width: 100%; min-height: 90px; font: inherit; font-size: .92rem; padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); resize: vertical; }
+.fb { display: none; margin-top: 10px; padding: 10px 12px; border-radius: 10px; font-size: .88rem; line-height: 1.5; }
+.q.done .fb { display: block; }
+.q.ok .fb { background: var(--ok-bg); }
+.q.bad .fb { background: var(--bad-bg); }
+.q.part .fb { background: var(--part-bg); }
+.q.reflect .fb { background: var(--note-bg); }
+.fb b.st { font-family: var(--sans); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; margin-right: 6px; }
+.q.ok .fb b.st { color: var(--ok); } .q.bad .fb b.st { color: var(--bad); } .q.part .fb b.st { color: var(--part); }
+.fb a { font-family: var(--sans); font-size: .74rem; font-weight: 600; display: inline-block; margin-top: 6px; }
+.q.missing { border-color: var(--bad); }
+.quiz-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 18px; }
+.btn { font-family: var(--sans); font-weight: 700; font-size: .8rem; padding: 12px 20px; border-radius: 999px; border: 0; cursor: pointer; background: var(--navy); color: var(--paper); }
+:root[data-theme="dark"] .btn { color: #10141c; }
+.btn.ghost { background: transparent; color: var(--navy); border: 1px solid var(--gold-line); }
+.warn { font-size: .85rem; color: var(--bad); }
+.result { margin-top: 18px; padding: 20px; border-radius: 14px; background: var(--paper); border: 1px solid var(--gold-line); display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+.ring { width: 112px; height: 112px; }
+.ring text { font-family: var(--sans); font-weight: 700; font-size: 20px; fill: var(--ink); }
+.result h4 { font-family: var(--display); font-size: 1.5rem; margin: 0 0 6px; color: var(--navy); }
+.result p { margin: 0 0 8px; font-size: .9rem; }
+.levels { grid-column: 1 / -1; display: grid; gap: 8px; }
+.lvlbar { display: grid; grid-template-columns: 120px 1fr 48px; gap: 10px; align-items: center; font-family: var(--sans); font-size: .72rem; }
+.lvlbar .bar { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; }
+.lvlbar .bar i { display: block; height: 100%; background: var(--gold); border-radius: 99px; }
+.review { grid-column: 1 / -1; font-size: .88rem; }
+.review ul { margin: 6px 0 0; padding-left: 18px; }
+@media (max-width: 560px) { .result { grid-template-columns: 1fr; justify-items: start; } }
+
+/* ---------- підсумок, підвал ---------- */
+.summary h2, .answers h2 { font-family: var(--display); font-size: 2.2rem; color: var(--navy); margin: 6px 0 10px; }
+.sum-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin-top: 10px; }
+.sum-table td, .sum-table th { padding: 10px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+.sum-table th { font-family: var(--sans); font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.site-foot { text-align: center; font-size: .82rem; color: var(--muted); padding: 30px 10px 10px; }
+.site-foot .emblem { width: 36px; height: 36px; color: var(--gold); }
+.site-foot p { margin: 4px 0; }
+.site-foot .small { font-size: .72rem; }
+
+/* ---------- друк / PDF ---------- */
+@page {
+  size: A4;
+  margin: 19mm 17mm 17mm;
+  @top-left { content: "Біблійна школа «Дім Слова» · Християнська церква «Перемога», м. Рівне"; font-family: "Montserrat", sans-serif; font-size: 7pt; font-weight: 600; letter-spacing: .08em; color: #9a7a35; vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #dcc896; }
+  @top-right { content: "Консультування"; font-family: "Cormorant Garamond", serif; font-size: 10pt; font-style: italic; color: #1f3a5f; vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #dcc896; }
+  @bottom-left { content: "instagram.com/victorychurch_rv"; font-family: "Montserrat", sans-serif; font-size: 6.5pt; color: #8f96a3; }
+  @bottom-right { content: counter(page); font-family: "Montserrat", sans-serif; font-size: 8pt; font-weight: 700; color: #b0852b; }
+}
+@page cover { margin: 0; @top-left { content: none; border: 0; } @top-right { content: none; border: 0; } @bottom-left { content: none; } @bottom-right { content: none; } }
+
+@media print {
+  :root { --fs: 10.4pt; --bg: #fff; --paper: #fff; }
+  html { font-size: 10.4pt; }
+  body { background: #fff; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .screen-only, .quiz-app, .scripture .more { display: none !important; }
+  .print-only { display: block; }
+  main { max-width: none; margin: 0 !important; padding: 0; }
+  main > section, .chapter { box-shadow: none; border-radius: 0; padding: 0; margin: 0; background: none; }
+  .cover { page: cover; height: 297mm; min-height: 0; width: 210mm; border-radius: 0 !important; break-after: page; }
+  .cover::before { inset: 12mm; } .cover::after { inset: 14.5mm; }
+  .cover-name { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 2rem; color: #e3c882; margin: 2px 0 26px; }
+.cover h1 { font-size: 64pt; }
+  .preface, .toc-page, .chapter, .answers { break-before: page; }
+  .scripture blockquote { font-size: 12.2pt; }
+  .scripture:not(.long), .key-idea, .note, .lg, .prayer, .epigraph { break-inside: avoid; }
+  .scripture.collapsed blockquote { max-height: none; -webkit-mask-image: none; mask-image: none; }
+  h3.sec, h4.sub, .ch-head { break-after: avoid; }
+  h3.sec { margin-top: 26pt; }
+  p { orphans: 3; widows: 3; }
+  .quiz { break-before: page; background: none; border: 0; padding: 0; margin: 0; }
+  .quiz-print { display: block; }
+  .pq { break-inside: avoid; margin: 0 0 12pt; }
+  .pq-q { margin: 0 0 5pt; }
+  .pq-hint { font-family: var(--sans); font-size: 6.5pt; letter-spacing: .06em; text-transform: uppercase; color: #9a7a35; margin-left: 4pt; }
+  .pq-opts { list-style: none; padding: 0 0 0 14pt; margin: 0; }
+  .pq-opts li { margin: 2pt 0; display: flex; gap: 5pt; }
+  .box { display: inline-block; width: 8pt; height: 8pt; border: .7pt solid #1f3a5f; border-radius: 1.5pt; flex: none; margin-top: 3pt; }
+  .pq-tf { padding-left: 14pt; }
+  .pq-match { display: grid; grid-template-columns: 1fr 1.3fr; gap: 12pt; padding-left: 14pt; }
+  .pq-match ol { margin: 0; padding-left: 14pt; }
+  .pq-match ol.letters { list-style: none; padding: 0; }
+  .pq-match li { margin: 2pt 0; }
+  .blank { display: inline-block; width: 28pt; border-bottom: .7pt solid #1f3a5f; margin-left: 4pt; }
+  .blank.sm { width: 16pt; margin: 0 4pt 0 0; }
+  .pq-order { list-style: none; padding-left: 14pt; margin: 0; }
+  .pq-order li { margin: 3pt 0; }
+  .pq-lines { height: 58pt; margin-left: 14pt; background: repeating-linear-gradient(transparent 0 18pt, #cfc6b3 18pt 18.6pt); }
+  .toc-page .toc-list { font-size: 10pt; columns: 1; }
+  .toc-page .toc-list > li { margin-bottom: 10pt; break-inside: avoid; }
+  .toc-page .toc-list > li > a { font-family: var(--display); font-size: 15pt; color: #1f3a5f; }
+  .toc-page .toc-list a { text-decoration: none; }
+  .toc-extra { font-size: 9pt; color: #5d6474; margin-top: 14pt; }
+  .answers h3 { font-family: var(--display); font-size: 14pt; color: #1f3a5f; margin: 16pt 0 6pt; break-after: avoid; }
+  .key-list { padding-left: 16pt; font-size: 8.8pt; line-height: 1.45; }
+  .key-list li { margin-bottom: 4pt; break-inside: avoid; }
+  .k-a { color: #1f3a5f; }
+  .k-exp { color: #3b4150; }
+  .site-foot { break-inside: avoid; padding-top: 30pt; }
+  a { color: inherit; text-decoration: none; }
+}
+
+/* ---------- ім’я учня і надсилання ---------- */
+.who-chip { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; line-height: 34px; }
+.who-chip[hidden] { display: none; }
+.who { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 16px; background: rgba(16, 20, 28, .55); }
+.who[hidden] { display: none; }
+.who-box { width: 100%; max-width: 440px; background: var(--paper); color: var(--ink); border: 1px solid var(--gold-line); border-radius: 18px; padding: 26px 24px 22px; box-shadow: var(--shadow); }
+.who-box h2 { font-family: var(--display); font-size: 2rem; color: var(--navy); margin: 4px 0 8px; line-height: 1.15; }
+.who-box p { margin: 0 0 14px; font-size: .92rem; }
+.who-box input { width: 100%; font: inherit; font-size: 1rem; padding: 12px 14px; border: 1px solid var(--gold-line); border-radius: 10px; background: var(--bg); color: var(--ink); }
+.who-box input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.who-box .warn { display: block; min-height: 1.2em; margin: 6px 0 10px; }
+.who-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.send { grid-column: 1 / -1; margin: 6px 0 0; font-family: var(--sans); font-size: .76rem; }
+.send:empty { display: none; }
+.send.ok { color: var(--ok); }
+.send.wait { color: var(--part); }
+.linkish { font: inherit; color: var(--navy); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+/* ---------- вузькі екрани ---------- */
+.brand { flex: 1 1 auto; }
+.brand > span { min-width: 0; }
+.brand b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tools { flex: none; }
+.table-wrap { overflow-x: auto; }
+@media (max-width: 600px) {
+  html { font-size: min(var(--fs), 17px); }
+  main { padding: 0 8px 40px; }
+  main > section, .chapter { padding: 22px 16px; border-radius: 14px; margin: 12px 0; }
+  .cover { padding: 0; }
+  .scripture { padding: 16px 14px 12px 16px; }
+  .scripture blockquote { font-size: 1.16rem; }
+  .key-idea, .note { padding-left: 16px; padding-right: 16px; }
+  .quiz { padding: 18px 10px; }
+  .q { padding: 14px 12px 12px; }
+  .brand small { display: none; }
+  .who-chip { max-width: 96px; }
+  .sum-table .c-date { display: none; }
+  /* обкладинка: увесь текст усередині золотої рамки (inset 22–30px) */
+  .cover-inner { padding: 52px 40px; max-width: 100%; }
+  .cover-church { letter-spacing: .14em; margin-bottom: 26px; }
+  .cover-school { letter-spacing: .22em; }
+  .cover h1 { font-size: clamp(2.3rem, 11vw, 3.4rem); overflow-wrap: anywhere; }
+  .cover-sub { font-size: 1.3rem; }
+  .cover-foot { flex-wrap: wrap; gap: 6px 18px; letter-spacing: .08em; }
+}
+@media (max-width: 400px) {
+  .topbar { gap: 6px; padding: 8px 10px; }
+  .tools { gap: 4px; }
+  .brand > span { display: none; }
+  .who-chip { max-width: 64px; padding: 0 8px; }
+  .cover-inner { padding: 52px 34px; }
+  .cover-foot { font-size: .6rem; letter-spacing: .04em; }
+}
+</style>
+</head>
+<body>
+<div class="progress screen-only" aria-hidden="true"><span></span></div>
+
+<header class="topbar screen-only">
+  <button class="icon-btn" id="tocBtn" type="button" aria-controls="toc" aria-expanded="false" title="Зміст">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+  </button>
+  <a class="brand" href="./" title="Усі уроки">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <span><b>Дім Слова</b><small>Урок 25 · Консультування</small></span>
+  </a>
+  <div class="tools">
+    <button class="chip who-chip" id="whoBtn" type="button" title="Змінити ім’я" hidden></button>
+    <button class="chip" id="memoBtn" type="button" aria-pressed="false" title="Сховати тексти віршів, щоб перевірити, чи пам’ятаєте їх">Режим запам’ятовування</button>
+    <button class="icon-btn" id="fsDown" type="button" title="Менший шрифт">A−</button>
+    <button class="icon-btn" id="fsUp" type="button" title="Більший шрифт">A+</button>
+    <button class="icon-btn" id="themeBtn" type="button" title="Світла / темна тема">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="chip solid" href="konsultuvannia.pdf" download>PDF</a>
+  </div>
+</header>
+
+<nav class="toc-drawer screen-only" id="toc" aria-label="Зміст">
+  <div class="toc-inner">
+    <p class="lbl">Зміст</p>
+    <ol class="toc-list">
+      <li><a href="./">← Усі уроки</a></li>
+      <li><a href="#preface">Передмова</a></li>
+      <li><a href="#ch1">I. Основи консультування</a><ol><li><a href="#ch1-s1">Що таке консультування</a></li><li><a href="#ch1-s2">Як ставитися до людини</a></li><li><a href="#quiz1">Перевір себе</a></li></ol></li><li><a href="#ch2">II. Тактики і небезпеки</a><ol><li><a href="#ch2-s1">Тактики консультування</a></li><li><a href="#ch2-s2">Слабкості й небезпеки консультанта</a></li><li><a href="#quiz2">Перевір себе</a></li></ol></li><li><a href="#ch3">III. Відкидання, хвилювання, провина, криза</a><ol><li><a href="#ch3-s1">Відкидання й хвилювання</a></li><li><a href="#ch3-s2">Почуття провини й криза</a></li><li><a href="#quiz3">Перевір себе</a></li></ol></li><li><a href="#ch4">IV. Депресія й гнів</a><ol><li><a href="#ch4-s1">Депресія й гнів</a></li><li><a href="#quiz4">Перевір себе</a></li></ol></li><li><a href="#ch5">V. Самотність, самооцінка, залежності</a><ol><li><a href="#ch5-s1">Самотність, смуток, самооцінка й залежності</a></li><li><a href="#quiz5">Перевір себе</a></li></ol></li>
+      <li><a href="#summary">Підсумок тестів</a></li>
+    </ol>
+  </div>
+</nav>
+<div class="scrim screen-only" id="scrim"></div>
+
+<div class="who screen-only" id="who" role="dialog" aria-modal="true" aria-labelledby="whoTitle" hidden>
+  <form class="who-box" id="whoForm" novalidate>
+    <span class="lbl">Біблійна школа «Дім Слова»</span>
+    <h2 id="whoTitle">Як вас звати?</h2>
+    <p id="whoText">Вкажіть ім’я та прізвище. Результати тестів побачить пастор, щоб допомагати вам у навчанні.</p>
+    <input id="whoName" type="text" autocomplete="name" maxlength="60" placeholder="Ім’я та прізвище" aria-describedby="whoWarn">
+    <p class="warn" id="whoWarn" aria-live="polite"></p>
+    <div class="who-actions">
+      <button class="btn" type="submit">Зберегти</button>
+      <button class="btn ghost" type="button" id="whoLater">Пізніше</button>
+    </div>
+  </form>
+</div>
+
+<main id="top">
+  <section class="cover">
+    <div class="cover-inner">
+      <p class="cover-church">Християнська церква «Перемога» · м. Рівне</p>
+      <svg class="cover-emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+      <p class="cover-school">Біблійна школа</p>
+      <p class="cover-name">«Дім Слова»</p>
+      <h1>Консультування</h1>
+      <p class="cover-sub">Урок 25 · Навчальний посібник</p>
+      <p class="cover-meta">Що таке консультування · Як ставитися до людини · Тактики консультування · Слабкості й небезпеки консультанта · Відкидання й хвилювання · Почуття провини й криза · Депресія й гнів · Самотність, смуток, самооцінка й залежності</p>
+      <p class="cover-foot"><span>instagram.com/victorychurch_rv</span><span>2026</span></p>
+      <a class="cover-start screen-only" href="#preface">Почати читання ↓</a>
+    </div>
+  </section>
+
+  <section class="preface" id="preface">
+  <span class="lbl">Передмова</span>
+  <figure class="epigraph">
+    <blockquote>Коли бракує розумного управління, народ занепадає, а при численних радниках люди безпечні.</blockquote>
+    <figcaption>Приповісті 11:14</figcaption>
+  </figure>
+
+  <p class="lead">Це урок 25 Біблійної школи «Дім Слова» після уроку «Етикет». Його тема – «Консультування»: що таке консультування, як ставитися до людини, тактики консультування, слабкості й небезпеки консультанта, відкидання й хвилювання, почуття провини й криза, депресія й гнів, самотність, смуток, самооцінка й залежності.</p>
+
+  <p>Кожну думку тут підкріплено місцями Писання – прочитайте їх уважно, бо саме Слово Боже, а не пояснення до нього, змінює життя.</p>
+
+  <p>Кожен розділ завершується тестом. Він перевіряє, чи зрозуміла прочитане людина, і тому частина питань описує ситуації з життя, де його треба застосувати. Відповіді з поясненнями зібрано наприкінці посібника, а на вебсторінці тест перевіряється одразу і показує, які теми варто перечитати.</p>
+
+  <figure class="prayer">
+    <span class="lbl">Перед кожним заняттям</span>
+    <blockquote>Відкрий мої очі, щоб я міг побачити дивовижні властивості Твого Закону!</blockquote>
+    <figcaption>Псалом 119:18</figcaption>
+  </figure>
+
+  <div class="legend">
+    <h3>Як читати посібник</h3>
+    <div class="legend-grid">
+      <div class="lg lg-scr"><b>Святе Письмо</b><span>Біблійні тексти виділено золотою рамкою. Посилання стоїть під текстом.</span></div>
+      <div class="lg lg-key"><b>Головна думка</b><span>Висновок, який варто запам’ятати. У тексті такі речення підсвічено.</span></div>
+      <div class="lg lg-note"><b>Пояснення</b><span>Значення слова, історичний фон, приклад.</span></div>
+      <div class="lg lg-quiz"><b>Перевір себе</b><span>Тест наприкінці розділу: знання, розуміння, застосування.</span></div>
+    </div>
+  </div>
+
+  <p class="source-note">Українською перекладено та оформлено за навчальним матеріалом Біблійної школи «Робітники Царства» християнської церкви «Перемога» (м. Київ). Використано з дозволу.<br>Цитати Святого Письма наведено за виданням «Біблія. Сучасний переклад» © Українське Біблійне Товариство, 2020–2023. Посилання подано за нумерацією цього перекладу.</p>
+</section>
+
+
+  <section class="toc-page print-only">
+    <span class="lbl">Зміст</span>
+    <ol class="toc-list"><li><a href="#ch1">I. Основи консультування</a><ol><li><a href="#ch1-s1">Що таке консультування</a></li><li><a href="#ch1-s2">Як ставитися до людини</a></li><li><a href="#quiz1">Перевір себе</a></li></ol></li><li><a href="#ch2">II. Тактики і небезпеки</a><ol><li><a href="#ch2-s1">Тактики консультування</a></li><li><a href="#ch2-s2">Слабкості й небезпеки консультанта</a></li><li><a href="#quiz2">Перевір себе</a></li></ol></li><li><a href="#ch3">III. Відкидання, хвилювання, провина, криза</a><ol><li><a href="#ch3-s1">Відкидання й хвилювання</a></li><li><a href="#ch3-s2">Почуття провини й криза</a></li><li><a href="#quiz3">Перевір себе</a></li></ol></li><li><a href="#ch4">IV. Депресія й гнів</a><ol><li><a href="#ch4-s1">Депресія й гнів</a></li><li><a href="#quiz4">Перевір себе</a></li></ol></li><li><a href="#ch5">V. Самотність, самооцінка, залежності</a><ol><li><a href="#ch5-s1">Самотність, смуток, самооцінка й залежності</a></li><li><a href="#quiz5">Перевір себе</a></li></ol></li></ol>
+    <p class="toc-extra">Відповіді до тестів – наприкінці посібника.</p>
+  </section>
+
+  <article class="chapter" data-ch="1"><header class="ch-head" id="ch1"><span class="ch-num">Розділ I</span><h2>Основи консультування</h2><p class="ch-sub">цілі, довіра, повага, таємниці</p></header><h3 class="sec" id="ch1-s1">Що таке консультування</h3><p>Консультувати – значить давати пораду, але консультування глибше. Християнське консультування – дати людині пораду, засновану на Слові Божому, що скерує її у Божу волю. У Біблії багато прикладів, коли людина потребує визволення від хвилювання, самотності, сумніву, смутку, насильства, гіркоти, убогості, жадібності, хвороби. Івана 10:10</p><h4 class="sub">1. Приклад Іова</h4><p>Багатий і шанований, раптом утратив усе: дім, маєток, дітей, здоров’я; з’явилися смуток і розпач, дружина докоряла. Троє друзів «консультували» неправильно: «Ти згрішив, інакше не мав би цих проблем». Іов відповідав, що не згрішив, і справді не грішив. Прийшов четвертий, набагато молодший, і постійно скеровував Іова до Бога; Іов поглянув на себе очима Божими, змінився, і Бог дав удвічі більше.</p><h4 class="sub">2. Цілі консультування</h4><p>Привести людину до самоусвідомлення: чимало проблем самостворені, а люди не помічають, що самі є причиною страждання (наприклад, хтось скаржиться, що ніхто не хоче з ним спілкуватися, а скарги дратують усіх). Допомогти навчитися спілкуватися, чітко передавати думки й приймати від інших. Допомогти змінити поведінку: люди вчаться не словами, а тим, що бачать, тож іноді треба показати приклад. Допомогти людині виявити те, що в ній уже є (в ній Бог, таланти), але не носити її на руках. Підтримка в кризі, коли людина раптом впадає в депресію, забуває Божі обітниці. Допомогти досягти духовної повноти: більшість проблем має духовне коріння. Не консультувати, говорячи лише «у тебе відкидання, саможалість», а не про стосунки з Богом. Вираз «Бог мені сказав…» не відповідь: треба уточнювати, як і що саме.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Консультування – допомога людині на основі Слова Божого прийти до повноти життя.</p></aside><h3 class="sec" id="ch1-s2">Як ставитися до людини</h3><h4 class="sub">1. Атмосфера довіри</h4><p>Головне – створити атмосферу довіри, інакше людина не розкриє серця. У ній тепло, турбота, повага, щирість без упередження. Людина з проблемою – не «мішок із цукром», а особистість за образом Божим. Відділяй грішника від гріха, не суди, а намагайся зрозуміти. Ісус зупинився заради жінки з кровотечею за людьми. Люди потребують поваги.</p><h4 class="sub">2. Говорити однією мовою</h4><p>З’ясуй погляди людини, віру, рани в серці: наприклад, якщо батько її бив, її уявлення про батьківство інакше. Людина може кивати, а діяти інакше. Багато хто воює всередині, а на обличчі усміхається. З’ясуй внутрішні конфлікти.</p><h4 class="sub">3. Не показувати, що ти кращий</h4><p>Будь реальним, не говори як супермен; можна навести приклади зі свого життя.</p><h4 class="sub">4. Зберігати таємниці</h4><p>Той, хто розносить, відкриває таємницю, а вірна людина приховує. Хам оприлюднив наготу батька й отримав прокляття. Не припиняй поважати людей через те, що вони відкрили.</p><figure class="scripture"><blockquote><sup>13</sup>Хто ходить обмовником, той зраджує таємниці, але гідний довір’я приховує секрет.</blockquote><figcaption><span class="ref">Приповісті 11:13</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Довіра, повага, спільна мова й збереження таємниць – основа консультування.</p></aside><section class="quiz" id="quiz1" data-ch="1"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 1</span><h3>Основи консультування</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="1"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що таке християнське консультування, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Будь-яка життєва порада</li><li><span class="box"></span><b>Б)</b> Психологічне тестування</li><li><span class="box"></span><b>В)</b> Розмова про погоду</li><li><span class="box"></span><b>Г)</b> Порада, заснована на Слові Божому, що скеровує людину в Божу волю</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Яку помилку, за уроком, припустилися троє друзів Іова? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Вони замовкли</li><li><span class="box"></span><b>Б)</b> Вони говорили: «Ти згрішив, тому й проблеми», хоча Іов не грішив; вони консультували неправильно</li><li><span class="box"></span><b>В)</b> Вони допомогли</li><li><span class="box"></span><b>Г)</b> Вони молилися</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Колега скаржиться, що ніхто з ним не хоче спілкуватися, і постійно скаржиться на всіх. Що, за уроком, може відбуватися? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Люди його не люблять без причини</li><li><span class="box"></span><b>Б)</b> Це воля Божа</li><li><span class="box"></span><b>В)</b> Його скарги дратують людей, і він сам відштовхує їх; консультант має допомогти побачити реальну картину</li><li><span class="box"></span><b>Г)</b> Нічого не відбувається</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Людина каже: «Бог мені сказав…» і не хоче розбирати проблему. Як діяти консультанту, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> «Бог мені сказав» не є відповіддю: уточнювати, як і що саме, бо це може бути прикриття проблеми</li><li><span class="box"></span><b>Б)</b> Прийняти без запитань</li><li><span class="box"></span><b>В)</b> Засудити</li><li><span class="box"></span><b>Г)</b> Мовчати</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Чому консультант не повинен «носити людину на руках», за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бо це складно</li><li><span class="box"></span><b>Б)</b> Бо людина цього не хоче</li><li><span class="box"></span><b>В)</b> Бо це заборонено</li><li><span class="box"></span><b>Г)</b> Його завдання – допомогти виявити те, що в людині вже є, щоб вона сама вийшла з проблеми</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Що, за уроком, є найголовнішим для атмосфери консультування? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Строгість</li><li><span class="box"></span><b>Б)</b> Довіра: тепло, турбота, повага й щирість без упередження</li><li><span class="box"></span><b>В)</b> Гумор</li><li><span class="box"></span><b>Г)</b> Швидкість</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> До вас приходить жінка з проблемою, і ви думаєте: «Мішок із цукром». Що, за уроком, не так? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Нічого</li><li><span class="box"></span><b>Б)</b> Це правильно</li><li><span class="box"></span><b>В)</b> Людина – особистість за образом Божим; відділяй грішника від гріха, не суди, а прагни зрозуміти</li><li><span class="box"></span><b>Г)</b> Це допомагає</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Хам, за історією з Ноєм, отримав прокляття за що? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> За те, що розголосив наготу батька: хто розносить таємниці, відкриває їх</li><li><span class="box"></span><b>Б)</b> За п’янство</li><li><span class="box"></span><b>В)</b> За гординю</li><li><span class="box"></span><b>Г)</b> За мовчання</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які цілі консультування називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Привести до самоусвідомлення</li><li><span class="box"></span><b>Б)</b> Дати людині готові рішення на все життя</li><li><span class="box"></span><b>В)</b> Допомогти змінити поведінку</li><li><span class="box"></span><b>Г)</b> Зробити людину залежною від консультанта</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що, за уроком, створює атмосферу довіри? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Повага</li><li><span class="box"></span><b>Б)</b> Зверхність</li><li><span class="box"></span><b>В)</b> Збереження таємниць</li><li><span class="box"></span><b>Г)</b> Осуд</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Люди вчаться переважно не словами, а тим, що бачать і повторюють. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Консультант має показати, що він набагато кращий за консультованого. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> З’єднайте ціль консультування з описом. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Самоусвідомлення <span class="blank"></span></li><li>Підтримка <span class="blank"></span></li><li>Духовна повнота <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Допомога в кризі</li><li><b>Б)</b> Корінь більшості проблем</li><li><b>В)</b> Побачити себе як причину страждання</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розташуйте за уроком, як Іов вийшов зі своєї ситуації. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Бог дає вдвічі більше</li><li><span class="blank sm"></span> Хибні поради друзів</li><li><span class="blank sm"></span> Четвертий консультант скеровує до Бога</li><li><span class="blank sm"></span> Утрата майна, дітей і здоров’я</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Хто у вашому житті виконує роль консультанта (чи ви самі) і чого цьому служінню зараз найбільше бракує? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="2"><header class="ch-head" id="ch2"><span class="ch-num">Розділ II</span><h2>Тактики і небезпеки</h2><p class="ch-sub">слухати й реагувати; мотиви, сигнали, знос</p></header><h3 class="sec" id="ch2-s1">Тактики консультування</h3><h4 class="sub">1. Нероздільна увага</h4><p>Контакт очима, розслаблена поза, природні рухи, доброта й ввічливість. Заважають: суворість, нетерплячість, зайняття іншим під час слухання, втома (краще консультувати бадьорим).</p><h4 class="sub">2. Вміти слухати й чути</h4><p>Без упередження: забудь старе, відклади конфлікт. Не поспішай судити й не погоджуйся. Улови інформацію з очей, пози, виразу обличчя. Коли людина плаче чи мовчить, не пропускай: це найболючіші моменти; потерпи, не обов’язково консультувати за один раз.</p><h4 class="sub">3. Реагувати</h4><p>Люди можуть довго говорити про неважливе, захищаючи себе. Три методи: скеровувати розмову запитаннями, що потребують пояснення («Розкажіть про вашу сім’ю»), а не «так/ні»; називати речі своїми іменами за Словом Божим («Ви були неправі, за Біблією треба було так»); інформувати фактами (іноді проблема розв’язується, коли просто розкажеш, що правильно).</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Слухай уважно без упередження, ставлячи запитання й називаючи речі за Словом.</p></aside><h3 class="sec" id="ch2-s2">Слабкості й небезпеки консультанта</h3><h4 class="sub">1. Неправильні мотиви</h4><p>Показати себе; шукати стосунків (консультація не база для знайомств; потреби консультанта мають бути заповнені заздалегідь); бажання контролювати; бажання врятувати людину, яка може сама (дати їй навчитися, а рішення нехай ухвалює сама); цікавість. Не консультуй з неправильними мотивами.</p><h4 class="sub">2. Маніпуляція</h4><p>Чи не маніпулює мною консультований? Чи не хоче, щоб я прикрив гріх? Чи не шукає він лише уваги й стосунків? Якщо так, відпусти.</p><h4 class="sub">3. Глибокі емоційні зв’язки</h4><p>Жалість – поганий порадник: друг не той, хто не ранить, а хто реально допомагає. Іноді люди відмовляються змінюватися, щоб не розлучатися з тобою.</p><h4 class="sub">4. Стать консультованого</h4><p>Між чоловіком і жінкою може виникнути теплота, яка набуває форми потягу. Принцип: не давай приводу тим, хто шукає привід. Небезпечно, коли консультований привабливий і любить флірт, а консультант емоційно й сексуально потребує; тоді краще не продовжувати. Сестри, які «консультують» невіруючих чоловіків, а потім хочуть одружитися, маніпулюють ситуацією; новонаверненому варто почекати пів року. Потрібне підвищене самообладання.</p><h4 class="sub">5. Як захиститися</h4><p>Слово Боже щодня, життя за принципами. Гаряча молитва (кличе Боже визволення, присутність, чутливість; Псалом 50:15). Покладатися на Духа. Стежити за думками: «Я вирішую, про що мені думати» (Томмі Барнет); Филип’ян 4:8. Мати людину, перед якою відповідаєш: для молитовної підтримки й підзвітності. Ніколи не казати «зі мною такого не станеться». Якщо впав – є прощення, але якщо справа заважає, краще займатися іншим.</p><figure class="scripture"><blockquote><sup>12</sup>Тому, хто вважає, що він стоїть, нехай стережеться, аби не впав.</blockquote><figcaption><span class="ref">1 Коринтян 10:12</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>9</sup>Якщо ж визнаємо свої гріхи, то Він вірний і праведний, щоб простити нам гріхи й очистити нас від усякої неправедності.</blockquote><figcaption><span class="ref">1 Івана 1:9</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>8</sup>Наостанку, брати: те, що істинне, що чесне, що справедливе, що чисте, що любе, що гідне хвали, – коли яка чеснота або коли яка похвала, – про це роздумуйте.</blockquote><figcaption><span class="ref">Филип’ян 4:8</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">6. Тривожні сигнали з боку консультованого</h4><p>Зростаюча залежність; постійні похвали; скарги на самотність при веселості з іншими; постійні подарунки; любов до фізичного контакту; провокаційний одяг. Жодного не слід розцінювати окремо: потрібне поєднання кількох і підтвердження в дусі; бувають люди вільного характеру, які без поганих думок гладять і поправляють.</p><h4 class="sub">7. Сигнали з боку консультанта</h4><p>Постійно думає про консультованого; порівнює його з дружиною (чоловіком); шукає приводи зустрітись поза консультацією; сексуальні фантазії; ділиться своїми глибокими проблемами. Тут перевіряє себе сам.</p><h4 class="sub">8. Знос консультанта</h4><p>Причини: ситуація не покращується; надто близько сприймає чужі проблеми (позбудься цього після розмови, не зберігай усередині). Ознаки: втрата ідеалів, втрата енергії, безсилля, хронічна втома, дратівливість, холодність, законництво. Як уникнути: духовна міцність (молитва, Слово); підтримка людини, що любить тебе безумовно і з якою можна плакати (не контролера); перевіряти, чи не шукаєш гідності в досягненнях (гідність у Христі); відпочинок (інша справа, інколи з сім’єю, інколи наодинці з Богом); делегувати; правильні пріоритети (Марка 1:36– 38); помазання; консультант теж потребує консультанта.</p><figure class="scripture"><blockquote><sup>36</sup>І поспішили за Ним Симон і ті, хто з ним, <sup>37</sup>і знайшли Його та й кажуть Йому: Всі Тебе шукають! <sup>38</sup>А Він відповів їм: Ходімо в інші місця, до сусідніх сіл [та міст], щоб і там проповідувати, адже на те Я і прийшов.</blockquote><figcaption><span class="ref">Марка 1:36–38</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Консультант береже серце й мотиви, має підзвітність, відпочинок і підтримку.</p></aside><section class="quiz" id="quiz2" data-ch="2"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 2</span><h3>Тактики і небезпеки</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="2"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що, за уроком, означає «нероздільна увага» консультанта? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Пильно дивитися, щоб налякати</li><li><span class="box"></span><b>Б)</b> Контакт очима, розслаблена поза, природні рухи, доброта й ввічливість; заважають суворість, нетерплячість, втома</li><li><span class="box"></span><b>В)</b> Одночасно робити інші справи</li><li><span class="box"></span><b>Г)</b> Говорити без пауз</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Консультований раптом заплакав. Як діяти, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Змінити тему</li><li><span class="box"></span><b>Б)</b> Закінчити розмову</li><li><span class="box"></span><b>В)</b> Не проходити повз: ці моменти найболючіші, треба уточнити й потерпіти; не обов’язково все за один раз</li><li><span class="box"></span><b>Г)</b> Не помітити</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Як, за уроком, треба ставити запитання? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Так, щоб потрібні були пояснення («Розкажіть про вашу сім’ю»), а не просте «так/ні»</li><li><span class="box"></span><b>Б)</b> Лише «так/ні»</li><li><span class="box"></span><b>В)</b> Лише закриті</li><li><span class="box"></span><b>Г)</b> Усі однозначні</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Яка небезпека, за уроком, виникає між консультантом і консультованим протилежної статі? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Жодної</li><li><span class="box"></span><b>Б)</b> Лише в церкві</li><li><span class="box"></span><b>В)</b> Лише в юності</li><li><span class="box"></span><b>Г)</b> Теплота може набути форми потягу; принцип: не давай приводу тим, хто шукає привід</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Консультант цікавиться життям привабливої знайомої «з любові до науки». Що, за уроком, це за мотив? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Любов</li><li><span class="box"></span><b>Б)</b> Цікавість: це неправильний мотив – не допомогти, а накопичити інформацію</li><li><span class="box"></span><b>В)</b> Милосердя</li><li><span class="box"></span><b>Г)</b> Підзвітність</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Як, за уроком, консультанту захиститися від інтимних стосунків із консультованим? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Уникати молитви</li><li><span class="box"></span><b>Б)</b> Покладатися на себе</li><li><span class="box"></span><b>В)</b> Слово Боже, гаряча молитва, довіра Духу, контроль думок, підзвітність; не казати «зі мною такого не станеться»</li><li><span class="box"></span><b>Г)</b> Ігнорувати проблему</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Що, за уроком, має робити консультант, який помічає, що подобається консультованій? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Негайно взяти під контроль ситуацію: підзвітність, молитва, а за потреби не продовжувати консультування</li><li><span class="box"></span><b>Б)</b> Продовжувати як є</li><li><span class="box"></span><b>В)</b> Приховувати</li><li><span class="box"></span><b>Г)</b> Зустрічатися поза консультацією</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Що, за уроком, є ознакою зносу консультанта? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бадьорість</li><li><span class="box"></span><b>Б)</b> Мотивація</li><li><span class="box"></span><b>В)</b> Радість</li><li><span class="box"></span><b>Г)</b> Втрата ідеалів, енергії, хронічна втома, дратівливість, холодність, законництво</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Що належить до неправильних мотивів консультування? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бажання показати себе</li><li><span class="box"></span><b>Б)</b> Бажання допомогти</li><li><span class="box"></span><b>В)</b> Бажання контролювати</li><li><span class="box"></span><b>Г)</b> Любов до людини</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що допомагає уникнути зносу? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Відпочинок</li><li><span class="box"></span><b>Б)</b> Постійна праця без перерв</li><li><span class="box"></span><b>В)</b> Підтримка того, хто любить безумовно</li><li><span class="box"></span><b>Г)</b> Збільшення навантаження</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Один тривожний сигнал, за уроком, ще не доводить, що є проблема: потрібне поєднання кількох і підтвердження в дусі. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Консультант не потребує власного консультанта. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> З’єднайте сигнал з його боком. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Постійні подарунки <span class="blank"></span></li><li>Сексуальні фантазії <span class="blank"></span></li><li>Зростаюча залежність <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Консультований</li><li><b>Б)</b> Консультант</li><li><b>В)</b> Консультований</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розташуйте за уроком кроки, як захиститися від інтимних стосунків із консультованим. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Підзвітність перед довіреною людиною</li><li><span class="blank sm"></span> Контроль думок</li><li><span class="blank sm"></span> Слово Боже щодня</li><li><span class="blank sm"></span> Гаряча молитва</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Хто є вашою людиною підзвітності й підтримки, перед якою ви можете бути самим собою, і як ви цього піклуєтеся? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="3"><header class="ch-head" id="ch3"><span class="ch-num">Розділ III</span><h2>Відкидання, хвилювання, провина, криза</h2><p class="ch-sub">причини й допомога</p></header><h3 class="sec" id="ch3-s1">Відкидання й хвилювання</h3><h4 class="sub">1. Відкидання</h4><p>Це наслідок неприйняття іншими. Причини: внутрішньоутробне (небажана дитина чи не тієї статі); серед родичів і ровесників (колір шкіри, повнота, зріст); соціальний статус; фізичні недоліки; розлучення; нерозділене кохання; відкидання в сім’ї (відсутність спілкування, дружби) і навіть у церкві. Не ставитися до людини як до мішка з цукром.</p><h4 class="sub">2. Самовідкидання</h4><p>Людина не приймає себе і хоче стати кимось іншим. Ти дивовижно створений, нікого, як ти, немає. Конфлікти між батьками, усиновлення, розлучення, насильство, слова вчителя породжують самовідкидання; його часто «покладають» на людину інші.</p><figure class="scripture"><blockquote><sup>14</sup>Я славлю Тебе за те, що Ти так дивовижно і пречудово створив мене! Дивовижні всі Твої вчинки, і моя душа це дуже добре усвідомлює.</blockquote><figcaption><span class="ref">Пс. 139:14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Ознаки відкидання</h4><p>Бунтівництво, гіркота, саможалість, небажання брати відповідальність, почуття провини й меншовартості, відсутність безпеки, безнадійність, недовіра, жорстокосердя, бажання бути досконалим у всьому.</p><h4 class="sub">4. Розв’язання</h4><p>Пробачити кожного, хто відкинув, поіменно й за конкретні ситуації («Мамо, я прощаю тебе»); розірвати душевні зв’язки (з колишніми партнерами); за розлучення попросити в Бога прощення за свою частину.</p><h4 class="sub">5. Хвилювання</h4><p>Панічний страх або надмірна турбота. Впливає на мислення (забудькуватість, повільність) і тіло (виразка, безсоння, втома, головний біль, аритмія, алергія). Звідки: відчуття загрози, конфлікти, страх (невдач, майбутнього, поразки, відкидання), невдоволені потреби. Біблія: не турбуйтеся, Отець знає; усі турботи покладіть на Нього; змінюйте мислення.</p><figure class="scripture long"><blockquote><sup>25</sup>Задля цього кажу вам: не журіться про своє життя, що будете їсти або що будете пити, ні про своє тіло, у що одягнетеся. Хіба душа не більша за їжу, а тіло – за одяг? <sup>26</sup>Погляньте на птахів небесних, які не сіють, не жнуть і в клуні не збирають, та ваш Небесний Отець годує їх; хіба ви не цінніші від них? <sup>27</sup>Хто ж із вас, турбуючись, може додати до свого росту хоч один лікоть? <sup>28</sup>І чого про одяг клопочетеся? Погляньте на польові лілеї, як вони ростуть: не працюють і не прядуть; <sup>29</sup>та кажу вам, що й Соломон у всій своїй славі не одягався так, як одна з них. <sup>30</sup>Якщо ж польову траву, яка сьогодні є, а завтра буде вкинута в піч, Бог так одягає, то чи не краще одягне вас, маловіри? <sup>31</sup>Тож не журіться і не говоріть: Що будемо їсти? Або: Що будемо пити? Чи: В що зодягнемося? <sup>32</sup>Адже цього всього язичники шукають. Бо ж знає ваш Отець Небесний, що цього всього потребуєте. <sup>33</sup>Шукайте перш за все Царства Божого і Його праведності, а це все вам додасться. <sup>34</sup>Отже, не журіться про завтрашній день, бо завтрашній день і сам про себе поклопочеться; вистачає дневі власних турбот.</blockquote><figcaption><span class="ref">Матвія 6:25–34</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>7</sup>Покладіть на Нього всі ваші турботи, бо Він дбає про вас.</blockquote><figcaption><span class="ref">1 Петра 5:7</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>6</sup>Нічим не журіться, але в усьому молитвою та благаннями з подякою висловлюйте ваші прохання Богові. <sup>7</sup>І мир Божий, який перевищує всяке розуміння, нехай береже ваші серця і ваші думки в Христі Ісусі. <sup>8</sup>Наостанку, брати: те, що істинне, що чесне, що справедливе, що чисте, що любе, що гідне хвали, – коли яка чеснота або коли яка похвала, – про це роздумуйте.</blockquote><figcaption><span class="ref">Филип’ян 4:6–8</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>18</sup>але досконала любов проганяє страх, оскільки страх несе страждання; хто ж боїться, той недосконалий у любові.</blockquote><figcaption><span class="ref">1 Івана 4:18</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">6. Як допомогти</h4><p>Консультант перевіряє свої хвилювання. Бути спокійним, вселяти довіру, показати любов. З’ясувати причини запитаннями, відмічаючи реакції (очі, рухи, подих). Допомогти вийти з проблеми, повернути до Біблії, молитися докладно.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>Відкидання лікується прощенням і розривом зв’язків, а хвилювання – довірою Богові та зміною мислення.</p></aside><h3 class="sec" id="ch3-s2">Почуття провини й криза</h3><h4 class="sub">1. Дві провини</h4><p>Об’єктивна (порушили, але не відчуваємо) і суб’єктивна (відчуваємо). Почуття не показник: грішать усі, незалежно від відчуттів. Іноді треба спокійно посидіти з Богом, згадати й покаятися за гріхи, які не викликали осуду. Бувають почуття провини, коли гріха немає. Біблійний смуток веде до покаяння, а самозвинувачення – ні.</p><figure class="scripture"><blockquote><sup>23</sup>адже всі згрішили й позбавлені Божої слави,</blockquote><figcaption><span class="ref">Римлян 3:23</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>8</sup>Бо хоч і засмутив я вас посланням, та не каюся, хоч і каявся, оскільки бачу, що послання, хоч і тимчасово, засмутило вас; <sup>9</sup>тепер я радію не тому, що ви були засмучені, а тому, що засмутилися на покаяння. Бо ви по‑Божому засмутилися, щоб ні в чому не зазнати втрати через нас. <sup>10</sup>Адже смуток, що по‑Божому, приносить покаяння на спасіння, – ним не слід журитися, а смуток світу спричиняє смерть.</blockquote><figcaption><span class="ref">2 Коринтян 7:8–10</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. 1 Івана 1:9</h4><p>не для емоційного полегшення: справжнє покаяння – зміна мислення, поворот на 180 градусів; поки любиш гріх, покаяння ще не прийшло.</p><h4 class="sub">3. Причини провини</h4><p>Порушення закону (держави, Біблії, особистих переконань, суспільного порядку); минулі переживання й нереалістичні очікування батьків; критика; лідери церкви, що вчать неправильно про гріх (називають гріхом те, що ним не є: годинник, краватка, телевізор); неправильне виховання совісті (її не завжди можна використовувати для оцінки); суспільний тиск; духовна провина від Адама. Провина веде або до втечі від Бога, або до покаяння.</p><figure class="scripture"><blockquote><sup>15</sup>Вони виявляють, що діло Закону написане в їхніх серцях, про що свідчить їм їхнє сумління і думки, які то засуджують, то виправдовують одна одну,</blockquote><figcaption><span class="ref">Римлян 2:15</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>1</sup>Дух же ясно говорить, що в останні часи деякі відступлять від віри, прислухаючись до спокусливих духів та вчення бісів; <sup>2</sup>говорячи в лицемірстві неправду, вони знищили власне сумління,</blockquote><figcaption><span class="ref">1 Тимофія 4:1–2</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>10</sup>Адже коли хто бачить, як ти, маючи знання, перебуваєш в ідольській святині, – то хіба його сумління, яке є немічне, не буде заохочене їсти ідольські жертви? <sup>11</sup>І через твоє знання загине немічний брат, за якого Христос помер. <sup>12</sup>Таким чином, коли ви грішите проти братів, вражаючи їхнє немічне сумління, ви грішите проти Христа.</blockquote><figcaption><span class="ref">1 Коринтян 8:10–12</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>25</sup>Їжте все, що продають на ринку, без жодного докору сумління, <sup>26</sup>адже Господня земля і все, що на ній! <sup>27</sup>Коли хто з невірних запросить вас, і захочете піти, їжте все, що вам запропонують, без жодного докору сумління. <sup>28</sup>Та якщо хтось вам скаже: Це з принесеного в жертву ідолам, – не їжте заради того, хто сказав, та через сумління. [Адже Господня земля і все, що на ній]. <sup>29</sup>Маю на увазі не своє сумління, але іншого. Однак, чому моя свобода має визначатися сумлінням іншого?</blockquote><figcaption><span class="ref">1 Коринтян 10:25–29</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>8</sup>Коли скажемо, що не маємо гріха, то самих себе обманюємо, і немає в нас правди. <sup>9</sup>Якщо ж визнаємо свої гріхи, то Він вірний і праведний, щоб простити нам гріхи й очистити нас від усякої неправедності. <sup>10</sup>А коли скажемо, що ми не згрішили, то робимо Його неправдомовним, і Його слово в нас не перебуває.</blockquote><figcaption><span class="ref">1 Івана 1:8–10</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">4. Ознаки</h4><p>Самозахист (перекручування фактів, звинувачення інших, відмова від відповідальності); самоосуд; моральний біль (наприклад, у учасників війни); постійне каяття невідомо за що.</p><h4 class="sub">5. Розв’язання</h4><p>Покаяння й прощення (1 Івана 1:9), у разі залежності перед кимось; не говорити «я допомагаю, а ти мене звинувачуєш»: це прояв проблеми; не казати, що гріх не гріх, але ставитися з любов’ю; діяти, як пророк Нафан із Давидом; дати моральний стандарт: де порушено – прощення й зміна, де нічого – пояснити.</p><figure class="scripture long"><blockquote><sup>1</sup>Тому Господь послав до Давида Натана, який, прийшовши, розповів Давидові: В одному місті жили два чоловіки: один – багатий, а другий – бідний. <sup>2</sup>У багатого були отари овець і дуже великі стада, <sup>3</sup>а в бідняка не було нічого, крім однієї малої овечки, яку він купив маленькою і вигодував. Вона в нього разом з його дітьми виросла. Вона їла його хліб, пила з його чаші та на його грудях засинала, – була йому як дочка. <sup>4</sup>Якось до багатого чоловіка зайшов подорожній, і той пожалів узяти щось зі своєї отари, або зі своїх стад, аби пригостити подорожнього, що до нього прийшов, а він відібрав овечку бідняка й приготував її для чоловіка, який до нього зайшов. <sup>5</sup>Давид спалахнув великим гнівом на того чоловіка, і сказав Натанові: Як живий Господь, чоловік, який це вчинив, заслуговує смерті <sup>6</sup>за те, що вчинив таку ганебну річ, і не виявив жодного співчуття; а за ту овечку він має заплатити в чотирикратному розмірі! <sup>7</sup>Тоді Натан промовив до Давида: Ти є тим чоловіком! Так говорить Господь, Бог Ізраїлю: Я помазав тебе царем над Ізраїлем, і Я спас тебе від рук Саула! <sup>8</sup>Я дав тобі дім твого володаря, та жінок твого володаря на твоє лоно, Я дав тобі весь рід Ізраїля і Юди, а якби й цього було замало, додав би тобі ще більше! <sup>9</sup>Чому ж ти так зневажливо поставився до Господніх слів, учинивши перед Ним злочин? Хеттейця Урію ти віддав під меч, убивши його руками аммонійців, а його дружину ти взяв собі за жінку. <sup>10</sup>Тому з цього часу меч повіки не відступить від твого дому через те, що ти зневаживши Мене, взяв дружину хеттейця Урії, щоб вона була твоєю дружиною! <sup>11</sup>Так говорить Господь: Ось Я виведу на тебе лихо з твого власного дому; на твоїх очах заберу від тебе дружин і віддам їх найближчому до тебе, який матиме з ними статеві стосунки серед ясного дня. <sup>12</sup>Ти все це вчинив таємно, а Я здійсню це провіщення перед усім Ізраїлем у світлі сонця. <sup>13</sup>Після цього Давид сказав Натанові: Я, дійсно, згрішив перед Господом! Натан же відповів Давиду: Господь простив твій гріх, – і ти не помреш. <sup>14</sup>Але оскільки ти своїм учинком збезчестив Господа перед Його ворогами, то твій новонароджений син неодмінно помре!</blockquote><figcaption><span class="ref">2 Самуїла 12:1–14</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">6. Криза</h4><p>Неминучий поворот, що може стати небезпекою або можливістю. Три види: аварійна (несподівана загроза, втрата, стреси один за одним, як в Іова), що розвивається (очікувана, як школа дитини чи смерть хворого), життєва (коли факти доходять до серця). Три етапи: шок, адаптація, відновлення. Вісім складових шоку: заперечення, бездушність, замішання, гнів, провина, непевність, страх, відкидання.</p><h4 class="sub">7. Втручання в кризу</h4><p>Мета – тимчасова емоційна допомога: допомогти пережити кризу, зменшити хвилювання, допомогти впоратися самому, витягти біблійні уроки. Як: налагодити контакт (першим зробити крок, слухати; повернути з фантазій у реальність, не руйнуючи віри; обережно з дотиком; пам’ятати, що жалість може штовхнути на шлюб зі співчуття); зменшити хвилювання (спокій консультанта, віра й упевненість без хибної надії, зосередження на необхідному, іноді ухвалювати рішення за людину); з’ясувати ресурси: духовні, особисті, міжособистісні, юридична, медична, фінансова, психологічна допомога.</p><aside class="key-idea"><span class="lbl">Головна думка</span><p>У провині й кризі допомагають покаяння, моральний стандарт і практична підтримка.</p></aside><section class="quiz" id="quiz3" data-ch="3"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 3</span><h3>Відкидання, провина, криза</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="3"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що таке відкидання, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Фізична хвороба</li><li><span class="box"></span><b>Б)</b> Спадкова риса</li><li><span class="box"></span><b>В)</b> Наслідок неприйняття іншими людьми, пережитого в житті</li><li><span class="box"></span><b>Г)</b> Покарання Бога</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Що, за уроком, є першим кроком розв’язання відкидання? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Пробачити кожного, хто відкинув, поіменно й за конкретні ситуації, і розірвати душевні зв’язки</li><li><span class="box"></span><b>Б)</b> Забути</li><li><span class="box"></span><b>В)</b> Помститися</li><li><span class="box"></span><b>Г)</b> Ігнорувати</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Чоловік постійно хвилюється, має безсоння й виразку. Що, за уроком, може бути причиною? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Лише вік</li><li><span class="box"></span><b>Б)</b> Лише погода</li><li><span class="box"></span><b>В)</b> Нічого</li><li><span class="box"></span><b>Г)</b> Інтенсивне хвилювання, що впливає на тіло: виразка, безсоння, втома, головний біль, аритмія</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Що, за уроком, є біблійним виходом з хвилювання? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Придушити емоції</li><li><span class="box"></span><b>Б)</b> Не турбуватися, а покласти турботи на Бога в молитві з подякою й змінити мислення</li><li><span class="box"></span><b>В)</b> Утекти</li><li><span class="box"></span><b>Г)</b> Не думати</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Чим об’єктивне почуття провини відрізняється від суб’єктивного? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Це одне й те саме</li><li><span class="box"></span><b>Б)</b> Об’єктивне – вигадане</li><li><span class="box"></span><b>В)</b> Об’єктивне – порушили, але не відчуваємо; суб’єктивне – відчуваємо</li><li><span class="box"></span><b>Г)</b> Суб’єктивне – від Бога</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Людина щоразу «кається» заради полегшення, але повертається до гріха. Що, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Справжнє покаяння – зміна мислення, поворот на 180 градусів, а не емоційне полегшення; поки любиш гріх, покаяння ще не прийшло</li><li><span class="box"></span><b>Б)</b> Це нормально</li><li><span class="box"></span><b>В)</b> Достатньо кількох слів</li><li><span class="box"></span><b>Г)</b> Це гріх проти Духа</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Вам лідери вчили, що носити годинник чи краватку – гріх. Що, за уроком, про такі почуття провини? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Це справжній гріх</li><li><span class="box"></span><b>Б)</b> Це від Бога</li><li><span class="box"></span><b>В)</b> Це доказ святості</li><li><span class="box"></span><b>Г)</b> Це від неправильного виховання совісті: гріхом названо те, що ним не є; треба пояснити, що тут нічого поганого</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Що, за уроком, є кризою? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Лише хвороба</li><li><span class="box"></span><b>Б)</b> Неминучий поворот у житті, що може стати небезпекою або можливістю для зростання</li><li><span class="box"></span><b>В)</b> Лише війна</li><li><span class="box"></span><b>Г)</b> Лише втрата грошей</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які ознаки відкидання називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бунтівництво</li><li><span class="box"></span><b>Б)</b> Радість</li><li><span class="box"></span><b>В)</b> Саможалість</li><li><span class="box"></span><b>Г)</b> Довіра</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Які етапи кризи називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Шок</li><li><span class="box"></span><b>Б)</b> Приховування</li><li><span class="box"></span><b>В)</b> Адаптація</li><li><span class="box"></span><b>Г)</b> Ігнорування</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Біблійний смуток веде до покаяння, а самозвинувачення не є від Бога. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Почуття провини завжди є точним показником гріха. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> З’єднайте причину провини з прикладом. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Неправильна теологія <span class="blank"></span></li><li>Занадто високі очікування <span class="blank"></span></li><li>Суспільний тиск <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Гріхом названо годинник чи краватку</li><li><b>Б)</b> Постійна критика навколо</li><li><b>В)</b> Дитина ніколи не чула «добре зроблено»</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розташуйте за уроком етапи кризи. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Шок</li><li><span class="blank sm"></span> Повернення до нормального життя</li><li><span class="blank sm"></span> Відновлення</li><li><span class="blank sm"></span> Адаптація</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Чи є у вашому житті відкидання або провина, які потрібно пробачити чи покаятися перед Богом, і що ви зробите першим? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="4"><header class="ch-head" id="ch4"><span class="ch-num">Розділ IV</span><h2>Депресія й гнів</h2><p class="ch-sub">ознаки, причини, допомога</p></header><h3 class="sec" id="ch4-s1">Депресія й гнів</h3><h4 class="sub">1. Депресія</h4><p>Ознаки: печаль із песимізмом і безнадійністю; хронічна втома, втрата інтересу; занижена самооцінка, постійна вина; загальмованість; безсоння; втрата апетиту. Причини фізичні (нестача відпочинку й фізичних вправ, наслідки наркоманії, неправильна дієта, жіночі цикли, пологи й аборти), психологічні (сімейна обстановка, стреси, втрата близьких і можливостей), рана в душі й прихований гнів (депресія може бути способом сховати гнів, бажання помсти), гріх і провина. Наслідки: відсутність радості, фізичні хвороби (слабка імунна система), занижена самооцінка, самогубство. Є й маскована депресія: агресивність, насильство, азартні ігри, сексуальні надмірності, постійні аварії.</p><h4 class="sub">2. Як допомагати</h4><p>Людина мало говорить, тож консультант активніший: виявити, на що гнівається; шукати рани; чи не думає погано про когось; втрати; відрізнити душевні проблеми від духовних; дивитися на сім’ю; залучати до дій (прогулянки, дрібні доручення); руйнувати негативне мислення; питати про самогубство; не ухвалювати великі рішення в депресії; докладна молитва й покаяння; зв’язати дух депресії; при думках про самогубство відректися від нього в ім’я Ісуса; залучити потрібну медичну й психологічну допомогу.</p><figure class="scripture"><blockquote><sup>22</sup>Веселе серце як хороші ліки, а пригнічений дух сушить кості.</blockquote><figcaption><span class="ref">Приповісті 17:22</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>8</sup>Наостанку, брати: те, що істинне, що чесне, що справедливе, що чисте, що любе, що гідне хвали, – коли яка чеснота або коли яка похвала, – про це роздумуйте.</blockquote><figcaption><span class="ref">Филип’ян 4:8</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Гнів</h4><p>Це Богом дана емоція; гнів Божий – контрольований і спрямований на гріх і несправедливість. Гнів людини – реакція на загрозу. Гніваючись, не грішіть. Гріховний гнів супроводжується помстою, гіркотою, ненавистю, осудом; виявляється злослів’ям і діями. Причини: алергія, їжа, спадковість, спілкування, несправедливість, розчарування, загрози й рани, завищені очікування. Наслідки: придушений гнів виявляється хворобами, хвилюванням, страхом, депресією, аваріями, засмучує Духа. Види агресії: пряма, пасивна, перенаправлена. «Око за око» Ісус скасував. Вихід: визнати гнів; висповідати перед Богом і людьми, на яких гнівався; навчитися правильно виражати (спершу заспокоїтися); не зберігати гнів; навчитися самоконтролю.</p><figure class="scripture"><blockquote><sup>18</sup>Оскільки гнів Божий з’являється з неба на всяку безбожність і неправедність людей, які правду стримують неправедністю;</blockquote><figcaption><span class="ref">Римлян 1:18</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>26</sup>Гніваючись, – не грішіть; сонце хай не заходить у вашому гніві,</blockquote><figcaption><span class="ref">Ефесян 4:26</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>19</sup>Знайте, мої улюблені брати: кожна людина нехай буде швидкою до слухання, стримана в словах, повільна на гнів.</blockquote><figcaption><span class="ref">Якова 1:19</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>23</sup>коли Його лихословили, Він не лихословив; страждаючи, не погрожував, а передавав Тому, Хто судить справедливо.</blockquote><figcaption><span class="ref">1 Петра 2:23</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>32</sup>Стримана людина краща за хоробру, і хто володіє собою, сильніший від того, хто завойовує міста.</blockquote><figcaption><span class="ref">Приповісті 16:32</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>24</sup>Не товаришуй з гнівливим, і з людиною запальною не спілкуйся, <sup>25</sup>щоб ти, бува, не перейняв його звички і не поставив капкана на власну душу.</blockquote><figcaption><span class="ref">Приповісті 22:24–25</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>38</sup>Ви чули, що було сказано: Око за око і зуб за зуб. <sup>39</sup>А Я кажу вам не противитися злу; але якщо тебе хто вдарить у твою праву щоку, підстав йому й другу. <span class="gap">…</span> <sup>43</sup>Ви чули, що було сказано: Люби ближнього свого і ненавидь свого ворога. <sup>44</sup>А Я кажу вам: Любіть ваших ворогів, [благословляйте тих, хто проклинає вас, робіть добро тим, хто ненавидить вас], і моліться за тих, які [кривдять і] переслідують вас,</blockquote><figcaption><span class="ref">Матвія 5:38–39, 43–44</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Депресія часто приховує гнів і рани, а гнів потрібно визнати, висповідати й навчитися контролювати.</p></aside><section class="quiz" id="quiz4" data-ch="4"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 4</span><h3>Депресія й гнів</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="4"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Які ознаки депресії називає урок? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Печаль із песимізмом і безнадійністю, хронічна втома, занижена самооцінка, загальмованість, безсоння, втрата апетиту</li><li><span class="box"></span><b>Б)</b> Лише швидка мова</li><li><span class="box"></span><b>В)</b> Радість і енергія</li><li><span class="box"></span><b>Г)</b> Надмірна активність</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Чому депресія, за уроком, іноді є способом приховати гнів? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Бо вона вдячна</li><li><span class="box"></span><b>Б)</b> Бо хоче відпочити</li><li><span class="box"></span><b>В)</b> Бо любить усамітнення</li><li><span class="box"></span><b>Г)</b> Людина замість вибуху «закриває двері» і ховає рану, бажання помститися й гнів</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Що, за уроком, робить консультант із людиною в депресії, яка мало говорить? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Чекає, поки заговорить</li><li><span class="box"></span><b>Б)</b> Він активніший: виявляє гнів і рани, з’ясовує втрати, дивиться на сім’ю, залучає до дій і руйнує негативне мислення</li><li><span class="box"></span><b>В)</b> Залишає її</li><li><span class="box"></span><b>Г)</b> Тисне на неї</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Людина має думки про самогубство. Що, за уроком, робити? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Ігнорувати</li><li><span class="box"></span><b>Б)</b> Говорити про інше</li><li><span class="box"></span><b>В)</b> Запитати про це, відректися від нього в ім’я Ісуса й залучити потрібну медичну й психологічну допомогу</li><li><span class="box"></span><b>Г)</b> Чекати</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Що, за уроком, є гнівом Божим? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Контрольований, інтенсивний гнів, що узгоджується з Божою любов’ю і спрямований на гріх і несправедливість</li><li><span class="box"></span><b>Б)</b> Нестримний вибух</li><li><span class="box"></span><b>В)</b> Помста</li><li><span class="box"></span><b>Г)</b> Образа</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Чим людський гнів може бути гріховним? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Коли контролюється</li><li><span class="box"></span><b>Б)</b> Коли виражається спокійно</li><li><span class="box"></span><b>В)</b> Коли відсутній</li><li><span class="box"></span><b>Г)</b> Коли супроводжується помстою, гіркотою, ненавистю, осудом; виявляється злослів’ям чи діями</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> На роботі поліція затримала чоловіка за крадіжку, а вдома він б’є дружину. Який вид агресії це, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Пряма</li><li><span class="box"></span><b>Б)</b> Перенаправлена: гнів спрямовано не на того, хто розгнівав, а на невинного</li><li><span class="box"></span><b>В)</b> Пасивна</li><li><span class="box"></span><b>Г)</b> Конструктивна</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Як, за уроком, вийти з гніву? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Придушити</li><li><span class="box"></span><b>Б)</b> Помститися</li><li><span class="box"></span><b>В)</b> Визнати гнів, висповідати Богові й людям, навчитися правильно виражати (спершу заспокоїтися), не зберігати гнів і вчитися самоконтролю</li><li><span class="box"></span><b>Г)</b> Ігнорувати</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які причини депресії називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Нестача відпочинку й фізичних вправ</li><li><span class="box"></span><b>Б)</b> Надмірна радість</li><li><span class="box"></span><b>В)</b> Прихований гнів</li><li><span class="box"></span><b>Г)</b> Спокійна сім’я</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Які види агресії називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Пряма</li><li><span class="box"></span><b>Б)</b> Мовчазна радість</li><li><span class="box"></span><b>В)</b> Пасивна</li><li><span class="box"></span><b>Г)</b> Молитовна</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Гнів, за уроком, – це Богом дана емоція, корисна, коли правильно спрямована. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Депресія завжди проявляється відкритою сумністю. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> З’єднайте вид депресії з проявом. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Маскована <span class="blank"></span></li><li>Звична <span class="blank"></span></li><li>Причина – гнів <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Прихована помста</li><li><b>Б)</b> Агресія, азартні ігри, постійні аварії</li><li><b>В)</b> Печаль і безнадійність</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розташуйте за уроком кроки виходу з гніву. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> Навчитися правильно виражати</li><li><span class="blank sm"></span> Навчитися самоконтролю</li><li><span class="blank sm"></span> Визнати гнів</li><li><span class="blank sm"></span> Висповідати перед Богом і людьми</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Де у вашому житті прихований гнів чи рана, що може вести до депресії, і що ви зробите, щоб їх визнати й пройти? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article><article class="chapter" data-ch="5"><header class="ch-head" id="ch5"><span class="ch-num">Розділ V</span><h2>Самотність, самооцінка, залежності</h2><p class="ch-sub">смуток; заниження самооцінки; залежність</p></header><h3 class="sec" id="ch5-s1">Самотність, смуток, самооцінка й залежності</h3><h4 class="sub">1. Самотність</h4><p>Усвідомлення відсутності близького контакту; можна бути в натовпі й самотнім. «Не добре бути чоловікові самому». Причини: суспільна ситуація, неправильний погляд на світ, розрив із Богом. Наркотики, тусовки, праця, спорт самотності не усувають. Наслідки: занижена самооцінка, депресія, алкоголь. Допомога: визнати проблему, з’ясувати джерело, докладно молитися й каятися, змінити мислення, підняти самооцінку Словом, виявити дари, допомогти ризикнути в спілкуванні, показати безумовну любов Бога.</p><figure class="scripture"><blockquote><sup>18</sup>Далі сказав Господь Бог: Недобре бути чоловікові самотнім. Створю для нього помічника, відповідного йому.</blockquote><figcaption><span class="ref">Буття 2:18</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>16</sup>Обернися до мене і помилуй мене, бо я самотній і нещасний.</blockquote><figcaption><span class="ref">Пс. 25:16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>16</sup>Бо так Бог полюбив світ, що дав [Свого] Єдинородного Сина, щоб кожен, хто вірить у Нього, не загинув, але мав життя вічне.</blockquote><figcaption><span class="ref">Івана 3:16</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">2. Смуток і печаль</h4><p>Нормальна реакція на втрату; Ісус узяв на Себе наші печалі. Після смерті подружжя потрібно 3–4 роки, щоб повернутися до норми. Тривалий смуток – ознака нездорового зв’язку. Не поспішай «перескочити» смуток; Авраам оплакував Сарру. Дітям померлих батьків потрібна довга увага. Не порівнювати, хто більше плаче.</p><figure class="scripture"><blockquote><sup>4</sup>Коли б я пішов навіть долиною смертної тіні, не боятимуся лиха, бо Ти зі мною. Твій жезл і Твій посох втішатимуть мене.</blockquote><figcaption><span class="ref">Пс. 23:4</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>5</sup>Він же був зранений за наші гріхи, був катований за наші провини. Завдяки перенесеному Ним стражданню, нам подаровано мир, – Його ранами ми оздоровлені!</blockquote><figcaption><span class="ref">Ісая 53:5</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>12</sup>І прийшли його учні, взяли тіло, поховали його та пішли й сповістили Ісуса. <sup>13</sup>Почувши це, Ісус відплив звідти човном у безлюдне місце й усамітнився; довідавшись про те, багато людей пішло за Ним пішки з міст.</blockquote><figcaption><span class="ref">Матвія 14:12–13</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">3. Занижена самооцінка</h4><p>Причини: неправильне вчення («ми ніщо», смирення як самоприниження), гріх і провина, минулий досвід, критика, стосунки батьків і дітей (критика, нереальні цілі, пророцтво поразки, жорстокі покарання, відсутність виявів любові, надмірна опіка, фаворитизм), нереальні цілі, неправильне мислення, вплив суспільства, порівняння, особисті недоліки. Наслідки: владність, привертання уваги, ізоляція, брак мотивації, труднощі в спілкуванні, ревнощі й критика, бажання контролювати, самовідкидання, депресія. Як допомогти: щира підтримка й прийняття (спершу ділами), знайти джерело, показати біблійний погляд на смирення (ми не черви, а діти Божі), дати людині розповісти про себе, розбити довгострокову ціль на «їстівні шматочки», навчити нових методів, змінити мислення, ободряти інших, розмірковувати над Словом, групи підтримки, усунути гріх. За одну консультацію без Божого втручання самооцінка не зміниться.</p><h4 class="sub">4. Залежності</h4><p>Мислення чи поведінка, що стали звичкою, повторюються й важко контролюються: алкоголь, наркотики, куріння, телевізор, гроші, сексуальні залежності, робота, ненажерливість, політика, релігія, мода, азарт тощо. Три рівні: духовні, душевні, фізичні. Біблія: «усе мені дозволено, але ніщо не повинне володіти мною»; залежність суперечить плоду Духа (самовладання) і заплямовує храм Духа. Причини: спадковість, оточення, стрес, духовні проблеми, приклад батьків, фізіологічні проблеми, занижена самооцінка, сексуальна плутанина, ЗМІ. Вихід із хімічної залежності (чотири складові одночасно): детоксикація; навчання запобіганню; підтримка; зміна духовного стану (визнати залежність, віддати життя Богу, самоаналіз, відповідальність і підзвітність, духовне зростання, допомога іншим). Легко кинути ворога, важко залишити друга.</p><figure class="scripture"><blockquote><sup>12</sup>Все мені можна, та не все на користь. Усе мені можна, та ніщо не повинно заволодіти мною. <sup>13</sup>Їжа для шлунка, і шлунок для їжі, але Бог і одне й друге знищить. Тіло не для розпусти, але для Господа, і Господь для тіла.</blockquote><figcaption><span class="ref">1 Коринтян 6:12–13</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>18</sup>І не впивайтеся вином, у якому розпуста, а наповнюйтеся Духом,</blockquote><figcaption><span class="ref">Ефесян 5:18</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><h4 class="sub">5. Поради консультанту</h4><p>Мати мир у серці; радіти; покладати турботи на Господа; знос настає, коли внутрішні сили витрачені; ми не покликані допомогти всім на землі.</p><figure class="scripture"><blockquote><sup>27</sup>Мир залишаю вам, Мій мир Я даю вам. Не так, як світ дає, Я даю вам. Хай не тривожиться ваше серце і не лякається.</blockquote><figcaption><span class="ref">Івана 14:27</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>4</sup>Радійте завжди в Господі; і ще раз кажу: радійте! <sup>5</sup>Нехай ваша лагідність стане відомою всім людям. Господь близько! <sup>6</sup>Нічим не журіться, але в усьому молитвою та благаннями з подякою висловлюйте ваші прохання Богові. <sup>7</sup>І мир Божий, який перевищує всяке розуміння, нехай береже ваші серця і ваші думки в Христі Ісусі.</blockquote><figcaption><span class="ref">Филип’ян 4:4–7</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><figure class="scripture"><blockquote><sup>7</sup>Покладіть на Нього всі ваші турботи, бо Він дбає про вас. <sup>8</sup>Будьте тверезі, пильнуйте. Ваш ворог – диявол – ходить і ричить, мов лев, шукаючи, кого б поглинути. <sup>9</sup>Протидійте йому міцною вірою, знаючи, що тих же самих страждань зазнають і ваші брати у світі.</blockquote><figcaption><span class="ref">1 Петра 5:7–9</span></figcaption><button class="more" type="button" aria-expanded="false">Показати весь уривок</button></figure><aside class="key-idea"><span class="lbl">Головна думка</span><p>Допомога самотнім, засмученим і залежним поєднує визнання проблеми, молитву, Слово та підтримку спільноти.</p></aside><section class="quiz" id="quiz5" data-ch="5"><header class="quiz-head"><span class="lbl">Перевір себе · Розділ 5</span><h3>Самотність, самооцінка, залежності</h3><p class="quiz-intro">15 питань. Частина з них – життєві ситуації, де треба застосувати прочитане. Після перевірки побачите, які теми варто повторити.</p></header><div class="quiz-app" data-ch="5"></div><div class="quiz-print"><div class="pq"><p class="pq-q"><b>1.</b> Що таке самотність, за уроком? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Відсутність людей навколо</li><li><span class="box"></span><b>Б)</b> Лише відсутність шлюбу</li><li><span class="box"></span><b>В)</b> Лише хвороба</li><li><span class="box"></span><b>Г)</b> Усвідомлення відсутності близького контакту: можна бути в натовпі й самотнім</li></ol></div><div class="pq"><p class="pq-q"><b>2.</b> Які шляхи, за уроком, не усувають самотності? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Молитва</li><li><span class="box"></span><b>Б)</b> Наркотики, тусовки, праця, спорт, сексуальні контакти: треба примиритися з Богом</li><li><span class="box"></span><b>В)</b> Спілкування</li><li><span class="box"></span><b>Г)</b> Служіння</li></ol></div><div class="pq"><p class="pq-q"><b>3.</b> Що, за уроком, допомагає самотній людині? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Ізоляція</li><li><span class="box"></span><b>Б)</b> Більше роботи</li><li><span class="box"></span><b>В)</b> Визнати проблему, з’ясувати джерело, змінити мислення, підняти самооцінку Словом, ризикнути в спілкуванні, відчути безумовну любов Бога</li><li><span class="box"></span><b>Г)</b> Телевізор</li></ol></div><div class="pq"><p class="pq-q"><b>4.</b> Скільки часу, за уроком, потрібно, щоб пережити втрату чоловіка чи дружини? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Приблизно 3–4 роки; тривалий смуток – ознака нездорового зв’язку</li><li><span class="box"></span><b>Б)</b> Тиждень</li><li><span class="box"></span><b>В)</b> Місяць</li><li><span class="box"></span><b>Г)</b> Не потрібно</li></ol></div><div class="pq"><p class="pq-q"><b>5.</b> Яка причина заниженої самооцінки, за уроком, може бути пов’язана з навчанням у церкві? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Правильне вчення</li><li><span class="box"></span><b>Б)</b> Достатня освіта</li><li><span class="box"></span><b>В)</b> Любов</li><li><span class="box"></span><b>Г)</b> Неправильна теологія: вчення, що ми ніщо і смирення – самоприниження</li></ol></div><div class="pq"><p class="pq-q"><b>6.</b> Людина із заниженою самооцінкою хоче одразу досягти великої мети. Що, за уроком, порадити? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Одразу велика мета</li><li><span class="box"></span><b>Б)</b> Розбити довгострокову ціль на «їстівні шматочки»: малі досягнення піднімають самооцінку</li><li><span class="box"></span><b>В)</b> Відмовитися</li><li><span class="box"></span><b>Г)</b> Порівнювати себе з іншими</li></ol></div><div class="pq"><p class="pq-q"><b>7.</b> Як, за уроком, називають мислення чи поведінку, що стали звичкою, повторюються й важко контролюються? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Нормальна звичка</li><li><span class="box"></span><b>Б)</b> Талант</li><li><span class="box"></span><b>В)</b> Залежність (прив’язаність): три рівні – духовна, душевна, фізична</li><li><span class="box"></span><b>Г)</b> Покликання</li></ol></div><div class="pq"><p class="pq-q"><b>8.</b> Що, за уроком, входить до виходу з хімічної залежності? <span class="pq-hint">одна відповідь</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Детоксикація, навчання запобіганню, підтримка (людині й родині) і зміна духовного стану, усе одночасно</li><li><span class="box"></span><b>Б)</b> Лише сила волі</li><li><span class="box"></span><b>В)</b> Лише молитва</li><li><span class="box"></span><b>Г)</b> Лише лікарня</li></ol></div><div class="pq"><p class="pq-q"><b>9.</b> Які причини самотності називає урок? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Суспільна ситуація</li><li><span class="box"></span><b>Б)</b> Правильний погляд на світ</li><li><span class="box"></span><b>В)</b> Неправильний погляд на світ</li><li><span class="box"></span><b>Г)</b> Любов Бога</li></ol></div><div class="pq"><p class="pq-q"><b>10.</b> Що належить до причин залежності, за уроком? <span class="pq-hint">кілька відповідей</span></p><ol class="pq-opts"><li><span class="box"></span><b>А)</b> Спадковість</li><li><span class="box"></span><b>Б)</b> Мир у домі</li><li><span class="box"></span><b>В)</b> Оточення й стрес</li><li><span class="box"></span><b>Г)</b> Любов до дітей</li></ol></div><div class="pq"><p class="pq-q"><b>11.</b> Легко кинути ворога, але важко залишити друга: поки залежність – «друг», важко звільнитися. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>12.</b> Занижена самооцінка, за уроком, зникає після однієї консультації. <span class="pq-hint">так / ні</span></p><p class="pq-tf"><span class="box"></span> Так&nbsp;&nbsp;&nbsp;<span class="box"></span> Ні</p></div><div class="pq"><p class="pq-q"><b>13.</b> З’єднайте проблему з її розв’язанням. <span class="pq-hint">відповідність</span></p><div class="pq-match"><ol><li>Самотність <span class="blank"></span></li><li>Занижена самооцінка <span class="blank"></span></li><li>Залежність <span class="blank"></span></li></ol><ol class="letters"><li><b>А)</b> Показати безумовну любов Бога</li><li><b>Б)</b> Детоксикація, підтримка, духовна зміна</li><li><b>В)</b> Розбити цілі на малі кроки</li></ol></div></div><div class="pq"><p class="pq-q"><b>14.</b> Розташуйте за уроком кроки допомоги самотній людині. <span class="pq-hint">порядок</span></p><ul class="pq-order"><li><span class="blank sm"></span> З’ясувати причини</li><li><span class="blank sm"></span> Визнати проблему</li><li><span class="blank sm"></span> Допомогти ризикнути в спілкуванні</li><li><span class="blank sm"></span> Змінити мислення й підняти самооцінку</li></ul></div><div class="pq"><p class="pq-q"><b>15.</b> Хто в вашому оточенні самотній, і як ви можете реально приділити йому або їй час цього тижня? <span class="pq-hint">для роздуму</span></p><div class="pq-lines"></div></div></div></section></article>
+
+  <section class="summary screen-only" id="summary">
+    <span class="lbl">Підсумок</span>
+    <h2>Ваші результати</h2>
+    <p>Результати зберігаються у вашому браузері і надсилаються пастору Біблійної школи разом з ім’ям, яке ви вказали.</p>
+    <div id="summaryTable"></div>
+  </section>
+
+  <section class="answers print-only" id="answers">
+    <span class="lbl">Додаток</span>
+    <h2>Відповіді до тестів</h2>
+    <p>Для питань на відповідність літери відповідають правому стовпчику в тесті. Для питань на порядок подано правильну послідовність.</p>
+    <section class="key-ch"><h3>Розділ 1. Основи консультування</h3><ol class="key-list"><li><b class="k-a">Г.</b> <span class="k-exp">Консультування глибше за просту пораду.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Четвертий консультант постійно скеровував Іова до Бога.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Мета: самоусвідомлення.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Це можуть бути біси чи власні думки.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">В людині Бог і таланти.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Без довіри людина не розкриє серця.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Ісус зупинився заради жінки з кровотечею.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Приповісті 11:13.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також спілкування, виявлення потенціалу, підтримка в кризі, духовна повнота.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також теплота, щирість, спільна мова.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Тому консультант іноді показує приклад.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Урок: не показувати, що ти кращий; будь реальним.</span></li><li><b class="k-a">1 – В; 2 – А; 3 – Б.</b> <span class="k-exp">Цілі консультування.</span></li><li><b class="k-a">Утрата майна, дітей і здоров’я → Хибні поради друзів → Четвертий консультант скеровує до Бога → Бог дає вдвічі більше.</b> <span class="k-exp">Іов дивиться на себе очима Бога.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Орієнтир: назвати людину; оцінити довіру й повагу; запланувати крок.</span></li></ol></section><section class="key-ch"><h3>Розділ 2. Тактики і небезпеки</h3><ol class="key-list"><li><b class="k-a">Б.</b> <span class="k-exp">Краще консультувати бадьорим.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Сльози й мовчання – ознаки болю.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Тоді розкриваються причини.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Потрібне підвищене самовладання.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Неправильні мотиви: показати себе, шукати стосунків, контролювати, врятувати, цікавість.</span></li><li><b class="k-a">В.</b> <span class="k-exp">1 Коринтян 10:12.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Небезпечні сигнали з боку консультанта.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Як уникнути: молитва, підтримка, відпочинок, делегування, помазання.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також шукати стосунків, врятувати, цікавість.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також делегування, помазання, молитва.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Не судити за одним пунктом.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Урок: кожен консультант потребує свого консультанта для підтримки.</span></li><li><b class="k-a">1 – А; 2 – Б; 3 – В.</b> <span class="k-exp">Тривожні сигнали.</span></li><li><b class="k-a">Слово Боже щодня → Гаряча молитва → Контроль думок → Підзвітність перед довіреною людиною.</b> <span class="k-exp">Духовний захист.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Орієнтир: назвати людину; домовитися про регулярну зустріч.</span></li></ol></section><section class="key-ch"><h3>Розділ 3. Відкидання, провина, криза</h3><ol class="key-list"><li><b class="k-a">В.</b> <span class="k-exp">Причини: внутрішньоутробне, в родині, серед ровесників, розлучення, в церкві.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Наприклад: «Мамо, я прощаю тебе».</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Хвилювання – від загрози, конфліктів, страху й невдоволених потреб.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Матвія 6:25–34; 1 Петра 5:7; Филип’ян 4:6–8.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Почуття не є показником: усі згрішили.</span></li><li><b class="k-a">А.</b> <span class="k-exp">1 Івана 1:9 не використовують лише для зняття тяжкості.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Такою совістю не завжди можна користуватися.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Три види: аварійна, що розвивається, життєва.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також гіркота, почуття провини, меншовартості, недовіра.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також відновлення.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">2 Коринтян 7:8–10.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Урок: почуття не показник; усе визначаємо Словом.</span></li><li><b class="k-a">1 – А; 2 – В; 3 – Б.</b> <span class="k-exp">Причини провини.</span></li><li><b class="k-a">Шок → Адаптація → Відновлення → Повернення до нормального життя.</b> <span class="k-exp">Консультант допомагає пройти етапи.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Орієнтир: поіменно пробачити; розірвати зв’язки; конкретний крок.</span></li></ol></section><section class="key-ch"><h3>Розділ 4. Депресія й гнів</h3><ol class="key-list"><li><b class="k-a">А.</b> <span class="k-exp">Депресія може бути й маскованою.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Замість того, щоб бити, людина входить у депресію.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Не ухвалювати великі рішення в депресії.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Також докладна молитва й покаяння.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Римлян 1:18.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Ефесян 4:26: гніваючись, не грішіть.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Є також пряма й пасивна.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Придушений гнів проявляється хворобами й депресією.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також наркоманія, сімейна обстановка, стреси, втрата близьких, гріх.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також перенаправлена.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Гнів не завжди гріх.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Урок: буває маскована депресія: агресія, азарт, насильство.</span></li><li><b class="k-a">1 – Б; 2 – В; 3 – А.</b> <span class="k-exp">Види депресії.</span></li><li><b class="k-a">Визнати гнів → Висповідати перед Богом і людьми → Навчитися правильно виражати → Навчитися самоконтролю.</b> <span class="k-exp">Урок наводить такий порядок.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Орієнтир: чесно назвати; висповідати; прощення; за потреби звернутися по допомогу.</span></li></ol></section><section class="key-ch"><h3>Розділ 5. Самотність, самооцінка, залежності</h3><ol class="key-list"><li><b class="k-a">Г.</b> <span class="k-exp">«Не добре бути чоловікові самому».</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Самотність відчували Іов, Ілля, Давид і Ісус.</span></li><li><b class="k-a">В.</b> <span class="k-exp">Івана 3:16.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Не поспішай «перескочити» смуток.</span></li><li><b class="k-a">Г.</b> <span class="k-exp">Показати, що ми діти Божі, а не черви.</span></li><li><b class="k-a">Б.</b> <span class="k-exp">Без Божого втручання самооцінка за одну консультацію не змінюється.</span></li><li><b class="k-a">В.</b> <span class="k-exp">1 Коринтян 6:12.</span></li><li><b class="k-a">А.</b> <span class="k-exp">Чотири складові мають діяти одночасно.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також розрив із Богом.</span></li><li><b class="k-a">А, В.</b> <span class="k-exp">Також духовні проблеми, приклад батьків, занижена самооцінка.</span></li><li><b class="k-a">Так.</b> <span class="k-exp">Урок наводить це порівняння.</span></li><li><b class="k-a">Ні.</b> <span class="k-exp">Без Божого втручання не зникає.</span></li><li><b class="k-a">1 – А; 2 – В; 3 – Б.</b> <span class="k-exp">Допомога в різних проблемах.</span></li><li><b class="k-a">Визнати проблему → З’ясувати причини → Змінити мислення й підняти самооцінку → Допомогти ризикнути в спілкуванні.</b> <span class="k-exp">Урок наводить такий порядок.</span></li><li><b class="k-a">Орієнтир:</b> <span class="k-exp">Орієнтир: назвати людину; запланувати спілкування; молитва.</span></li></ol></section>
+  </section>
+
+  <footer class="site-foot">
+    <svg class="emblem" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 24c-7-5-15-5-21-3v25c6-2 14-2 21 3 7-5 15-5 21-3V21c-6-2-14-2-21 3zM32 24v25M32 8v10M27 12.5h10"/></g></svg>
+    <p><b>Біблійна школа «Дім Слова»</b> · Християнська церква «Перемога», м. Рівне</p>
+    <p class="links"><a href="https://www.instagram.com/victorychurch_rv/" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=100077340400434" rel="noopener">Facebook</a></p>
+    <p class="small">Українською перекладено та оформлено за навчальним матеріалом Біблійної школи «Робітники Царства» християнської церкви «Перемога» (м. Київ). Використано з дозволу.</p>
+    <p class="small">Цитати Святого Письма – «Біблія. Сучасний переклад» © Українське Біблійне Товариство, 2020–2023.</p>
+  </footer>
+</main>
+
+<script type="application/json" id="quiz-data" data-endpoint="https://script.google.com/macros/s/AKfycbyyOJP3nvwp38aiZIJQHnpvppkgWD4EYnmRpf0tdZVsY2Ls4fPLwr7fvoc4AycUOZA/exec" data-lesson="konsultuvannia">[{"chapter": 1, "title": "Основи консультування", "questions": [{"id": "q1-01", "type": "single", "level": "знання", "q": "Що таке християнське консультування, за уроком?", "anchor": "ch1-s1", "options": ["Будь-яка життєва порада", "Психологічне тестування", "Розмова про погоду", "Порада, заснована на Слові Божому, що скеровує людину в Божу волю"], "answer": 3, "explain": "Консультування глибше за просту пораду."}, {"id": "q1-02", "type": "single", "level": "розуміння", "q": "Яку помилку, за уроком, припустилися троє друзів Іова?", "anchor": "ch1-s1", "options": ["Вони замовкли", "Вони говорили: «Ти згрішив, тому й проблеми», хоча Іов не грішив; вони консультували неправильно", "Вони допомогли", "Вони молилися"], "answer": 1, "explain": "Четвертий консультант постійно скеровував Іова до Бога."}, {"id": "q1-03", "type": "single", "level": "застосування", "q": "Колега скаржиться, що ніхто з ним не хоче спілкуватися, і постійно скаржиться на всіх. Що, за уроком, може відбуватися?", "anchor": "ch1-s1", "options": ["Люди його не люблять без причини", "Це воля Божа", "Його скарги дратують людей, і він сам відштовхує їх; консультант має допомогти побачити реальну картину", "Нічого не відбувається"], "answer": 2, "explain": "Мета: самоусвідомлення."}, {"id": "q1-04", "type": "single", "level": "застосування", "q": "Людина каже: «Бог мені сказав…» і не хоче розбирати проблему. Як діяти консультанту, за уроком?", "anchor": "ch1-s1", "options": ["«Бог мені сказав» не є відповіддю: уточнювати, як і що саме, бо це може бути прикриття проблеми", "Прийняти без запитань", "Засудити", "Мовчати"], "answer": 0, "explain": "Це можуть бути біси чи власні думки."}, {"id": "q1-05", "type": "single", "level": "розуміння", "q": "Чому консультант не повинен «носити людину на руках», за уроком?", "anchor": "ch1-s1", "options": ["Бо це складно", "Бо людина цього не хоче", "Бо це заборонено", "Його завдання – допомогти виявити те, що в людині вже є, щоб вона сама вийшла з проблеми"], "answer": 3, "explain": "В людині Бог і таланти."}, {"id": "q1-06", "type": "single", "level": "застосування", "q": "Що, за уроком, є найголовнішим для атмосфери консультування?", "anchor": "ch1-s2", "options": ["Строгість", "Довіра: тепло, турбота, повага й щирість без упередження", "Гумор", "Швидкість"], "answer": 1, "explain": "Без довіри людина не розкриє серця."}, {"id": "q1-07", "type": "single", "level": "знання", "q": "До вас приходить жінка з проблемою, і ви думаєте: «Мішок із цукром». Що, за уроком, не так?", "anchor": "ch1-s2", "options": ["Нічого", "Це правильно", "Людина – особистість за образом Божим; відділяй грішника від гріха, не суди, а прагни зрозуміти", "Це допомагає"], "answer": 2, "explain": "Ісус зупинився заради жінки з кровотечею."}, {"id": "q1-08", "type": "single", "level": "застосування", "q": "Хам, за історією з Ноєм, отримав прокляття за що?", "anchor": "ch1-s2", "options": ["За те, що розголосив наготу батька: хто розносить таємниці, відкриває їх", "За п’янство", "За гординю", "За мовчання"], "answer": 0, "explain": "Приповісті 11:13."}, {"id": "q1-09", "type": "multi", "level": "знання", "q": "Які цілі консультування називає урок?", "anchor": "ch1-s1", "options": ["Привести до самоусвідомлення", "Дати людині готові рішення на все життя", "Допомогти змінити поведінку", "Зробити людину залежною від консультанта"], "answer": [0, 2], "explain": "Також спілкування, виявлення потенціалу, підтримка в кризі, духовна повнота."}, {"id": "q1-10", "type": "multi", "level": "розуміння", "q": "Що, за уроком, створює атмосферу довіри?", "anchor": "ch1-s2", "options": ["Повага", "Зверхність", "Збереження таємниць", "Осуд"], "answer": [0, 2], "explain": "Також теплота, щирість, спільна мова."}, {"id": "q1-11", "type": "truefalse", "level": "знання", "q": "Люди вчаться переважно не словами, а тим, що бачать і повторюють.", "anchor": "ch1-s1", "answer": true, "explain": "Тому консультант іноді показує приклад."}, {"id": "q1-12", "type": "truefalse", "level": "розуміння", "q": "Консультант має показати, що він набагато кращий за консультованого.", "anchor": "ch1-s2", "answer": false, "explain": "Урок: не показувати, що ти кращий; будь реальним."}, {"id": "q1-13", "type": "match", "level": "розуміння", "q": "З’єднайте ціль консультування з описом.", "anchor": "ch1-s1", "pairs": [["Самоусвідомлення", "Побачити себе як причину страждання"], ["Підтримка", "Допомога в кризі"], ["Духовна повнота", "Корінь більшості проблем"]], "explain": "Цілі консультування.", "_print_right": [1, 2, 0]}, {"id": "q1-14", "type": "order", "level": "розуміння", "q": "Розташуйте за уроком, як Іов вийшов зі своєї ситуації.", "anchor": "ch1-s1", "items": ["Утрата майна, дітей і здоров’я", "Хибні поради друзів", "Четвертий консультант скеровує до Бога", "Бог дає вдвічі більше"], "explain": "Іов дивиться на себе очима Бога.", "_print_order": [3, 1, 2, 0]}, {"id": "q1-15", "type": "reflect", "level": "застосування", "q": "Хто у вашому житті виконує роль консультанта (чи ви самі) і чого цьому служінню зараз найбільше бракує?", "sample": "Орієнтир: назвати людину; оцінити довіру й повагу; запланувати крок."}], "sections": {"ch1-s1": "Що таке консультування", "ch1-s2": "Як ставитися до людини"}}, {"chapter": 2, "title": "Тактики і небезпеки", "questions": [{"id": "q2-01", "type": "single", "level": "знання", "q": "Що, за уроком, означає «нероздільна увага» консультанта?", "anchor": "ch2-s1", "options": ["Пильно дивитися, щоб налякати", "Контакт очима, розслаблена поза, природні рухи, доброта й ввічливість; заважають суворість, нетерплячість, втома", "Одночасно робити інші справи", "Говорити без пауз"], "answer": 1, "explain": "Краще консультувати бадьорим."}, {"id": "q2-02", "type": "single", "level": "розуміння", "q": "Консультований раптом заплакав. Як діяти, за уроком?", "anchor": "ch2-s1", "options": ["Змінити тему", "Закінчити розмову", "Не проходити повз: ці моменти найболючіші, треба уточнити й потерпіти; не обов’язково все за один раз", "Не помітити"], "answer": 2, "explain": "Сльози й мовчання – ознаки болю."}, {"id": "q2-03", "type": "single", "level": "застосування", "q": "Як, за уроком, треба ставити запитання?", "anchor": "ch2-s1", "options": ["Так, щоб потрібні були пояснення («Розкажіть про вашу сім’ю»), а не просте «так/ні»", "Лише «так/ні»", "Лише закриті", "Усі однозначні"], "answer": 0, "explain": "Тоді розкриваються причини."}, {"id": "q2-04", "type": "single", "level": "застосування", "q": "Яка небезпека, за уроком, виникає між консультантом і консультованим протилежної статі?", "anchor": "ch2-s2", "options": ["Жодної", "Лише в церкві", "Лише в юності", "Теплота може набути форми потягу; принцип: не давай приводу тим, хто шукає привід"], "answer": 3, "explain": "Потрібне підвищене самовладання."}, {"id": "q2-05", "type": "single", "level": "розуміння", "q": "Консультант цікавиться життям привабливої знайомої «з любові до науки». Що, за уроком, це за мотив?", "anchor": "ch2-s2", "options": ["Любов", "Цікавість: це неправильний мотив – не допомогти, а накопичити інформацію", "Милосердя", "Підзвітність"], "answer": 1, "explain": "Неправильні мотиви: показати себе, шукати стосунків, контролювати, врятувати, цікавість."}, {"id": "q2-06", "type": "single", "level": "застосування", "q": "Як, за уроком, консультанту захиститися від інтимних стосунків із консультованим?", "anchor": "ch2-s2", "options": ["Уникати молитви", "Покладатися на себе", "Слово Боже, гаряча молитва, довіра Духу, контроль думок, підзвітність; не казати «зі мною такого не станеться»", "Ігнорувати проблему"], "answer": 2, "explain": "1 Коринтян 10:12."}, {"id": "q2-07", "type": "single", "level": "знання", "q": "Що, за уроком, має робити консультант, який помічає, що подобається консультованій?", "anchor": "ch2-s2", "options": ["Негайно взяти під контроль ситуацію: підзвітність, молитва, а за потреби не продовжувати консультування", "Продовжувати як є", "Приховувати", "Зустрічатися поза консультацією"], "answer": 0, "explain": "Небезпечні сигнали з боку консультанта."}, {"id": "q2-08", "type": "single", "level": "застосування", "q": "Що, за уроком, є ознакою зносу консультанта?", "anchor": "ch2-s2", "options": ["Бадьорість", "Мотивація", "Радість", "Втрата ідеалів, енергії, хронічна втома, дратівливість, холодність, законництво"], "answer": 3, "explain": "Як уникнути: молитва, підтримка, відпочинок, делегування, помазання."}, {"id": "q2-09", "type": "multi", "level": "знання", "q": "Що належить до неправильних мотивів консультування?", "anchor": "ch2-s1", "options": ["Бажання показати себе", "Бажання допомогти", "Бажання контролювати", "Любов до людини"], "answer": [0, 2], "explain": "Також шукати стосунків, врятувати, цікавість."}, {"id": "q2-10", "type": "multi", "level": "розуміння", "q": "Що допомагає уникнути зносу?", "anchor": "ch2-s2", "options": ["Відпочинок", "Постійна праця без перерв", "Підтримка того, хто любить безумовно", "Збільшення навантаження"], "answer": [0, 2], "explain": "Також делегування, помазання, молитва."}, {"id": "q2-11", "type": "truefalse", "level": "знання", "q": "Один тривожний сигнал, за уроком, ще не доводить, що є проблема: потрібне поєднання кількох і підтвердження в дусі.", "anchor": "ch2-s2", "answer": true, "explain": "Не судити за одним пунктом."}, {"id": "q2-12", "type": "truefalse", "level": "розуміння", "q": "Консультант не потребує власного консультанта.", "anchor": "ch2-s2", "answer": false, "explain": "Урок: кожен консультант потребує свого консультанта для підтримки."}, {"id": "q2-13", "type": "match", "level": "розуміння", "q": "З’єднайте сигнал з його боком.", "anchor": "ch2-s2", "pairs": [["Постійні подарунки", "Консультований"], ["Сексуальні фантазії", "Консультант"], ["Зростаюча залежність", "Консультований"]], "explain": "Тривожні сигнали.", "_print_right": [0, 1, 2]}, {"id": "q2-14", "type": "order", "level": "розуміння", "q": "Розташуйте за уроком кроки, як захиститися від інтимних стосунків із консультованим.", "anchor": "ch2-s2", "items": ["Слово Боже щодня", "Гаряча молитва", "Контроль думок", "Підзвітність перед довіреною людиною"], "explain": "Духовний захист.", "_print_order": [3, 2, 0, 1]}, {"id": "q2-15", "type": "reflect", "level": "застосування", "q": "Хто є вашою людиною підзвітності й підтримки, перед якою ви можете бути самим собою, і як ви цього піклуєтеся?", "sample": "Орієнтир: назвати людину; домовитися про регулярну зустріч."}], "sections": {"ch2-s1": "Тактики консультування", "ch2-s2": "Слабкості й небезпеки консультанта"}}, {"chapter": 3, "title": "Відкидання, провина, криза", "questions": [{"id": "q3-01", "type": "single", "level": "знання", "q": "Що таке відкидання, за уроком?", "anchor": "ch3-s1", "options": ["Фізична хвороба", "Спадкова риса", "Наслідок неприйняття іншими людьми, пережитого в житті", "Покарання Бога"], "answer": 2, "explain": "Причини: внутрішньоутробне, в родині, серед ровесників, розлучення, в церкві."}, {"id": "q3-02", "type": "single", "level": "розуміння", "q": "Що, за уроком, є першим кроком розв’язання відкидання?", "anchor": "ch3-s1", "options": ["Пробачити кожного, хто відкинув, поіменно й за конкретні ситуації, і розірвати душевні зв’язки", "Забути", "Помститися", "Ігнорувати"], "answer": 0, "explain": "Наприклад: «Мамо, я прощаю тебе»."}, {"id": "q3-03", "type": "single", "level": "застосування", "q": "Чоловік постійно хвилюється, має безсоння й виразку. Що, за уроком, може бути причиною?", "anchor": "ch3-s1", "options": ["Лише вік", "Лише погода", "Нічого", "Інтенсивне хвилювання, що впливає на тіло: виразка, безсоння, втома, головний біль, аритмія"], "answer": 3, "explain": "Хвилювання – від загрози, конфліктів, страху й невдоволених потреб."}, {"id": "q3-04", "type": "single", "level": "застосування", "q": "Що, за уроком, є біблійним виходом з хвилювання?", "anchor": "ch3-s2", "options": ["Придушити емоції", "Не турбуватися, а покласти турботи на Бога в молитві з подякою й змінити мислення", "Утекти", "Не думати"], "answer": 1, "explain": "Матвія 6:25–34; 1 Петра 5:7; Филип’ян 4:6–8."}, {"id": "q3-05", "type": "single", "level": "розуміння", "q": "Чим об’єктивне почуття провини відрізняється від суб’єктивного?", "anchor": "ch3-s2", "options": ["Це одне й те саме", "Об’єктивне – вигадане", "Об’єктивне – порушили, але не відчуваємо; суб’єктивне – відчуваємо", "Суб’єктивне – від Бога"], "answer": 2, "explain": "Почуття не є показником: усі згрішили."}, {"id": "q3-06", "type": "single", "level": "застосування", "q": "Людина щоразу «кається» заради полегшення, але повертається до гріха. Що, за уроком?", "anchor": "ch3-s2", "options": ["Справжнє покаяння – зміна мислення, поворот на 180 градусів, а не емоційне полегшення; поки любиш гріх, покаяння ще не прийшло", "Це нормально", "Достатньо кількох слів", "Це гріх проти Духа"], "answer": 0, "explain": "1 Івана 1:9 не використовують лише для зняття тяжкості."}, {"id": "q3-07", "type": "single", "level": "знання", "q": "Вам лідери вчили, що носити годинник чи краватку – гріх. Що, за уроком, про такі почуття провини?", "anchor": "ch3-s2", "options": ["Це справжній гріх", "Це від Бога", "Це доказ святості", "Це від неправильного виховання совісті: гріхом названо те, що ним не є; треба пояснити, що тут нічого поганого"], "answer": 3, "explain": "Такою совістю не завжди можна користуватися."}, {"id": "q3-08", "type": "single", "level": "застосування", "q": "Що, за уроком, є кризою?", "anchor": "ch3-s2", "options": ["Лише хвороба", "Неминучий поворот у житті, що може стати небезпекою або можливістю для зростання", "Лише війна", "Лише втрата грошей"], "answer": 1, "explain": "Три види: аварійна, що розвивається, життєва."}, {"id": "q3-09", "type": "multi", "level": "знання", "q": "Які ознаки відкидання називає урок?", "anchor": "ch3-s1", "options": ["Бунтівництво", "Радість", "Саможалість", "Довіра"], "answer": [0, 2], "explain": "Також гіркота, почуття провини, меншовартості, недовіра."}, {"id": "q3-10", "type": "multi", "level": "розуміння", "q": "Які етапи кризи називає урок?", "anchor": "ch3-s2", "options": ["Шок", "Приховування", "Адаптація", "Ігнорування"], "answer": [0, 2], "explain": "Також відновлення."}, {"id": "q3-11", "type": "truefalse", "level": "знання", "q": "Біблійний смуток веде до покаяння, а самозвинувачення не є від Бога.", "anchor": "ch3-s2", "answer": true, "explain": "2 Коринтян 7:8–10."}, {"id": "q3-12", "type": "truefalse", "level": "розуміння", "q": "Почуття провини завжди є точним показником гріха.", "anchor": "ch3-s2", "answer": false, "explain": "Урок: почуття не показник; усе визначаємо Словом."}, {"id": "q3-13", "type": "match", "level": "розуміння", "q": "З’єднайте причину провини з прикладом.", "anchor": "ch3-s1", "pairs": [["Неправильна теологія", "Гріхом названо годинник чи краватку"], ["Занадто високі очікування", "Дитина ніколи не чула «добре зроблено»"], ["Суспільний тиск", "Постійна критика навколо"]], "explain": "Причини провини.", "_print_right": [0, 2, 1]}, {"id": "q3-14", "type": "order", "level": "розуміння", "q": "Розташуйте за уроком етапи кризи.", "anchor": "ch3-s2", "items": ["Шок", "Адаптація", "Відновлення", "Повернення до нормального життя"], "explain": "Консультант допомагає пройти етапи.", "_print_order": [0, 3, 2, 1]}, {"id": "q3-15", "type": "reflect", "level": "застосування", "q": "Чи є у вашому житті відкидання або провина, які потрібно пробачити чи покаятися перед Богом, і що ви зробите першим?", "sample": "Орієнтир: поіменно пробачити; розірвати зв’язки; конкретний крок."}], "sections": {"ch3-s1": "Відкидання й хвилювання", "ch3-s2": "Почуття провини й криза"}}, {"chapter": 4, "title": "Депресія й гнів", "questions": [{"id": "q4-01", "type": "single", "level": "знання", "q": "Які ознаки депресії називає урок?", "anchor": "ch4-s1", "options": ["Печаль із песимізмом і безнадійністю, хронічна втома, занижена самооцінка, загальмованість, безсоння, втрата апетиту", "Лише швидка мова", "Радість і енергія", "Надмірна активність"], "answer": 0, "explain": "Депресія може бути й маскованою."}, {"id": "q4-02", "type": "single", "level": "розуміння", "q": "Чому депресія, за уроком, іноді є способом приховати гнів?", "anchor": "ch4-s1", "options": ["Бо вона вдячна", "Бо хоче відпочити", "Бо любить усамітнення", "Людина замість вибуху «закриває двері» і ховає рану, бажання помститися й гнів"], "answer": 3, "explain": "Замість того, щоб бити, людина входить у депресію."}, {"id": "q4-03", "type": "single", "level": "застосування", "q": "Що, за уроком, робить консультант із людиною в депресії, яка мало говорить?", "anchor": "ch4-s1", "options": ["Чекає, поки заговорить", "Він активніший: виявляє гнів і рани, з’ясовує втрати, дивиться на сім’ю, залучає до дій і руйнує негативне мислення", "Залишає її", "Тисне на неї"], "answer": 1, "explain": "Не ухвалювати великі рішення в депресії."}, {"id": "q4-04", "type": "single", "level": "застосування", "q": "Людина має думки про самогубство. Що, за уроком, робити?", "anchor": "ch4-s1", "options": ["Ігнорувати", "Говорити про інше", "Запитати про це, відректися від нього в ім’я Ісуса й залучити потрібну медичну й психологічну допомогу", "Чекати"], "answer": 2, "explain": "Також докладна молитва й покаяння."}, {"id": "q4-05", "type": "single", "level": "розуміння", "q": "Що, за уроком, є гнівом Божим?", "anchor": "ch4-s1", "options": ["Контрольований, інтенсивний гнів, що узгоджується з Божою любов’ю і спрямований на гріх і несправедливість", "Нестримний вибух", "Помста", "Образа"], "answer": 0, "explain": "Римлян 1:18."}, {"id": "q4-06", "type": "single", "level": "застосування", "q": "Чим людський гнів може бути гріховним?", "anchor": "ch4-s1", "options": ["Коли контролюється", "Коли виражається спокійно", "Коли відсутній", "Коли супроводжується помстою, гіркотою, ненавистю, осудом; виявляється злослів’ям чи діями"], "answer": 3, "explain": "Ефесян 4:26: гніваючись, не грішіть."}, {"id": "q4-07", "type": "single", "level": "знання", "q": "На роботі поліція затримала чоловіка за крадіжку, а вдома він б’є дружину. Який вид агресії це, за уроком?", "anchor": "ch4-s1", "options": ["Пряма", "Перенаправлена: гнів спрямовано не на того, хто розгнівав, а на невинного", "Пасивна", "Конструктивна"], "answer": 1, "explain": "Є також пряма й пасивна."}, {"id": "q4-08", "type": "single", "level": "застосування", "q": "Як, за уроком, вийти з гніву?", "anchor": "ch4-s1", "options": ["Придушити", "Помститися", "Визнати гнів, висповідати Богові й людям, навчитися правильно виражати (спершу заспокоїтися), не зберігати гнів і вчитися самоконтролю", "Ігнорувати"], "answer": 2, "explain": "Придушений гнів проявляється хворобами й депресією."}, {"id": "q4-09", "type": "multi", "level": "знання", "q": "Які причини депресії називає урок?", "anchor": "ch4-s1", "options": ["Нестача відпочинку й фізичних вправ", "Надмірна радість", "Прихований гнів", "Спокійна сім’я"], "answer": [0, 2], "explain": "Також наркоманія, сімейна обстановка, стреси, втрата близьких, гріх."}, {"id": "q4-10", "type": "multi", "level": "розуміння", "q": "Які види агресії називає урок?", "anchor": "ch4-s1", "options": ["Пряма", "Мовчазна радість", "Пасивна", "Молитовна"], "answer": [0, 2], "explain": "Також перенаправлена."}, {"id": "q4-11", "type": "truefalse", "level": "знання", "q": "Гнів, за уроком, – це Богом дана емоція, корисна, коли правильно спрямована.", "anchor": "ch4-s1", "answer": true, "explain": "Гнів не завжди гріх."}, {"id": "q4-12", "type": "truefalse", "level": "розуміння", "q": "Депресія завжди проявляється відкритою сумністю.", "anchor": "ch4-s1", "answer": false, "explain": "Урок: буває маскована депресія: агресія, азарт, насильство."}, {"id": "q4-13", "type": "match", "level": "розуміння", "q": "З’єднайте вид депресії з проявом.", "anchor": "ch4-s1", "pairs": [["Маскована", "Агресія, азартні ігри, постійні аварії"], ["Звична", "Печаль і безнадійність"], ["Причина – гнів", "Прихована помста"]], "explain": "Види депресії.", "_print_right": [2, 0, 1]}, {"id": "q4-14", "type": "order", "level": "розуміння", "q": "Розташуйте за уроком кроки виходу з гніву.", "anchor": "ch4-s1", "items": ["Визнати гнів", "Висповідати перед Богом і людьми", "Навчитися правильно виражати", "Навчитися самоконтролю"], "explain": "Урок наводить такий порядок.", "_print_order": [2, 3, 0, 1]}, {"id": "q4-15", "type": "reflect", "level": "застосування", "q": "Де у вашому житті прихований гнів чи рана, що може вести до депресії, і що ви зробите, щоб їх визнати й пройти?", "sample": "Орієнтир: чесно назвати; висповідати; прощення; за потреби звернутися по допомогу."}], "sections": {"ch4-s1": "Депресія й гнів"}}, {"chapter": 5, "title": "Самотність, самооцінка, залежності", "questions": [{"id": "q5-01", "type": "single", "level": "знання", "q": "Що таке самотність, за уроком?", "anchor": "ch5-s1", "options": ["Відсутність людей навколо", "Лише відсутність шлюбу", "Лише хвороба", "Усвідомлення відсутності близького контакту: можна бути в натовпі й самотнім"], "answer": 3, "explain": "«Не добре бути чоловікові самому»."}, {"id": "q5-02", "type": "single", "level": "розуміння", "q": "Які шляхи, за уроком, не усувають самотності?", "anchor": "ch5-s1", "options": ["Молитва", "Наркотики, тусовки, праця, спорт, сексуальні контакти: треба примиритися з Богом", "Спілкування", "Служіння"], "answer": 1, "explain": "Самотність відчували Іов, Ілля, Давид і Ісус."}, {"id": "q5-03", "type": "single", "level": "застосування", "q": "Що, за уроком, допомагає самотній людині?", "anchor": "ch5-s1", "options": ["Ізоляція", "Більше роботи", "Визнати проблему, з’ясувати джерело, змінити мислення, підняти самооцінку Словом, ризикнути в спілкуванні, відчути безумовну любов Бога", "Телевізор"], "answer": 2, "explain": "Івана 3:16."}, {"id": "q5-04", "type": "single", "level": "застосування", "q": "Скільки часу, за уроком, потрібно, щоб пережити втрату чоловіка чи дружини?", "anchor": "ch5-s1", "options": ["Приблизно 3–4 роки; тривалий смуток – ознака нездорового зв’язку", "Тиждень", "Місяць", "Не потрібно"], "answer": 0, "explain": "Не поспішай «перескочити» смуток."}, {"id": "q5-05", "type": "single", "level": "розуміння", "q": "Яка причина заниженої самооцінки, за уроком, може бути пов’язана з навчанням у церкві?", "anchor": "ch5-s1", "options": ["Правильне вчення", "Достатня освіта", "Любов", "Неправильна теологія: вчення, що ми ніщо і смирення – самоприниження"], "answer": 3, "explain": "Показати, що ми діти Божі, а не черви."}, {"id": "q5-06", "type": "single", "level": "застосування", "q": "Людина із заниженою самооцінкою хоче одразу досягти великої мети. Що, за уроком, порадити?", "anchor": "ch5-s1", "options": ["Одразу велика мета", "Розбити довгострокову ціль на «їстівні шматочки»: малі досягнення піднімають самооцінку", "Відмовитися", "Порівнювати себе з іншими"], "answer": 1, "explain": "Без Божого втручання самооцінка за одну консультацію не змінюється."}, {"id": "q5-07", "type": "single", "level": "знання", "q": "Як, за уроком, називають мислення чи поведінку, що стали звичкою, повторюються й важко контролюються?", "anchor": "ch5-s1", "options": ["Нормальна звичка", "Талант", "Залежність (прив’язаність): три рівні – духовна, душевна, фізична", "Покликання"], "answer": 2, "explain": "1 Коринтян 6:12."}, {"id": "q5-08", "type": "single", "level": "застосування", "q": "Що, за уроком, входить до виходу з хімічної залежності?", "anchor": "ch5-s1", "options": ["Детоксикація, навчання запобіганню, підтримка (людині й родині) і зміна духовного стану, усе одночасно", "Лише сила волі", "Лише молитва", "Лише лікарня"], "answer": 0, "explain": "Чотири складові мають діяти одночасно."}, {"id": "q5-09", "type": "multi", "level": "знання", "q": "Які причини самотності називає урок?", "anchor": "ch5-s1", "options": ["Суспільна ситуація", "Правильний погляд на світ", "Неправильний погляд на світ", "Любов Бога"], "answer": [0, 2], "explain": "Також розрив із Богом."}, {"id": "q5-10", "type": "multi", "level": "розуміння", "q": "Що належить до причин залежності, за уроком?", "anchor": "ch5-s1", "options": ["Спадковість", "Мир у домі", "Оточення й стрес", "Любов до дітей"], "answer": [0, 2], "explain": "Також духовні проблеми, приклад батьків, занижена самооцінка."}, {"id": "q5-11", "type": "truefalse", "level": "знання", "q": "Легко кинути ворога, але важко залишити друга: поки залежність – «друг», важко звільнитися.", "anchor": "ch5-s1", "answer": true, "explain": "Урок наводить це порівняння."}, {"id": "q5-12", "type": "truefalse", "level": "розуміння", "q": "Занижена самооцінка, за уроком, зникає після однієї консультації.", "anchor": "ch5-s1", "answer": false, "explain": "Без Божого втручання не зникає."}, {"id": "q5-13", "type": "match", "level": "розуміння", "q": "З’єднайте проблему з її розв’язанням.", "anchor": "ch5-s1", "pairs": [["Самотність", "Показати безумовну любов Бога"], ["Занижена самооцінка", "Розбити цілі на малі кроки"], ["Залежність", "Детоксикація, підтримка, духовна зміна"]], "explain": "Допомога в різних проблемах.", "_print_right": [0, 2, 1]}, {"id": "q5-14", "type": "order", "level": "розуміння", "q": "Розташуйте за уроком кроки допомоги самотній людині.", "anchor": "ch5-s1", "items": ["Визнати проблему", "З’ясувати причини", "Змінити мислення й підняти самооцінку", "Допомогти ризикнути в спілкуванні"], "explain": "Урок наводить такий порядок.", "_print_order": [1, 0, 3, 2]}, {"id": "q5-15", "type": "reflect", "level": "застосування", "q": "Хто в вашому оточенні самотній, і як ви можете реально приділити йому або їй час цього тижня?", "sample": "Орієнтир: назвати людину; запланувати спілкування; молитва."}], "sections": {"ch5-s1": "Самотність, смуток, самооцінка й залежності"}}]</script>
+<script>(function () {
+  'use strict';
+  var root = document.documentElement;
+  var store = {
+    get: function (k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  };
+  function $(s, el) { return (el || document).querySelector(s); }
+  function $$(s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); }
+  function h(tag, attrs, kids) {
+    var el = document.createElement(tag);
+    for (var k in attrs || {}) {
+      if (k === 'text') el.textContent = attrs[k];
+      else if (k === 'html') el.innerHTML = attrs[k];
+      else if (k.slice(0, 2) === 'on') el.addEventListener(k.slice(2), attrs[k]);
+      else el.setAttribute(k, attrs[k]);
+    }
+    (kids || []).forEach(function (c) { if (c) el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return el;
+  }
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function range(n) { var r = []; for (var i = 0; i < n; i++) r.push(i); return r; }
+
+  /* ---------- тема і шрифт ---------- */
+  $('#themeBtn').addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('sb-theme', next); } catch (e) {}
+  });
+  var fs = store.get('sb-fs') || 18;
+  function applyFs() { root.style.setProperty('--fs', fs + 'px'); }
+  applyFs();
+  $('#fsUp').addEventListener('click', function () { fs = Math.min(24, fs + 1); applyFs(); store.set('sb-fs', fs); });
+  $('#fsDown').addEventListener('click', function () { fs = Math.max(15, fs - 1); applyFs(); store.set('sb-fs', fs); });
+
+  /* ---------- прогрес читання ---------- */
+  var bar = $('.progress span');
+  function onScroll() {
+    var max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.width = (max > 0 ? Math.min(100, scrollY / max * 100) : 0) + '%';
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- зміст ---------- */
+  var drawer = $('#toc'), scrim = $('#scrim'), tocBtn = $('#tocBtn');
+  function toggleToc(open) {
+    drawer.classList.toggle('open', open); scrim.classList.toggle('open', open);
+    tocBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  tocBtn.addEventListener('click', function () { toggleToc(!drawer.classList.contains('open')); });
+  scrim.addEventListener('click', function () { toggleToc(false); });
+  $$('#toc a').forEach(function (a) { a.addEventListener('click', function () { if (innerWidth < 1280) toggleToc(false); }); });
+  var links = {};
+  $$('#toc a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && links[e.target.id]) {
+          $$('#toc a.active').forEach(function (x) { x.classList.remove('active'); });
+          links[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-15% 0px -75% 0px' });
+    Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+  }
+
+  /* ---------- довгі уривки і режим запам'ятовування ---------- */
+  $$('.scripture.long').forEach(function (f) {
+    f.classList.add('collapsed');
+    var b = $('.more', f);
+    b.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      var c = f.classList.toggle('collapsed');
+      b.textContent = c ? 'Показати весь уривок' : 'Згорнути';
+      b.setAttribute('aria-expanded', c ? 'false' : 'true');
+    });
+  });
+  var memoBtn = $('#memoBtn');
+  memoBtn.addEventListener('click', function () {
+    var on = document.body.classList.toggle('memo');
+    memoBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    $$('.scripture.revealed').forEach(function (f) { f.classList.remove('revealed'); });
+  });
+  $$('.scripture').forEach(function (f) {
+    f.addEventListener('click', function () { if (document.body.classList.contains('memo')) f.classList.toggle('revealed'); });
+  });
+
+  /* ---------- учень і надсилання результатів ---------- */
+  var ENDPOINT = $('#quiz-data').getAttribute('data-endpoint') || '';
+  var LESSON = $('#quiz-data').getAttribute('data-lesson') || 'slovo-bozhe';
+  // «Слово Боже» зберігав результати під старим ключем – лишаємо його.
+  var RESULTS_KEY = LESSON === 'slovo-bozhe' ? 'sb-results' : 'sb-results-' + LESSON;
+  function rid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 10); }
+  var student = store.get('sb-student') || {};
+  if (!student.uid) { student.uid = rid(); store.set('sb-student', student); }
+  var outbox = store.get('sb-outbox') || [];
+  var sendState = {};  // id -> 'sending' | 'ok' | 'fail'
+
+  var who = $('#who'), whoName = $('#whoName'), whoWarn = $('#whoWarn'), whoBtn = $('#whoBtn'), whoText = $('#whoText');
+  var whoDefault = whoText.textContent;
+  function showName() {
+    whoBtn.hidden = !ENDPOINT;
+    whoBtn.textContent = student.name ? student.name : 'Вказати ім’я';
+  }
+  function openWho(reason) {
+    whoText.textContent = reason || whoDefault;
+    whoName.value = student.name || '';
+    whoWarn.textContent = '';
+    who.hidden = false;
+    setTimeout(function () { whoName.focus(); }, 30);
+  }
+  function closeWho() {
+    who.hidden = true;
+    store.set('sb-asked', true);
+  }
+  $('#whoForm').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var v = whoName.value.replace(/\s+/g, ' ').trim();
+    if (v.split(' ').length < 2 || v.length < 4) { whoWarn.textContent = 'Вкажіть, будь ласка, ім’я та прізвище.'; whoName.focus(); return; }
+    student.name = v;
+    store.set('sb-student', student);
+    showName();
+    closeWho();
+    flush();
+  });
+  $('#whoLater').addEventListener('click', closeWho);
+  who.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeWho(); });
+  whoBtn.addEventListener('click', function () { openWho(); });
+  showName();
+  if (ENDPOINT && !student.name && !store.get('sb-asked')) openWho();
+
+  function sendStatusText(id) {
+    var st = sendState[id];
+    if (st === 'ok') return ['ok', '✓ Результат надіслано пастору.'];
+    if (!student.name) return ['wait', 'Результат ще не надіслано: вкажіть ім’я, щоб його побачив пастор.'];
+    if (st === 'fail') return ['wait', 'Не вдалося надіслати. Спробуємо ще раз автоматично, коли буде інтернет.'];
+    return ['wait', 'Надсилаємо результат пастору…'];
+  }
+  function paintStatus() {
+    $$('[data-send]').forEach(function (el) {
+      var t = sendStatusText(el.getAttribute('data-send'));
+      el.className = 'send ' + t[0];
+      el.textContent = t[1];
+      if (!student.name) {
+        el.appendChild(document.createTextNode(' '));
+        el.appendChild(h('button', { class: 'linkish', type: 'button', text: 'Вказати ім’я', onclick: function () { openWho(); } }));
+      }
+    });
+    var n = $('#outboxNote');
+    if (n) n.textContent = ENDPOINT && outbox.length ? 'Ще не надіслано пастору: ' + outbox.length + '.' : '';
+  }
+  var sending = false;
+  function flush() {
+    paintStatus();
+    if (!ENDPOINT || sending || !student.name || !outbox.length) return;
+    var item = outbox[0];
+    item.name = student.name;
+    sending = true;
+    sendState[item.id] = 'sending';
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(item) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res.ok && res.error !== 'bad_data') throw new Error(res.error);
+        outbox = outbox.filter(function (x) { return x.id !== item.id; });
+        store.set('sb-outbox', outbox);
+        sendState[item.id] = 'ok';
+        sending = false;
+        flush();
+      })
+      .catch(function () {
+        sendState[item.id] = 'fail';
+        sending = false;
+        paintStatus();
+      });
+  }
+  function queueResult(entry) {
+    if (!ENDPOINT) return null;
+    entry.id = rid();
+    entry.lesson = LESSON;
+    entry.uid = student.uid;
+    entry.ts = new Date().toISOString();
+    outbox.push(entry);
+    store.set('sb-outbox', outbox);
+    if (!student.name) openWho('Щоб пастор побачив ваш результат, вкажіть ім’я та прізвище.');
+    return entry.id;
+  }
+  addEventListener('online', flush);
+  setInterval(function () { if (outbox.length) flush(); }, 60000);
+
+  /* ---------- тести ---------- */
+  var DATA = JSON.parse($('#quiz-data').textContent);
+  var LEVELS = ['знання', 'розуміння', 'застосування'];
+
+  function buildQuestion(q, i, data) {
+    var box = h('div', { class: 'q', 'data-type': q.type });
+    var lvl = h('span', { class: 'lvl' + (q.level === 'застосування' ? ' app' : ''), text: q.level || '' });
+    box.appendChild(h('div', { class: 'q-top' }, [h('span', { text: 'Питання ' + (i + 1) }), q.level ? lvl : null]));
+    box.appendChild(h('div', { class: 'q-text', text: q.q }));
+    var name = 'q' + data.chapter + '_' + i;
+    var api = { el: box, q: q };
+
+    if (q.type === 'single' || q.type === 'multi') {
+      var order = shuffle(range(q.options.length));
+      var inputs = [];
+      order.forEach(function (idx) {
+        var inp = h('input', { type: q.type === 'single' ? 'radio' : 'checkbox', name: name, value: idx });
+        inputs.push(inp);
+        box.appendChild(h('label', { class: 'opt' }, [inp, h('span', { text: q.options[idx] })]));
+      });
+      if (q.type === 'multi') box.appendChild(h('p', { class: 'q-top', text: 'Оберіть усі правильні відповіді' }));
+      api.answered = function () { return inputs.some(function (x) { return x.checked; }); };
+      api.grade = function () {
+        var picked = inputs.filter(function (x) { return x.checked; }).map(function (x) { return +x.value; });
+        var right = q.type === 'single' ? [q.answer] : q.answer;
+        inputs.forEach(function (x) {
+          var v = +x.value, lab = x.parentNode;
+          if (right.indexOf(v) >= 0) lab.classList.add('right');
+          else if (x.checked) lab.classList.add('wrong');
+          x.disabled = true;
+        });
+        var wrong = picked.filter(function (v) { return right.indexOf(v) < 0; }).length;
+        var hit = picked.filter(function (v) { return right.indexOf(v) >= 0; }).length;
+        if (!wrong && hit === right.length) return 1;
+        if (q.type === 'multi' && !wrong && hit > 0) return 0.5;
+        return 0;
+      };
+    } else if (q.type === 'truefalse') {
+      var yes = h('input', { type: 'radio', name: name, value: '1' });
+      var no = h('input', { type: 'radio', name: name, value: '0' });
+      box.appendChild(h('div', { class: 'tf' }, [
+        h('label', { class: 'opt' }, [yes, h('span', { text: 'Так, правильно' })]),
+        h('label', { class: 'opt' }, [no, h('span', { text: 'Ні, неправильно' })])
+      ]));
+      api.answered = function () { return yes.checked || no.checked; };
+      api.grade = function () {
+        var rightEl = q.answer ? yes : no, wrongEl = q.answer ? no : yes;
+        rightEl.parentNode.classList.add('right');
+        if (wrongEl.checked) wrongEl.parentNode.classList.add('wrong');
+        yes.disabled = no.disabled = true;
+        return rightEl.checked ? 1 : 0;
+      };
+    } else if (q.type === 'match') {
+      var rights = shuffle(range(q.pairs.length));
+      var sels = q.pairs.map(function (p, k) {
+        var sel = h('select', { 'aria-label': p[0] }, [h('option', { value: '', text: '— оберіть —' })]
+          .concat(rights.map(function (r) { return h('option', { value: r, text: q.pairs[r][1] }); })));
+        box.appendChild(h('div', { class: 'match-row' }, [h('div', { text: p[0] }), sel]));
+        return sel;
+      });
+      box.appendChild(h('p', { class: 'q-top', text: 'Кожен варіант підходить лише до одного пункту' }));
+      api.answered = function () { return sels.every(function (s) { return s.value !== ''; }); };
+      api.grade = function () {
+        var ok = 0;
+        sels.forEach(function (s, k) {
+          var row = s.parentNode, good = s.value !== '' && +s.value === k;
+          row.classList.add(good ? 'right' : 'wrong');
+          if (good) ok++; else row.appendChild(h('div', { class: 'fix', text: 'Правильно: ' + q.pairs[k][1] }));
+          s.disabled = true;
+        });
+        return ok / sels.length;
+      };
+    } else if (q.type === 'order') {
+      var cur = shuffle(range(q.items.length));
+      while (cur.join() === range(q.items.length).join() && cur.length > 1) cur = shuffle(cur);
+      var list = h('ol', { class: 'order-list' });
+      var draw = function () {
+        list.innerHTML = '';
+        cur.forEach(function (idx, pos) {
+          var up = h('button', { type: 'button', 'aria-label': 'Вище', text: '↑', onclick: function () { if (pos > 0) { cur.splice(pos - 1, 0, cur.splice(pos, 1)[0]); draw(); } } });
+          var dn = h('button', { type: 'button', 'aria-label': 'Нижче', text: '↓', onclick: function () { if (pos < cur.length - 1) { cur.splice(pos + 1, 0, cur.splice(pos, 1)[0]); draw(); } } });
+          list.appendChild(h('li', { 'data-i': idx }, [h('span', { text: q.items[idx] }), up, dn]));
+        });
+      };
+      draw();
+      box.appendChild(h('p', { class: 'q-top', text: 'Розставте кнопками ↑ ↓' }));
+      box.appendChild(list);
+      api.answered = function () { return true; };
+      api.grade = function () {
+        var ok = 0;
+        $$('li', list).forEach(function (li, pos) {
+          var good = +li.getAttribute('data-i') === pos;
+          li.classList.add(good ? 'right' : 'wrong');
+          if (good) ok++;
+          $$('button', li).forEach(function (b) { b.disabled = true; });
+        });
+        return ok / cur.length;
+      };
+      api.correctText = 'Правильний порядок: ' + q.items.join(' → ');
+    } else if (q.type === 'reflect') {
+      box.classList.add('reflect');
+      var ta = h('textarea', { placeholder: 'Запишіть свою відповідь. Її ніхто не побачить – вона лише для вас.' });
+      box.appendChild(ta);
+      api.answered = function () { return true; };
+      api.grade = function () { return null; };
+    }
+
+    var fb = h('div', { class: 'fb' });
+    box.appendChild(fb);
+    api.feedback = function (score) {
+      box.classList.add('done');
+      if (score === null) {
+        box.classList.add('reflect');
+        fb.appendChild(h('b', { class: 'st', text: 'Орієнтир' }));
+        fb.appendChild(document.createTextNode(q.sample || ''));
+        return;
+      }
+      var st = score === 1 ? 'Правильно' : score === 0 ? 'Неправильно' : 'Частково';
+      box.classList.add(score === 1 ? 'ok' : score === 0 ? 'bad' : 'part');
+      fb.appendChild(h('b', { class: 'st', text: st }));
+      if (api.correctText && score < 1) fb.appendChild(h('div', { text: api.correctText }));
+      if (q.explain) fb.appendChild(document.createTextNode(q.explain));
+      if (score < 1 && q.anchor && data.sections[q.anchor]) {
+        fb.appendChild(h('br'));
+        fb.appendChild(h('a', { href: '#' + q.anchor, text: '↩ Перечитати: ' + data.sections[q.anchor] }));
+      }
+    };
+    return api;
+  }
+
+  function ringSvg(pct) {
+    var r = 46, c = 2 * Math.PI * r, off = c * (1 - pct / 100);
+    var col = pct >= 85 ? 'var(--ok)' : pct >= 70 ? 'var(--gold)' : pct >= 50 ? 'var(--part)' : 'var(--bad)';
+    return '<svg class="ring" viewBox="0 0 112 112"><circle cx="56" cy="56" r="' + r + '" fill="none" stroke="var(--line)" stroke-width="10"/>' +
+      '<circle cx="56" cy="56" r="' + r + '" fill="none" stroke="' + col + '" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) +
+      '" stroke-dashoffset="' + off.toFixed(1) + '" transform="rotate(-90 56 56)"/><text x="56" y="63" text-anchor="middle">' + pct + '%</text></svg>';
+  }
+
+  function verdict(pct) {
+    if (pct >= 85) return ['Матеріал засвоєно глибоко', 'Ви не лише пам’ятаєте зміст, а й умієте застосувати його в конкретних ситуаціях.'];
+    if (pct >= 70) return ['Добре, але є прогалини', 'Основне зрозуміло. Перечитайте теми нижче, щоб закрити прогалини.'];
+    if (pct >= 50) return ['Знайомство поверхове', 'Частину думок розділу ви впізнаєте, але ще не можете на них спиратися. Перечитайте позначені теми і пройдіть тест ще раз.'];
+    return ['Розділ варто прочитати ще раз', 'Поверніться до тексту, особливо до головних думок, і пройдіть тест знову через день-два.'];
+  }
+
+  function renderQuiz(app, data) {
+    app.innerHTML = '';
+    var qs = data.questions.map(function (q, i) { var a = buildQuestion(q, i, data); app.appendChild(a.el); return a; });
+    var warn = h('span', { class: 'warn' });
+    var resultBox = h('div');
+    var checkBtn = h('button', { class: 'btn', type: 'button', text: 'Перевірити відповіді' });
+    var retry = h('button', { class: 'btn ghost', type: 'button', text: 'Пройти ще раз', style: 'display:none' });
+    var forced = false;
+    checkBtn.addEventListener('click', function () {
+      var missing = qs.filter(function (a) { return !a.answered(); });
+      qs.forEach(function (a) { a.el.classList.toggle('missing', !a.answered()); });
+      if (missing.length && !forced) {
+        forced = true;
+        warn.textContent = 'Без відповіді: ' + missing.length + '. Натисніть ще раз, щоб перевірити як є.';
+        missing[0].el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      warn.textContent = '';
+      var total = 0, max = 0, byLvl = {}, review = {}, perQ = [];
+      qs.forEach(function (a) {
+        a.el.classList.remove('missing');
+        var s = a.answered() ? a.grade() : (a.grade(), 0);
+        if (a.q.type === 'reflect') s = null;
+        a.feedback(s);
+        perQ.push(s === null ? null : Math.round(s * 100) / 100);
+        if (s === null) return;
+        total += s; max += 1;
+        var L = a.q.level || 'розуміння';
+        byLvl[L] = byLvl[L] || [0, 0]; byLvl[L][0] += s; byLvl[L][1] += 1;
+        if (s < 1 && a.q.anchor) review[a.q.anchor] = true;
+      });
+      var pct = Math.round(total / max * 100);
+      var v = verdict(pct);
+      var lv = LEVELS.filter(function (L) { return byLvl[L]; }).map(function (L) {
+        var p = Math.round(byLvl[L][0] / byLvl[L][1] * 100);
+        return '<div class="lvlbar"><span>' + L + '</span><span class="bar"><i style="width:' + p + '%"></i></span><b>' + p + '%</b></div>';
+      }).join('');
+      var rv = Object.keys(review).filter(function (k) { return data.sections[k]; });
+      resultBox.innerHTML = '<div class="result">' + ringSvg(pct) + '<div><h4>' + v[0] + '</h4><p>' + v[1] + '</p><p>Бали: ' +
+        (Math.round(total * 10) / 10) + ' з ' + max + '</p></div><div class="levels">' + lv + '</div>' +
+        (rv.length ? '<div class="review"><b>Що перечитати:</b><ul>' + rv.map(function (k) { return '<li><a href="#' + k + '">' + data.sections[k] + '</a></li>'; }).join('') + '</ul></div>' : '') +
+        '</div>';
+      checkBtn.style.display = 'none';
+      retry.style.display = '';
+      var saved = store.get(RESULTS_KEY) || {};
+      var prev = saved[data.chapter];
+      saved[data.chapter] = { pct: pct, best: Math.max(pct, prev ? prev.best || prev.pct : 0), date: new Date().toLocaleDateString('uk-UA'), tries: (prev ? prev.tries || 1 : 0) + 1 };
+      store.set(RESULTS_KEY, saved);
+      var sid = queueResult({ ch: data.chapter, title: data.title, pct: pct, score: Math.round(total * 10) / 10, max: max,
+        attempt: saved[data.chapter].tries, q: perQ });
+      if (sid) $('.result', resultBox).appendChild(h('p', { 'data-send': sid }));
+      renderSummary();
+      flush();
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+    retry.addEventListener('click', function () { renderQuiz(app, data); app.scrollIntoView({ behavior: 'smooth' }); });
+    app.appendChild(h('div', { class: 'quiz-actions' }, [checkBtn, retry, warn]));
+    app.appendChild(resultBox);
+  }
+
+  function renderSummary() {
+    var saved = store.get(RESULTS_KEY) || {};
+    var rows = DATA.map(function (d) {
+      var r = saved[d.chapter];
+      return '<tr><td>' + d.chapter + '</td><td><a href="#quiz' + d.chapter + '">' + d.title + '</a></td><td>' +
+        (r ? r.pct + '%' : '—') + '</td><td>' + (r ? r.best + '%' : '—') + '</td><td class="c-date">' + (r ? r.date : '') + '</td></tr>';
+    }).join('');
+    var done = DATA.filter(function (d) { return saved[d.chapter]; });
+    var avg = done.length ? Math.round(done.reduce(function (s, d) { return s + saved[d.chapter].best; }, 0) / done.length) : null;
+    $('#summaryTable').innerHTML = '<div class="table-wrap"><table class="sum-table"><thead><tr><th>№</th><th>Розділ</th><th>Останній</th><th>Найкращий</th><th class="c-date">Дата</th></tr></thead><tbody>' +
+      rows + '</tbody></table></div>' + (avg !== null ? '<p style="margin-top:14px">Пройдено тестів: ' + done.length + ' з ' + DATA.length + '. Середній найкращий результат: <b>' + avg + '%</b>.</p>' : '<p style="margin-top:14px">Тести ще не пройдено.</p>') + '<p class="send wait" id="outboxNote"></p>';
+    paintStatus();
+  }
+
+  DATA.forEach(function (d) {
+    var app = $('.quiz-app[data-ch="' + d.chapter + '"]');
+    if (app) renderQuiz(app, d);
+  });
+  renderSummary();
+  flush();
+})();
+</script>
+</body>
+</html>
